@@ -152,7 +152,7 @@ var options = {
 //    ],
     view: 'month',
     //    modal: '#events-modal',
-    tmpl_path: 'third/bootstrap-calendar-master/tmpls/',
+    tmpl_path: '../../third/bootstrap-calendar-master/tmpls/',
     tmpl_cache: false,
     //day: '2013-03-12',
     onAfterEventsLoad: function (events) {
