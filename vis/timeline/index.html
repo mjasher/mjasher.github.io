@@ -9,9 +9,13 @@ body, html{
 }
 
 #title{
-  height: 5%;
-  margin: 0;
-  padding: 0;
+  font-size: 20px;
+  display: inline-block;
+}
+#sub-title{
+  float: right;
+  display: inline-block;
+  padding-right: 10px;
 }
 
 #graph{
@@ -63,7 +67,8 @@ foreignObject img{
 </style>
 <body>
 
-<h1 id='title'> The Acts of the Australian Federal Governments <input id='filter' placeholder='Filter' value="tax or levy" type='text'> </h1>
+<div id='title'> The Acts of the Australian Federal Governments </div> 
+<div id='sub-title'> Show acts with <input id='filter' value="tax or levy" type='text'> in the title </div>
 <div id="graph"></div>
 <div id="context"></div>
 <!-- <div class='tooltip'></div> -->
@@ -73,36 +78,9 @@ foreignObject img{
 
 <script>
 
-var parseDate = d3.time.format('%d.%m.%Y').parse;
 
-var parties = {
-  LP: 'Liberal Party of Australia',
-  LIB: 'The Liberal Party',
-  CP: 'Country Party',
-  FT: 'Free Trade',
-  UAP: 'United Australia Party',
-  NL: 'National Labor',
-  NAT: 'Nationalist',
-  ALP: 'Australian Labor Party',
-  PROT: 'Protectionist'
-};
 
-// var color = d3.scale.category20()
-var color = d3.scale.ordinal()
-        .domain(Object.keys(parties))
-        .range([
-          '#3182bd',
-          '#6baed6',
-          '#74c476',
-          '#e7ba52',
-          '#5254a3',
-          '#6b6ecf',
-          '#9c9ede',
-          '#d62728',
-          '#799BC6'
-        ])
-
-var lanes = [{title: 'PMs', height: '50%'}]
+// var lanes = [{title: 'PMs', height: '50%'}]
 
 d3.csv("data/pms.aec.csv", pmsAecType, function(error, data) {
   draw(data);

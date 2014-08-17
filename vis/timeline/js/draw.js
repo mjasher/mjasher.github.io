@@ -3,10 +3,40 @@
 // it adds a bunch of code and the browser doens't seem to struggle 
 // react.js could be noice
 
+var parseDate = d3.time.format('%d.%m.%Y').parse;
+
+var parties = {
+  LP: 'Liberal Party of Australia',
+  LIB: 'The Liberal Party',
+  CP: 'Country Party',
+  ALP: 'Australian Labor Party',
+  FT: 'Free Trade',
+  UAP: 'United Australia Party',
+  NL: 'National Labor',
+  NAT: 'Nationalist',
+  PROT: 'Protectionist'
+};
+
+var color = d3.scale.category10()
+// var color = d3.scale.ordinal()
+        .domain(Object.keys(parties))
+        // .range([
+        //   '#3182bd',
+        //   '#6baed6',
+        //   '#74c476',
+        //   '#e7ba52',
+        //   '#5254a3',
+        //   '#6b6ecf',
+        //   '#9c9ede',
+        //   '#d62728',
+        //   '#799BC6'
+        // ])
 
 
 function draw(data){
     var laneHeight = 100;
+
+
 
     var graphElement = document.getElementById('graph');
     var contextElement = document.getElementById('context');
@@ -173,15 +203,26 @@ function draw(data){
 
       d3.select('#filter').on('blur', brushended);
 
+      var legend_data = color.domain().slice(0,-1).map(function(p,i){
+        return {color: color.range()[i], label: parties[p]};
+      });
 
       var legends = focus.append("g")
         .attr("class", "legend")
-        .attr("transform", "translate(0," + height-20 + ")")
+        // .attr("transform", "translate(0," + (height-20) + ")")
         .selectAll('g')
-        .data(color.range())
-        .enter().append('g');
+        .data(legend_data)
+        .enter().append('g')
+        .attr('transform', function(d,i){ return "translate(" + (i*50) +"," + (height-150) +")" });
 
-      legends.append()
+      legends.append('rect')
+        .attr('width',30)
+        .attr('height',30)
+        .attr('fill', function(d){ return d.color; })
+        
+       legends.append('text')
+        .text(function(d){ return d.label; })
+        .attr('transform', "rotate(-45)translate(-10,20)")
 
 
 
