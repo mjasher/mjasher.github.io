@@ -38,7 +38,8 @@
 			}
 
 
-			body { 
+			html { 
+			  height: 100%;
 			  background: url(img/cockatoo.svg) no-repeat center center fixed;
 			  -webkit-background-size: cover;
 			  -moz-background-size: cover;
@@ -46,6 +47,17 @@
 			  background-size: cover;
 	          filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/cockatoo.svg', sizingMethod='scale');
 	          -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/cockatoo.svg', sizingMethod='scale')";
+
+
+			}
+
+			body{
+				height: 100%;
+				background-color: rgba(21,27,41,0.85);
+			}
+
+			.contents{
+				height: 100%;
 			}
 
 			.container{
@@ -78,21 +90,44 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class='header'>
+		<div class='contents'>
+	        <div class='header'>
 
-        	<div class='container'>
-        		Michael Asher
-        	</div>
+	        	<div class='container'>
+	        		Michael Asher
+	        	</div>
 
-        </div>
+	        </div>
 
-        <div class='container'>
-			<a href="vis/timeline/index.html"> The Acts of Australia's federal governments</a> <br>
-        	<a href="vis/nz/index.html"> NZ tax and welfare calculator</a> (<a href="http://nzinitiative.org.nz/Media/Graph+of+the+week/Issue+18+-+2014.html">featured here</a>) <br>
-        	<a href="vis/rent-or-buy/index.html"> Rent or buy? </a> <br>
-        	<a href="vis/confidence-redundancy/index.html"> Consumer confidence plotted with Google trends for 'redundancy'  </a> <br>
-        	<a href="vis/include/index.html"> Map and Calendar app for creating events </a>
+	        <div class='container'>
+				<a href="vis/timeline/index.html"> The Acts of Australia's federal governments</a> <br>
+	        	<a href="vis/nz/index.html"> NZ tax and welfare calculator</a> (<a href="http://nzinitiative.org.nz/Media/Graph+of+the+week/Issue+18+-+2014.html">featured here</a>) <br>
+	        	<a href="vis/rent-or-buy/index.html"> Rent or buy? </a> <br>
+	        	<a href="vis/confidence-redundancy/index.html"> Consumer confidence plotted with Google trends for 'redundancy'  </a> <br>
+	        	<a href="vis/include/index.html"> Map and Calendar app for creating events </a>
 
+
+			<!-- 			
+				TODO
+				----
+				CKAN/ OECD data
+
+				simple menu
+
+				ecommerce
+
+				mutualcoin
+
+				Threadharvest splash page
+
+	        	Budget bot
+
+	        	ASGS NRP viewer 
+
+				BEET: add lat long add eg. again
+	        -->
+
+	        </div>
         </div>
 
 <!--

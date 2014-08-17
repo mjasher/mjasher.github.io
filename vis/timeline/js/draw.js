@@ -174,4 +174,17 @@ function draw(data){
       d3.select('#filter').on('blur', brushended);
 
 
+      var legends = focus.append("g")
+        .attr("class", "legend")
+        .attr("transform", "translate(0," + height-20 + ")")
+        .selectAll('g')
+        .data(color.range())
+        .enter().append('g');
+
+      legends.append()
+
+
+
+
+
 }

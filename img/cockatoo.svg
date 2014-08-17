@@ -14,7 +14,7 @@
    id="svg3156"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="cockatoo.I.svg">
+   sodipodi:docname="cockatoo.svg">
   <defs
      id="defs3158" />
   <sodipodi:namedview
@@ -25,7 +25,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4123814"
-     inkscape:cx="58.613526"
+     inkscape:cx="-65.998707"
      inkscape:cy="65.593317"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -121,12 +121,5 @@
          id="path3178"
          inkscape:connector-curvature="0" />
     </g>
-    <rect
-       style="opacity:0.9;fill:#151b29;fill-opacity:1;stroke:none"
-       id="rect3225"
-       width="268.16193"
-       height="188.63794"
-       x="388.79483"
-       y="328.96387" />
   </g>
 </svg>
