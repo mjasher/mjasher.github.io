@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+</style>
+<body>
+<script src="../../third/d3.min.js"></script>
+<script src="../../third/jsxcompressor.min.js"></script>
+
+
+<script>
+
+var fusiontable_api_key = "AIzaSyDpfNMH_IkouFwgI8y0_6tTQ0437Ncx8cQ";
+var fusiontable_id = {acts:"15-Ew4SFnqlzSa6uCxk1T430Q8iREB1-ihaQ4QkFk"};
+// Decompress an LZW-encoded string
+// function lzw_decode(s) {
+//     var dict = {};
+//     var data = (s + "").split("");
+//     var currChar = data[0];
+//     var oldPhrase = currChar;
+//     var out = [currChar];
+
+d3.xhr("data/all.csv.gz.txt")
+// .header('Content-Type', 'text/plain')
+// .header('Content-Encoding', 'gzip')
+.get(function(error, data) {
+  console.log(error, data)
+	// var gunzip = new Zlib.Gunzip(data);
+	// var plain = gunzip.decompress();
+
+var binary = JXG.decompress(data);
+   var plain =  btoa(binary);
+  	console.log(plain);
+});
+
+
+ //      d3.xhr(
+ //        "https://www.googleapis.com/fusiontables/v1/query?"
+ //              +"sql=SELECT * FROM " + fusiontable_id.acts
+ //              // +" WHERE year IN (2012,2013)"
+ //              // +" AND name CONTAINS 'TAX'"
+ //              +"&alt=csv&key=" + fusiontable_api_key)
+ //      .header('Accept-Encoding', 'gzip')
+ //      .header('User-Agent','my program (gzip)') // TODO
+ //      .get(
+ //        function(error,data){
+ //        	console.log(error)
+	// var gunzip = new Zlib.Gunzip(data);
+	// var plain = gunzip.decompress();
+	// console.log(plain,data);
+
+
+ //        }
+ //      );
+
+
+</script>
+</body>
+</html>

@@ -201,7 +201,7 @@ function draw(data){
         brushended();
       }
 
-      d3.select('#filter').on('blur', brushended);
+      d3.select('#filter').on('change', brushended);
 
       var legend_data = color.domain().slice(0,-1).map(function(p,i){
         return {color: color.range()[i], label: parties[p]};

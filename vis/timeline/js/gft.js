@@ -53,14 +53,40 @@ function loadAustlii(ext, acts_by_year, austlii, yearDraw){
 
   // https://developers.google.com/fusiontables/docs/v1/sql-reference
   if (years.length>0){
-      d3.csv(
+      // d3.csv(
+      //   "https://www.googleapis.com/fusiontables/v1/query?"
+      //         +"sql=SELECT * FROM " + fusiontable_id.acts
+      //         +" WHERE year IN (" + years.join() + ")"
+      //         // +" AND name CONTAINS 'TAX'"
+      //         +"&alt=csv&key=" + fusiontable_api_key,
+      //   function(data){
+
+      //       nested = d3.nest()
+      //         .key(function(d) { return d.year; })
+      //         .entries(data);
+
+      //       for (var i = 0; i < nested.length; i++) {
+      //         acts_by_year.set( nested[i].key, nested[i].values );
+      //       };
+      //       plotAustlii(from,to, acts_by_year, austlii,yearDraw);
+      //   }
+      // );
+
+d3.csv(
         "https://www.googleapis.com/fusiontables/v1/query?"
               +"sql=SELECT * FROM " + fusiontable_id.acts
               +" WHERE year IN (" + years.join() + ")"
               // +" AND name CONTAINS 'TAX'"
-              +"&alt=csv&key=" + fusiontable_api_key,
-        function(data){
+              +"&alt=csv&key=" + fusiontable_api_key)
 
+      // .header('Accept-Encoding', 'gzip')
+      // .header('User-Agent','my program(gzip)') // won't work as you can't change user-agent in browser
+     // http://stackoverflow.com/questions/5771878/jquery-ajax-request-change-user-agent
+     // github pages gzips json but not csv alegedly so http://stackoverflow.com/questions/24490168/ungzip-csv-files-in-web-browser-with-javascript
+      // or if we use 
+      .get(
+        function(error,data){
+            
             nested = d3.nest()
               .key(function(d) { return d.year; })
               .entries(data);
@@ -71,6 +97,8 @@ function loadAustlii(ext, acts_by_year, austlii, yearDraw){
             plotAustlii(from,to, acts_by_year, austlii,yearDraw);
         }
       );
+
+
   }
   else plotAustlii(from,to, acts_by_year, austlii,yearDraw);
 }
