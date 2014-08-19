@@ -5,7 +5,7 @@
 </style>
 <body>
 <script src="../../third/d3.min.js"></script>
-<script src="../../third/jsxcompressor.min.js"></script>
+<!-- <script src="../../third/jsxcompressor.min.js"></script> -->
 
 
 <script>
@@ -20,7 +20,7 @@ var fusiontable_id = {acts:"15-Ew4SFnqlzSa6uCxk1T430Q8iREB1-ihaQ4QkFk"};
 //     var oldPhrase = currChar;
 //     var out = [currChar];
 
-d3.xhr("data/all.csv.gz.txt")
+d3.xhr("http://www.asher.org.au/vis/timeline/data/austlii/all.json")
 // .header('Content-Type', 'text/plain')
 // .header('Content-Encoding', 'gzip')
 .get(function(error, data) {
@@ -28,9 +28,23 @@ d3.xhr("data/all.csv.gz.txt")
 	// var gunzip = new Zlib.Gunzip(data);
 	// var plain = gunzip.decompress();
 
-var binary = JXG.decompress(data);
-   var plain =  btoa(binary);
-  	console.log(plain);
+// var binary = JXG.decompress(data);
+//    var plain =  btoa(binary);
+//   	console.log(plain);
+});
+
+
+d3.xhr("http://www.asher.org.au/vis/timeline/data/austlii/all.csv")
+// .header('Content-Type', 'text/plain')
+// .header('Content-Encoding', 'gzip')
+.get(function(error, data) {
+  console.log(error, data)
+  // var gunzip = new Zlib.Gunzip(data);
+  // var plain = gunzip.decompress();
+
+// var binary = JXG.decompress(data);
+//    var plain =  btoa(binary);
+//    console.log(plain);
 });
 
 
