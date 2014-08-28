@@ -1,9 +1,15 @@
 var austliiId = _.uniqueId('b_');
 
+
+d3.select('#other').append('div')
+	.html("Show acts with <input id='filter' value='gun or firearm' type='text'> in the title.");
+
+
 var austlii = d3.select('#other')
 		.append('svg');
 
-
+    // <div id='title'> The Acts of the Australian Federal Governments </div> 
+    // <div id='sub-title'> Show acts with <input id='filter' value="gun or firearm" type='text'> in the title. </div>
 
 // TODO we should use queue or a promise here to make sure draw_pms is finished
 // var throttled = _.throttle(updatePosition, 100);
@@ -14,7 +20,7 @@ function draw_austlii(acts_by_year){
 
 	austlii.selectAll('g').remove();
 
-	austlii.attr('width',document.getElementById('graph').clientWidth)
+	austlii.attr("width", width + margin.left + margin.right)
 		.attr('height', 2000)
 		// .append('div')
 		.attr('id','austlii');
@@ -92,7 +98,7 @@ d3.json('data/austlii/all.json', function(error,data){
 
 			// only rerender visible
 			this_year = austlii.select('.c'+year)
-				.attr('transform', function(d){ return "translate(" + x(d) + ",10)"; } )
+				.attr('transform', function(d){ return "translate(" + (margin.left+x(d)) + ",10)"; } )
 				.classed('invisible', false);
 				// .style('width', year_width)
 				// .style('left', function(d){ return x(d)+'px'; });

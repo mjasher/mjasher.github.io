@@ -6,6 +6,7 @@ It'd be nice to reuse x() function - make sure html offset (margins) are the sam
 TODO: window. on resize
 Clip path doesn't work anyway
 */
+var loaded = false; // TODO better done with promises, $get etc. see graph/js/views.js
 var x;
 var brush = d3.svg.brush();
 
@@ -13,9 +14,18 @@ var brush = d3.svg.brush();
         // .on("brushend."+pmsId, brushended);
 var pmsId = _.uniqueId('b_');
 
+var graphElement = document.getElementById('graph');
+var contextElement = document.getElementById('context');
+
+var margin = {top: 0, right: 25, bottom: 0, left: 25},
+    margin2 = {top: 0, right: 25, bottom: 0, left: 25},
+    width = graphElement.clientWidth - margin.left - margin.right;
+
+
 // TODO "data/opps.aec.csv"
 d3.csv("data/pms.aec.csv", pmsAecType, function(error, data) {
   drawPms(data);
+  loaded = true;
   d3.select(window).on('resize.'+pmsId,function(event) {
       drawPms(data);
   });
@@ -40,12 +50,7 @@ function pmsAecType(d) {
 function drawPms(data){
     // var laneHeight = 100;
 
-    var graphElement = document.getElementById('graph');
-    var contextElement = document.getElementById('context');
 
-    var margin = {top: 0, right: 25, bottom: 0, left: 25},
-        margin2 = {top: 0, right: 25, bottom: 0, left: 25},
-        width = graphElement.clientWidth - margin.left - margin.right;
         // height = graphElement.clientHeight - margin.top - margin.bottom;
         // height2 = contextElement.clientHeight - margin2.top - margin2.bottom;
 
@@ -69,7 +74,7 @@ function drawPms(data){
         .domain(Object.keys(parties))
 
     x = d3.time.scale().range([0, width]);
-    var    x2 = d3.time.scale().range([0, width]);
+    var x2 = d3.time.scale().range([0, width]);
         // y = d3.scale.linear().range([height, 0]),
         // y2 = d3.scale.linear().range([height2, 0]);
 
@@ -77,9 +82,9 @@ function drawPms(data){
         xAxis2 = d3.svg.axis().scale(x2).orient("bottom");
         // yAxis = d3.svg.axis().scale(y).orient("left");
 
-    function yearDraw(d,i){
-      return "translate(" + x(d) + ",0)";
-    }
+    // function yearDraw(d,i){
+    //   return "translate(" + x(d) + ",0)";
+    // }
 
     function brushed() {
       x.domain(brush.empty() ? x2.domain() : brush.extent());
@@ -91,9 +96,7 @@ function drawPms(data){
 
     }
 
-    // austlii acts from gft
-    // var acts_filter_terms = ['TAX', 'LEVY', 'TARIFF'];
-    // var acts_by_year = d3.map();
+ 
     function brushended(){
         // loadAustlii(brush.extent(), acts_by_year, austlii, yearDraw);
         bar.each(drawImages);
@@ -124,6 +127,7 @@ function drawPms(data){
     var focus = svg.append("g")
         .attr("class", "focus")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
 
     var contextSvg = d3.select("#context").append('svg')
         .attr("width", width + margin.left + margin.right)
@@ -214,7 +218,7 @@ function drawPms(data){
       // initialize brush
       var ext = brush.extent();
       if (ext[0] - ext[1] < 10000) {
-        contextSvg.select('.brush').call(brush.extent([new Date(2010,1), new Date()]));
+        contextSvg.select('.brush').call(brush.extent([new Date(1996,3), new Date(2000,1)]));
         // brush.brushed();
         brushed();
         brushended();

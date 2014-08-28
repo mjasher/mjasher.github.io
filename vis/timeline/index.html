@@ -10,20 +10,24 @@ body, html{
   overflow: hidden;
 }
 
-
 #title{
+  margin-top: 10px;
+  margin-left: 25px;
+  position:absolute;
+}
+#title h3{
+  margin: 0;
+}
+/*#title{
   font-size: 20px;
-  /*position: absolute;*/
-  /*width: 50%;*/
-  /*vertical-align: top;*/
-  /*margin-top: 10px;*/
+  margin-top: 10px;
   display: inline-block;
 }
 #sub-title{
   float: right;
   display: inline-block;
   padding-right: 10px;
-}
+}*/
 
 #graph{
   /*background-color: rgba(255,255,255,0.9);*/
@@ -82,6 +86,16 @@ svg {
   shape-rendering: crispEdges;
 }
 
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
 .brush .extent {
   stroke: #fff;
   fill-opacity: .4;
@@ -104,16 +118,18 @@ foreignObject img{
 
 
 <div id='other'>
-    <div id='title'> The Acts of the Australian Federal Governments </div> 
-    <div id='sub-title'> Show acts with <input id='filter' value="tax or levy" type='text'> in the title. </div>
 </div>
 <div id="graph">
+  <div id='title'> 
+    <h3>The Acts of the Australian Federal Governments</h3>
+  </div> 
 </div>
 <div id="context"></div>
 <!-- <div class='tooltip'></div> -->
 <script src="../../third/d3.min.js"></script>
 <script src="../../third/underscore.min.js"></script>
 <script src="js/pms.js"></script>
+<script src="js/guns.js"></script>
 <script src="js/austlii_acts.js"></script>
 
 <script>
