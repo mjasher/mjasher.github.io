@@ -82,7 +82,7 @@ d3.csv(
       // .header('Accept-Encoding', 'gzip')
       // .header('User-Agent','my program(gzip)') // won't work as you can't change user-agent in browser
      // http://stackoverflow.com/questions/5771878/jquery-ajax-request-change-user-agent
-     // github pages gzips json but not csv alegedly so http://stackoverflow.com/questions/24490168/ungzip-csv-files-in-web-browser-with-javascript
+     // github pages gzips json but not csv (experimentally confirmed) so http://stackoverflow.com/questions/24490168/ungzip-csv-files-in-web-browser-with-javascript
       // or if we use 
       .get(
         function(error,data){

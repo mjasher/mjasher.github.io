@@ -100,6 +100,7 @@ function draw(data){
         .attr("height", height);
 
     var focus = svg.append("g")
+        .style('fill','white')
         .attr("class", "focus")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
