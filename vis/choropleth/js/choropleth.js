@@ -5,8 +5,6 @@ var colorScale = d3.scale.quantize() //threshold()
 			.range(["#ffffcc","#ffeda0","#fed976","#feb24c","#fd8d3c","#fc4e2a","#e31a1c","#bd0026","#800026"]); // thanks colorbrewer
 	
 
-
-
 // return color for feature
 function choroplethColor(feature) {
 	// TODO auto domain, legend, choose year (just [3] mightn't work) or timeseries plot, popup
@@ -19,6 +17,8 @@ function choroplethColor(feature) {
 }
 
 // TODO filter out non SA2s
+// geoMap.keys().filter(function(v){ if(geoMap.get(v)[1]) return geoMap.get(v)[1].value>30000; })
+
 
 function updateColor(){
 	// set the domain of colorScale
@@ -31,13 +31,15 @@ function updateColor(){
 			if (!isNaN(tempC)) rangeChoro.push(tempC);
 		}
 		catch(error) {
-			console.log(error, ' no value for ', i,  geoKeys[i]);
+			// console.log(error, ' no value for ', i,  geoKeys[i]);
 		}
 		
 	};
-	var range = d3.extent(rangeChoro);
-	var r = (range[1]-range[0])/10;
-	colorScale.domain([range[0]+r, range[1]-r]);
+
+	// get rid of top and bottom percentiles
+	rangeChoro.sort(function(a, b){return a-b});
+	var offset = Math.round(rangeChoro.length/10)
+	colorScale.domain([rangeChoro[offset], rangeChoro[rangeChoro.length-1-offset]]);
 }
 
 function updateLegend(){
