@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body, html{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#title{
+  font-size: 20px;
+  display: inline-block;
+}
+#sub-title{
+  float: right;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+#graph{
+  width: 100%;
+  min-width: 600px;
+  height:80%;
+  /*overflow-y: scroll;*/
+}
+#context{
+  width: 100%;
+  min-width: 600px;
+  height:10%;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+/*.area */
+/*.pm-rects{
+  clip-path: url(#clip);
+}
+*/
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .4;
+  shape-rendering: crispEdges;
+}
+
+foreignObject body{
+  padding: 0;
+  margin: 0;
+  margin-left: 15px;
+}
+
+foreignObject img{
+  max-width: calc(100% - 15px);;
+  max-height: 100%;
+}
+
+
+</style>
+<body>
+
+<div id='title'> The Acts of the Australian Federal Governments </div> 
+<div id='sub-title'> Show acts with <input id='filter' value="tax or levy" type='text'> in the title. </div>
+<div id="graph"></div>
+<div id="context"></div>
+<!-- <div class='tooltip'></div> -->
+<script src="../../third/d3.min.js"></script>
+<script src="js/gft.js"></script>
+<script src="js/draw.js"></script>
+
+<script>
+
+
+
+// var lanes = [{title: 'PMs', height: '50%'}]
+
+d3.csv("data/pms.aec.csv", pmsAecType, function(error, data) {
+  draw(data);
+  // console.log(data);
+  window.onresize = function(event) {
+      draw(data);
+  };
+});
+
+// d3.csv("data/opps.aec.csv", pmsAecType, function(error, data) {
+//   drawOpps(data);
+//   // console.log(data);
+//   window.onresize = function(event) {
+//       drawOpps(data);
+//   };
+// });
+
+
+
+function pmsAecType(d) {
+  var dates = d['Period in office'].split(' – ').map( function(date){
+    if (date == 'present') return new Date();
+    return parseDate(date);
+  });
+  d.startDate = dates[0];
+  d.endDate = dates[1];
+  return d;
+}
+
+</script>
+</body>
+</html>

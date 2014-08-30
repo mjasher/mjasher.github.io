@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>National Regional Profile </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../../third/font-awesome-4.0.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../third/leaflet-0.7.3.css">
+        <link rel="stylesheet" href="../../third/leaflet-sidebar-master/src/L.Control.Sidebar.css">
+
+        <style>
+            html,body,#mapElement{
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                width: 100%;
+            }
+            .autoselect{
+                border: 1px solid black;
+                border-radius: 5px;
+                min-height: 52px;
+                /*position: relative;*/
+            }
+            .autoselect > input{
+                min-height: 26px;
+                /*width: 70%;*/
+                padding: 0;
+                border: 0;
+                margin: 0;
+            }
+            .active{
+                background-color: lightsteelblue;
+            }
+            .autoselect .chosen{
+                /*position: relative;*/
+                background-color: steelblue;
+            }
+
+            .filtered > div, .chosen{
+                border-radius: 5px;
+                min-height: 26px;
+                line-height: 26px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            .filtered{
+                 /*margin-top: -26px;*/
+                 background-color: white;
+                 border-radius: 5px;
+                 z-index: 1;
+                 position: relative;
+            }
+            .autoselect > b{
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<!-- 
+        for ABS geospatial data (typically ASGS) check out
+        http://www.abs.gov.au/websitedbs/D3310114.nsf/home/ASGS+Implementation+Schedule+for+ABS+Publications
+
+        ASGS: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1270.0.55.001July%202011?OpenDocument
+        NRP: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1379.0.55.0012008%20to%202012?OpenDocument
+
+        Census etc: https://www.censusdata.abs.gov.au/datapacks/DataPacks?release=2011
+        MB counts: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/2074.02011?OpenDocument
+
+        TODO intro to OSM, proximity using pgrouting, bike path optimisation 
+
+            // TODO set server cache policy to months for ASGS
+
+            // query
+// geoMap.get(geojsonTileLayer.geojsonLayer._layers[1200].feature.properties.SA2_MAIN11)[0].value
+
+-->
+
+        <div id="sidebar">
+            <p>This page displays a couple of the spatial data sets of the ABS (namely the <a href="http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1379.0.55.0012008%20to%202012?OpenDocument">National Regional Profiles</a> and the
+            <a href="https://www.censusdata.abs.gov.au/datapacks/DataPacks?release=2011">Census Datapacks</a>). The data has been downloaded from the ABS and set up on Google's gear as an HTTP API (database accessible to 3rd party apps over the web). Thanks Google.</p>
+
+            <p> Pick a data table and a column name to create a choropleth of the most recent value for each area. Click on the map for more detail.</p>
+
+            <div id='tableName' class='autoselect'>
+                <b>Data table name:</b> <input class='filter' type='text' placeholder='(click to choose, type to filter)'>
+                <div class='chosen'></div>
+                <div class='filtered'></div>
+            </div>
+            <br>
+            <div id='columnName' class='autoselect'>
+                <b>Column name:</b> <input class='filter' type='text' placeholder='(click to choose, type to filter)'>
+                <div class='chosen'></div>
+                <div class='filtered'></div>
+            </div>
+        </div>
+        <div id="mapElement" ></div>
+
+        <script src="../../third/leaflet-0.7.3.js"></script>
+        <script src="../../third/leaflet-sidebar-master/src/L.Control.Sidebar.js"></script>
+        <script src="../../third/TileLayer.GeoJSON.js"></script>
+        <script src="../../third/d3.min.js"></script>
+        <script src="../../third/jquery-1.11.0.min.js"></script>
+        <script src="js/autoselect.js"></script>
+        <script src="js/choropleth.js"></script>
+
+        <script>
+
+// ----------------------------------
+// leaflet base map
+// ----------------------------------
+
+            // var init_loc = {lat: -32.882743, lng: 147.330234};
+            // map = L.map('mapElement').setView([init_loc.lat, init_loc.lng], 6);
+            var map = new L.Map('mapElement', {
+            center: [-35.1663756, 149.2531554],  
+                zoom: 8, // start zoom
+                minZoom: 5,
+                maxZoom: 10,
+            });
+            // var Stamen_TonerBackground = L.tileLayer('http://{s}.tile.stamen.com/toner-background/{z}/{x}/{y}.png', {
+            //     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            //     subdomains: 'abcd',
+            //     minZoom: 0,
+            //     maxZoom: 20
+            // }).addTo(map);
+
+            var baseLayer = L.tileLayer('http://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png', {
+                attribution: 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; toolserver.org',
+            }).addTo(map);
+
+
+            var sidebar = L.control.sidebar('sidebar', {
+                position: 'right'
+            });
+
+            map.addControl(sidebar);
+            sidebar.show();
+
+
+// ----------------------------------
+// autoselect table and column then query fusiontable
+// ----------------------------------
+
+
+            // TODO get more api_keys at https://console.developers.google.com/project
+            var fusiontable_api_key = "AIzaSyDpfNMH_IkouFwgI8y0_6tTQ0437Ncx8cQ";
+            // var fusiontable_api_key = "AIzaSyCLZjLXBHk6AjcNxBcByiG7q3bZnTN3M44"; // TODO
+
+            var chosenDriveTableName;
+            var geoMap;
+
+
+            // what to do when an o)ption is picked
+            var colChosen =  function(choice){
+                console.log("chosenDriveTableName",     "https://www.googleapis.com/fusiontables/v1/query?"
+                        +"sql=SELECT '"
+                        + chosenDriveTableName.geo
+                        +"' as geo, '"
+                        + chosenDriveTableName.time
+                        +"' as year, '"
+                        + driveColNames[choice].name
+                        + "' as value FROM " + chosenDriveTableName.short
+                        // +'sql=SELECT * FROM ' + driveTableNames[3].short
+                        // +" WHERE year = " + 2010
+                        // +" AND name CONTAINS 'TAX'"
+                        + ' LIMIT 10'
+                        +"&alt=csv&key=" + fusiontable_api_key);
+                d3.csv(
+                    "https://www.googleapis.com/fusiontables/v1/query?"
+                        +"sql=SELECT '"
+                        + chosenDriveTableName.geo
+                        +"' as geo, '"
+                        + chosenDriveTableName.time
+                        +"' as year, '"
+                        + driveColNames[choice].name
+                        + "' as value FROM " + chosenDriveTableName.short
+                        // +'sql=SELECT * FROM ' + driveTableNames[3].short
+                        // +" WHERE year = " + 2010
+                        // +" AND name CONTAINS 'TAX'"
+                        // + ' LIMIT 10'
+                        +"&alt=csv&key=" + fusiontable_api_key,
+                    function(error, data){
+
+                        geoMap = d3.nest()
+                          .key(function(d) { return d.geo; })
+                          .map(data, d3.map);
+
+                        geojsonTileLayer.redraw();
+       
+                    }
+                );
+                colName.find('.chosen').html(driveColNames[choice].name );
+            
+            }
+
+            // what to do when an option is picked
+            var chosen =  function(choice){
+                tableNames.find('.chosen').html(driveTableNames[choice].long );
+                chosenDriveTableName = driveTableNames[choice];
+                 // get column names
+                d3.json(
+                    "https://www.googleapis.com/fusiontables/v1/tables/"
+                        + driveTableNames[choice].short
+                        + "/columns?key=" + fusiontable_api_key, 
+                    function(data){
+                        driveColNames =  data.items;  
+                        make_autocomplete(colFilterInput, colName.find('.filtered'), colFilterRender, colChosen);
+                        colChosen(3); // TODO remove time, geo
+                    }
+                );
+
+            }
+            make_autocomplete(filterInput, tableNames.find('.filtered'), filterRender, chosen);
+            chosen(0);
+
+
+// ----------------------------------
+// leaflet geojson tilelayer
+// ----------------------------------
+
+            var style = function(feature){
+                var fillColor = "#00D";
+                if (geoMap) fillColor = choroplethColor(feature);
+                return {
+                    "clickable": true,
+                    "color": "#00D",
+                    "fillColor": fillColor, //"#00D"
+                    "weight": 1.0,
+                    "opacity": 0.3,
+                    "fillOpacity": 0.7
+                }
+            }
+            var hoverStyle = {
+                "fillOpacity": 0.5
+            };
+
+            // made with "/home/mikey/Dropbox/recipes/tiler.py"
+            var geojsonURL = 'http://urbananalyzer.appspot.com/sa2/{z}/{x}/{y}.json';
+            var geojsonTileLayer = new L.TileLayer.GeoJSON(geojsonURL, {
+                    clipTiles: true,
+                    unique: function (feature) {
+                        return feature.id; 
+                        // return feature.SA2_MAIN11; 
+                    }
+                }, {
+                    style: style,
+                    onEachFeature: function (feature, layer) {
+                        if (feature.properties) {
+                            var popupString = '<div class="popup">';
+                            for (var k in feature.properties) {
+                                var v = feature.properties[k];
+                                popupString += k + ': ' + v + '<br />';
+                            }
+                            popupString += '</div>';
+                            layer.bindPopup(popupString);
+                        }
+                        if (!(layer instanceof L.Point)) {
+                            layer.on('mouseover', function () {
+                                layer.setStyle(hoverStyle);
+                                // layer.openPopup();
+                            });
+                            layer.on('mouseout', function () {
+                                layer.setStyle(style(feature));
+                                // layer.closePopup();
+                            });
+                        }
+                    }
+                }
+            );
+            map.addLayer(geojsonTileLayer);
+
+        </script>
+
+    </body>
+</html>

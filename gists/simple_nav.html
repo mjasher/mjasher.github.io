@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+<style type="text/css">	
+
+	html,body{
+		padding: 0;
+		margin: 0;
+		background-color: steelblue;
+	}
+
+	.container{
+		margin: auto;
+		width: 100%;
+		max-width: 800px;
+	}
+	.pull-right{
+		float: right;
+	}
+
+	.my-nav{
+		position: absolute; 
+		left: 0;
+		right: 0;
+		/*position: fixed; */
+	}
+
+	.my-nav > .container{
+		background-color: white;
+	}
+
+	.my-nav-item{
+		left: 0;
+		right: 0;
+		display: inline-block;
+		background-color: white;
+
+	}
+
+	.my-nav-contents{
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		display: none;
+	}
+
+	.my-nav-contents > .container{
+		background-color: white;
+	}
+
+	@media (max-width: 768px) {
+		.my-nav-item, .my-nav-heading{
+			width: 100%;
+		}
+		.my-nav-contents{
+			position: relative;
+		}
+
+		.my-nav{
+			display: none;
+		}
+		.my-nav-toggle{
+			position: absolute;
+			z-index: 1;
+			right: 0;
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			font-size: 13px;
+			line-height: 46px;
+			text-align: center;
+			background-color: blue;
+		}
+
+	}
+	@media (min-width: 768px) {
+		.my-nav-toggle{
+			display: none;
+		}
+	}
+
+</style>							
+							
+	</head>
+	
+	<body>
+	<div class='my-nav-toggle'>Menu</div>
+	<div class='my-nav'>
+			<div class="container">
+		<div id='first' class='my-nav-item'>
+			<div class='my-nav-heading'>
+				<i class='glyphicon glyphicon-chevron-down'>&#x25BC;</i><a href="#">Category 1</a>
+			</div>
+			<div class='my-nav-contents'>
+				<div class='container'>
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			 			<ul>
+						   	<li><a href="#">Shirts</a></li>
+		                    <li><a href="#">Pants</a></li>
+		                    <li><a href="#">Jumpers</a></li>
+		                    <li><a href="#">Dresses</a></li>
+		                    <li><a href="#">Jewelry</a></li>
+		                    <li><a href="#">Accessories</a></li>
+		                    <li><a href="#">Shoes</a></li>
+		                    <li><a href="#">Sleepwear</a></li>
+						</ul>  
+			 		</div>
+			 		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img class='img-responsive' src="http://placehold.it/200x200"></div>
+			 		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img class='img-responsive' src="http://placehold.it/200x200"></div>
+			 		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img class='img-responsive' src="http://placehold.it/200x200"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class='my-nav-item'>
+			<div class='my-nav-heading'>
+				<i class='glyphicon glyphicon-chevron-down'>&#x25BC;</i><a href="#">Category 2</a>
+			</div>
+			<div class='my-nav-contents'>
+				<div class='container'>
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			 			<ul>
+						   	<li><a href="#">Shirts</a></li>
+		                    <li><a href="#">Pants</a></li>
+		                    <li><a href="#">Jumpers</a></li>
+		                    <li><a href="#">Dresses</a></li>
+		                    <li><a href="#">Jewelry</a></li>
+		                    <li><a href="#">Accessories</a></li>
+		                    <li><a href="#">Shoes</a></li>
+		                    <li><a href="#">Sleepwear</a></li>
+						</ul>  
+			 		</div>
+			 		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img class='img-responsive' src="http://placehold.it/200x200"></div>
+			 		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img class='img-responsive' src="http://placehold.it/200x200"></div>
+			 		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img class='img-responsive' src="http://placehold.it/200x200"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class='my-nav-item'>
+			<div class='my-nav-heading'>
+				<i class='glyphicon glyphicon-chevron-down'>&#x25BC;</i><a href="#">Category 3</a>
+			</div>
+			<div class='my-nav-contents'>
+				<div class='container'>
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			 			<ul>
+						   	<li><a href="#">Shirts 3</a></li>
+		                    <li><a href="#">Pants 3</a></li>
+		                    <li><a href="#">Jumpers 3</a></li>
+		                    <li><a href="#">Dresses 3</a></li>
+		                    <li><a href="#">Jewelry 3</a></li>
+		                    <li><a href="#">Accessories 3</a></li>
+		                    <li><a href="#">Shoes 3</a></li>
+		                    <li><a href="#">Sleepwear 3</a></li>
+						</ul>  
+			 		</div>
+			 		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img class='img-responsive' src="http://placehold.it/200x200"></div>
+			 		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img class='img-responsive' src="http://placehold.it/200x200"></div>
+			 		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img class='img-responsive' src="http://placehold.it/200x200"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class='my-nav-item pull-right'>
+			<div class='my-nav-heading'>
+				<i class='glyphicon glyphicon-chevron-down'>&#x25BC;</i><a href="#">Category 4</a>
+			</div>
+			<div class='my-nav-contents'>
+				<div class='container'>
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			 			<ul>
+						   	<li><a href="#">Shirts 4</a></li>
+		                    <li><a href="#">Pants 4</a></li>
+		                    <li><a href="#">Jumpers 4</a></li>
+		                    <li><a href="#">Dresses 4</a></li>
+		                    <li><a href="#">Jewelry 4</a></li>
+		                    <li><a href="#">Accessories 4</a></li>
+		                    <li><a href="#">Shoes 4</a></li>
+		                    <li><a href="#">Sleepwear 4</a></li>
+						</ul>  
+			 		</div>
+			 		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img class='img-responsive' src="http://placehold.it/200x200"></div>
+			 		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img class='img-responsive' src="http://placehold.it/200x200"></div>
+			 		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img class='img-responsive' src="http://placehold.it/200x200"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+	
+	</div>
+</div>
+
+<div class="container main">
+
+<p>"Let us read, and let us dance; these two amusements will never do any harm to the world."
+― Voltaire </p>
+<p>"‎Life is a shipwreck, but we must not forget to sing in the lifeboats."
+― Voltaire </p>
+<p>"It is forbidden to kill; therefore all murderers are punished unless they kill in large numbers and to the sound of trumpets."
+― Voltaire </p>
+<p>"The more I read, the more I acquire, the more certain I am that I know nothing."
+― Voltaire </p>
+<p>"Judge a man by his questions rather than by his answers."
+― Voltaire </p>
+<p>"Common sense is not so common."
+― Voltaire </p>
+<p>"Love truth, but pardon error."
+― Voltaire </p>
+<p>"Those who can make you believe absurdities, can make you commit atrocities."
+― Voltaire </p>
+<p>"I have never made but one prayer to God, a very short one: Oh Lord, make my enemies ridiculous. And God granted it."
+(Letter to Étienne Noël Damilaville, May 16, 1767)"
+― Voltaire </p>
+<p>"Despite the enormous quantity of books, how few people read! And if one reads profitably, one would realize how much stupid stuff the vulgar herd is content to swallow every day."
+― Voltaire </p>
+<p>"I don’t know where I am going, but I am on my way."
+― Voltaire </p>
+<p>"Dare to think for yourself."
+― Voltaire </p>
+<p>"God is a comedian playing to an audience that is too afraid to laugh."
+― Voltaire </p>
+<p>"I have wanted to kill myself a hundred times, but somehow I am still in love with life. This ridiculous weakness is perhaps one of our more stupid melancholy propensities, for is there anything more stupid than to be eager to go on carrying a burden which one would gladly throw away, to loathe one’s very being and yet to hold it fast, to fondle the snake that devours us until it has eaten our hearts away?"
+― Voltaire </p>
+<p>"Every man is guilty of all the good he did not do."
+― Voltaire </p>
+<p>"God is a circle whose center is everywhere and circumference nowhere."
+― Voltaire </p>
+<p>"It is dangerous to be right in matters on which the established authorities are wrong."
+― Voltaire </p>
+<p>"Now, now my good man, this is no time to be making enemies."
+(Voltaire on his deathbed in response to a priest asking him that he renounce Satan.)"
+― Voltaire </p>
+<p>"Le secret d'ennuyer est celui de tout dire.
+(The secret of being a bore is to tell everything.)"
+(Sept Discours en Vers sur l'Homme, 1738)"
+― Voltaire </p>
+<p>"The most important decision you make is to be in a good mood."
+― Voltaire </p>
+<p>"Doubt is an uncomfortable condition, but certainty is a ridiculous one."
+― Voltaire </p>
+<p>"Faith consists in believing what reason cannot."
+― Voltaire </p>
+<p>"Ice-cream is exquisite. What a pity it isn't illegal."
+― Voltaire </p>
+<p>"Fools have a habit of believing that everything written by a famous author is admirable. For my part I read only to please myself and like only what suits my taste."
+― Voltaire </p>
+<p>"It is better to risk saving a guilty person than to condemn an innocent one."
+― Voltaire </p>
+<p>"Think for yourself and let others enjoy the privilege of doing so too."
+― Voltaire </p>
+<p>"Cherish those who seek the truth but beware of those who find it."
+― Voltaire </p>
+<p>"Our wretched species is so made that those who walk on the well-trodden path always throw stones at those who are showing a new road."
+― Voltaire </p>
+<p>"If God did not exist, it would be necessary to invent him."
+― Voltaire </p>
+<p>"The human brain is a complex organ with the wonderful power of enabling man to find reasons for continuing to believe whatever it is that he wants to believe." 
+― Voltaire </p>
+</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../third/jquery-1.11.0.min.js"><\/script>')</script>
+	<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+	<script type="text/javascript">
+
+		function nav_touch(){
+			var mq = window.matchMedia('(min-width: 768px)');
+            $('.my-nav-item').unbind();
+            $('.my-nav-toggle').unbind();
+            $('.my-nav-heading .glyphicon-chevron-down').unbind();
+            if (mq.matches){
+            	$('.my-nav').show();
+            	$('.my-nav-item').hover(
+					function(){
+						$(this).find('.my-nav-contents').show();
+					},
+					function(){
+						$(this).find('.my-nav-contents').hide();
+					}
+				);
+            }
+            else{
+            	$('.my-nav-toggle').click(function(){
+            		$('.my-nav').toggle();
+            	})
+
+
+            	$('.my-nav-heading .glyphicon-chevron-down').click(function(){
+            		$(this).parent().siblings('.my-nav-contents').toggle();
+            	})
+            } 
+		}
+
+		$(document).ready(nav_touch);
+		$(window).resize(nav_touch);
+		
+		
+	</script>
+	</body>
+
+	
+	
+</html>
+	

@@ -178,7 +178,7 @@
     opacity: 1.0;
     color: #333;
     font-size: 25pt;
-    line-height: 1em;
+    /*line-height: 1em;*/
     text-align: center;
     background: white;
     -webkit-border-radius: 16px;
@@ -193,9 +193,8 @@
     border-radius: 25px;
     top: 45%;
     right: -25px;
-    padding-top: 9px;
-
     
-    
-    
+}
+.leaflet-sidebar.right > .leaflet-close {
+    left: -25px;
 }

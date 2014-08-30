@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>National Regional Profile </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../../third/font-awesome-4.0.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../third/leaflet-0.7.3.css">
+        <link rel="stylesheet" href="../../third/leaflet-sidebar-master/src/L.Control.Sidebar.css">
+
+        <style>
+            html,body,#mapElement{
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<!-- 
+        for ABS geospatial data (typically ASGS) check out
+        http://www.abs.gov.au/websitedbs/D3310114.nsf/home/ASGS+Implementation+Schedule+for+ABS+Publications
+
+        ASGS: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1270.0.55.001July%202011?OpenDocument
+        NRP: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1379.0.55.0012008%20to%202012?OpenDocument
+
+        Census etc: https://www.censusdata.abs.gov.au/datapacks/DataPacks?release=2011
+        MB counts: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/2074.02011?OpenDocument
+
+        TODO intro to OSM, proximity using pgrouting, bike path optimisation 
+-->
+
+        <div id="sidebar">
+            <h1>leaflet-sidebar</h1>
+        </div>
+        <div id="mapElement" ></div>
+
+        <script src="../../third/leaflet-0.7.3.js"></script>
+        <script src="../../third/leaflet-sidebar-master/src/L.Control.Sidebar.js"></script>
+        <script src="../../third/TileLayer.GeoJSON.js"></script>
+        <script src="../../third/d3.min.js"></script>
+
+        <script>
+            // var init_loc = {lat: -32.882743, lng: 147.330234};
+            // map = L.map('mapElement').setView([init_loc.lat, init_loc.lng], 6);
+            var map = new L.Map('mapElement', {
+            center: [-35.1663756, 149.2531554],  
+                zoom: 8, // start zoom
+                minZoom: 5,
+                maxZoom: 10,
+            });
+            // var Stamen_TonerBackground = L.tileLayer('http://{s}.tile.stamen.com/toner-background/{z}/{x}/{y}.png', {
+            //     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            //     subdomains: 'abcd',
+            //     minZoom: 0,
+            //     maxZoom: 20
+            // }).addTo(map);
+
+            var baseLayer = L.tileLayer('http://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png', {
+                attribution: 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; toolserver.org',
+            }).addTo(map);
+
+
+            var sidebar = L.control.sidebar('sidebar', {
+                position: 'right'
+            });
+
+            map.addControl(sidebar);
+            sidebar.show();
+
+            // TODO get more api_keys at https://console.developers.google.com/project
+            var fusiontable_api_key = "AIzaSyDpfNMH_IkouFwgI8y0_6tTQ0437Ncx8cQ";
+            // var fusiontable_api_key = "AIzaSyCLZjLXBHk6AjcNxBcByiG7q3bZnTN3M44"; // TODO
+            var driveTableNames = [
+                    {
+                        long: "National Regional Profile, Population, ASGS, 2007-2011",
+                        short: "1NZqM7xmjpXLlyBoryjnrOuiKw56FxuJ3tc_zGAVD"
+                    },
+                    {
+                        long: "National Regional Profile, Industry, ASGS, 2007-2011",
+                        short: "1DhCZ70s6Zb2sVwy3U7cAj01pkZ_PO8F1wS44iaeW"
+                    },
+                    {
+                        long: "National Regional Profile, Environment, ASGS, 2007-2011",
+                        short: "1WZX7wwo6WfBpJ8k47B_GVz7gIngsEvsbNrp6qtR6"
+                    },
+                    {
+                        long: "National Regional Profile, Economy, ASGS, 2007-2011",
+                        short: "1gB66u4yU-Jc7Q9m8oYtkr5VPf_f5gE0os4fTrMRa"
+                    }
+            ];
+
+            // get column names
+            d3.json(
+                "https://www.googleapis.com/fusiontables/v1/tables/"
+                    + driveTableNames[3].short 
+                    + "/columns?key=" + fusiontable_api_key, 
+                function(data){
+                    console.log('columns',data);
+                }
+            );
+
+
+            // query
+            var geoMap;
+            d3.csv(
+                "https://www.googleapis.com/fusiontables/v1/query?"
+                      +"sql=SELECT 'Geography - Codes' as geo, 'Year - Labels' as year, 'NUMBER OF BUSINESSES - at 30 June - Total number of businesses (Number)' as value FROM " + driveTableNames[3].short
+                      // +'sql=SELECT * FROM ' + driveTableNames[3].short
+                      // +" WHERE year = " + 2010
+                      // +" AND name CONTAINS 'TAX'"
+                      + ' LIMIT 100'
+                      +"&alt=csv&key=" + fusiontable_api_key,
+                function(error, data){
+
+                    geoMap = d3.nest()
+                      .key(function(d) { return d.geo; })
+                      .map(data, d3.map);
+                      // .entries(data);
+
+                    console.log(error, data);
+   
+                }
+            );
+
+
+            var style = {
+                "clickable": true,
+                "color": "#00D",
+                "fillColor": "#00D",
+                "weight": 1.0,
+                "opacity": 0.3,
+                "fillOpacity": 0.2
+            };
+            var hoverStyle = {
+                "fillOpacity": 0.5
+            };
+
+            // made with "/home/mikey/Dropbox/recipes/tiler.py"
+            var geojsonURL = 'http://urbananalyzer.appspot.com/sa2/{z}/{x}/{y}.json';
+            var geojsonTileLayer = new L.TileLayer.GeoJSON(geojsonURL, {
+                    clipTiles: true,
+                    unique: function (feature) {
+                        return feature.id; 
+                    }
+                }, {
+                    style: style,
+                    onEachFeature: function (feature, layer) {
+                        if (feature.properties) {
+                            var popupString = '<div class="popup">';
+                            for (var k in feature.properties) {
+                                var v = feature.properties[k];
+                                popupString += k + ': ' + v + '<br />';
+                            }
+                            popupString += '</div>';
+                            layer.bindPopup(popupString);
+                        }
+                        if (!(layer instanceof L.Point)) {
+                            layer.on('mouseover', function () {
+                                layer.setStyle(hoverStyle);
+                                // layer.openPopup();
+                            });
+                            layer.on('mouseout', function () {
+                                layer.setStyle(style);
+                                // layer.closePopup();
+                            });
+                        }
+                    }
+                }
+            );
+            map.addLayer(geojsonTileLayer);
+
+        </script>
+
+    </body>
+</html>
