@@ -10,7 +10,7 @@ var colorScale = d3.scale.quantize() //threshold()
 // return color for feature
 function choroplethColor(feature) {
 	// TODO auto domain, legend, choose year (just [3] mightn't work) or timeseries plot, popup
-	var val = geoMap.get(feature.properties.SA2_MAIN11)[3].value;
+	var val = geoMap.get(feature.properties.SA2_MAIN11)[1].value;
 	if (val) return colorScale(val);
 	else {
 		console.log('broken', val);
@@ -27,7 +27,7 @@ function updateColor(){
 	var geoKeys = geoMap.keys();
 	for (var i = 0; i < geoKeys.length; i++) {
 		try{
-			tempC = + geoMap.get(geoKeys[i])[3].value;
+			tempC = + geoMap.get(geoKeys[i])[1].value;
 			if (!isNaN(tempC)) rangeChoro.push(tempC);
 		}
 		catch(error) {
