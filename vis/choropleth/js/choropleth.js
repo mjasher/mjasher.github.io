@@ -5,62 +5,52 @@ var colorScale = d3.scale.quantize() //threshold()
 			.range(["#ffffcc","#ffeda0","#fed976","#feb24c","#fd8d3c","#fc4e2a","#e31a1c","#bd0026","#800026"]); // thanks colorbrewer
 	
 
+
+
 // return color for feature
 function choroplethColor(feature) {
-	// TODO auto domain, legend, choose year or timeseries plot, popup
+	// TODO auto domain, legend, choose year (just [3] mightn't work) or timeseries plot, popup
 	var val = geoMap.get(feature.properties.SA2_MAIN11)[3].value;
 	if (val) return colorScale(val);
 	else {
 		console.log('broken', val);
 		return NaN;
 	}
-    // try {
-    //     //SA2map.get(fCode);
-    //     //return codeControl();
-    //     return SA2map.get(fCode);
-    // } catch (e) {
-    //     return NaN;
-    // }
 }
 
-// Legend view-source:http://leafletjs.com/examples/choropleth-example.html
-// function addLegend(map, colors) {
-//     // expand domain for quantize
-//     var d = (colors.domain()[1] - colors.domain()[0]) / 9
+// TODO filter out non SA2s
 
-//     var legend = L.control({
-//         position: 'bottomright'
-//     });
-//     legend.onAdd = function (map) {
-//         var div = L.DomUtil.create('div', 'info legend'),
-//             grades = colors.range(),
-//             labels = [];
+function updateColor(){
+	// set the domain of colorScale
+	var rangeChoro = [];
+	var tempC;
+	var geoKeys = geoMap.keys();
+	for (var i = 0; i < geoKeys.length; i++) {
+		try{
+			tempC = + geoMap.get(geoKeys[i])[3].value;
+			if (!isNaN(tempC)) rangeChoro.push(tempC);
+		}
+		catch(error) {
+			console.log(error, ' no value for ', i,  geoKeys[i]);
+		}
+		
+	};
+	var range = d3.extent(rangeChoro);
+	var r = (range[1]-range[0])/10;
+	colorScale.domain([range[0]+r, range[1]-r]);
+}
 
-//         for (var i = 0; i < grades.length; i++) {
-//             fromTo = colors.invertExtent(grades[i]);
-//             labels.push(
-//                 '<i style="background:' + grades[i] + '"></i> ' +
-//                 fromTo[0].toFixed(2) + (fromTo[1] ? '&ndash;' + fromTo[1].toFixed(2) : '+'));
-//         }
+function updateLegend(){
+	// d3.select('#legend svg').remove();
+	// var legend = d3.select('#legend').append('svg');
+	var grades = colorScale.range();
+	var labels = [];
+	for (var i = 0; i < grades.length; i++) {
+            fromTo = colorScale.invertExtent(grades[i]);
+            labels.push(
+                '<div style="background-color:' + grades[i] + '; display: inline-block; vertical-align: middle; width:20px; height: 20px;"></div> ' +
+                fromTo[0].toFixed(2) + (fromTo[1] ? '&ndash;' + fromTo[1].toFixed(2) : '+'));
+    }
+    document.getElementById('legend').innerHTML = labels.join('<br />');
+}
 
-//         div.innerHTML = labels.join('<br />'); // '<h4> Legend </h4>' +
-//         return div;
-//     }
-//     legend.addTo(map);
-// }
-
-
-
-// find the range of values to create legend
-// var rangeChoro = [];
-// var tempC;
-// for (i in SA2map.keys()) {
-//     // add to range only if choroplethColor returns a value for this element
-//     tempC = +SA2map.get(SA2map.keys()[i]);
-//     if (!isNaN(tempC)) {
-//         rangeChoro.push(tempC);
-//     }
-// }
-// addLegend(map, d3Color);
-
-// d3Color(SA2map.get(feature.properties[code]))
