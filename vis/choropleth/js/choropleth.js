@@ -50,9 +50,12 @@ function updateLegend(){
 	for (var i = 0; i < grades.length; i++) {
             fromTo = colorScale.invertExtent(grades[i]);
             labels.push(
-                '<div style="background-color:' + grades[i] + '; display: inline-block; vertical-align: middle; width:20px; height: 20px;"></div> ' +
+              '<div style="background-color:' + grades[i] + '; display: inline-block; vertical-align: middle; width:20px; height: 20px;"></div> ' +
                 fromTo[0].toFixed(2) + (fromTo[1] ? '&ndash;' + fromTo[1].toFixed(2) : '+'));
     }
+    labels.push(
+         '<div style="background-color:#00D; display: inline-block; vertical-align: middle; width:20px; height: 20px;"></div> No data');
+   
     document.getElementById('legend').innerHTML = labels.join('<br />');
 }
 
