@@ -51,7 +51,7 @@ function updateLegend(){
             fromTo = colorScale.invertExtent(grades[i]);
             labels.push(
               '<div style="background-color:' + grades[i] + '; display: inline-block; vertical-align: middle; width:20px; height: 20px;"></div> ' +
-                fromTo[0].toFixed(2) + (fromTo[1] ? '&ndash;' + fromTo[1].toFixed(2) : '+'));
+                fromTo[0].toFixed() + (fromTo[1] ? '&ndash;' + fromTo[1].toFixed() : '+'));
     }
     labels.push(
          '<div style="background-color:#00D; display: inline-block; vertical-align: middle; width:20px; height: 20px;"></div> No data');
