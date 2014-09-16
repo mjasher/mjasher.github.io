@@ -221,7 +221,11 @@
                     "https://www.googleapis.com/fusiontables/v1/tables/"
                         + driveTableNames[choice].short
                         + "/columns?key=" + fusiontable_api_key, 
-                    function(data){
+                    function(error,data){
+                        // console.log(error);
+                        // console.log("https://www.googleapis.com/fusiontables/v1/tables/"
+                        //     + driveTableNames[choice].short
+                        //     + "/columns?key=" + fusiontable_api_key);
                         driveColNames =  data.items;  
                         make_autocomplete(colFilterInput, colName.find('.filtered'), colFilterRender, colChosen);
                         colChosen(3); // TODO remove time, geo
