@@ -61,6 +61,10 @@
                 padding-right: 5px;
             }
 
+            #years>span{
+                padding: 10px;
+            }
+
 
         </style>
     </head>
@@ -108,6 +112,7 @@
                 <div class='filtered'></div>
             </div>
             <br>
+            <div id='years'></div>
             <div id='legend'></div>
         </div>
         <div id="mapElement" ></div>
@@ -155,6 +160,31 @@
 
 
 // ----------------------------------
+// select year
+// ----------------------------------
+
+            function render_year(){
+                d3.select('#years span').remove();
+                d3.select('#years')
+                    .selectAll('span')
+                    .data(yearSet.values().filter(function(d){ return d != ""; })).enter()
+                    .append('span')
+                    .html(function(d,i){ return d; })
+                    .classed('active', function(d,i){ return d == chosen_year; })
+                    .on('click', function(d,i){
+                        chosen_year = d;
+                        d3.selectAll(this.parentNode.childNodes).classed('active', false);
+                        d3.select(this).classed('active', true);
+                        // render_year();
+                        updateColor();
+                        updateLegend();
+                        geojsonTileLayer.redraw();
+                    });
+            }
+
+
+
+// ----------------------------------
 // autoselect table and column then query fusiontable
 // ----------------------------------
 
@@ -166,8 +196,10 @@
             var chosenDriveTableName;
             var geoMap;
 
+            var yearSet = d3.set();
+            var chosen_year = '2010';
 
-            // what to do when an o)ption is picked
+            // what to do when a column is picked
             var colChosen =  function(choice){
                 console.log("chosenDriveTableName",     "https://www.googleapis.com/fusiontables/v1/query?"
                         +"sql=SELECT '"
@@ -200,11 +232,23 @@
 
                         geoMap = d3.nest()
                           .key(function(d) { return d.geo; })
+                          .key(function(d) { return d.year; })
                           .map(data, d3.map);
 
-                        geojsonTileLayer.redraw();
+                        // figure out available years
+                        yearSet.empty();
+                        geoMap.values().forEach(function(location){
+                            location.keys().forEach(function(year){
+                                yearSet.add(year);
+                                
+                            });
+                        });
+
+                        render_year();
+
                         updateColor();
                         updateLegend();
+                        geojsonTileLayer.redraw();
        
                     }
                 );
@@ -212,7 +256,7 @@
             
             }
 
-            // what to do when an option is picked
+            // what to do when a table picked
             var chosen =  function(choice){
                 tableNames.find('.chosen').html(driveTableNames[choice].long );
                 chosenDriveTableName = driveTableNames[choice];
@@ -275,10 +319,13 @@
                                 popupString += k + ': ' + v + '<br />';
                             }
                             if (geoMap){
-                                for (var k in geoMap.get(feature.id)) {
-                                  var v = geoMap.get(feature.id)[k];
-                                    popupString += v.year + ': ' + v.value + '<br />';
-                                }
+                                geoMap.get(feature.id).values().forEach(function(v){
+                                    popupString += v[0].year + ': ' + v[0].value + '<br />';
+                                });
+                                // for (var k in geoMap.get(feature.id).values()) {
+                                //   var v = geoMap.get(feature.id)[k];
+                                //     popupString += v.year + ': ' + v.value + '<br />';
+                                // }
                             }
                             popupString += '</div>';
                             layer.bindPopup(popupString);
