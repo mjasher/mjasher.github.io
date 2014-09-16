@@ -15,12 +15,6 @@ function choroplethColor(feature) {
 		}
 	}
 	return NaN;
-	// var val = geoMap.get(feature.properties.SA2_MAIN11).get(chosen_year)[0].value;
-	// if (val) return colorScale(val);
-	// else {
-	// 	console.log('broken', val);
-	// 	return NaN;
-	// }
 
 	// var val = geoMap.get(feature.properties.SA2_MAIN11).get(chosen_year)[0].value;
 	// if (val) return colorScale(val);

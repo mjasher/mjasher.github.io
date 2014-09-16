@@ -175,8 +175,6 @@
                         chosen_year = d;
                         d3.selectAll(this.parentNode.childNodes).classed('active', false);
                         d3.select(this).classed('active', true);
-                        console.log(d);
-                        // render_year();
                         updateColor();
                         updateLegend();
                         geojsonTileLayer.geojsonLayer.setStyle(style);   // beats geojsonTileLayer.redraw();
