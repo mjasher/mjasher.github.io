@@ -302,6 +302,26 @@
                 "fillOpacity": 0.5
             };
 
+            var makePopup = function(feature){
+                var popupString = '<div class="popup">';
+                if (feature.properties) {
+                    for (var k in feature.properties) {
+                        var v = feature.properties[k];
+                        popupString += k + ': ' + v + '<br />';
+                    }
+                    if (geoMap){
+                        geoMap.get(feature.id).values().forEach(function(v){
+                            popupString += v[0].year + ': ' + v[0].value + '<br />';
+                        });
+                        // for (var k in geoMap.get(feature.id).values()) {
+                        //   var v = geoMap.get(feature.id)[k];
+                        //     popupString += v.year + ': ' + v.value + '<br />';
+                        // }
+                    }
+                }
+                popupString += '</div>';
+                return popupString;
+            }
             // made with "/home/mikey/Dropbox/recipes/tiler.py"
             var geojsonURL = 'http://urbananalyzer.appspot.com/sa2/{z}/{x}/{y}.json';
             var geojsonTileLayer = new L.TileLayer.GeoJSON(geojsonURL, {
@@ -313,31 +333,16 @@
                 }, {
                     style: style,
                     onEachFeature: function (feature, layer) {
-                        if (feature.properties) {
-                            var popupString = '<div class="popup">';
-                            for (var k in feature.properties) {
-                                var v = feature.properties[k];
-                                popupString += k + ': ' + v + '<br />';
-                            }
-                            if (geoMap){
-                                geoMap.get(feature.id).values().forEach(function(v){
-                                    popupString += v[0].year + ': ' + v[0].value + '<br />';
-                                });
-                                // for (var k in geoMap.get(feature.id).values()) {
-                                //   var v = geoMap.get(feature.id)[k];
-                                //     popupString += v.year + ': ' + v.value + '<br />';
-                                // }
-                            }
-                            popupString += '</div>';
-                            layer.bindPopup(popupString);
-                        }
+                        // layer.bindPopup(makePopup(feature));
                         if (!(layer instanceof L.Point)) {
                             layer.on('mouseover', function () {
                                 layer.setStyle(hoverStyle);
+                                layer.bindPopup(makePopup(feature));
                                 // layer.openPopup();
                             });
                             layer.on('mouseout', function () {
                                 layer.setStyle(style(feature));
+                                layer.unbindPopup();
                                 // layer.closePopup();
                             });
                         }
