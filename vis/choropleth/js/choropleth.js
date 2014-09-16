@@ -8,12 +8,27 @@ var colorScale = d3.scale.quantize() //threshold()
 // return color for feature
 function choroplethColor(feature) {
 	// TODO auto domain, legend, choose year (just [3] mightn't work) or timeseries plot, popup
-	var val = geoMap.get(feature.properties.SA2_MAIN11).get(chosen_year)[0].value;
-	if (val) return colorScale(val);
-	else {
-		console.log('broken', val);
-		return NaN;
+	if (geoMap.get(feature.properties.SA2_MAIN11) != undefined){
+		if (geoMap.get(feature.properties.SA2_MAIN11).get(chosen_year) != undefined){
+			var val = geoMap.get(feature.properties.SA2_MAIN11).get(chosen_year)[0].value;
+			if (val) return colorScale(val);
+		}
 	}
+	return NaN;
+	// var val = geoMap.get(feature.properties.SA2_MAIN11).get(chosen_year)[0].value;
+	// if (val) return colorScale(val);
+	// else {
+	// 	console.log('broken', val);
+	// 	return NaN;
+	// }
+
+	// var val = geoMap.get(feature.properties.SA2_MAIN11).get(chosen_year)[0].value;
+	// if (val) return colorScale(val);
+	// else {
+	// 	console.log('broken', val);
+	// 	return NaN;
+	// }
+
 }
 
 // TODO filter out non SA2s

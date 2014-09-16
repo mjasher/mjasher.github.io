@@ -164,7 +164,7 @@
 // ----------------------------------
 
             function render_year(){
-                d3.select('#years span').remove();
+                d3.selectAll('#years span').remove();
                 d3.select('#years')
                     .selectAll('span')
                     .data(yearSet.values().filter(function(d){ return d != ""; })).enter()
@@ -175,6 +175,7 @@
                         chosen_year = d;
                         d3.selectAll(this.parentNode.childNodes).classed('active', false);
                         d3.select(this).classed('active', true);
+                        console.log(d);
                         // render_year();
                         updateColor();
                         updateLegend();
@@ -197,7 +198,7 @@
             var geoMap;
 
             var yearSet = d3.set();
-            var chosen_year = '2010';
+            var chosen_year;
 
             // what to do when a column is picked
             var colChosen =  function(choice){
@@ -239,10 +240,11 @@
                         yearSet.empty();
                         geoMap.values().forEach(function(location){
                             location.keys().forEach(function(year){
-                                yearSet.add(year);
+                                yearSet.add(year.replace(' ',''));
                                 
                             });
                         });
+                        chosen_year = yearSet.values().filter(function(d){ return d != ""; })[0];
 
                         render_year();
 
@@ -337,12 +339,12 @@
                         if (!(layer instanceof L.Point)) {
                             layer.on('mouseover', function () {
                                 layer.setStyle(hoverStyle);
-                                layer.bindPopup(makePopup(feature));
+                                if(layer.bindPopup) layer.bindPopup(makePopup(feature));
                                 // layer.openPopup();
                             });
                             layer.on('mouseout', function () {
                                 layer.setStyle(style(feature));
-                                layer.unbindPopup();
+                                if(layer.unbindPopup) layer.unbindPopup();
                                 // layer.closePopup();
                             });
                         }
