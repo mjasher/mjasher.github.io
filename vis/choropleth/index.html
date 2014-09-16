@@ -178,7 +178,7 @@
                         // render_year();
                         updateColor();
                         updateLegend();
-                        geojsonTileLayer.redraw();
+                        geojsonTileLayer.geojsonLayer.setStyle(style);   // beats geojsonTileLayer.redraw();
                     });
             }
 
@@ -248,7 +248,8 @@
 
                         updateColor();
                         updateLegend();
-                        geojsonTileLayer.redraw();
+                        geojsonTileLayer.geojsonLayer.setStyle(style); 
+                        // geojsonTileLayer.redraw();
        
                     }
                 );
