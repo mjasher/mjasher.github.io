@@ -74,22 +74,49 @@
         <![endif]-->
 
 <!-- 
-        for ABS geospatial data (typically ASGS) check out
-        http://www.abs.gov.au/websitedbs/D3310114.nsf/home/ASGS+Implementation+Schedule+for+ABS+Publications
 
-        ASGS: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1270.0.55.001July%202011?OpenDocument
-        NRP: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1379.0.55.0012008%20to%202012?OpenDocument
+Great ABS datasets are 
+------------------------
+(Prisoners) [http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/4517.02013?OpenDocument]
+(Australian Historical Population Statistics) [http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/3105.0.65.0012014?OpenDocument]
+(Census data packs) [https://www.censusdata.abs.gov.au/datapacks/DataPacks?release=2011]
+(National Regional Profiles) [http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1379.0.55.]0012008%20to%202012?OpenDocument
+(Modeller's database) [http://www.abs.gov.au/ausstats/abs@.nsf/mf/1364.0.15.003]
+(MB counts) [http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/2074.02011?OpenDocument]
 
-        Census etc: https://www.censusdata.abs.gov.au/datapacks/DataPacks?release=2011
-        MB counts: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/2074.02011?OpenDocument
+for ABS geospatial data (typically ASGS) check out (the release schedule) [http://www.abs.gov.au/websitedbs/D3310114.nsf/home/ASGS+Implementation+Schedule+for+ABS+Publications
+ASGS: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1270.0.55.001July%202011?OpenDocument]
 
-        TODO intro to OSM, proximity using pgrouting, bike path optimisation 
+Vision for the ABS
+--------------------
+Get all databases available via HTTP, 
+hierarchy as DB > excel files > sheets > csv/json
 
-            // TODO set server cache policy to months for ASGS
+LGA and ASGS chorpleths
+Timeline for timeseries
+Bar charts for all else. eg. HSE
+States are probably better viewed as bar/multiline charts than choropleths
+
+
+Data Availability for ABS Regions
+Disaggregated Census data is available for all ABS Regions SA1 and above.
+Note: data on Indigenous Communities is available at the ILOC level.
+Additional data is available for the following:
+SA2s: Business Demographics, Building Approvals and
+Estimated Resident Population
+SA4s: Labour Force Survey
+GCCSA: CPI and House Price Index.
+Mesh Blocks are intended as building blocks so only limited data is available:
+Census population and dwelling counts
+
+
+TODO intro to OSM, proximity using pgrouting, bike path optimisation 
+
+// TODO set server cache policy to months for ASGS
 
 // TODO filter out non SA2s so ranges aren't too big
 
-            // query
+// query
 // geoMap.get(geojsonTileLayer.geojsonLayer._layers[1200].feature.properties.SA2_MAIN11)[0].value
 
 -->
