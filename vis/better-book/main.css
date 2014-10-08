@@ -1,0 +1,170 @@
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}                 
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+/*button, input, select, textarea {margin: 0;}*/
+
+
+/*! PocketGrid 1.1.0 http://arnaudleray.github.io/pocketgrid/docs/
+* Copyright 2013 Arnaud Leray * MIT License */
+/* Border-box-sizing */
+.block-group, .block, .block-group:after, .block:after, .block-group:before, .block:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.block-group:before, .block-group:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.block-group:after {
+    clear: both;
+}
+.block-group {
+    /* Clearfix */
+    *zoom: 1;
+    /* ul/li compatibility */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/* Nested grid */
+.block-group > .block-group {
+    clear: none;
+    float: left;
+    margin: 0 !important;
+}
+/* Default block */
+.block {
+    float: left;
+    width: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.invisible{
+    display: none;
+}
+
+
+
+body, html{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#intro{
+  padding: 50px;
+  position: absolute;
+  background-color: white;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+#history{
+  width: 25%;
+}
+#menu{
+  width: 25%;
+}
+#text{
+  width: 50%;
+  height: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.block-group{
+  height: 100%;
+  position: relative;
+}
+
+.block{
+  overflow: auto;
+  height: 100%;
+  position: relative;
+}
+
+sup{
+  font-size: 10px;
+}
+
+.book, .chapter, .section{
+  cursor: pointer;
+}
+.book:hover, .chapter:hover, .section:hover{
+  background-color: lightsteelblue;
+}
+.chapter{
+  display: inline-block;
+  padding: 2px;
+  border: 1px solid black;
+  margin: 2px;
+  min-width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.book{
+  height: 25px;
+  line-height: 25px;
+}
+
+.auto-container{
+  position: relative;
+  height: 20px;
+}
+
+#input-section-grey
+{
+    color: #BBB;
+    background-color: transparent;
+    top: 0px;
+    left: 0px;
+    position:absolute;
+}
+#input-section
+{
+    color: #000;
+    background-color: transparent;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    position:absolute;
+}
+
+
+.key{
+  background-color: #EEE;
+  border-radius: 2px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+/*#autoselecter{
+  position: absolute;
+  background: white;
+  opacity: 0.8;
+}
+
+.auto-active{
+  background-color: lightsteelblue;
+}*/
+

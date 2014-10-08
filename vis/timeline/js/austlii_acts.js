@@ -94,6 +94,8 @@ d3.json('data/austlii/all.json', function(error,data){
 
 		var this_year; 
 
+		super_acts_percent = [];
+
 		for(var year=from; year<=to; year++){
 
 			// only rerender visible
@@ -107,15 +109,21 @@ d3.json('data/austlii/all.json', function(error,data){
 
 	        //this_year.exit().remove(); // something fishy
 
-            this_year
-            	.selectAll('a')
-                .data(acts_by_year.get(year).filter(function(act){
+	        var filtered_year = acts_by_year.get(year).filter(function(act){
                     var acts_filter_terms = d3.select('#filter')[0][0].value.split(' or ');
                     for (var i = 0; i < acts_filter_terms.length; i++) {
-                      if (act.name.indexOf(acts_filter_terms[i].toUpperCase()) > -1) return true;
+                      if (act.name.indexOf(acts_filter_terms[i].toUpperCase()) > -1) {
+                      	return true;
+                      }
                     };
                     return false;
-                }))
+                });
+
+	        super_acts_percent.push({year: year, rate: filtered_year.length/acts_by_year.get(year).length})
+
+            this_year
+            	.selectAll('a')
+                .data(filtered_year)
                 .enter()
 			    .append('svg:a')
 	            .attr("xlink:href", function(d){return 'http://www.austlii.edu.au/au/legis/cth/num_act/'
@@ -128,10 +136,13 @@ d3.json('data/austlii/all.json', function(error,data){
 	            // })
 	           	.attr('y',function(d,i){ return i*7; });
 
-
-
-
 		}
+
+
+	// draw_super_acts(super_acts_percent);
+
+
+
 	} 
 
 	draw_austlii(acts_by_year);

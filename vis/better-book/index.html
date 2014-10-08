@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="main.css">
+<body>
+
+<div id='intro'>
+  Like many luddites, I find digital books much less accessible than hard copies. Especially when having to flick back and forth between sections while studying a book. Here is my attempt to make a more usable interface to the world's most studied text: the Bible.
+
+</div>
+
+<div class='block-group'>
+  <div class='block' id='history'> 
+    <h2>Recently searched keywords</h2>
+    <div id='history-keyword'></div>
+    <h2>Recently visited sections</h2>
+    <div id='history-section'></div>
+  </div>
+  <div class='block' id='text'> </div>
+  <div class='block' id='menu'> 
+    <h2>Search keyword</h2> <span class='key'>⌘+shift+s</span>/<span class='key'>ctrl+shift+s</span> to focus <input id="input-keyword" type="text">
+    <div id='menu-keyword'></div>
+    <h2>Navigate to section</h2> <span class='key'>⌘+s</span>/<span class='key'>ctrl+s</span> to focus <span class='key'>enter</span>/ <span class='key'>return</span> to go  
+    <div class='auto-container'>
+      <input id="input-section" type="text">
+      <input id="input-section-grey" disabled="disabled" type="text">
+    </div>
+    <div id='menu-section'></div>
+  </div>
+</div>
+<!-- <div class='tooltip'></div> -->
+
+<script src="../../third/jquery-1.11.0.min.js"></script>
+<script src="../../third/underscore.min.js"></script>
+<script src="../../third/keymaster.min.js"></script>
+<!-- <script src="js/autoselect.js"></script> -->
+
+<script type='text/template' id="menu-book-template">
+ <% for (var i = 0; i < books.length; i++) { %>
+     <div class='book' data-i= <%= i %> data-chapters= <%= books[i].length %> > <%= books[i].name %> </div>
+ <% } %>
+</script>
+
+<script type='text/template' id="menu-chapter-template">
+ <div>
+   <% for (var i = 0; i < chapters; i++) { %>
+       <span class='chapter' data-i= <%= i %> data-book= <%= book %> > <%= i+1 %> </span>
+   <% } %>
+ </div>
+</script>
+
+
+
+<script>
+
+/*
+model: open book and chapter, history
+
+*/
+
+
+
+
+// TODO
+// search 
+// http://api.biblia.com/v1/bible/search/LEB.js?query=bread&mode=verse&start=0&limit=20&key=fd37d8f28e95d3be8cb4fbc37e15e18e
+
+// history with localstorage
+
+// autocomplete book on space, book/chapter go to on enter
+
+// arrow keys
+
+// responsive
+
+// title css
+
+// intro fade to corner icon
+
+// scrape http://www.rosings.com/users/rsv/
+
+// NT OT in separate cols
+
+// routing or updating url with section
+
+// allow editing (with version control) and linking
+
+
+// https://bibles.org/account/apps/edit
+  var api_key = 'hVOGyS3O8uZoRblgT0q5ekXgyw97c2HZrajuo0te';
+
+// http://api.biblia.com/docs/
+  var biblia_key = 'ef399a9450d78d70ba5a6b90ed31a92d';
+
+  var version = 'KJV1900';
+
+  var history = {};
+  history.sections = [];
+
+// make books.json
+  // $.ajax('http://api.biblia.com/v1/bible/contents/'+version+'?key='+biblia_key, {
+  // // dataType: 'jsonp', 
+  // })
+  // .done(function(data){
+  //   var books = data.books.map(function(d){ return { name: d.passage, length: d.chapters.length }; });
+  //   console.log(JSON.stringify(books));
+  // })
+  // .fail(function(textStatus, errorThrown ){
+  //   console.log('error books', textStatus, errorThrown);
+  // });
+
+  var historySection = $('#history-section');
+  var menuSection = $('#menu-section');
+  var book_view = $("#menu-book-template").html();
+  var chapter_view = $("#menu-chapter-template").html();
+  $.ajax('data/books.json')
+    .done(function(books){
+      // for each book
+      menuSection.append(_.template(book_view, {books: books}));
+
+      menuSection.find('.book').off('click');
+      menuSection.find('.book').on('click',function(){
+        var book = $(this).html(); 
+
+        // for each chapter
+        menuSection.find('.chapter').remove(); // gets rid of bound events
+
+        $(this).after(_.template(chapter_view, {
+          book: book,
+          chapters: + $(this).attr('data-chapters')
+        }));
+
+        $(this).next().find('.chapter').on('click',function(){
+          load_section( book + $(this).html() );
+          add_to_history( book + $(this).html() );
+        });
+
+      }); // end for each book
+    
+
+      // type autocomplete/filter
+
+      var predicted = '';
+      $("#input-section").on('keyup', function(event){
+        var val = $(this).val().toLowerCase();
+        var trimmed = $.trim(val);
+        
+        // get candidates for autocompletion
+        var predicted = ''
+        for (var i = 0; i < books.length; i++) {
+          if (books[i].name.slice(0,trimmed.length).toLowerCase() === trimmed){
+
+            // result = str.replace(/.{10}\S*\s+/g, "$&~@~").split(/\s+~@~/)
+            // split on space after n chars
+            re = new RegExp('.{' + trimmed.length + '}\\S*\\s+','g');
+            predicted = books[i].name.replace(re, "$&~@~").split(/\s+~@~/)[0];
+            // predicted = books[i].name;
+          }
+        };
+
+        // autocomplete on space
+        if (val.slice(-1) === ' ' && predicted !== ''){
+          $(this).val(predicted+' ');
+        }
+
+        if (event.which === 13){
+          // recapitalise and load
+          load_section(val.replace(/(\b)([a-zA-Z])/g,
+              function(firstLetter){
+                  return firstLetter.toUpperCase();
+              }));
+        }
+
+        $("#input-section-grey").val(predicted);
+        console.log(val);
+        console.log('pred',predicted);
+      });
+
+
+
+    });
+
+
+
+  function load_section(section){
+    $.ajax('http://api.biblia.com/v1/bible/content/'+version+'.html?passage='+section+'&style=fullyFormatted&key='+biblia_key, {})
+    .done(function(data){
+      $('#text').html(data).trigger('focus');
+      // $('#text').trigger('focus');
+    })
+    .fail(function(textStatus, errorThrown ){
+      console.log('error books', textStatus, errorThrown);
+    });
+    localStorage.setItem("better-book.openSection", section);
+    add_to_history(section);
+
+    // // Store
+    // localStorage.setItem("lastname", "Smith");
+    // // Retrieve
+    // document.getElementById("result").innerHTML = localStorage.getItem("lastname"); 
+  }
+
+  function add_to_history(section){
+    // add section to front of history
+    history.sections = history.sections.filter(function(d){
+      return d !== section;
+    });
+    history.sections.unshift(section);
+
+    historySection.empty();
+    history.sections.forEach(function(d){
+      historySection.append('<div class="section" data-section="' + d + '">' + d + '</div>')
+      .on('click', function(){
+        load_section($(this).attr('data-section'));
+      });
+    });
+
+    // historySection.find("[data-section='" + section + "']").remove(); // gets rid of bound events
+
+    // historySection.prepend('<div class="section" data-section="' + section + '">' + section + '</div>');
+    // historySection.children().first().on('click', function(){
+    //   load_section(section);
+    // });
+  }
+
+
+  var openSection = localStorage.getItem("better-book.openSection");
+
+  if (openSection) load_section(openSection);
+  else load_section('John 1');
+
+  var toggle_intro = function(){
+    $("#intro").toggle();
+  }
+
+  setTimeout(toggle_intro, 2000);
+
+
+  // ================================
+  // shortcuts using keymaster.js
+  // ================================
+
+  key.filter = function(event){
+    return true;
+  }
+  key('⌘+shift+s, ctrl+shift+s', function(e){ 
+    e.preventDefault();
+    $('input').trigger('blur');
+    $("#input-keyword").trigger('focus');
+  });
+  key('⌘+s, ctrl+s', function(e){
+    e.preventDefault();
+    $('input').trigger('blur');
+    $("#input-section").trigger('focus');
+  });
+
+  $('input').on('focus', function(){
+    this.setSelectionRange(0, this.value.length);;
+  })
+
+
+
+
+</script>
+</body>
+</html>

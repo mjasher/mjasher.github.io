@@ -1,0 +1,56 @@
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}  
+
+html, body{
+	overflow-x: hidden;
+	height: 100%;
+  	width: 100%;
+}
+
+body{
+	height: 200%;
+}
+
+#graph, #map{ 
+	height: 50%;
+  	width: 100%;
+}
+
+#title, #sub-title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	margin-left: -150px;
+	height: 100px;
+	margin-top: -50px;
+	text-align: center;
+	font-size: 50px;
+
+}
+
+#sub-title{
+	margin-top: 0px;
+	font-size: 15px;
+	text-align: right;
+}
+
+/*svg {
+  font-family: "Helvetica Neue", Helvetica;
+}
+*/
+.line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+}
+
