@@ -209,7 +209,7 @@ model: open book and chapter, history
     historySection.empty();
     history.sections.forEach(function(d){
       historySection.append('<div class="section" data-section="' + d + '">' + d + '</div>')
-      .on('click', function(){
+      historySection.children().last().on('click', function(){
         load_section($(this).attr('data-section'));
       });
     });
