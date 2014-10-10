@@ -153,7 +153,7 @@ var catchment_filter;
 function set_catchment_filter(d){
   catchment_filter = d;
 
-  d3.csv('ignore_data/'+d[0], function(error, data) {
+  d3.csv('ignore_data/'+d[0]+'.json', function(error, data) {
 
     var parseDate = d3.time.format("%d %m %Y").parse;
 
