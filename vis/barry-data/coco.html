@@ -29,7 +29,7 @@ body {
   shape-rendering: crispEdges;
 }
 
-span.site{
+span.site, span.catchment{
   border: 0.02px solid black;
   margin: 2px;
   padding: 3px;
@@ -63,6 +63,8 @@ text.active {
 <div id='species'></div>
 <h4>Sites, click to choose. Sorted decreasing number of observations.</h4>
 <div id='sites'></div>
+<h4>Catchments, click to choose.</h4>
+<div id='catchments'></div>
 
 <script src='../../third/d3.min.js'></script>
 <script src='cross_correlation.js'></script>
@@ -88,7 +90,7 @@ function exclude(string){
 
 // MODELS - at this stage "views" just refer to these global variables, they all have the same model
 var observations,
-    site_filter = ["CTT100 "],
+    site_filter,
     species_filter = {
       exclude_set: d3.set(),
       // exclude_list: ['Sub-catchment', 'Site', 'Year', 'date', 'Date', '???'],
@@ -104,6 +106,8 @@ var observations,
 var cross_correlation_graph = new Cross_correlation_graph();
 var sites = new Sites();
 var species = new Species();
+var catchments = new Catchments();
+
 
 // LISTENERS
 function set_observations(d){
@@ -136,6 +140,7 @@ function toggle_species_filter(name, regex){
   species.draw();
 }
 
+var site_filter;
 function set_site_filter(d){
   site_filter = d;
   cross_correlation_graph.draw_site();
@@ -143,38 +148,85 @@ function set_site_filter(d){
 }
 
 
-// initialize 
-d3.csv("Tuggeranong_out.csv", function(error, data) {
+var catchment_filter;
 
-  var parseDate = d3.time.format("%d %m %Y").parse;
+function set_catchment_filter(d){
+  catchment_filter = d;
 
-  for (var i = 0; i < data.length; i++) {
-    data[i].date = parseDate(data[i].Date);
-  };
+  d3.csv('ignore_data/'+d[0], function(error, data) {
 
-  var nested = d3.nest()
-        .key(function(d){ return d.Site })
-        .map(data, d3.map);
+    var parseDate = d3.time.format("%d %m %Y").parse;
 
-  // console.log(Object.keys(nested.values()[0][0]), d3.keys(nested.get(site_filter[0])[0]) );
+    for (var i = 0; i < data.length; i++) {
+      data[i].date = parseDate(data[i].Date);
+    };
 
-  // so color remains constant with removals
+    var nested = d3.nest()
+          .key(function(d){ return d.Site })
+          .map(data, d3.map);
 
-  // cross_correlation_graph.color.domain(Object.keys(nested.values()[0][0]));
+    site_filter = [nested.keys()[0]];
 
-  d3.select('#species-all').on('click', function(){
-    var all_species = Object.keys(nested.values()[0][0]);
-    set_species_filter(all_species);
+    // console.log(Object.keys(nested.values()[0][0]), d3.keys(nested.get(site_filter[0])[0]) );
+
+    // so color remains constant with removals
+    // timeseries_graph.color.domain(Object.keys(nested.values()[0][0]));
+
+    d3.select('#species-all').on('click', function(){
+      var all_species = Object.keys(nested.values()[0][0]);
+      set_species_filter(all_species);
+    });
+
+    d3.select('#species-none').on('click', function(){
+      set_species_filter([]);
+    });
+
+    set_observations(nested);
+    catchments.draw();
+
   });
 
-  d3.select('#species-none').on('click', function(){
-    set_species_filter([]);
-  });
+ 
 
-  set_observations(nested);
+}
+
+  // initialize 
+
+set_catchment_filter(['Tuggeranong_out.csv']);
 
 
-});
+// // initialize 
+// d3.csv("Tuggeranong_out.csv", function(error, data) {
+
+//   var parseDate = d3.time.format("%d %m %Y").parse;
+
+//   for (var i = 0; i < data.length; i++) {
+//     data[i].date = parseDate(data[i].Date);
+//   };
+
+//   var nested = d3.nest()
+//         .key(function(d){ return d.Site })
+//         .map(data, d3.map);
+
+//   // console.log(Object.keys(nested.values()[0][0]), d3.keys(nested.get(site_filter[0])[0]) );
+
+//   // so color remains constant with removals
+
+//   // cross_correlation_graph.color.domain(Object.keys(nested.values()[0][0]));
+
+//   d3.select('#species-all').on('click', function(){
+//     var all_species = Object.keys(nested.values()[0][0]);
+//     set_species_filter(all_species);
+//   });
+
+//   d3.select('#species-none').on('click', function(){
+//     set_species_filter([]);
+//   });
+
+//   set_observations(nested);
+
+
+// });
 
 
 
