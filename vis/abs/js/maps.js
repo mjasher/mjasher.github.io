@@ -32,8 +32,8 @@
     // return color for feature
     function choroplethColor(feature) {
         // TODO auto domain, legend, choose year (just [3] mightn't work) or timeseries plot, popup
-        if (geoMap.get(feature.sa2_main11) != undefined){
-            var val = geoMap.get(feature.sa2_main11)[0][chosen_col];
+        if (geoMap.get(feature.properties.sa2_main11) != undefined){
+            var val = geoMap.get(feature.properties.sa2_main11)[0][chosen_col];
             if (val) return colorScale(val);
         }
         return NaN;
@@ -87,22 +87,22 @@
                 popupString += k + ': ' + v + '<br />';
             }
             if (geoMap){
-                Object.keys(geoMap.get(feature.sa2_main11)[0]).forEach(function(v){
-                    popupString += v + ': ' + geoMap.get(feature.sa2_main11)[0][v] + '<br />';
+                Object.keys(geoMap.get(feature.properties.sa2_main11)[0]).forEach(function(v){
+                    popupString += v + ': ' + geoMap.get(feature.properties.sa2_main11)[0][v] + '<br />';
                 });
             }
         }
         popupString += '</div>';
         return popupString;
     }
+    // to switch just change SA2_MAIN11 to sa2_main11
     // var geojsonURL = 'http://urbananalyzer.appspot.com/sa2/{z}/{x}/{y}.json';
-    var geojsonURL = '/vector-tiles/stache/sa2-psql/{z}/{x}/{y}.json';
+    var geojsonURL = '../../stache/sa2-psql/{z}/{x}/{y}.json';
     var geojsonTileLayer = new L.TileLayer.GeoJSON(geojsonURL, {
             clipTiles: true,
             unique: function (feature) {
-                return feature.sa2_main11; 
-                // return feature.SA2_MAIN11; 
-                return feature.sa2_main11; 
+                // return feature.properties.SA2_MAIN11; 
+                return feature.properties.sa2_main11; 
             }
         }, {
             style: style,
