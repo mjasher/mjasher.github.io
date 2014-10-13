@@ -32,8 +32,8 @@
     // return color for feature
     function choroplethColor(feature) {
         // TODO auto domain, legend, choose year (just [3] mightn't work) or timeseries plot, popup
-        if (geoMap.get(feature.id) != undefined){
-            var val = geoMap.get(feature.id)[0][chosen_col];
+        if (geoMap.get(feature.sa2_main11) != undefined){
+            var val = geoMap.get(feature.sa2_main11)[0][chosen_col];
             if (val) return colorScale(val);
         }
         return NaN;
@@ -87,8 +87,8 @@
                 popupString += k + ': ' + v + '<br />';
             }
             if (geoMap){
-                Object.keys(geoMap.get(feature.id)[0]).forEach(function(v){
-                    popupString += v + ': ' + geoMap.get(feature.id)[0][v] + '<br />';
+                Object.keys(geoMap.get(feature.sa2_main11)[0]).forEach(function(v){
+                    popupString += v + ': ' + geoMap.get(feature.sa2_main11)[0][v] + '<br />';
                 });
             }
         }
@@ -100,8 +100,9 @@
     var geojsonTileLayer = new L.TileLayer.GeoJSON(geojsonURL, {
             clipTiles: true,
             unique: function (feature) {
-                return feature.id; 
+                return feature.sa2_main11; 
                 // return feature.SA2_MAIN11; 
+                return feature.sa2_main11; 
             }
         }, {
             style: style,
