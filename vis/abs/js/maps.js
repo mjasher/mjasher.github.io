@@ -95,8 +95,8 @@
         popupString += '</div>';
         return popupString;
     }
-    var geojsonURL = 'http://urbananalyzer.appspot.com/sa2/{z}/{x}/{y}.json';
-    // var geojsonURL = 'http://asher.org.au/vector-tiles/stache/sa2-psql/{z}/{x}/{y}.json';
+    // var geojsonURL = 'http://urbananalyzer.appspot.com/sa2/{z}/{x}/{y}.json';
+    var geojsonURL = '/vector-tiles/stache/sa2-psql/{z}/{x}/{y}.json';
     var geojsonTileLayer = new L.TileLayer.GeoJSON(geojsonURL, {
             clipTiles: true,
             unique: function (feature) {

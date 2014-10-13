@@ -93,6 +93,7 @@ var observations,
 var timeseries_graph = new Timeseries_graph();
 var sites = new Sites();
 var species = new Species();
+var catchments = new Catchments();
 
 // LISTENERS
 function set_observations(d){
@@ -125,45 +126,62 @@ function toggle_species_filter(name, regex){
   species.draw();
 }
 
+var site_filter
 function set_site_filter(d){
   site_filter = d;
   timeseries_graph.draw_site();
   sites.draw();
 }
 
+var catchment_filter;
 
-// initialize 
-d3.csv("Tuggeranong_out.csv", function(error, data) {
+function set_catchment_filter(d){
+  catchment_filter = d;
 
-  var parseDate = d3.time.format("%d %m %Y").parse;
+  d3.csv(d[0], function(error, data) {
 
-  for (var i = 0; i < data.length; i++) {
-    data[i].date = parseDate(data[i].Date);
-  };
+    var parseDate = d3.time.format("%d %m %Y").parse;
 
-  var nested = d3.nest()
-        .key(function(d){ return d.Site })
-        .map(data, d3.map);
+    for (var i = 0; i < data.length; i++) {
+      data[i].date = parseDate(data[i].Date);
+    };
 
-  // console.log(Object.keys(nested.values()[0][0]), d3.keys(nested.get(site_filter[0])[0]) );
+    var nested = d3.nest()
+          .key(function(d){ return d.Site })
+          .map(data, d3.map);
 
-  // so color remains constant with removals
-  timeseries_graph.color.domain(Object.keys(nested.values()[0][0]));
+    // console.log(Object.keys(nested.values()[0][0]), d3.keys(nested.get(site_filter[0])[0]) );
 
-  d3.select('#species-all').on('click', function(){
-    var all_species = Object.keys(nested.values()[0][0]);
-    set_species_filter(all_species);
+    // so color remains constant with removals
+    timeseries_graph.color.domain(Object.keys(nested.values()[0][0]));
+
+    d3.select('#species-all').on('click', function(){
+      var all_species = Object.keys(nested.values()[0][0]);
+      set_species_filter(all_species);
+    });
+
+    d3.select('#species-none').on('click', function(){
+      set_species_filter([]);
+    });
+
+    set_observations(nested);
+
+    timeseries_graph.init_brush();
+
+    timeseries_graph.draw_site();
+
   });
 
-  d3.select('#species-none').on('click', function(){
-    set_species_filter([]);
-  });
+  catchments.draw();
 
-  set_observations(nested);
+}
 
-  timeseries_graph.init_brush();
+  // initialize 
 
-});
+set_catchment_filter(['Tuggeranong_out.csv']);
+
+
+
 
 
 

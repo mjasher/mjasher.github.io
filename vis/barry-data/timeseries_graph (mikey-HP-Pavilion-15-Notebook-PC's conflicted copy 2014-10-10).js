@@ -1,3 +1,5 @@
+
+
 function Sites(){
   var el = d3.select('#sites');
 
@@ -18,40 +20,6 @@ function Sites(){
       });
   }
 }
-
-
-var catchment_files = [
-'Fyshwick_out.csv',
-'Lower_out.csv',
-'Mid_out.csv',
-'Riverview_out.csv',
-'Tuggeranong_out.csv',
-'Tugg_out.csv',
-'Yarralumla_out.csv',
-]
-
-
-function Catchments(){
-  var el = d3.select('#catchments');
-
-  this.draw = function(){
-    el.selectAll('.catchment').remove();
-    el.selectAll('.catchment')
-      .data(catchment_files).enter()
-      .append('span')
-      .attr('class', function(d){
-        if (d == catchment_filter[0]) return 'catchment active';
-        return 'catchment';
-      })
-      .html(function(d){ 
-        return d; 
-      })
-      .on('click', function(d){
-        set_catchment_filter([d]);
-      });
-  }
-}
-
 
 
 function Species(){

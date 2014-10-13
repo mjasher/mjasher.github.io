@@ -1,0 +1,2309 @@
+cor,species_x,species_y,site,catchment
+1,rain,rain,TUG238,Tuggeranong_out.csv
+1,rain,i6,TUG238,Tuggeranong_out.csv
+1,rain,i30,TUG238,Tuggeranong_out.csv
+1,rain,U,TUG238,Tuggeranong_out.csv
+0.5000000000000029,rain,CMD,TUG238,Tuggeranong_out.csv
+1,rain,Month,TUG238,Tuggeranong_out.csv
+1,rain,flag,TUG238,Tuggeranong_out.csv
+1,rain,???,TUG238,Tuggeranong_out.csv
+1,rain,pH (units),TUG238,Tuggeranong_out.csv
+1,rain,Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+0.9999999999999999,rain,date,TUG238,Tuggeranong_out.csv
+1,temp,temp,TUG238,Tuggeranong_out.csv
+1,temp,CMD,TUG238,Tuggeranong_out.csv
+1,temp,day,TUG238,Tuggeranong_out.csv
+0.5000000000000001,temp,flag,TUG238,Tuggeranong_out.csv
+0.5000000000000001,temp,???,TUG238,Tuggeranong_out.csv
+1.0000000000000002,temp,Temperature (Degrees C),TUG238,Tuggeranong_out.csv
+0.5000000000000011,temp,pH (units),TUG238,Tuggeranong_out.csv
+1,temp,Electrical Conductivity (�S/cm),TUG238,Tuggeranong_out.csv
+1,temp,Turbidity (NTU),TUG238,Tuggeranong_out.csv
+0.5000000000000002,temp,Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+1,temp,Total Phosphorus (mg/L),TUG238,Tuggeranong_out.csv
+0.5000000000000001,temp,date,TUG238,Tuggeranong_out.csv
+1,i6,rain,TUG238,Tuggeranong_out.csv
+1,i6,i6,TUG238,Tuggeranong_out.csv
+1,i6,i30,TUG238,Tuggeranong_out.csv
+1,i6,U,TUG238,Tuggeranong_out.csv
+0.5000000000000029,i6,CMD,TUG238,Tuggeranong_out.csv
+1,i6,Month,TUG238,Tuggeranong_out.csv
+1,i6,flag,TUG238,Tuggeranong_out.csv
+1,i6,???,TUG238,Tuggeranong_out.csv
+1,i6,pH (units),TUG238,Tuggeranong_out.csv
+1,i6,Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+0.9999999999999999,i6,date,TUG238,Tuggeranong_out.csv
+1,i30,rain,TUG238,Tuggeranong_out.csv
+1,i30,i6,TUG238,Tuggeranong_out.csv
+1,i30,i30,TUG238,Tuggeranong_out.csv
+1,i30,U,TUG238,Tuggeranong_out.csv
+0.5000000000000029,i30,CMD,TUG238,Tuggeranong_out.csv
+1,i30,Month,TUG238,Tuggeranong_out.csv
+1,i30,flag,TUG238,Tuggeranong_out.csv
+1,i30,???,TUG238,Tuggeranong_out.csv
+1,i30,pH (units),TUG238,Tuggeranong_out.csv
+1,i30,Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+0.9999999999999999,i30,date,TUG238,Tuggeranong_out.csv
+1,U,rain,TUG238,Tuggeranong_out.csv
+1,U,i6,TUG238,Tuggeranong_out.csv
+1,U,i30,TUG238,Tuggeranong_out.csv
+1,U,U,TUG238,Tuggeranong_out.csv
+0.5000000000000029,U,CMD,TUG238,Tuggeranong_out.csv
+0.9999999999999999,U,Month,TUG238,Tuggeranong_out.csv
+1,U,flag,TUG238,Tuggeranong_out.csv
+1,U,???,TUG238,Tuggeranong_out.csv
+1,U,pH (units),TUG238,Tuggeranong_out.csv
+1.0000000000000002,U,Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+1,U,date,TUG238,Tuggeranong_out.csv
+0.5000000000000029,CMD,rain,TUG238,Tuggeranong_out.csv
+1,CMD,temp,TUG238,Tuggeranong_out.csv
+0.5000000000000029,CMD,i6,TUG238,Tuggeranong_out.csv
+0.5000000000000029,CMD,i30,TUG238,Tuggeranong_out.csv
+0.5000000000000029,CMD,U,TUG238,Tuggeranong_out.csv
+1,CMD,CMD,TUG238,Tuggeranong_out.csv
+0.5000000000000029,CMD,Month,TUG238,Tuggeranong_out.csv
+1,CMD,day,TUG238,Tuggeranong_out.csv
+0.5000000000000029,CMD,flag,TUG238,Tuggeranong_out.csv
+0.5000000000000029,CMD,???,TUG238,Tuggeranong_out.csv
+1,CMD,Temperature (Degrees C),TUG238,Tuggeranong_out.csv
+0.500000000000004,CMD,pH (units),TUG238,Tuggeranong_out.csv
+1,CMD,Electrical Conductivity (�S/cm),TUG238,Tuggeranong_out.csv
+1,CMD,Turbidity (NTU),TUG238,Tuggeranong_out.csv
+0.500000000000003,CMD,Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+1,CMD,Total Phosphorus (mg/L),TUG238,Tuggeranong_out.csv
+0.5000000000000029,CMD,date,TUG238,Tuggeranong_out.csv
+1,Month,rain,TUG238,Tuggeranong_out.csv
+1,Month,i6,TUG238,Tuggeranong_out.csv
+1,Month,i30,TUG238,Tuggeranong_out.csv
+0.9999999999999999,Month,U,TUG238,Tuggeranong_out.csv
+0.5000000000000029,Month,CMD,TUG238,Tuggeranong_out.csv
+1,Month,Month,TUG238,Tuggeranong_out.csv
+1,Month,flag,TUG238,Tuggeranong_out.csv
+1,Month,???,TUG238,Tuggeranong_out.csv
+1,Month,pH (units),TUG238,Tuggeranong_out.csv
+1.0000000000000002,Month,Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+1,Month,date,TUG238,Tuggeranong_out.csv
+1,day,temp,TUG238,Tuggeranong_out.csv
+1,day,CMD,TUG238,Tuggeranong_out.csv
+1,day,day,TUG238,Tuggeranong_out.csv
+1,day,Temperature (Degrees C),TUG238,Tuggeranong_out.csv
+0.5000000000000011,day,pH (units),TUG238,Tuggeranong_out.csv
+1,day,Electrical Conductivity (�S/cm),TUG238,Tuggeranong_out.csv
+1,day,Turbidity (NTU),TUG238,Tuggeranong_out.csv
+0.5000000000000002,day,Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+1,day,Total Phosphorus (mg/L),TUG238,Tuggeranong_out.csv
+1,flag,rain,TUG238,Tuggeranong_out.csv
+0.5000000000000001,flag,temp,TUG238,Tuggeranong_out.csv
+1,flag,i6,TUG238,Tuggeranong_out.csv
+1,flag,i30,TUG238,Tuggeranong_out.csv
+1,flag,U,TUG238,Tuggeranong_out.csv
+0.5000000000000029,flag,CMD,TUG238,Tuggeranong_out.csv
+1,flag,Month,TUG238,Tuggeranong_out.csv
+1,flag,flag,TUG238,Tuggeranong_out.csv
+1,flag,???,TUG238,Tuggeranong_out.csv
+0.5000000000000001,flag,Temperature (Degrees C),TUG238,Tuggeranong_out.csv
+1,flag,pH (units),TUG238,Tuggeranong_out.csv
+1,flag,Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+1,flag,date,TUG238,Tuggeranong_out.csv
+1,???,rain,TUG238,Tuggeranong_out.csv
+0.5000000000000001,???,temp,TUG238,Tuggeranong_out.csv
+1,???,i6,TUG238,Tuggeranong_out.csv
+1,???,i30,TUG238,Tuggeranong_out.csv
+1,???,U,TUG238,Tuggeranong_out.csv
+0.5000000000000029,???,CMD,TUG238,Tuggeranong_out.csv
+1,???,Month,TUG238,Tuggeranong_out.csv
+1,???,flag,TUG238,Tuggeranong_out.csv
+1,???,???,TUG238,Tuggeranong_out.csv
+0.5000000000000001,???,Temperature (Degrees C),TUG238,Tuggeranong_out.csv
+1,???,pH (units),TUG238,Tuggeranong_out.csv
+1,???,Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+1,???,date,TUG238,Tuggeranong_out.csv
+1.0000000000000002,Temperature (Degrees C),temp,TUG238,Tuggeranong_out.csv
+1,Temperature (Degrees C),CMD,TUG238,Tuggeranong_out.csv
+1,Temperature (Degrees C),day,TUG238,Tuggeranong_out.csv
+0.5000000000000001,Temperature (Degrees C),flag,TUG238,Tuggeranong_out.csv
+0.5000000000000001,Temperature (Degrees C),???,TUG238,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),TUG238,Tuggeranong_out.csv
+0.5000000000000011,Temperature (Degrees C),pH (units),TUG238,Tuggeranong_out.csv
+0.9999999999999998,Temperature (Degrees C),Electrical Conductivity (�S/cm),TUG238,Tuggeranong_out.csv
+1,Temperature (Degrees C),Turbidity (NTU),TUG238,Tuggeranong_out.csv
+0.5000000000000002,Temperature (Degrees C),Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+1,Temperature (Degrees C),Total Phosphorus (mg/L),TUG238,Tuggeranong_out.csv
+1,pH (units),rain,TUG238,Tuggeranong_out.csv
+0.5000000000000011,pH (units),temp,TUG238,Tuggeranong_out.csv
+1,pH (units),i6,TUG238,Tuggeranong_out.csv
+1,pH (units),i30,TUG238,Tuggeranong_out.csv
+1,pH (units),U,TUG238,Tuggeranong_out.csv
+0.500000000000004,pH (units),CMD,TUG238,Tuggeranong_out.csv
+1,pH (units),Month,TUG238,Tuggeranong_out.csv
+0.5000000000000011,pH (units),day,TUG238,Tuggeranong_out.csv
+1,pH (units),flag,TUG238,Tuggeranong_out.csv
+1,pH (units),???,TUG238,Tuggeranong_out.csv
+0.5000000000000011,pH (units),Temperature (Degrees C),TUG238,Tuggeranong_out.csv
+1,pH (units),pH (units),TUG238,Tuggeranong_out.csv
+0.5000000000000011,pH (units),Electrical Conductivity (�S/cm),TUG238,Tuggeranong_out.csv
+0.5000000000000011,pH (units),Turbidity (NTU),TUG238,Tuggeranong_out.csv
+0.9999999999999998,pH (units),Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+0.5000000000000011,pH (units),Total Phosphorus (mg/L),TUG238,Tuggeranong_out.csv
+1,pH (units),date,TUG238,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),temp,TUG238,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),CMD,TUG238,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),day,TUG238,Tuggeranong_out.csv
+0.9999999999999998,Electrical Conductivity (�S/cm),Temperature (Degrees C),TUG238,Tuggeranong_out.csv
+0.5000000000000011,Electrical Conductivity (�S/cm),pH (units),TUG238,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),TUG238,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Turbidity (NTU),TUG238,Tuggeranong_out.csv
+0.5000000000000002,Electrical Conductivity (�S/cm),Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Total Phosphorus (mg/L),TUG238,Tuggeranong_out.csv
+1,Turbidity (NTU),temp,TUG238,Tuggeranong_out.csv
+1,Turbidity (NTU),CMD,TUG238,Tuggeranong_out.csv
+1,Turbidity (NTU),day,TUG238,Tuggeranong_out.csv
+1,Turbidity (NTU),Temperature (Degrees C),TUG238,Tuggeranong_out.csv
+0.5000000000000011,Turbidity (NTU),pH (units),TUG238,Tuggeranong_out.csv
+1,Turbidity (NTU),Electrical Conductivity (�S/cm),TUG238,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),TUG238,Tuggeranong_out.csv
+0.5000000000000002,Turbidity (NTU),Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+1,Turbidity (NTU),Total Phosphorus (mg/L),TUG238,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),rain,TUG238,Tuggeranong_out.csv
+0.5000000000000002,Dissolved Oxygen (mg/L),temp,TUG238,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),i6,TUG238,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),i30,TUG238,Tuggeranong_out.csv
+1.0000000000000002,Dissolved Oxygen (mg/L),U,TUG238,Tuggeranong_out.csv
+0.500000000000003,Dissolved Oxygen (mg/L),CMD,TUG238,Tuggeranong_out.csv
+1.0000000000000002,Dissolved Oxygen (mg/L),Month,TUG238,Tuggeranong_out.csv
+0.5000000000000002,Dissolved Oxygen (mg/L),day,TUG238,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),flag,TUG238,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),???,TUG238,Tuggeranong_out.csv
+0.5000000000000002,Dissolved Oxygen (mg/L),Temperature (Degrees C),TUG238,Tuggeranong_out.csv
+0.9999999999999998,Dissolved Oxygen (mg/L),pH (units),TUG238,Tuggeranong_out.csv
+0.5000000000000002,Dissolved Oxygen (mg/L),Electrical Conductivity (�S/cm),TUG238,Tuggeranong_out.csv
+0.5000000000000002,Dissolved Oxygen (mg/L),Turbidity (NTU),TUG238,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+0.5000000000000002,Dissolved Oxygen (mg/L),Total Phosphorus (mg/L),TUG238,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),date,TUG238,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),temp,TUG238,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),CMD,TUG238,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),day,TUG238,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Temperature (Degrees C),TUG238,Tuggeranong_out.csv
+0.5000000000000011,Total Phosphorus (mg/L),pH (units),TUG238,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Electrical Conductivity (�S/cm),TUG238,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Turbidity (NTU),TUG238,Tuggeranong_out.csv
+0.5000000000000002,Total Phosphorus (mg/L),Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),TUG238,Tuggeranong_out.csv
+0.5000000000000001,Total Phosphorus (mg/L),date,TUG238,Tuggeranong_out.csv
+0.9999999999999999,date,rain,TUG238,Tuggeranong_out.csv
+0.5000000000000001,date,temp,TUG238,Tuggeranong_out.csv
+0.9999999999999999,date,i6,TUG238,Tuggeranong_out.csv
+0.9999999999999999,date,i30,TUG238,Tuggeranong_out.csv
+1,date,U,TUG238,Tuggeranong_out.csv
+0.5000000000000029,date,CMD,TUG238,Tuggeranong_out.csv
+1,date,Month,TUG238,Tuggeranong_out.csv
+1,date,flag,TUG238,Tuggeranong_out.csv
+1,date,???,TUG238,Tuggeranong_out.csv
+1,date,pH (units),TUG238,Tuggeranong_out.csv
+1,date,Dissolved Oxygen (mg/L),TUG238,Tuggeranong_out.csv
+0.5000000000000001,date,Total Phosphorus (mg/L),TUG238,Tuggeranong_out.csv
+1,date,date,TUG238,Tuggeranong_out.csv
+1,temp,temp,LTG257,Tuggeranong_out.csv
+0.640378311897641,temp,minQ,LTG257,Tuggeranong_out.csv
+0.5742354977173723,temp,maxQ,LTG257,Tuggeranong_out.csv
+0.5826075913496352,temp,medianQ,LTG257,Tuggeranong_out.csv
+0.6601635195531088,temp,CMD,LTG257,Tuggeranong_out.csv
+0.5093390972585181,temp,day,LTG257,Tuggeranong_out.csv
+0.5770917305872769,temp,flag,LTG257,Tuggeranong_out.csv
+0.7986202100914492,temp,Temperature (Degrees C),LTG257,Tuggeranong_out.csv
+0.9417346779067645,temp,pH (units),LTG257,Tuggeranong_out.csv
+0.6574850746007302,temp,Electrical Conductivity (�S/cm),LTG257,Tuggeranong_out.csv
+0.640378311897641,minQ,temp,LTG257,Tuggeranong_out.csv
+1,minQ,minQ,LTG257,Tuggeranong_out.csv
+0.6786436973926551,minQ,maxQ,LTG257,Tuggeranong_out.csv
+0.6968348920145611,minQ,medianQ,LTG257,Tuggeranong_out.csv
+0.5430616765059418,minQ,day,LTG257,Tuggeranong_out.csv
+0.6848099357164422,minQ,flag,LTG257,Tuggeranong_out.csv
+0.6059300071823975,minQ,???,LTG257,Tuggeranong_out.csv
+0.6324555320336759,minQ,Electrical Conductivity (�S/cm),LTG257,Tuggeranong_out.csv
+0.6183562184795477,minQ,Total Nitrogen (mg/L),LTG257,Tuggeranong_out.csv
+0.6056743952106931,minQ,date,LTG257,Tuggeranong_out.csv
+0.5742354977173723,maxQ,temp,LTG257,Tuggeranong_out.csv
+0.6786436973926551,maxQ,minQ,LTG257,Tuggeranong_out.csv
+1,maxQ,maxQ,LTG257,Tuggeranong_out.csv
+0.9996859990552683,maxQ,medianQ,LTG257,Tuggeranong_out.csv
+0.6442889553473291,maxQ,Month,LTG257,Tuggeranong_out.csv
+0.5213149173726433,maxQ,day,LTG257,Tuggeranong_out.csv
+0.9999644809111763,maxQ,flag,LTG257,Tuggeranong_out.csv
+0.6877956421775892,maxQ,???,LTG257,Tuggeranong_out.csv
+0.6313314928659531,maxQ,Temperature (Degrees C),LTG257,Tuggeranong_out.csv
+0.9265928308996031,maxQ,Electrical Conductivity (�S/cm),LTG257,Tuggeranong_out.csv
+0.6127160365486055,maxQ,Turbidity (NTU),LTG257,Tuggeranong_out.csv
+0.5246404101470359,maxQ,Total Nitrogen (mg/L),LTG257,Tuggeranong_out.csv
+0.6874631945465849,maxQ,date,LTG257,Tuggeranong_out.csv
+0.5826075913496352,medianQ,temp,LTG257,Tuggeranong_out.csv
+0.6968348920145611,medianQ,minQ,LTG257,Tuggeranong_out.csv
+0.9996859990552683,medianQ,maxQ,LTG257,Tuggeranong_out.csv
+1,medianQ,medianQ,LTG257,Tuggeranong_out.csv
+0.6430974412818684,medianQ,Month,LTG257,Tuggeranong_out.csv
+0.5074118229078219,medianQ,day,LTG257,Tuggeranong_out.csv
+0.9998616884525469,medianQ,flag,LTG257,Tuggeranong_out.csv
+0.6855592192317522,medianQ,???,LTG257,Tuggeranong_out.csv
+0.6247874810821599,medianQ,Temperature (Degrees C),LTG257,Tuggeranong_out.csv
+0.9228294249678619,medianQ,Electrical Conductivity (�S/cm),LTG257,Tuggeranong_out.csv
+0.6093088473813942,medianQ,Turbidity (NTU),LTG257,Tuggeranong_out.csv
+0.5334250408448891,medianQ,Total Nitrogen (mg/L),LTG257,Tuggeranong_out.csv
+0.685224587203415,medianQ,date,LTG257,Tuggeranong_out.csv
+0.6601635195531088,CMD,temp,LTG257,Tuggeranong_out.csv
+1,CMD,CMD,LTG257,Tuggeranong_out.csv
+0.6095154435843866,CMD,Month,LTG257,Tuggeranong_out.csv
+0.6568259616708861,CMD,day,LTG257,Tuggeranong_out.csv
+0.821116439250807,CMD,Temperature (Degrees C),LTG257,Tuggeranong_out.csv
+0.6744477306141042,CMD,pH (units),LTG257,Tuggeranong_out.csv
+0.5725456591569535,CMD,Turbidity (NTU),LTG257,Tuggeranong_out.csv
+0.5378017400623066,CMD,Total Nitrogen (mg/L),LTG257,Tuggeranong_out.csv
+0.6442889553473291,Month,maxQ,LTG257,Tuggeranong_out.csv
+0.6430974412818684,Month,medianQ,LTG257,Tuggeranong_out.csv
+0.6095154435843866,Month,CMD,LTG257,Tuggeranong_out.csv
+1,Month,Month,LTG257,Tuggeranong_out.csv
+0.6439333478626431,Month,flag,LTG257,Tuggeranong_out.csv
+0.8873624508525966,Month,???,LTG257,Tuggeranong_out.csv
+0.6454972243679028,Month,Electrical Conductivity (�S/cm),LTG257,Tuggeranong_out.csv
+0.5012804118276031,Month,Turbidity (NTU),LTG257,Tuggeranong_out.csv
+0.507154887569045,Month,Total Nitrogen (mg/L),LTG257,Tuggeranong_out.csv
+0.8873849150294568,Month,date,LTG257,Tuggeranong_out.csv
+0.5093390972585181,day,temp,LTG257,Tuggeranong_out.csv
+0.5430616765059418,day,minQ,LTG257,Tuggeranong_out.csv
+0.5213149173726433,day,maxQ,LTG257,Tuggeranong_out.csv
+0.5074118229078219,day,medianQ,LTG257,Tuggeranong_out.csv
+0.6568259616708861,day,CMD,LTG257,Tuggeranong_out.csv
+1,day,day,LTG257,Tuggeranong_out.csv
+0.5166751080987393,day,flag,LTG257,Tuggeranong_out.csv
+0.5129618829604313,day,pH (units),LTG257,Tuggeranong_out.csv
+0.7785223209942445,day,Total Nitrogen (mg/L),LTG257,Tuggeranong_out.csv
+0.5770917305872769,flag,temp,LTG257,Tuggeranong_out.csv
+0.6848099357164422,flag,minQ,LTG257,Tuggeranong_out.csv
+0.9999644809111763,flag,maxQ,LTG257,Tuggeranong_out.csv
+0.9998616884525469,flag,medianQ,LTG257,Tuggeranong_out.csv
+0.6439333478626431,flag,Month,LTG257,Tuggeranong_out.csv
+0.5166751080987393,flag,day,LTG257,Tuggeranong_out.csv
+1,flag,flag,LTG257,Tuggeranong_out.csv
+0.6870916258136845,flag,???,LTG257,Tuggeranong_out.csv
+0.6291746469406752,flag,Temperature (Degrees C),LTG257,Tuggeranong_out.csv
+0.9253919475632598,flag,Electrical Conductivity (�S/cm),LTG257,Tuggeranong_out.csv
+0.6116129663321722,flag,Turbidity (NTU),LTG257,Tuggeranong_out.csv
+0.5276319247875655,flag,Total Nitrogen (mg/L),LTG257,Tuggeranong_out.csv
+0.686758420150167,flag,date,LTG257,Tuggeranong_out.csv
+0.6059300071823975,???,minQ,LTG257,Tuggeranong_out.csv
+0.6877956421775892,???,maxQ,LTG257,Tuggeranong_out.csv
+0.6855592192317522,???,medianQ,LTG257,Tuggeranong_out.csv
+0.8873624508525966,???,Month,LTG257,Tuggeranong_out.csv
+0.6870916258136845,???,flag,LTG257,Tuggeranong_out.csv
+1,???,???,LTG257,Tuggeranong_out.csv
+0.7228064273518885,???,Electrical Conductivity (�S/cm),LTG257,Tuggeranong_out.csv
+0.9999996772843351,???,date,LTG257,Tuggeranong_out.csv
+0.7986202100914492,Temperature (Degrees C),temp,LTG257,Tuggeranong_out.csv
+0.6313314928659531,Temperature (Degrees C),maxQ,LTG257,Tuggeranong_out.csv
+0.6247874810821599,Temperature (Degrees C),medianQ,LTG257,Tuggeranong_out.csv
+0.821116439250807,Temperature (Degrees C),CMD,LTG257,Tuggeranong_out.csv
+0.6291746469406752,Temperature (Degrees C),flag,LTG257,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),LTG257,Tuggeranong_out.csv
+0.8668706167788942,Temperature (Degrees C),pH (units),LTG257,Tuggeranong_out.csv
+0.7236518651950598,Temperature (Degrees C),Electrical Conductivity (�S/cm),LTG257,Tuggeranong_out.csv
+0.9417346779067645,pH (units),temp,LTG257,Tuggeranong_out.csv
+0.6744477306141042,pH (units),CMD,LTG257,Tuggeranong_out.csv
+0.5129618829604313,pH (units),day,LTG257,Tuggeranong_out.csv
+0.8668706167788942,pH (units),Temperature (Degrees C),LTG257,Tuggeranong_out.csv
+1,pH (units),pH (units),LTG257,Tuggeranong_out.csv
+0.5496089064377401,pH (units),Electrical Conductivity (�S/cm),LTG257,Tuggeranong_out.csv
+0.6574850746007302,Electrical Conductivity (�S/cm),temp,LTG257,Tuggeranong_out.csv
+0.6324555320336759,Electrical Conductivity (�S/cm),minQ,LTG257,Tuggeranong_out.csv
+0.9265928308996031,Electrical Conductivity (�S/cm),maxQ,LTG257,Tuggeranong_out.csv
+0.9228294249678619,Electrical Conductivity (�S/cm),medianQ,LTG257,Tuggeranong_out.csv
+0.6454972243679028,Electrical Conductivity (�S/cm),Month,LTG257,Tuggeranong_out.csv
+0.9253919475632598,Electrical Conductivity (�S/cm),flag,LTG257,Tuggeranong_out.csv
+0.7228064273518885,Electrical Conductivity (�S/cm),???,LTG257,Tuggeranong_out.csv
+0.7236518651950598,Electrical Conductivity (�S/cm),Temperature (Degrees C),LTG257,Tuggeranong_out.csv
+0.5496089064377401,Electrical Conductivity (�S/cm),pH (units),LTG257,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),LTG257,Tuggeranong_out.csv
+0.7225712274971696,Electrical Conductivity (�S/cm),date,LTG257,Tuggeranong_out.csv
+0.6127160365486055,Turbidity (NTU),maxQ,LTG257,Tuggeranong_out.csv
+0.6093088473813942,Turbidity (NTU),medianQ,LTG257,Tuggeranong_out.csv
+0.5725456591569535,Turbidity (NTU),CMD,LTG257,Tuggeranong_out.csv
+0.5012804118276031,Turbidity (NTU),Month,LTG257,Tuggeranong_out.csv
+0.6116129663321722,Turbidity (NTU),flag,LTG257,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),LTG257,Tuggeranong_out.csv
+0.8102108527659633,Turbidity (NTU),Total Nitrogen (mg/L),LTG257,Tuggeranong_out.csv
+0.6183562184795477,Total Nitrogen (mg/L),minQ,LTG257,Tuggeranong_out.csv
+0.5246404101470359,Total Nitrogen (mg/L),maxQ,LTG257,Tuggeranong_out.csv
+0.5334250408448891,Total Nitrogen (mg/L),medianQ,LTG257,Tuggeranong_out.csv
+0.5378017400623066,Total Nitrogen (mg/L),CMD,LTG257,Tuggeranong_out.csv
+0.507154887569045,Total Nitrogen (mg/L),Month,LTG257,Tuggeranong_out.csv
+0.7785223209942445,Total Nitrogen (mg/L),day,LTG257,Tuggeranong_out.csv
+0.5276319247875655,Total Nitrogen (mg/L),flag,LTG257,Tuggeranong_out.csv
+0.8102108527659633,Total Nitrogen (mg/L),Turbidity (NTU),LTG257,Tuggeranong_out.csv
+1,Total Nitrogen (mg/L),Total Nitrogen (mg/L),LTG257,Tuggeranong_out.csv
+0.6056743952106931,date,minQ,LTG257,Tuggeranong_out.csv
+0.6874631945465849,date,maxQ,LTG257,Tuggeranong_out.csv
+0.685224587203415,date,medianQ,LTG257,Tuggeranong_out.csv
+0.8873849150294568,date,Month,LTG257,Tuggeranong_out.csv
+0.686758420150167,date,flag,LTG257,Tuggeranong_out.csv
+0.9999996772843351,date,???,LTG257,Tuggeranong_out.csv
+0.7225712274971696,date,Electrical Conductivity (�S/cm),LTG257,Tuggeranong_out.csv
+1,date,date,LTG257,Tuggeranong_out.csv
+1,temp,temp,TUG061,Tuggeranong_out.csv
+0.5000000000000007,temp,CMD,TUG061,Tuggeranong_out.csv
+0.5000000000000001,temp,Month,TUG061,Tuggeranong_out.csv
+1,temp,day,TUG061,Tuggeranong_out.csv
+0.5000000000000001,temp,???,TUG061,Tuggeranong_out.csv
+1,temp,Temperature (Degrees C),TUG061,Tuggeranong_out.csv
+1,temp,pH (units),TUG061,Tuggeranong_out.csv
+0.5000000000000001,temp,Electrical Conductivity (�S/cm),TUG061,Tuggeranong_out.csv
+1,temp,Turbidity (NTU),TUG061,Tuggeranong_out.csv
+1.0000000000000002,temp,Dissolved Oxygen (mg/L),TUG061,Tuggeranong_out.csv
+0.5000000000000001,temp,date,TUG061,Tuggeranong_out.csv
+0.5000000000000007,CMD,temp,TUG061,Tuggeranong_out.csv
+1,CMD,CMD,TUG061,Tuggeranong_out.csv
+1,CMD,Month,TUG061,Tuggeranong_out.csv
+0.5000000000000006,CMD,day,TUG061,Tuggeranong_out.csv
+1,CMD,???,TUG061,Tuggeranong_out.csv
+0.5000000000000006,CMD,Temperature (Degrees C),TUG061,Tuggeranong_out.csv
+0.5000000000000007,CMD,pH (units),TUG061,Tuggeranong_out.csv
+1,CMD,Electrical Conductivity (�S/cm),TUG061,Tuggeranong_out.csv
+0.5000000000000004,CMD,Turbidity (NTU),TUG061,Tuggeranong_out.csv
+0.5000000000000006,CMD,Dissolved Oxygen (mg/L),TUG061,Tuggeranong_out.csv
+1,CMD,date,TUG061,Tuggeranong_out.csv
+0.5000000000000001,Month,temp,TUG061,Tuggeranong_out.csv
+1,Month,CMD,TUG061,Tuggeranong_out.csv
+1,Month,Month,TUG061,Tuggeranong_out.csv
+1,Month,???,TUG061,Tuggeranong_out.csv
+0.5000000000000012,Month,pH (units),TUG061,Tuggeranong_out.csv
+1,Month,Electrical Conductivity (�S/cm),TUG061,Tuggeranong_out.csv
+1,Month,date,TUG061,Tuggeranong_out.csv
+1,day,temp,TUG061,Tuggeranong_out.csv
+0.5000000000000006,day,CMD,TUG061,Tuggeranong_out.csv
+1,day,day,TUG061,Tuggeranong_out.csv
+1,day,Temperature (Degrees C),TUG061,Tuggeranong_out.csv
+1,day,pH (units),TUG061,Tuggeranong_out.csv
+0.9999999999999999,day,Turbidity (NTU),TUG061,Tuggeranong_out.csv
+1,day,Dissolved Oxygen (mg/L),TUG061,Tuggeranong_out.csv
+0.5000000000000001,???,temp,TUG061,Tuggeranong_out.csv
+1,???,CMD,TUG061,Tuggeranong_out.csv
+1,???,Month,TUG061,Tuggeranong_out.csv
+1,???,???,TUG061,Tuggeranong_out.csv
+0.5000000000000011,???,pH (units),TUG061,Tuggeranong_out.csv
+1,???,Electrical Conductivity (�S/cm),TUG061,Tuggeranong_out.csv
+0.5000000000000001,???,Turbidity (NTU),TUG061,Tuggeranong_out.csv
+0.5000000000000001,???,Dissolved Oxygen (mg/L),TUG061,Tuggeranong_out.csv
+1,???,date,TUG061,Tuggeranong_out.csv
+1,Temperature (Degrees C),temp,TUG061,Tuggeranong_out.csv
+0.5000000000000006,Temperature (Degrees C),CMD,TUG061,Tuggeranong_out.csv
+1,Temperature (Degrees C),day,TUG061,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),TUG061,Tuggeranong_out.csv
+1,Temperature (Degrees C),pH (units),TUG061,Tuggeranong_out.csv
+0.9999999999999998,Temperature (Degrees C),Turbidity (NTU),TUG061,Tuggeranong_out.csv
+1,Temperature (Degrees C),Dissolved Oxygen (mg/L),TUG061,Tuggeranong_out.csv
+1,pH (units),temp,TUG061,Tuggeranong_out.csv
+0.5000000000000007,pH (units),CMD,TUG061,Tuggeranong_out.csv
+0.5000000000000012,pH (units),Month,TUG061,Tuggeranong_out.csv
+1,pH (units),day,TUG061,Tuggeranong_out.csv
+0.5000000000000011,pH (units),???,TUG061,Tuggeranong_out.csv
+1,pH (units),Temperature (Degrees C),TUG061,Tuggeranong_out.csv
+1,pH (units),pH (units),TUG061,Tuggeranong_out.csv
+0.5000000000000012,pH (units),Electrical Conductivity (�S/cm),TUG061,Tuggeranong_out.csv
+1,pH (units),Turbidity (NTU),TUG061,Tuggeranong_out.csv
+1,pH (units),Dissolved Oxygen (mg/L),TUG061,Tuggeranong_out.csv
+0.5000000000000012,pH (units),date,TUG061,Tuggeranong_out.csv
+0.5000000000000001,Electrical Conductivity (�S/cm),temp,TUG061,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),CMD,TUG061,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Month,TUG061,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),???,TUG061,Tuggeranong_out.csv
+0.5000000000000012,Electrical Conductivity (�S/cm),pH (units),TUG061,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),TUG061,Tuggeranong_out.csv
+0.5000000000000001,Electrical Conductivity (�S/cm),Dissolved Oxygen (mg/L),TUG061,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),date,TUG061,Tuggeranong_out.csv
+1,Turbidity (NTU),temp,TUG061,Tuggeranong_out.csv
+0.5000000000000004,Turbidity (NTU),CMD,TUG061,Tuggeranong_out.csv
+0.9999999999999999,Turbidity (NTU),day,TUG061,Tuggeranong_out.csv
+0.5000000000000001,Turbidity (NTU),???,TUG061,Tuggeranong_out.csv
+0.9999999999999998,Turbidity (NTU),Temperature (Degrees C),TUG061,Tuggeranong_out.csv
+1,Turbidity (NTU),pH (units),TUG061,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),TUG061,Tuggeranong_out.csv
+0.9999999999999998,Turbidity (NTU),Dissolved Oxygen (mg/L),TUG061,Tuggeranong_out.csv
+1.0000000000000002,Dissolved Oxygen (mg/L),temp,TUG061,Tuggeranong_out.csv
+0.5000000000000006,Dissolved Oxygen (mg/L),CMD,TUG061,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),day,TUG061,Tuggeranong_out.csv
+0.5000000000000001,Dissolved Oxygen (mg/L),???,TUG061,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Temperature (Degrees C),TUG061,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),pH (units),TUG061,Tuggeranong_out.csv
+0.5000000000000001,Dissolved Oxygen (mg/L),Electrical Conductivity (�S/cm),TUG061,Tuggeranong_out.csv
+0.9999999999999998,Dissolved Oxygen (mg/L),Turbidity (NTU),TUG061,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),TUG061,Tuggeranong_out.csv
+0.5000000000000001,date,temp,TUG061,Tuggeranong_out.csv
+1,date,CMD,TUG061,Tuggeranong_out.csv
+1,date,Month,TUG061,Tuggeranong_out.csv
+1,date,???,TUG061,Tuggeranong_out.csv
+0.5000000000000012,date,pH (units),TUG061,Tuggeranong_out.csv
+1,date,Electrical Conductivity (�S/cm),TUG061,Tuggeranong_out.csv
+1,date,date,TUG061,Tuggeranong_out.csv
+1,temp,temp,TOM,Tuggeranong_out.csv
+1.0000000000000002,temp,CMD,TOM,Tuggeranong_out.csv
+1,temp,Temperature (Degrees C),TOM,Tuggeranong_out.csv
+1,temp,pH (units),TOM,Tuggeranong_out.csv
+1,temp,Electrical Conductivity (�S/cm),TOM,Tuggeranong_out.csv
+1,temp,Turbidity (NTU),TOM,Tuggeranong_out.csv
+1,temp,Dissolved Oxygen (mg/L),TOM,Tuggeranong_out.csv
+1.0000000000000002,CMD,temp,TOM,Tuggeranong_out.csv
+1,CMD,CMD,TOM,Tuggeranong_out.csv
+0.5000000000000003,CMD,Month,TOM,Tuggeranong_out.csv
+0.5000000000000003,CMD,day,TOM,Tuggeranong_out.csv
+0.5000000000000003,CMD,flag,TOM,Tuggeranong_out.csv
+0.5000000000000003,CMD,???,TOM,Tuggeranong_out.csv
+1,CMD,Temperature (Degrees C),TOM,Tuggeranong_out.csv
+1,CMD,pH (units),TOM,Tuggeranong_out.csv
+1,CMD,Electrical Conductivity (�S/cm),TOM,Tuggeranong_out.csv
+0.9999999999999999,CMD,Turbidity (NTU),TOM,Tuggeranong_out.csv
+0.9999999999999998,CMD,Dissolved Oxygen (mg/L),TOM,Tuggeranong_out.csv
+0.5000000000000004,CMD,date,TOM,Tuggeranong_out.csv
+0.5000000000000003,Month,CMD,TOM,Tuggeranong_out.csv
+1,Month,Month,TOM,Tuggeranong_out.csv
+1,Month,day,TOM,Tuggeranong_out.csv
+1,Month,flag,TOM,Tuggeranong_out.csv
+1,Month,???,TOM,Tuggeranong_out.csv
+0.5000000000000001,Month,Temperature (Degrees C),TOM,Tuggeranong_out.csv
+0.5000000000000001,Month,Turbidity (NTU),TOM,Tuggeranong_out.csv
+0.500000000000001,Month,Dissolved Oxygen (mg/L),TOM,Tuggeranong_out.csv
+1,Month,date,TOM,Tuggeranong_out.csv
+0.5000000000000003,day,CMD,TOM,Tuggeranong_out.csv
+1,day,Month,TOM,Tuggeranong_out.csv
+1,day,day,TOM,Tuggeranong_out.csv
+1,day,flag,TOM,Tuggeranong_out.csv
+1,day,???,TOM,Tuggeranong_out.csv
+0.5000000000000001,day,Temperature (Degrees C),TOM,Tuggeranong_out.csv
+0.5000000000000001,day,Turbidity (NTU),TOM,Tuggeranong_out.csv
+0.500000000000001,day,Dissolved Oxygen (mg/L),TOM,Tuggeranong_out.csv
+1,day,date,TOM,Tuggeranong_out.csv
+0.5000000000000003,flag,CMD,TOM,Tuggeranong_out.csv
+1,flag,Month,TOM,Tuggeranong_out.csv
+1,flag,day,TOM,Tuggeranong_out.csv
+1,flag,flag,TOM,Tuggeranong_out.csv
+1,flag,???,TOM,Tuggeranong_out.csv
+0.5000000000000001,flag,Temperature (Degrees C),TOM,Tuggeranong_out.csv
+0.5000000000000001,flag,Turbidity (NTU),TOM,Tuggeranong_out.csv
+0.500000000000001,flag,Dissolved Oxygen (mg/L),TOM,Tuggeranong_out.csv
+1,flag,date,TOM,Tuggeranong_out.csv
+0.5000000000000003,???,CMD,TOM,Tuggeranong_out.csv
+1,???,Month,TOM,Tuggeranong_out.csv
+1,???,day,TOM,Tuggeranong_out.csv
+1,???,flag,TOM,Tuggeranong_out.csv
+1,???,???,TOM,Tuggeranong_out.csv
+0.5000000000000001,???,Temperature (Degrees C),TOM,Tuggeranong_out.csv
+0.5000000000000001,???,Turbidity (NTU),TOM,Tuggeranong_out.csv
+0.5000000000000009,???,Dissolved Oxygen (mg/L),TOM,Tuggeranong_out.csv
+1,???,date,TOM,Tuggeranong_out.csv
+1,Temperature (Degrees C),temp,TOM,Tuggeranong_out.csv
+1,Temperature (Degrees C),CMD,TOM,Tuggeranong_out.csv
+0.5000000000000001,Temperature (Degrees C),Month,TOM,Tuggeranong_out.csv
+0.5000000000000001,Temperature (Degrees C),day,TOM,Tuggeranong_out.csv
+0.5000000000000001,Temperature (Degrees C),flag,TOM,Tuggeranong_out.csv
+0.5000000000000001,Temperature (Degrees C),???,TOM,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),TOM,Tuggeranong_out.csv
+1.0000000000000002,Temperature (Degrees C),pH (units),TOM,Tuggeranong_out.csv
+1,Temperature (Degrees C),Electrical Conductivity (�S/cm),TOM,Tuggeranong_out.csv
+1,Temperature (Degrees C),Turbidity (NTU),TOM,Tuggeranong_out.csv
+1,Temperature (Degrees C),Dissolved Oxygen (mg/L),TOM,Tuggeranong_out.csv
+0.5000000000000001,Temperature (Degrees C),date,TOM,Tuggeranong_out.csv
+1,pH (units),temp,TOM,Tuggeranong_out.csv
+1,pH (units),CMD,TOM,Tuggeranong_out.csv
+1.0000000000000002,pH (units),Temperature (Degrees C),TOM,Tuggeranong_out.csv
+1,pH (units),pH (units),TOM,Tuggeranong_out.csv
+1,pH (units),Electrical Conductivity (�S/cm),TOM,Tuggeranong_out.csv
+1,pH (units),Turbidity (NTU),TOM,Tuggeranong_out.csv
+1,pH (units),Dissolved Oxygen (mg/L),TOM,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),temp,TOM,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),CMD,TOM,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Temperature (Degrees C),TOM,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),pH (units),TOM,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),TOM,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Turbidity (NTU),TOM,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Dissolved Oxygen (mg/L),TOM,Tuggeranong_out.csv
+1,Turbidity (NTU),temp,TOM,Tuggeranong_out.csv
+0.9999999999999999,Turbidity (NTU),CMD,TOM,Tuggeranong_out.csv
+0.5000000000000001,Turbidity (NTU),Month,TOM,Tuggeranong_out.csv
+0.5000000000000001,Turbidity (NTU),day,TOM,Tuggeranong_out.csv
+0.5000000000000001,Turbidity (NTU),flag,TOM,Tuggeranong_out.csv
+0.5000000000000001,Turbidity (NTU),???,TOM,Tuggeranong_out.csv
+1,Turbidity (NTU),Temperature (Degrees C),TOM,Tuggeranong_out.csv
+1,Turbidity (NTU),pH (units),TOM,Tuggeranong_out.csv
+1,Turbidity (NTU),Electrical Conductivity (�S/cm),TOM,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),TOM,Tuggeranong_out.csv
+1.0000000000000002,Turbidity (NTU),Dissolved Oxygen (mg/L),TOM,Tuggeranong_out.csv
+0.5000000000000001,Turbidity (NTU),date,TOM,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),temp,TOM,Tuggeranong_out.csv
+0.9999999999999998,Dissolved Oxygen (mg/L),CMD,TOM,Tuggeranong_out.csv
+0.500000000000001,Dissolved Oxygen (mg/L),Month,TOM,Tuggeranong_out.csv
+0.500000000000001,Dissolved Oxygen (mg/L),day,TOM,Tuggeranong_out.csv
+0.500000000000001,Dissolved Oxygen (mg/L),flag,TOM,Tuggeranong_out.csv
+0.5000000000000009,Dissolved Oxygen (mg/L),???,TOM,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Temperature (Degrees C),TOM,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),pH (units),TOM,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Electrical Conductivity (�S/cm),TOM,Tuggeranong_out.csv
+1.0000000000000002,Dissolved Oxygen (mg/L),Turbidity (NTU),TOM,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),TOM,Tuggeranong_out.csv
+0.500000000000001,Dissolved Oxygen (mg/L),date,TOM,Tuggeranong_out.csv
+0.5000000000000004,date,CMD,TOM,Tuggeranong_out.csv
+1,date,Month,TOM,Tuggeranong_out.csv
+1,date,day,TOM,Tuggeranong_out.csv
+1,date,flag,TOM,Tuggeranong_out.csv
+1,date,???,TOM,Tuggeranong_out.csv
+0.5000000000000001,date,Temperature (Degrees C),TOM,Tuggeranong_out.csv
+0.5000000000000001,date,Turbidity (NTU),TOM,Tuggeranong_out.csv
+0.500000000000001,date,Dissolved Oxygen (mg/L),TOM,Tuggeranong_out.csv
+1,date,date,TOM,Tuggeranong_out.csv
+1,rain,rain,CTT300 ,Tuggeranong_out.csv
+0.5905670501012638,rain,maxQ,CTT300 ,Tuggeranong_out.csv
+0.597359555714635,rain,medianQ,CTT300 ,Tuggeranong_out.csv
+0.5176087846048868,rain,i6,CTT300 ,Tuggeranong_out.csv
+0.9713096589996326,rain,U,CTT300 ,Tuggeranong_out.csv
+0.6639063046831528,rain,flag,CTT300 ,Tuggeranong_out.csv
+0.5533898282214544,rain,Turbidity (NTU),CTT300 ,Tuggeranong_out.csv
+0.5400007453245115,rain,Total Phosphorus (mg/L),CTT300 ,Tuggeranong_out.csv
+1,temp,temp,CTT300 ,Tuggeranong_out.csv
+0.7126870890249813,temp,Temperature (Degrees C),CTT300 ,Tuggeranong_out.csv
+1,minQ,minQ,CTT300 ,Tuggeranong_out.csv
+0.5905670501012638,maxQ,rain,CTT300 ,Tuggeranong_out.csv
+1,maxQ,maxQ,CTT300 ,Tuggeranong_out.csv
+0.9990711948505425,maxQ,medianQ,CTT300 ,Tuggeranong_out.csv
+0.9237635925124125,maxQ,i6,CTT300 ,Tuggeranong_out.csv
+0.6078803115987574,maxQ,i30,CTT300 ,Tuggeranong_out.csv
+0.6651669584886435,maxQ,U,CTT300 ,Tuggeranong_out.csv
+0.9869567008044063,maxQ,flag,CTT300 ,Tuggeranong_out.csv
+0.9710012429812596,maxQ,Turbidity (NTU),CTT300 ,Tuggeranong_out.csv
+0.9690135064986135,maxQ,Total Phosphorus (mg/L),CTT300 ,Tuggeranong_out.csv
+0.597359555714635,medianQ,rain,CTT300 ,Tuggeranong_out.csv
+0.9990711948505425,medianQ,maxQ,CTT300 ,Tuggeranong_out.csv
+1,medianQ,medianQ,CTT300 ,Tuggeranong_out.csv
+0.9176444499472985,medianQ,i6,CTT300 ,Tuggeranong_out.csv
+0.6002312037936711,medianQ,i30,CTT300 ,Tuggeranong_out.csv
+0.6692447733920508,medianQ,U,CTT300 ,Tuggeranong_out.csv
+0.988992594600925,medianQ,flag,CTT300 ,Tuggeranong_out.csv
+0.964230486680014,medianQ,Turbidity (NTU),CTT300 ,Tuggeranong_out.csv
+0.9645680727289049,medianQ,Total Phosphorus (mg/L),CTT300 ,Tuggeranong_out.csv
+0.5176087846048868,i6,rain,CTT300 ,Tuggeranong_out.csv
+0.9237635925124125,i6,maxQ,CTT300 ,Tuggeranong_out.csv
+0.9176444499472985,i6,medianQ,CTT300 ,Tuggeranong_out.csv
+1,i6,i6,CTT300 ,Tuggeranong_out.csv
+0.8513915534587281,i6,i30,CTT300 ,Tuggeranong_out.csv
+0.5946999968005707,i6,U,CTT300 ,Tuggeranong_out.csv
+0.9040376682176844,i6,flag,CTT300 ,Tuggeranong_out.csv
+0.9142687307758194,i6,Turbidity (NTU),CTT300 ,Tuggeranong_out.csv
+0.5218350009123466,i6,Dissolved Oxygen (mg/L),CTT300 ,Tuggeranong_out.csv
+0.5400015484007602,i6,Nitrate (mg/L),CTT300 ,Tuggeranong_out.csv
+0.9000245634227049,i6,Total Phosphorus (mg/L),CTT300 ,Tuggeranong_out.csv
+0.6078803115987574,i30,maxQ,CTT300 ,Tuggeranong_out.csv
+0.6002312037936711,i30,medianQ,CTT300 ,Tuggeranong_out.csv
+0.8513915534587281,i30,i6,CTT300 ,Tuggeranong_out.csv
+1,i30,i30,CTT300 ,Tuggeranong_out.csv
+0.5872140551051367,i30,flag,CTT300 ,Tuggeranong_out.csv
+0.6197388378689833,i30,Turbidity (NTU),CTT300 ,Tuggeranong_out.csv
+0.5428418616314903,i30,Nitrate (mg/L),CTT300 ,Tuggeranong_out.csv
+0.5953804528267562,i30,Total Phosphorus (mg/L),CTT300 ,Tuggeranong_out.csv
+0.9713096589996326,U,rain,CTT300 ,Tuggeranong_out.csv
+0.6651669584886435,U,maxQ,CTT300 ,Tuggeranong_out.csv
+0.6692447733920508,U,medianQ,CTT300 ,Tuggeranong_out.csv
+0.5946999968005707,U,i6,CTT300 ,Tuggeranong_out.csv
+1,U,U,CTT300 ,Tuggeranong_out.csv
+0.7246627384749874,U,flag,CTT300 ,Tuggeranong_out.csv
+0.6520069043140081,U,Turbidity (NTU),CTT300 ,Tuggeranong_out.csv
+0.6159953705278491,U,Total Phosphorus (mg/L),CTT300 ,Tuggeranong_out.csv
+1,CMD,CMD,CTT300 ,Tuggeranong_out.csv
+0.7117253374543991,CMD,Electrical Conductivity (�S/cm),CTT300 ,Tuggeranong_out.csv
+1,Year,Year,CTT300 ,Tuggeranong_out.csv
+0.9949192289868126,Year,???,CTT300 ,Tuggeranong_out.csv
+0.5168286860019781,Year,Temperature (Degrees C),CTT300 ,Tuggeranong_out.csv
+0.9949102965003015,Year,date,CTT300 ,Tuggeranong_out.csv
+1,Month,Month,CTT300 ,Tuggeranong_out.csv
+1,day,day,CTT300 ,Tuggeranong_out.csv
+0.6639063046831528,flag,rain,CTT300 ,Tuggeranong_out.csv
+0.9869567008044063,flag,maxQ,CTT300 ,Tuggeranong_out.csv
+0.988992594600925,flag,medianQ,CTT300 ,Tuggeranong_out.csv
+0.9040376682176844,flag,i6,CTT300 ,Tuggeranong_out.csv
+0.5872140551051367,flag,i30,CTT300 ,Tuggeranong_out.csv
+0.7246627384749874,flag,U,CTT300 ,Tuggeranong_out.csv
+1,flag,flag,CTT300 ,Tuggeranong_out.csv
+0.9489430209601252,flag,Turbidity (NTU),CTT300 ,Tuggeranong_out.csv
+0.945391949864255,flag,Total Phosphorus (mg/L),CTT300 ,Tuggeranong_out.csv
+0.9949192289868126,???,Year,CTT300 ,Tuggeranong_out.csv
+1,???,???,CTT300 ,Tuggeranong_out.csv
+0.5104981091392502,???,Temperature (Degrees C),CTT300 ,Tuggeranong_out.csv
+0.9999999513170584,???,date,CTT300 ,Tuggeranong_out.csv
+0.7126870890249813,Temperature (Degrees C),temp,CTT300 ,Tuggeranong_out.csv
+0.5168286860019781,Temperature (Degrees C),Year,CTT300 ,Tuggeranong_out.csv
+0.5104981091392502,Temperature (Degrees C),???,CTT300 ,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),CTT300 ,Tuggeranong_out.csv
+0.5104491816790436,Temperature (Degrees C),date,CTT300 ,Tuggeranong_out.csv
+1,pH (units),pH (units),CTT300 ,Tuggeranong_out.csv
+0.7117253374543991,Electrical Conductivity (�S/cm),CMD,CTT300 ,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),CTT300 ,Tuggeranong_out.csv
+0.5533898282214544,Turbidity (NTU),rain,CTT300 ,Tuggeranong_out.csv
+0.9710012429812596,Turbidity (NTU),maxQ,CTT300 ,Tuggeranong_out.csv
+0.964230486680014,Turbidity (NTU),medianQ,CTT300 ,Tuggeranong_out.csv
+0.9142687307758194,Turbidity (NTU),i6,CTT300 ,Tuggeranong_out.csv
+0.6197388378689833,Turbidity (NTU),i30,CTT300 ,Tuggeranong_out.csv
+0.6520069043140081,Turbidity (NTU),U,CTT300 ,Tuggeranong_out.csv
+0.9489430209601252,Turbidity (NTU),flag,CTT300 ,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),CTT300 ,Tuggeranong_out.csv
+0.9503491336257073,Turbidity (NTU),Total Phosphorus (mg/L),CTT300 ,Tuggeranong_out.csv
+0.5218350009123466,Dissolved Oxygen (mg/L),i6,CTT300 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),CTT300 ,Tuggeranong_out.csv
+0.9475556647642354,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),CTT300 ,Tuggeranong_out.csv
+0.9475556647642354,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),CTT300 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),CTT300 ,Tuggeranong_out.csv
+0.5400015484007602,Nitrate (mg/L),i6,CTT300 ,Tuggeranong_out.csv
+0.5428418616314903,Nitrate (mg/L),i30,CTT300 ,Tuggeranong_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),CTT300 ,Tuggeranong_out.csv
+0.5092165598762626,Nitrate (mg/L),Total Phosphorus (mg/L),CTT300 ,Tuggeranong_out.csv
+0.5400007453245115,Total Phosphorus (mg/L),rain,CTT300 ,Tuggeranong_out.csv
+0.9690135064986135,Total Phosphorus (mg/L),maxQ,CTT300 ,Tuggeranong_out.csv
+0.9645680727289049,Total Phosphorus (mg/L),medianQ,CTT300 ,Tuggeranong_out.csv
+0.9000245634227049,Total Phosphorus (mg/L),i6,CTT300 ,Tuggeranong_out.csv
+0.5953804528267562,Total Phosphorus (mg/L),i30,CTT300 ,Tuggeranong_out.csv
+0.6159953705278491,Total Phosphorus (mg/L),U,CTT300 ,Tuggeranong_out.csv
+0.945391949864255,Total Phosphorus (mg/L),flag,CTT300 ,Tuggeranong_out.csv
+0.9503491336257073,Total Phosphorus (mg/L),Turbidity (NTU),CTT300 ,Tuggeranong_out.csv
+0.5092165598762626,Total Phosphorus (mg/L),Nitrate (mg/L),CTT300 ,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),CTT300 ,Tuggeranong_out.csv
+0.9949102965003015,date,Year,CTT300 ,Tuggeranong_out.csv
+0.9999999513170584,date,???,CTT300 ,Tuggeranong_out.csv
+0.5104491816790436,date,Temperature (Degrees C),CTT300 ,Tuggeranong_out.csv
+1,date,date,CTT300 ,Tuggeranong_out.csv
+1,rain,rain,CTT100 ,Tuggeranong_out.csv
+0.8122874850729821,rain,i6,CTT100 ,Tuggeranong_out.csv
+0.6388080845544691,rain,i30,CTT100 ,Tuggeranong_out.csv
+0.8199933594327282,rain,U,CTT100 ,Tuggeranong_out.csv
+0.8382314641318478,rain,flag,CTT100 ,Tuggeranong_out.csv
+0.7482834408192512,rain,Turbidity (NTU),CTT100 ,Tuggeranong_out.csv
+0.7900064536134251,rain,Total Phosphorus (mg/L),CTT100 ,Tuggeranong_out.csv
+1,temp,temp,CTT100 ,Tuggeranong_out.csv
+0.5598768709861042,temp,Month,CTT100 ,Tuggeranong_out.csv
+0.8442978047027724,temp,Temperature (Degrees C),CTT100 ,Tuggeranong_out.csv
+1,minQ,minQ,CTT100 ,Tuggeranong_out.csv
+0.9653236511051771,minQ,maxQ,CTT100 ,Tuggeranong_out.csv
+0.9840198146055823,minQ,medianQ,CTT100 ,Tuggeranong_out.csv
+0.9653236511051771,maxQ,minQ,CTT100 ,Tuggeranong_out.csv
+1,maxQ,maxQ,CTT100 ,Tuggeranong_out.csv
+0.9956160141915437,maxQ,medianQ,CTT100 ,Tuggeranong_out.csv
+0.6567259228575263,maxQ,flag,CTT100 ,Tuggeranong_out.csv
+0.9840198146055823,medianQ,minQ,CTT100 ,Tuggeranong_out.csv
+0.9956160141915437,medianQ,maxQ,CTT100 ,Tuggeranong_out.csv
+1,medianQ,medianQ,CTT100 ,Tuggeranong_out.csv
+0.5908910424423862,medianQ,flag,CTT100 ,Tuggeranong_out.csv
+0.8122874850729821,i6,rain,CTT100 ,Tuggeranong_out.csv
+1,i6,i6,CTT100 ,Tuggeranong_out.csv
+0.9424734407542242,i6,i30,CTT100 ,Tuggeranong_out.csv
+0.7581239468302824,i6,U,CTT100 ,Tuggeranong_out.csv
+0.804956555557605,i6,flag,CTT100 ,Tuggeranong_out.csv
+0.6984178070252284,i6,Turbidity (NTU),CTT100 ,Tuggeranong_out.csv
+0.7495530996779953,i6,Total Phosphorus (mg/L),CTT100 ,Tuggeranong_out.csv
+0.6388080845544691,i30,rain,CTT100 ,Tuggeranong_out.csv
+0.9424734407542242,i30,i6,CTT100 ,Tuggeranong_out.csv
+1,i30,i30,CTT100 ,Tuggeranong_out.csv
+0.6023768744179829,i30,U,CTT100 ,Tuggeranong_out.csv
+0.6825069974368148,i30,flag,CTT100 ,Tuggeranong_out.csv
+0.5562779583794213,i30,Turbidity (NTU),CTT100 ,Tuggeranong_out.csv
+0.5859755002228972,i30,Total Phosphorus (mg/L),CTT100 ,Tuggeranong_out.csv
+0.8199933594327282,U,rain,CTT100 ,Tuggeranong_out.csv
+0.7581239468302824,U,i6,CTT100 ,Tuggeranong_out.csv
+0.6023768744179829,U,i30,CTT100 ,Tuggeranong_out.csv
+1,U,U,CTT100 ,Tuggeranong_out.csv
+0.8790613323072275,U,flag,CTT100 ,Tuggeranong_out.csv
+0.8933138522005335,U,Turbidity (NTU),CTT100 ,Tuggeranong_out.csv
+0.8467412301767321,U,Total Phosphorus (mg/L),CTT100 ,Tuggeranong_out.csv
+1,CMD,CMD,CTT100 ,Tuggeranong_out.csv
+1,Year,Year,CTT100 ,Tuggeranong_out.csv
+0.9920959091330129,Year,???,CTT100 ,Tuggeranong_out.csv
+0.9920992394713073,Year,date,CTT100 ,Tuggeranong_out.csv
+0.5598768709861042,Month,temp,CTT100 ,Tuggeranong_out.csv
+1,Month,Month,CTT100 ,Tuggeranong_out.csv
+0.6192498933410004,Month,Temperature (Degrees C),CTT100 ,Tuggeranong_out.csv
+1,day,day,CTT100 ,Tuggeranong_out.csv
+0.5307146708626672,day,Nitrate (mg/L),CTT100 ,Tuggeranong_out.csv
+0.8382314641318478,flag,rain,CTT100 ,Tuggeranong_out.csv
+0.6567259228575263,flag,maxQ,CTT100 ,Tuggeranong_out.csv
+0.5908910424423862,flag,medianQ,CTT100 ,Tuggeranong_out.csv
+0.804956555557605,flag,i6,CTT100 ,Tuggeranong_out.csv
+0.6825069974368148,flag,i30,CTT100 ,Tuggeranong_out.csv
+0.8790613323072275,flag,U,CTT100 ,Tuggeranong_out.csv
+1,flag,flag,CTT100 ,Tuggeranong_out.csv
+0.5071394616077153,flag,Electrical Conductivity (�S/cm),CTT100 ,Tuggeranong_out.csv
+0.8937121541601379,flag,Turbidity (NTU),CTT100 ,Tuggeranong_out.csv
+0.8088224832875406,flag,Total Phosphorus (mg/L),CTT100 ,Tuggeranong_out.csv
+0.9920959091330129,???,Year,CTT100 ,Tuggeranong_out.csv
+1,???,???,CTT100 ,Tuggeranong_out.csv
+0.9999999101671696,???,date,CTT100 ,Tuggeranong_out.csv
+0.8442978047027724,Temperature (Degrees C),temp,CTT100 ,Tuggeranong_out.csv
+0.6192498933410004,Temperature (Degrees C),Month,CTT100 ,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),CTT100 ,Tuggeranong_out.csv
+1,pH (units),pH (units),CTT100 ,Tuggeranong_out.csv
+0.5071394616077153,Electrical Conductivity (�S/cm),flag,CTT100 ,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),CTT100 ,Tuggeranong_out.csv
+0.7482834408192512,Turbidity (NTU),rain,CTT100 ,Tuggeranong_out.csv
+0.6984178070252284,Turbidity (NTU),i6,CTT100 ,Tuggeranong_out.csv
+0.5562779583794213,Turbidity (NTU),i30,CTT100 ,Tuggeranong_out.csv
+0.8933138522005335,Turbidity (NTU),U,CTT100 ,Tuggeranong_out.csv
+0.8937121541601379,Turbidity (NTU),flag,CTT100 ,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),CTT100 ,Tuggeranong_out.csv
+0.7831567849826635,Turbidity (NTU),Total Phosphorus (mg/L),CTT100 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),CTT100 ,Tuggeranong_out.csv
+0.9358483627556615,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),CTT100 ,Tuggeranong_out.csv
+0.9358483627556615,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),CTT100 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),CTT100 ,Tuggeranong_out.csv
+0.5307146708626672,Nitrate (mg/L),day,CTT100 ,Tuggeranong_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),CTT100 ,Tuggeranong_out.csv
+0.7900064536134251,Total Phosphorus (mg/L),rain,CTT100 ,Tuggeranong_out.csv
+0.7495530996779953,Total Phosphorus (mg/L),i6,CTT100 ,Tuggeranong_out.csv
+0.5859755002228972,Total Phosphorus (mg/L),i30,CTT100 ,Tuggeranong_out.csv
+0.8467412301767321,Total Phosphorus (mg/L),U,CTT100 ,Tuggeranong_out.csv
+0.8088224832875406,Total Phosphorus (mg/L),flag,CTT100 ,Tuggeranong_out.csv
+0.7831567849826635,Total Phosphorus (mg/L),Turbidity (NTU),CTT100 ,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),CTT100 ,Tuggeranong_out.csv
+0.9920992394713073,date,Year,CTT100 ,Tuggeranong_out.csv
+0.9999999101671696,date,???,CTT100 ,Tuggeranong_out.csv
+1,date,date,CTT100 ,Tuggeranong_out.csv
+1,rain,rain,TLT150 ,Tuggeranong_out.csv
+0.6881351917727252,rain,temp,TLT150 ,Tuggeranong_out.csv
+0.9311934065438617,rain,i6,TLT150 ,Tuggeranong_out.csv
+0.9311934065438617,rain,i30,TLT150 ,Tuggeranong_out.csv
+0.9999996938886918,rain,U,TLT150 ,Tuggeranong_out.csv
+0.6343027003182851,rain,CMD,TLT150 ,Tuggeranong_out.csv
+0.672077179589876,rain,Month,TLT150 ,Tuggeranong_out.csv
+0.5879941561342455,rain,day,TLT150 ,Tuggeranong_out.csv
+0.8527598743603584,rain,Temperature (Degrees C),TLT150 ,Tuggeranong_out.csv
+0.579076721549234,rain,pH (units),TLT150 ,Tuggeranong_out.csv
+0.9275609267416541,rain,Electrical Conductivity (�S/cm),TLT150 ,Tuggeranong_out.csv
+0.9323309008368861,rain,Turbidity (NTU),TLT150 ,Tuggeranong_out.csv
+0.9500815567388954,rain,Nitrate (mg/L),TLT150 ,Tuggeranong_out.csv
+0.9112767841090404,rain,Total Phosphorus (mg/L),TLT150 ,Tuggeranong_out.csv
+0.6881351917727252,temp,rain,TLT150 ,Tuggeranong_out.csv
+1,temp,temp,TLT150 ,Tuggeranong_out.csv
+0.6083649645850364,temp,i6,TLT150 ,Tuggeranong_out.csv
+0.6083649645850364,temp,i30,TLT150 ,Tuggeranong_out.csv
+0.6879975769387301,temp,U,TLT150 ,Tuggeranong_out.csv
+0.5801863722992178,temp,CMD,TLT150 ,Tuggeranong_out.csv
+0.7178272886787603,temp,Month,TLT150 ,Tuggeranong_out.csv
+0.831846200376796,temp,Temperature (Degrees C),TLT150 ,Tuggeranong_out.csv
+0.5114252514503106,temp,pH (units),TLT150 ,Tuggeranong_out.csv
+0.5840312287461177,temp,Electrical Conductivity (�S/cm),TLT150 ,Tuggeranong_out.csv
+0.5102627826950076,temp,Turbidity (NTU),TLT150 ,Tuggeranong_out.csv
+0.5492725494533099,temp,Dissolved Oxygen (mg/L),TLT150 ,Tuggeranong_out.csv
+0.5349781440199469,temp,Dissolved Oxygen (% Saturation),TLT150 ,Tuggeranong_out.csv
+0.616711817814842,temp,Nitrate (mg/L),TLT150 ,Tuggeranong_out.csv
+0.9311934065438617,i6,rain,TLT150 ,Tuggeranong_out.csv
+0.6083649645850364,i6,temp,TLT150 ,Tuggeranong_out.csv
+1,i6,i6,TLT150 ,Tuggeranong_out.csv
+1,i6,i30,TLT150 ,Tuggeranong_out.csv
+0.9311558701818804,i6,U,TLT150 ,Tuggeranong_out.csv
+0.7441088596357193,i6,CMD,TLT150 ,Tuggeranong_out.csv
+0.6389151433378876,i6,Month,TLT150 ,Tuggeranong_out.csv
+0.5210598485243355,i6,day,TLT150 ,Tuggeranong_out.csv
+0.8197213546526695,i6,Temperature (Degrees C),TLT150 ,Tuggeranong_out.csv
+0.5260841190811657,i6,pH (units),TLT150 ,Tuggeranong_out.csv
+0.9988360626481858,i6,Electrical Conductivity (�S/cm),TLT150 ,Tuggeranong_out.csv
+0.8545794697038127,i6,Turbidity (NTU),TLT150 ,Tuggeranong_out.csv
+0.9213820407913326,i6,Nitrate (mg/L),TLT150 ,Tuggeranong_out.csv
+0.9383978549026927,i6,Total Phosphorus (mg/L),TLT150 ,Tuggeranong_out.csv
+0.9311934065438617,i30,rain,TLT150 ,Tuggeranong_out.csv
+0.6083649645850364,i30,temp,TLT150 ,Tuggeranong_out.csv
+1,i30,i6,TLT150 ,Tuggeranong_out.csv
+1,i30,i30,TLT150 ,Tuggeranong_out.csv
+0.9311558701818804,i30,U,TLT150 ,Tuggeranong_out.csv
+0.7441088596357193,i30,CMD,TLT150 ,Tuggeranong_out.csv
+0.6389151433378876,i30,Month,TLT150 ,Tuggeranong_out.csv
+0.5210598485243355,i30,day,TLT150 ,Tuggeranong_out.csv
+0.8197213546526695,i30,Temperature (Degrees C),TLT150 ,Tuggeranong_out.csv
+0.5260841190811657,i30,pH (units),TLT150 ,Tuggeranong_out.csv
+0.9988360626481858,i30,Electrical Conductivity (�S/cm),TLT150 ,Tuggeranong_out.csv
+0.8545794697038127,i30,Turbidity (NTU),TLT150 ,Tuggeranong_out.csv
+0.9213820407913326,i30,Nitrate (mg/L),TLT150 ,Tuggeranong_out.csv
+0.9383978549026927,i30,Total Phosphorus (mg/L),TLT150 ,Tuggeranong_out.csv
+0.9999996938886918,U,rain,TLT150 ,Tuggeranong_out.csv
+0.6879975769387301,U,temp,TLT150 ,Tuggeranong_out.csv
+0.9311558701818804,U,i6,TLT150 ,Tuggeranong_out.csv
+0.9311558701818804,U,i30,TLT150 ,Tuggeranong_out.csv
+1,U,U,TLT150 ,Tuggeranong_out.csv
+0.6343741403852339,U,CMD,TLT150 ,Tuggeranong_out.csv
+0.6719872645536096,U,Month,TLT150 ,Tuggeranong_out.csv
+0.5876172425129641,U,day,TLT150 ,Tuggeranong_out.csv
+0.8526637708539844,U,Temperature (Degrees C),TLT150 ,Tuggeranong_out.csv
+0.5789896932242355,U,pH (units),TLT150 ,Tuggeranong_out.csv
+0.9275256128764421,U,Electrical Conductivity (�S/cm),TLT150 ,Tuggeranong_out.csv
+0.9324350388658211,U,Turbidity (NTU),TLT150 ,Tuggeranong_out.csv
+0.9499965723492122,U,Nitrate (mg/L),TLT150 ,Tuggeranong_out.csv
+0.9112323613055445,U,Total Phosphorus (mg/L),TLT150 ,Tuggeranong_out.csv
+0.6343027003182851,CMD,rain,TLT150 ,Tuggeranong_out.csv
+0.5801863722992178,CMD,temp,TLT150 ,Tuggeranong_out.csv
+0.7441088596357193,CMD,i6,TLT150 ,Tuggeranong_out.csv
+0.7441088596357193,CMD,i30,TLT150 ,Tuggeranong_out.csv
+0.6343741403852339,CMD,U,TLT150 ,Tuggeranong_out.csv
+1,CMD,CMD,TLT150 ,Tuggeranong_out.csv
+0.585072855396262,CMD,pH (units),TLT150 ,Tuggeranong_out.csv
+0.76211552423588,CMD,Electrical Conductivity (�S/cm),TLT150 ,Tuggeranong_out.csv
+0.5749207653597797,CMD,Turbidity (NTU),TLT150 ,Tuggeranong_out.csv
+0.6609063149815262,CMD,Nitrate (mg/L),TLT150 ,Tuggeranong_out.csv
+0.6759074945752089,CMD,Total Phosphorus (mg/L),TLT150 ,Tuggeranong_out.csv
+1,Year,Year,TLT150 ,Tuggeranong_out.csv
+0.5358379524020921,Year,day,TLT150 ,Tuggeranong_out.csv
+0.9968368885863692,Year,???,TLT150 ,Tuggeranong_out.csv
+0.8265929895146281,Year,Dissolved Oxygen (mg/L),TLT150 ,Tuggeranong_out.csv
+0.8374414938012337,Year,Dissolved Oxygen (% Saturation),TLT150 ,Tuggeranong_out.csv
+0.9968993240234285,Year,date,TLT150 ,Tuggeranong_out.csv
+0.672077179589876,Month,rain,TLT150 ,Tuggeranong_out.csv
+0.7178272886787603,Month,temp,TLT150 ,Tuggeranong_out.csv
+0.6389151433378876,Month,i6,TLT150 ,Tuggeranong_out.csv
+0.6389151433378876,Month,i30,TLT150 ,Tuggeranong_out.csv
+0.6719872645536096,Month,U,TLT150 ,Tuggeranong_out.csv
+1,Month,Month,TLT150 ,Tuggeranong_out.csv
+0.514501952066204,Month,day,TLT150 ,Tuggeranong_out.csv
+0.5123762896208294,Month,Temperature (Degrees C),TLT150 ,Tuggeranong_out.csv
+0.6069638830567341,Month,pH (units),TLT150 ,Tuggeranong_out.csv
+0.6239233797869953,Month,Electrical Conductivity (�S/cm),TLT150 ,Tuggeranong_out.csv
+0.5460037643794275,Month,Turbidity (NTU),TLT150 ,Tuggeranong_out.csv
+0.7163353318053449,Month,Nitrate (mg/L),TLT150 ,Tuggeranong_out.csv
+0.5623060419866244,Month,Total Phosphorus (mg/L),TLT150 ,Tuggeranong_out.csv
+0.5879941561342455,day,rain,TLT150 ,Tuggeranong_out.csv
+0.5210598485243355,day,i6,TLT150 ,Tuggeranong_out.csv
+0.5210598485243355,day,i30,TLT150 ,Tuggeranong_out.csv
+0.5876172425129641,day,U,TLT150 ,Tuggeranong_out.csv
+0.5358379524020921,day,Year,TLT150 ,Tuggeranong_out.csv
+0.514501952066204,day,Month,TLT150 ,Tuggeranong_out.csv
+1,day,day,TLT150 ,Tuggeranong_out.csv
+0.5029911213751885,day,???,TLT150 ,Tuggeranong_out.csv
+0.5204533675041073,day,Electrical Conductivity (�S/cm),TLT150 ,Tuggeranong_out.csv
+0.6189038233431785,day,Turbidity (NTU),TLT150 ,Tuggeranong_out.csv
+0.6234159855582532,day,Nitrate (mg/L),TLT150 ,Tuggeranong_out.csv
+0.604363183567708,day,Total Phosphorus (mg/L),TLT150 ,Tuggeranong_out.csv
+0.5033314716176246,day,date,TLT150 ,Tuggeranong_out.csv
+0.9968368885863692,???,Year,TLT150 ,Tuggeranong_out.csv
+0.5029911213751885,???,day,TLT150 ,Tuggeranong_out.csv
+1,???,???,TLT150 ,Tuggeranong_out.csv
+0.8069364960484633,???,Dissolved Oxygen (mg/L),TLT150 ,Tuggeranong_out.csv
+0.8165473393898088,???,Dissolved Oxygen (% Saturation),TLT150 ,Tuggeranong_out.csv
+0.9999993926903581,???,date,TLT150 ,Tuggeranong_out.csv
+0.8527598743603584,Temperature (Degrees C),rain,TLT150 ,Tuggeranong_out.csv
+0.831846200376796,Temperature (Degrees C),temp,TLT150 ,Tuggeranong_out.csv
+0.8197213546526695,Temperature (Degrees C),i6,TLT150 ,Tuggeranong_out.csv
+0.8197213546526695,Temperature (Degrees C),i30,TLT150 ,Tuggeranong_out.csv
+0.8526637708539844,Temperature (Degrees C),U,TLT150 ,Tuggeranong_out.csv
+0.5123762896208294,Temperature (Degrees C),Month,TLT150 ,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),TLT150 ,Tuggeranong_out.csv
+0.7151059561670147,Temperature (Degrees C),pH (units),TLT150 ,Tuggeranong_out.csv
+0.8033810201419918,Temperature (Degrees C),Electrical Conductivity (�S/cm),TLT150 ,Tuggeranong_out.csv
+0.7298708755243103,Temperature (Degrees C),Turbidity (NTU),TLT150 ,Tuggeranong_out.csv
+0.7625922913776634,Temperature (Degrees C),Nitrate (mg/L),TLT150 ,Tuggeranong_out.csv
+0.7005227042300084,Temperature (Degrees C),Total Phosphorus (mg/L),TLT150 ,Tuggeranong_out.csv
+0.579076721549234,pH (units),rain,TLT150 ,Tuggeranong_out.csv
+0.5114252514503106,pH (units),temp,TLT150 ,Tuggeranong_out.csv
+0.5260841190811657,pH (units),i6,TLT150 ,Tuggeranong_out.csv
+0.5260841190811657,pH (units),i30,TLT150 ,Tuggeranong_out.csv
+0.5789896932242355,pH (units),U,TLT150 ,Tuggeranong_out.csv
+0.585072855396262,pH (units),CMD,TLT150 ,Tuggeranong_out.csv
+0.6069638830567341,pH (units),Month,TLT150 ,Tuggeranong_out.csv
+0.7151059561670147,pH (units),Temperature (Degrees C),TLT150 ,Tuggeranong_out.csv
+1,pH (units),pH (units),TLT150 ,Tuggeranong_out.csv
+0.5311167597528582,pH (units),Electrical Conductivity (�S/cm),TLT150 ,Tuggeranong_out.csv
+0.5706263060827543,pH (units),Turbidity (NTU),TLT150 ,Tuggeranong_out.csv
+0.5091594001227632,pH (units),Nitrate (mg/L),TLT150 ,Tuggeranong_out.csv
+0.9275609267416541,Electrical Conductivity (�S/cm),rain,TLT150 ,Tuggeranong_out.csv
+0.5840312287461177,Electrical Conductivity (�S/cm),temp,TLT150 ,Tuggeranong_out.csv
+0.9988360626481858,Electrical Conductivity (�S/cm),i6,TLT150 ,Tuggeranong_out.csv
+0.9988360626481858,Electrical Conductivity (�S/cm),i30,TLT150 ,Tuggeranong_out.csv
+0.9275256128764421,Electrical Conductivity (�S/cm),U,TLT150 ,Tuggeranong_out.csv
+0.76211552423588,Electrical Conductivity (�S/cm),CMD,TLT150 ,Tuggeranong_out.csv
+0.6239233797869953,Electrical Conductivity (�S/cm),Month,TLT150 ,Tuggeranong_out.csv
+0.5204533675041073,Electrical Conductivity (�S/cm),day,TLT150 ,Tuggeranong_out.csv
+0.8033810201419918,Electrical Conductivity (�S/cm),Temperature (Degrees C),TLT150 ,Tuggeranong_out.csv
+0.5311167597528582,Electrical Conductivity (�S/cm),pH (units),TLT150 ,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),TLT150 ,Tuggeranong_out.csv
+0.853584792738931,Electrical Conductivity (�S/cm),Turbidity (NTU),TLT150 ,Tuggeranong_out.csv
+0.9257028546647035,Electrical Conductivity (�S/cm),Nitrate (mg/L),TLT150 ,Tuggeranong_out.csv
+0.9428450420379533,Electrical Conductivity (�S/cm),Total Phosphorus (mg/L),TLT150 ,Tuggeranong_out.csv
+0.9323309008368861,Turbidity (NTU),rain,TLT150 ,Tuggeranong_out.csv
+0.5102627826950076,Turbidity (NTU),temp,TLT150 ,Tuggeranong_out.csv
+0.8545794697038127,Turbidity (NTU),i6,TLT150 ,Tuggeranong_out.csv
+0.8545794697038127,Turbidity (NTU),i30,TLT150 ,Tuggeranong_out.csv
+0.9324350388658211,Turbidity (NTU),U,TLT150 ,Tuggeranong_out.csv
+0.5749207653597797,Turbidity (NTU),CMD,TLT150 ,Tuggeranong_out.csv
+0.5460037643794275,Turbidity (NTU),Month,TLT150 ,Tuggeranong_out.csv
+0.6189038233431785,Turbidity (NTU),day,TLT150 ,Tuggeranong_out.csv
+0.7298708755243103,Turbidity (NTU),Temperature (Degrees C),TLT150 ,Tuggeranong_out.csv
+0.5706263060827543,Turbidity (NTU),pH (units),TLT150 ,Tuggeranong_out.csv
+0.853584792738931,Turbidity (NTU),Electrical Conductivity (�S/cm),TLT150 ,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),TLT150 ,Tuggeranong_out.csv
+0.8621328540567866,Turbidity (NTU),Nitrate (mg/L),TLT150 ,Tuggeranong_out.csv
+0.8621150373900509,Turbidity (NTU),Total Phosphorus (mg/L),TLT150 ,Tuggeranong_out.csv
+0.5492725494533099,Dissolved Oxygen (mg/L),temp,TLT150 ,Tuggeranong_out.csv
+0.8265929895146281,Dissolved Oxygen (mg/L),Year,TLT150 ,Tuggeranong_out.csv
+0.8069364960484633,Dissolved Oxygen (mg/L),???,TLT150 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),TLT150 ,Tuggeranong_out.csv
+0.9943415173677339,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),TLT150 ,Tuggeranong_out.csv
+0.8071156009755042,Dissolved Oxygen (mg/L),date,TLT150 ,Tuggeranong_out.csv
+0.5349781440199469,Dissolved Oxygen (% Saturation),temp,TLT150 ,Tuggeranong_out.csv
+0.8374414938012337,Dissolved Oxygen (% Saturation),Year,TLT150 ,Tuggeranong_out.csv
+0.8165473393898088,Dissolved Oxygen (% Saturation),???,TLT150 ,Tuggeranong_out.csv
+0.9943415173677339,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),TLT150 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),TLT150 ,Tuggeranong_out.csv
+0.8167274332181514,Dissolved Oxygen (% Saturation),date,TLT150 ,Tuggeranong_out.csv
+0.9500815567388954,Nitrate (mg/L),rain,TLT150 ,Tuggeranong_out.csv
+0.616711817814842,Nitrate (mg/L),temp,TLT150 ,Tuggeranong_out.csv
+0.9213820407913326,Nitrate (mg/L),i6,TLT150 ,Tuggeranong_out.csv
+0.9213820407913326,Nitrate (mg/L),i30,TLT150 ,Tuggeranong_out.csv
+0.9499965723492122,Nitrate (mg/L),U,TLT150 ,Tuggeranong_out.csv
+0.6609063149815262,Nitrate (mg/L),CMD,TLT150 ,Tuggeranong_out.csv
+0.7163353318053449,Nitrate (mg/L),Month,TLT150 ,Tuggeranong_out.csv
+0.6234159855582532,Nitrate (mg/L),day,TLT150 ,Tuggeranong_out.csv
+0.7625922913776634,Nitrate (mg/L),Temperature (Degrees C),TLT150 ,Tuggeranong_out.csv
+0.5091594001227632,Nitrate (mg/L),pH (units),TLT150 ,Tuggeranong_out.csv
+0.9257028546647035,Nitrate (mg/L),Electrical Conductivity (�S/cm),TLT150 ,Tuggeranong_out.csv
+0.8621328540567866,Nitrate (mg/L),Turbidity (NTU),TLT150 ,Tuggeranong_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),TLT150 ,Tuggeranong_out.csv
+0.9336489608447822,Nitrate (mg/L),Total Phosphorus (mg/L),TLT150 ,Tuggeranong_out.csv
+0.9112767841090404,Total Phosphorus (mg/L),rain,TLT150 ,Tuggeranong_out.csv
+0.9383978549026927,Total Phosphorus (mg/L),i6,TLT150 ,Tuggeranong_out.csv
+0.9383978549026927,Total Phosphorus (mg/L),i30,TLT150 ,Tuggeranong_out.csv
+0.9112323613055445,Total Phosphorus (mg/L),U,TLT150 ,Tuggeranong_out.csv
+0.6759074945752089,Total Phosphorus (mg/L),CMD,TLT150 ,Tuggeranong_out.csv
+0.5623060419866244,Total Phosphorus (mg/L),Month,TLT150 ,Tuggeranong_out.csv
+0.604363183567708,Total Phosphorus (mg/L),day,TLT150 ,Tuggeranong_out.csv
+0.7005227042300084,Total Phosphorus (mg/L),Temperature (Degrees C),TLT150 ,Tuggeranong_out.csv
+0.9428450420379533,Total Phosphorus (mg/L),Electrical Conductivity (�S/cm),TLT150 ,Tuggeranong_out.csv
+0.8621150373900509,Total Phosphorus (mg/L),Turbidity (NTU),TLT150 ,Tuggeranong_out.csv
+0.9336489608447822,Total Phosphorus (mg/L),Nitrate (mg/L),TLT150 ,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),TLT150 ,Tuggeranong_out.csv
+0.9968993240234285,date,Year,TLT150 ,Tuggeranong_out.csv
+0.5033314716176246,date,day,TLT150 ,Tuggeranong_out.csv
+0.9999993926903581,date,???,TLT150 ,Tuggeranong_out.csv
+0.8071156009755042,date,Dissolved Oxygen (mg/L),TLT150 ,Tuggeranong_out.csv
+0.8167274332181514,date,Dissolved Oxygen (% Saturation),TLT150 ,Tuggeranong_out.csv
+1,date,date,TLT150 ,Tuggeranong_out.csv
+1,rain,rain,LTC100 ,Tuggeranong_out.csv
+0.5929276032037315,rain,minQ,LTC100 ,Tuggeranong_out.csv
+0.8234334107470911,rain,maxQ,LTC100 ,Tuggeranong_out.csv
+0.7598648378058044,rain,medianQ,LTC100 ,Tuggeranong_out.csv
+0.9213432604131975,rain,U,LTC100 ,Tuggeranong_out.csv
+0.8117320559563372,rain,flag,LTC100 ,Tuggeranong_out.csv
+1,temp,temp,LTC100 ,Tuggeranong_out.csv
+0.5541910496260134,temp,Month,LTC100 ,Tuggeranong_out.csv
+0.8233926474904445,temp,Temperature (Degrees C),LTC100 ,Tuggeranong_out.csv
+0.5929276032037315,minQ,rain,LTC100 ,Tuggeranong_out.csv
+1,minQ,minQ,LTC100 ,Tuggeranong_out.csv
+0.7886295620939829,minQ,maxQ,LTC100 ,Tuggeranong_out.csv
+0.7820157300713844,minQ,medianQ,LTC100 ,Tuggeranong_out.csv
+0.5627564013042773,minQ,U,LTC100 ,Tuggeranong_out.csv
+0.6538650957396225,minQ,flag,LTC100 ,Tuggeranong_out.csv
+0.8234334107470911,maxQ,rain,LTC100 ,Tuggeranong_out.csv
+0.7886295620939829,maxQ,minQ,LTC100 ,Tuggeranong_out.csv
+1,maxQ,maxQ,LTC100 ,Tuggeranong_out.csv
+0.980408968323553,maxQ,medianQ,LTC100 ,Tuggeranong_out.csv
+0.6183711682993936,maxQ,i6,LTC100 ,Tuggeranong_out.csv
+0.6806146208397014,maxQ,i30,LTC100 ,Tuggeranong_out.csv
+0.7021955665735066,maxQ,U,LTC100 ,Tuggeranong_out.csv
+0.9545787587865711,maxQ,flag,LTC100 ,Tuggeranong_out.csv
+0.654186542248521,maxQ,Turbidity (NTU),LTC100 ,Tuggeranong_out.csv
+0.5964530149253998,maxQ,Dissolved Oxygen (mg/L),LTC100 ,Tuggeranong_out.csv
+0.5176045941101042,maxQ,Total Phosphorus (mg/L),LTC100 ,Tuggeranong_out.csv
+0.7598648378058044,medianQ,rain,LTC100 ,Tuggeranong_out.csv
+0.7820157300713844,medianQ,minQ,LTC100 ,Tuggeranong_out.csv
+0.980408968323553,medianQ,maxQ,LTC100 ,Tuggeranong_out.csv
+1,medianQ,medianQ,LTC100 ,Tuggeranong_out.csv
+0.6570200654796038,medianQ,i6,LTC100 ,Tuggeranong_out.csv
+0.7283444855797399,medianQ,i30,LTC100 ,Tuggeranong_out.csv
+0.5765307184694669,medianQ,U,LTC100 ,Tuggeranong_out.csv
+0.8883505072890013,medianQ,flag,LTC100 ,Tuggeranong_out.csv
+0.7140466559380493,medianQ,Turbidity (NTU),LTC100 ,Tuggeranong_out.csv
+0.6337228133831442,medianQ,Dissolved Oxygen (mg/L),LTC100 ,Tuggeranong_out.csv
+0.5388342312195356,medianQ,Dissolved Oxygen (% Saturation),LTC100 ,Tuggeranong_out.csv
+0.5497207874693298,medianQ,Total Phosphorus (mg/L),LTC100 ,Tuggeranong_out.csv
+0.6183711682993936,i6,maxQ,LTC100 ,Tuggeranong_out.csv
+0.6570200654796038,i6,medianQ,LTC100 ,Tuggeranong_out.csv
+1,i6,i6,LTC100 ,Tuggeranong_out.csv
+0.980320725134306,i6,i30,LTC100 ,Tuggeranong_out.csv
+0.5699253972223037,i6,flag,LTC100 ,Tuggeranong_out.csv
+0.6539280935669972,i6,Turbidity (NTU),LTC100 ,Tuggeranong_out.csv
+0.6555490813739677,i6,Dissolved Oxygen (mg/L),LTC100 ,Tuggeranong_out.csv
+0.6465839806813808,i6,Dissolved Oxygen (% Saturation),LTC100 ,Tuggeranong_out.csv
+0.8625460249034224,i6,Total Phosphorus (mg/L),LTC100 ,Tuggeranong_out.csv
+0.6806146208397014,i30,maxQ,LTC100 ,Tuggeranong_out.csv
+0.7283444855797399,i30,medianQ,LTC100 ,Tuggeranong_out.csv
+0.980320725134306,i30,i6,LTC100 ,Tuggeranong_out.csv
+1,i30,i30,LTC100 ,Tuggeranong_out.csv
+0.6002882656356615,i30,flag,LTC100 ,Tuggeranong_out.csv
+0.5692203497679225,i30,Turbidity (NTU),LTC100 ,Tuggeranong_out.csv
+0.6315553647914767,i30,Dissolved Oxygen (mg/L),LTC100 ,Tuggeranong_out.csv
+0.6425096349013253,i30,Dissolved Oxygen (% Saturation),LTC100 ,Tuggeranong_out.csv
+0.8785303792315754,i30,Total Phosphorus (mg/L),LTC100 ,Tuggeranong_out.csv
+0.9213432604131975,U,rain,LTC100 ,Tuggeranong_out.csv
+0.5627564013042773,U,minQ,LTC100 ,Tuggeranong_out.csv
+0.7021955665735066,U,maxQ,LTC100 ,Tuggeranong_out.csv
+0.5765307184694669,U,medianQ,LTC100 ,Tuggeranong_out.csv
+1,U,U,LTC100 ,Tuggeranong_out.csv
+0.7607703326946949,U,flag,LTC100 ,Tuggeranong_out.csv
+0.5265683018786544,U,Turbidity (NTU),LTC100 ,Tuggeranong_out.csv
+1,CMD,CMD,LTC100 ,Tuggeranong_out.csv
+0.590293811543564,CMD,Electrical Conductivity (�S/cm),LTC100 ,Tuggeranong_out.csv
+0.5224455161391227,CMD,Dissolved Oxygen (mg/L),LTC100 ,Tuggeranong_out.csv
+1,Year,Year,LTC100 ,Tuggeranong_out.csv
+0.9690831723255412,Year,???,LTC100 ,Tuggeranong_out.csv
+0.5222127241907665,Year,Electrical Conductivity (�S/cm),LTC100 ,Tuggeranong_out.csv
+0.9690725806796215,Year,date,LTC100 ,Tuggeranong_out.csv
+0.5541910496260134,Month,temp,LTC100 ,Tuggeranong_out.csv
+1,Month,Month,LTC100 ,Tuggeranong_out.csv
+0.7220573430884324,Month,Temperature (Degrees C),LTC100 ,Tuggeranong_out.csv
+1,day,day,LTC100 ,Tuggeranong_out.csv
+0.8117320559563372,flag,rain,LTC100 ,Tuggeranong_out.csv
+0.6538650957396225,flag,minQ,LTC100 ,Tuggeranong_out.csv
+0.9545787587865711,flag,maxQ,LTC100 ,Tuggeranong_out.csv
+0.8883505072890013,flag,medianQ,LTC100 ,Tuggeranong_out.csv
+0.5699253972223037,flag,i6,LTC100 ,Tuggeranong_out.csv
+0.6002882656356615,flag,i30,LTC100 ,Tuggeranong_out.csv
+0.7607703326946949,flag,U,LTC100 ,Tuggeranong_out.csv
+1,flag,flag,LTC100 ,Tuggeranong_out.csv
+0.5578490476430038,flag,Turbidity (NTU),LTC100 ,Tuggeranong_out.csv
+0.5264321611213512,flag,Dissolved Oxygen (mg/L),LTC100 ,Tuggeranong_out.csv
+0.9690831723255412,???,Year,LTC100 ,Tuggeranong_out.csv
+1,???,???,LTC100 ,Tuggeranong_out.csv
+0.9999998295417174,???,date,LTC100 ,Tuggeranong_out.csv
+0.8233926474904445,Temperature (Degrees C),temp,LTC100 ,Tuggeranong_out.csv
+0.7220573430884324,Temperature (Degrees C),Month,LTC100 ,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),LTC100 ,Tuggeranong_out.csv
+1,pH (units),pH (units),LTC100 ,Tuggeranong_out.csv
+0.5200110956157125,pH (units),Electrical Conductivity (�S/cm),LTC100 ,Tuggeranong_out.csv
+0.590293811543564,Electrical Conductivity (�S/cm),CMD,LTC100 ,Tuggeranong_out.csv
+0.5222127241907665,Electrical Conductivity (�S/cm),Year,LTC100 ,Tuggeranong_out.csv
+0.5200110956157125,Electrical Conductivity (�S/cm),pH (units),LTC100 ,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),LTC100 ,Tuggeranong_out.csv
+0.654186542248521,Turbidity (NTU),maxQ,LTC100 ,Tuggeranong_out.csv
+0.7140466559380493,Turbidity (NTU),medianQ,LTC100 ,Tuggeranong_out.csv
+0.6539280935669972,Turbidity (NTU),i6,LTC100 ,Tuggeranong_out.csv
+0.5692203497679225,Turbidity (NTU),i30,LTC100 ,Tuggeranong_out.csv
+0.5265683018786544,Turbidity (NTU),U,LTC100 ,Tuggeranong_out.csv
+0.5578490476430038,Turbidity (NTU),flag,LTC100 ,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),LTC100 ,Tuggeranong_out.csv
+0.545061483417565,Turbidity (NTU),Dissolved Oxygen (mg/L),LTC100 ,Tuggeranong_out.csv
+0.5664536955347571,Turbidity (NTU),Dissolved Oxygen (% Saturation),LTC100 ,Tuggeranong_out.csv
+0.587080804112746,Turbidity (NTU),Total Phosphorus (mg/L),LTC100 ,Tuggeranong_out.csv
+0.5964530149253998,Dissolved Oxygen (mg/L),maxQ,LTC100 ,Tuggeranong_out.csv
+0.6337228133831442,Dissolved Oxygen (mg/L),medianQ,LTC100 ,Tuggeranong_out.csv
+0.6555490813739677,Dissolved Oxygen (mg/L),i6,LTC100 ,Tuggeranong_out.csv
+0.6315553647914767,Dissolved Oxygen (mg/L),i30,LTC100 ,Tuggeranong_out.csv
+0.5224455161391227,Dissolved Oxygen (mg/L),CMD,LTC100 ,Tuggeranong_out.csv
+0.5264321611213512,Dissolved Oxygen (mg/L),flag,LTC100 ,Tuggeranong_out.csv
+0.545061483417565,Dissolved Oxygen (mg/L),Turbidity (NTU),LTC100 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),LTC100 ,Tuggeranong_out.csv
+0.9081856444641153,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),LTC100 ,Tuggeranong_out.csv
+0.6976592058184028,Dissolved Oxygen (mg/L),Total Phosphorus (mg/L),LTC100 ,Tuggeranong_out.csv
+0.5388342312195356,Dissolved Oxygen (% Saturation),medianQ,LTC100 ,Tuggeranong_out.csv
+0.6465839806813808,Dissolved Oxygen (% Saturation),i6,LTC100 ,Tuggeranong_out.csv
+0.6425096349013253,Dissolved Oxygen (% Saturation),i30,LTC100 ,Tuggeranong_out.csv
+0.5664536955347571,Dissolved Oxygen (% Saturation),Turbidity (NTU),LTC100 ,Tuggeranong_out.csv
+0.9081856444641153,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),LTC100 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),LTC100 ,Tuggeranong_out.csv
+0.6860918630339186,Dissolved Oxygen (% Saturation),Total Phosphorus (mg/L),LTC100 ,Tuggeranong_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),LTC100 ,Tuggeranong_out.csv
+0.5176045941101042,Total Phosphorus (mg/L),maxQ,LTC100 ,Tuggeranong_out.csv
+0.5497207874693298,Total Phosphorus (mg/L),medianQ,LTC100 ,Tuggeranong_out.csv
+0.8625460249034224,Total Phosphorus (mg/L),i6,LTC100 ,Tuggeranong_out.csv
+0.8785303792315754,Total Phosphorus (mg/L),i30,LTC100 ,Tuggeranong_out.csv
+0.587080804112746,Total Phosphorus (mg/L),Turbidity (NTU),LTC100 ,Tuggeranong_out.csv
+0.6976592058184028,Total Phosphorus (mg/L),Dissolved Oxygen (mg/L),LTC100 ,Tuggeranong_out.csv
+0.6860918630339186,Total Phosphorus (mg/L),Dissolved Oxygen (% Saturation),LTC100 ,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),LTC100 ,Tuggeranong_out.csv
+0.9690725806796215,date,Year,LTC100 ,Tuggeranong_out.csv
+0.9999998295417174,date,???,LTC100 ,Tuggeranong_out.csv
+1,date,date,LTC100 ,Tuggeranong_out.csv
+1,rain,rain,MTW100 ,Tuggeranong_out.csv
+0.920363865297402,rain,U,MTW100 ,Tuggeranong_out.csv
+1,temp,temp,MTW100 ,Tuggeranong_out.csv
+0.7998960810880746,temp,Temperature (Degrees C),MTW100 ,Tuggeranong_out.csv
+0.5181626297207658,temp,pH (units),MTW100 ,Tuggeranong_out.csv
+1,minQ,minQ,MTW100 ,Tuggeranong_out.csv
+0.9997686375221129,minQ,maxQ,MTW100 ,Tuggeranong_out.csv
+0.9999392123930612,minQ,medianQ,MTW100 ,Tuggeranong_out.csv
+0.9262985032241786,minQ,flag,MTW100 ,Tuggeranong_out.csv
+0.6032120314660117,minQ,Total Phosphorus (mg/L),MTW100 ,Tuggeranong_out.csv
+0.9997686375221129,maxQ,minQ,MTW100 ,Tuggeranong_out.csv
+1,maxQ,maxQ,MTW100 ,Tuggeranong_out.csv
+0.9999450070468271,maxQ,medianQ,MTW100 ,Tuggeranong_out.csv
+0.9230741483614163,maxQ,flag,MTW100 ,Tuggeranong_out.csv
+0.600896872154122,maxQ,Total Phosphorus (mg/L),MTW100 ,Tuggeranong_out.csv
+0.9999392123930612,medianQ,minQ,MTW100 ,Tuggeranong_out.csv
+0.9999450070468271,medianQ,maxQ,MTW100 ,Tuggeranong_out.csv
+1,medianQ,medianQ,MTW100 ,Tuggeranong_out.csv
+0.9247069043329776,medianQ,flag,MTW100 ,Tuggeranong_out.csv
+0.6021273293588987,medianQ,Total Phosphorus (mg/L),MTW100 ,Tuggeranong_out.csv
+1,i6,i6,MTW100 ,Tuggeranong_out.csv
+1,i6,i30,MTW100 ,Tuggeranong_out.csv
+0.5087203962432453,i6,pH (units),MTW100 ,Tuggeranong_out.csv
+0.5311357182559177,i6,Turbidity (NTU),MTW100 ,Tuggeranong_out.csv
+0.5267879338333674,i6,Nitrate (mg/L),MTW100 ,Tuggeranong_out.csv
+0.6273838858331672,i6,Total Phosphorus (mg/L),MTW100 ,Tuggeranong_out.csv
+1,i30,i6,MTW100 ,Tuggeranong_out.csv
+1,i30,i30,MTW100 ,Tuggeranong_out.csv
+0.5087203962432453,i30,pH (units),MTW100 ,Tuggeranong_out.csv
+0.5311357182559177,i30,Turbidity (NTU),MTW100 ,Tuggeranong_out.csv
+0.5267879338333674,i30,Nitrate (mg/L),MTW100 ,Tuggeranong_out.csv
+0.6273838858331672,i30,Total Phosphorus (mg/L),MTW100 ,Tuggeranong_out.csv
+0.920363865297402,U,rain,MTW100 ,Tuggeranong_out.csv
+1,U,U,MTW100 ,Tuggeranong_out.csv
+0.5224153372276976,U,flag,MTW100 ,Tuggeranong_out.csv
+0.5569411486901273,U,Total Phosphorus (mg/L),MTW100 ,Tuggeranong_out.csv
+1,CMD,CMD,MTW100 ,Tuggeranong_out.csv
+1,Year,Year,MTW100 ,Tuggeranong_out.csv
+0.9728653953660171,Year,???,MTW100 ,Tuggeranong_out.csv
+0.9728428059893791,Year,date,MTW100 ,Tuggeranong_out.csv
+1,Month,Month,MTW100 ,Tuggeranong_out.csv
+1,day,day,MTW100 ,Tuggeranong_out.csv
+0.9262985032241786,flag,minQ,MTW100 ,Tuggeranong_out.csv
+0.9230741483614163,flag,maxQ,MTW100 ,Tuggeranong_out.csv
+0.9247069043329776,flag,medianQ,MTW100 ,Tuggeranong_out.csv
+0.5224153372276976,flag,U,MTW100 ,Tuggeranong_out.csv
+1,flag,flag,MTW100 ,Tuggeranong_out.csv
+0.6861174592514311,flag,Total Phosphorus (mg/L),MTW100 ,Tuggeranong_out.csv
+0.9728653953660171,???,Year,MTW100 ,Tuggeranong_out.csv
+1,???,???,MTW100 ,Tuggeranong_out.csv
+0.999998845915055,???,date,MTW100 ,Tuggeranong_out.csv
+0.7998960810880746,Temperature (Degrees C),temp,MTW100 ,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),MTW100 ,Tuggeranong_out.csv
+0.5181626297207658,pH (units),temp,MTW100 ,Tuggeranong_out.csv
+0.5087203962432453,pH (units),i6,MTW100 ,Tuggeranong_out.csv
+0.5087203962432453,pH (units),i30,MTW100 ,Tuggeranong_out.csv
+1,pH (units),pH (units),MTW100 ,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),MTW100 ,Tuggeranong_out.csv
+0.5311357182559177,Turbidity (NTU),i6,MTW100 ,Tuggeranong_out.csv
+0.5311357182559177,Turbidity (NTU),i30,MTW100 ,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),MTW100 ,Tuggeranong_out.csv
+0.5002223774898412,Turbidity (NTU),Dissolved Oxygen (mg/L),MTW100 ,Tuggeranong_out.csv
+0.5002223774898412,Dissolved Oxygen (mg/L),Turbidity (NTU),MTW100 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),MTW100 ,Tuggeranong_out.csv
+0.98211149426143,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),MTW100 ,Tuggeranong_out.csv
+0.5812362632561786,Dissolved Oxygen (mg/L),Nitrate (mg/L),MTW100 ,Tuggeranong_out.csv
+0.98211149426143,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),MTW100 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),MTW100 ,Tuggeranong_out.csv
+0.5965126696137604,Dissolved Oxygen (% Saturation),Nitrate (mg/L),MTW100 ,Tuggeranong_out.csv
+0.5267879338333674,Nitrate (mg/L),i6,MTW100 ,Tuggeranong_out.csv
+0.5267879338333674,Nitrate (mg/L),i30,MTW100 ,Tuggeranong_out.csv
+0.5812362632561786,Nitrate (mg/L),Dissolved Oxygen (mg/L),MTW100 ,Tuggeranong_out.csv
+0.5965126696137604,Nitrate (mg/L),Dissolved Oxygen (% Saturation),MTW100 ,Tuggeranong_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),MTW100 ,Tuggeranong_out.csv
+0.6032120314660117,Total Phosphorus (mg/L),minQ,MTW100 ,Tuggeranong_out.csv
+0.600896872154122,Total Phosphorus (mg/L),maxQ,MTW100 ,Tuggeranong_out.csv
+0.6021273293588987,Total Phosphorus (mg/L),medianQ,MTW100 ,Tuggeranong_out.csv
+0.6273838858331672,Total Phosphorus (mg/L),i6,MTW100 ,Tuggeranong_out.csv
+0.6273838858331672,Total Phosphorus (mg/L),i30,MTW100 ,Tuggeranong_out.csv
+0.5569411486901273,Total Phosphorus (mg/L),U,MTW100 ,Tuggeranong_out.csv
+0.6861174592514311,Total Phosphorus (mg/L),flag,MTW100 ,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),MTW100 ,Tuggeranong_out.csv
+0.9728428059893791,date,Year,MTW100 ,Tuggeranong_out.csv
+0.999998845915055,date,???,MTW100 ,Tuggeranong_out.csv
+1,date,date,MTW100 ,Tuggeranong_out.csv
+1,rain,rain,MTV100 ,Tuggeranong_out.csv
+0.70412407644314,rain,i6,MTV100 ,Tuggeranong_out.csv
+0.70412407644314,rain,i30,MTV100 ,Tuggeranong_out.csv
+0.9980734633173974,rain,U,MTV100 ,Tuggeranong_out.csv
+0.6022836697212693,rain,flag,MTV100 ,Tuggeranong_out.csv
+0.8332144286662949,rain,Turbidity (NTU),MTV100 ,Tuggeranong_out.csv
+0.6773578903013924,rain,Nitrate (mg/L),MTV100 ,Tuggeranong_out.csv
+1,temp,temp,MTV100 ,Tuggeranong_out.csv
+0.6333005405276643,temp,Temperature (Degrees C),MTV100 ,Tuggeranong_out.csv
+1,minQ,minQ,MTV100 ,Tuggeranong_out.csv
+0.9991097009634791,minQ,maxQ,MTV100 ,Tuggeranong_out.csv
+0.9998279174159119,minQ,medianQ,MTV100 ,Tuggeranong_out.csv
+0.8542673277493763,minQ,flag,MTV100 ,Tuggeranong_out.csv
+0.9991097009634791,maxQ,minQ,MTV100 ,Tuggeranong_out.csv
+1,maxQ,maxQ,MTV100 ,Tuggeranong_out.csv
+0.9997125701130228,maxQ,medianQ,MTV100 ,Tuggeranong_out.csv
+0.8521985829094934,maxQ,flag,MTV100 ,Tuggeranong_out.csv
+0.9998279174159119,medianQ,minQ,MTV100 ,Tuggeranong_out.csv
+0.9997125701130228,medianQ,maxQ,MTV100 ,Tuggeranong_out.csv
+1,medianQ,medianQ,MTV100 ,Tuggeranong_out.csv
+0.8527555673674405,medianQ,flag,MTV100 ,Tuggeranong_out.csv
+0.70412407644314,i6,rain,MTV100 ,Tuggeranong_out.csv
+1,i6,i6,MTV100 ,Tuggeranong_out.csv
+1,i6,i30,MTV100 ,Tuggeranong_out.csv
+0.7006922929083174,i6,U,MTV100 ,Tuggeranong_out.csv
+0.5164618410848131,i6,???,MTV100 ,Tuggeranong_out.csv
+0.6719018424073492,i6,Nitrate (mg/L),MTV100 ,Tuggeranong_out.csv
+0.5164692237851585,i6,date,MTV100 ,Tuggeranong_out.csv
+0.70412407644314,i30,rain,MTV100 ,Tuggeranong_out.csv
+1,i30,i6,MTV100 ,Tuggeranong_out.csv
+1,i30,i30,MTV100 ,Tuggeranong_out.csv
+0.7006922929083174,i30,U,MTV100 ,Tuggeranong_out.csv
+0.5164618410848131,i30,???,MTV100 ,Tuggeranong_out.csv
+0.6719018424073492,i30,Nitrate (mg/L),MTV100 ,Tuggeranong_out.csv
+0.5164692237851585,i30,date,MTV100 ,Tuggeranong_out.csv
+0.9980734633173974,U,rain,MTV100 ,Tuggeranong_out.csv
+0.7006922929083174,U,i6,MTV100 ,Tuggeranong_out.csv
+0.7006922929083174,U,i30,MTV100 ,Tuggeranong_out.csv
+1,U,U,MTV100 ,Tuggeranong_out.csv
+0.6127242454710983,U,flag,MTV100 ,Tuggeranong_out.csv
+0.8491104599104012,U,Turbidity (NTU),MTV100 ,Tuggeranong_out.csv
+0.6841364286625103,U,Nitrate (mg/L),MTV100 ,Tuggeranong_out.csv
+0.5091627697749794,U,Total Phosphorus (mg/L),MTV100 ,Tuggeranong_out.csv
+1,CMD,CMD,MTV100 ,Tuggeranong_out.csv
+1,Year,Year,MTV100 ,Tuggeranong_out.csv
+0.9677784655497301,Year,???,MTV100 ,Tuggeranong_out.csv
+0.6159887561078262,Year,Electrical Conductivity (�S/cm),MTV100 ,Tuggeranong_out.csv
+0.9678003779463797,Year,date,MTV100 ,Tuggeranong_out.csv
+1,Month,Month,MTV100 ,Tuggeranong_out.csv
+1,day,day,MTV100 ,Tuggeranong_out.csv
+0.6022836697212693,flag,rain,MTV100 ,Tuggeranong_out.csv
+0.8542673277493763,flag,minQ,MTV100 ,Tuggeranong_out.csv
+0.8521985829094934,flag,maxQ,MTV100 ,Tuggeranong_out.csv
+0.8527555673674405,flag,medianQ,MTV100 ,Tuggeranong_out.csv
+0.6127242454710983,flag,U,MTV100 ,Tuggeranong_out.csv
+1,flag,flag,MTV100 ,Tuggeranong_out.csv
+0.7079424241223602,flag,Turbidity (NTU),MTV100 ,Tuggeranong_out.csv
+0.5075510975503978,flag,Nitrate (mg/L),MTV100 ,Tuggeranong_out.csv
+0.5164618410848131,???,i6,MTV100 ,Tuggeranong_out.csv
+0.5164618410848131,???,i30,MTV100 ,Tuggeranong_out.csv
+0.9677784655497301,???,Year,MTV100 ,Tuggeranong_out.csv
+1,???,???,MTV100 ,Tuggeranong_out.csv
+0.6038766418671646,???,Electrical Conductivity (�S/cm),MTV100 ,Tuggeranong_out.csv
+0.9999993966173877,???,date,MTV100 ,Tuggeranong_out.csv
+0.6333005405276643,Temperature (Degrees C),temp,MTV100 ,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),MTV100 ,Tuggeranong_out.csv
+0.7339309205678237,Temperature (Degrees C),pH (units),MTV100 ,Tuggeranong_out.csv
+0.7339309205678237,pH (units),Temperature (Degrees C),MTV100 ,Tuggeranong_out.csv
+1,pH (units),pH (units),MTV100 ,Tuggeranong_out.csv
+0.6159887561078262,Electrical Conductivity (�S/cm),Year,MTV100 ,Tuggeranong_out.csv
+0.6038766418671646,Electrical Conductivity (�S/cm),???,MTV100 ,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),MTV100 ,Tuggeranong_out.csv
+0.6146527863595298,Electrical Conductivity (�S/cm),Turbidity (NTU),MTV100 ,Tuggeranong_out.csv
+0.6037571406307471,Electrical Conductivity (�S/cm),date,MTV100 ,Tuggeranong_out.csv
+0.8332144286662949,Turbidity (NTU),rain,MTV100 ,Tuggeranong_out.csv
+0.8491104599104012,Turbidity (NTU),U,MTV100 ,Tuggeranong_out.csv
+0.7079424241223602,Turbidity (NTU),flag,MTV100 ,Tuggeranong_out.csv
+0.6146527863595298,Turbidity (NTU),Electrical Conductivity (�S/cm),MTV100 ,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),MTV100 ,Tuggeranong_out.csv
+0.6494061628663348,Turbidity (NTU),Nitrate (mg/L),MTV100 ,Tuggeranong_out.csv
+0.5651560383400033,Turbidity (NTU),Total Phosphorus (mg/L),MTV100 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),MTV100 ,Tuggeranong_out.csv
+0.98451647727113,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),MTV100 ,Tuggeranong_out.csv
+0.5367409058085199,Dissolved Oxygen (mg/L),Nitrate (mg/L),MTV100 ,Tuggeranong_out.csv
+0.5086073347516066,Dissolved Oxygen (mg/L),Total Phosphorus (mg/L),MTV100 ,Tuggeranong_out.csv
+0.98451647727113,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),MTV100 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),MTV100 ,Tuggeranong_out.csv
+0.5089040260391392,Dissolved Oxygen (% Saturation),Total Phosphorus (mg/L),MTV100 ,Tuggeranong_out.csv
+0.6773578903013924,Nitrate (mg/L),rain,MTV100 ,Tuggeranong_out.csv
+0.6719018424073492,Nitrate (mg/L),i6,MTV100 ,Tuggeranong_out.csv
+0.6719018424073492,Nitrate (mg/L),i30,MTV100 ,Tuggeranong_out.csv
+0.6841364286625103,Nitrate (mg/L),U,MTV100 ,Tuggeranong_out.csv
+0.5075510975503978,Nitrate (mg/L),flag,MTV100 ,Tuggeranong_out.csv
+0.6494061628663348,Nitrate (mg/L),Turbidity (NTU),MTV100 ,Tuggeranong_out.csv
+0.5367409058085199,Nitrate (mg/L),Dissolved Oxygen (mg/L),MTV100 ,Tuggeranong_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),MTV100 ,Tuggeranong_out.csv
+0.5503116077230126,Nitrate (mg/L),Total Phosphorus (mg/L),MTV100 ,Tuggeranong_out.csv
+0.5091627697749794,Total Phosphorus (mg/L),U,MTV100 ,Tuggeranong_out.csv
+0.5651560383400033,Total Phosphorus (mg/L),Turbidity (NTU),MTV100 ,Tuggeranong_out.csv
+0.5086073347516066,Total Phosphorus (mg/L),Dissolved Oxygen (mg/L),MTV100 ,Tuggeranong_out.csv
+0.5089040260391392,Total Phosphorus (mg/L),Dissolved Oxygen (% Saturation),MTV100 ,Tuggeranong_out.csv
+0.5503116077230126,Total Phosphorus (mg/L),Nitrate (mg/L),MTV100 ,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),MTV100 ,Tuggeranong_out.csv
+0.5164692237851585,date,i6,MTV100 ,Tuggeranong_out.csv
+0.5164692237851585,date,i30,MTV100 ,Tuggeranong_out.csv
+0.9678003779463797,date,Year,MTV100 ,Tuggeranong_out.csv
+0.9999993966173877,date,???,MTV100 ,Tuggeranong_out.csv
+0.6037571406307471,date,Electrical Conductivity (�S/cm),MTV100 ,Tuggeranong_out.csv
+1,date,date,MTV100 ,Tuggeranong_out.csv
+1,rain,rain,TLT100 ,Tuggeranong_out.csv
+0.9162125742951672,rain,minQ,TLT100 ,Tuggeranong_out.csv
+0.930261435833996,rain,maxQ,TLT100 ,Tuggeranong_out.csv
+0.8964110256596739,rain,medianQ,TLT100 ,Tuggeranong_out.csv
+0.9069234047250605,rain,i6,TLT100 ,Tuggeranong_out.csv
+0.9069234047250605,rain,i30,TLT100 ,Tuggeranong_out.csv
+0.9613924730350081,rain,U,TLT100 ,Tuggeranong_out.csv
+0.8783431411511547,rain,flag,TLT100 ,Tuggeranong_out.csv
+0.8097219553555366,rain,Turbidity (NTU),TLT100 ,Tuggeranong_out.csv
+0.5051582543667746,rain,Dissolved Oxygen (mg/L),TLT100 ,Tuggeranong_out.csv
+0.6354349523316599,rain,Total Phosphorus (mg/L),TLT100 ,Tuggeranong_out.csv
+1,temp,temp,TLT100 ,Tuggeranong_out.csv
+0.6147584223496337,temp,Month,TLT100 ,Tuggeranong_out.csv
+0.8210736027256494,temp,Temperature (Degrees C),TLT100 ,Tuggeranong_out.csv
+0.9162125742951672,minQ,rain,TLT100 ,Tuggeranong_out.csv
+1,minQ,minQ,TLT100 ,Tuggeranong_out.csv
+0.9878754703193197,minQ,maxQ,TLT100 ,Tuggeranong_out.csv
+0.979077694836445,minQ,medianQ,TLT100 ,Tuggeranong_out.csv
+0.9521750213255581,minQ,i6,TLT100 ,Tuggeranong_out.csv
+0.9521750213255581,minQ,i30,TLT100 ,Tuggeranong_out.csv
+0.9725499430164338,minQ,U,TLT100 ,Tuggeranong_out.csv
+0.9472990650832421,minQ,flag,TLT100 ,Tuggeranong_out.csv
+0.8738350990657169,minQ,Turbidity (NTU),TLT100 ,Tuggeranong_out.csv
+0.5652758710264889,minQ,Dissolved Oxygen (mg/L),TLT100 ,Tuggeranong_out.csv
+0.6897993784574227,minQ,Total Phosphorus (mg/L),TLT100 ,Tuggeranong_out.csv
+0.930261435833996,maxQ,rain,TLT100 ,Tuggeranong_out.csv
+0.9878754703193197,maxQ,minQ,TLT100 ,Tuggeranong_out.csv
+1,maxQ,maxQ,TLT100 ,Tuggeranong_out.csv
+0.9763135975622872,maxQ,medianQ,TLT100 ,Tuggeranong_out.csv
+0.9683995817570006,maxQ,i6,TLT100 ,Tuggeranong_out.csv
+0.9683995817570006,maxQ,i30,TLT100 ,Tuggeranong_out.csv
+0.9900065606374479,maxQ,U,TLT100 ,Tuggeranong_out.csv
+0.9624175017582788,maxQ,flag,TLT100 ,Tuggeranong_out.csv
+0.868701941173537,maxQ,Turbidity (NTU),TLT100 ,Tuggeranong_out.csv
+0.5468601217795003,maxQ,Dissolved Oxygen (mg/L),TLT100 ,Tuggeranong_out.csv
+0.5303736529281791,maxQ,Dissolved Oxygen (% Saturation),TLT100 ,Tuggeranong_out.csv
+0.7045496591667106,maxQ,Total Phosphorus (mg/L),TLT100 ,Tuggeranong_out.csv
+0.8964110256596739,medianQ,rain,TLT100 ,Tuggeranong_out.csv
+0.979077694836445,medianQ,minQ,TLT100 ,Tuggeranong_out.csv
+0.9763135975622872,medianQ,maxQ,TLT100 ,Tuggeranong_out.csv
+1,medianQ,medianQ,TLT100 ,Tuggeranong_out.csv
+0.903843059571722,medianQ,i6,TLT100 ,Tuggeranong_out.csv
+0.903843059571722,medianQ,i30,TLT100 ,Tuggeranong_out.csv
+0.9485632144066943,medianQ,U,TLT100 ,Tuggeranong_out.csv
+0.9894705179114825,medianQ,flag,TLT100 ,Tuggeranong_out.csv
+0.8176428608609603,medianQ,Turbidity (NTU),TLT100 ,Tuggeranong_out.csv
+0.5032562494673261,medianQ,Dissolved Oxygen (% Saturation),TLT100 ,Tuggeranong_out.csv
+0.6470498329952242,medianQ,Total Phosphorus (mg/L),TLT100 ,Tuggeranong_out.csv
+0.9069234047250605,i6,rain,TLT100 ,Tuggeranong_out.csv
+0.9521750213255581,i6,minQ,TLT100 ,Tuggeranong_out.csv
+0.9683995817570006,i6,maxQ,TLT100 ,Tuggeranong_out.csv
+0.903843059571722,i6,medianQ,TLT100 ,Tuggeranong_out.csv
+1,i6,i6,TLT100 ,Tuggeranong_out.csv
+1,i6,i30,TLT100 ,Tuggeranong_out.csv
+0.9736843387569427,i6,U,TLT100 ,Tuggeranong_out.csv
+0.8793086608077336,i6,flag,TLT100 ,Tuggeranong_out.csv
+0.8861158483428708,i6,Turbidity (NTU),TLT100 ,Tuggeranong_out.csv
+0.5867038241569703,i6,Dissolved Oxygen (mg/L),TLT100 ,Tuggeranong_out.csv
+0.5091713731135074,i6,Dissolved Oxygen (% Saturation),TLT100 ,Tuggeranong_out.csv
+0.7221834311848855,i6,Total Phosphorus (mg/L),TLT100 ,Tuggeranong_out.csv
+0.9069234047250605,i30,rain,TLT100 ,Tuggeranong_out.csv
+0.9521750213255581,i30,minQ,TLT100 ,Tuggeranong_out.csv
+0.9683995817570006,i30,maxQ,TLT100 ,Tuggeranong_out.csv
+0.903843059571722,i30,medianQ,TLT100 ,Tuggeranong_out.csv
+1,i30,i6,TLT100 ,Tuggeranong_out.csv
+1,i30,i30,TLT100 ,Tuggeranong_out.csv
+0.9736843387569427,i30,U,TLT100 ,Tuggeranong_out.csv
+0.8793086608077336,i30,flag,TLT100 ,Tuggeranong_out.csv
+0.8861158483428708,i30,Turbidity (NTU),TLT100 ,Tuggeranong_out.csv
+0.5867038241569703,i30,Dissolved Oxygen (mg/L),TLT100 ,Tuggeranong_out.csv
+0.5091713731135074,i30,Dissolved Oxygen (% Saturation),TLT100 ,Tuggeranong_out.csv
+0.7221834311848855,i30,Total Phosphorus (mg/L),TLT100 ,Tuggeranong_out.csv
+0.9613924730350081,U,rain,TLT100 ,Tuggeranong_out.csv
+0.9725499430164338,U,minQ,TLT100 ,Tuggeranong_out.csv
+0.9900065606374479,U,maxQ,TLT100 ,Tuggeranong_out.csv
+0.9485632144066943,U,medianQ,TLT100 ,Tuggeranong_out.csv
+0.9736843387569427,U,i6,TLT100 ,Tuggeranong_out.csv
+0.9736843387569427,U,i30,TLT100 ,Tuggeranong_out.csv
+1,U,U,TLT100 ,Tuggeranong_out.csv
+0.9316678792456653,U,flag,TLT100 ,Tuggeranong_out.csv
+0.8660180313098697,U,Turbidity (NTU),TLT100 ,Tuggeranong_out.csv
+0.5484566125132565,U,Dissolved Oxygen (mg/L),TLT100 ,Tuggeranong_out.csv
+0.5132815903709435,U,Dissolved Oxygen (% Saturation),TLT100 ,Tuggeranong_out.csv
+0.7040981010865993,U,Total Phosphorus (mg/L),TLT100 ,Tuggeranong_out.csv
+1,CMD,CMD,TLT100 ,Tuggeranong_out.csv
+1,Year,Year,TLT100 ,Tuggeranong_out.csv
+0.9656945800638802,Year,???,TLT100 ,Tuggeranong_out.csv
+0.9657166568073602,Year,date,TLT100 ,Tuggeranong_out.csv
+0.6147584223496337,Month,temp,TLT100 ,Tuggeranong_out.csv
+1,Month,Month,TLT100 ,Tuggeranong_out.csv
+0.7389376341982344,Month,Temperature (Degrees C),TLT100 ,Tuggeranong_out.csv
+1,day,day,TLT100 ,Tuggeranong_out.csv
+0.8783431411511547,flag,rain,TLT100 ,Tuggeranong_out.csv
+0.9472990650832421,flag,minQ,TLT100 ,Tuggeranong_out.csv
+0.9624175017582788,flag,maxQ,TLT100 ,Tuggeranong_out.csv
+0.9894705179114825,flag,medianQ,TLT100 ,Tuggeranong_out.csv
+0.8793086608077336,flag,i6,TLT100 ,Tuggeranong_out.csv
+0.8793086608077336,flag,i30,TLT100 ,Tuggeranong_out.csv
+0.9316678792456653,flag,U,TLT100 ,Tuggeranong_out.csv
+1,flag,flag,TLT100 ,Tuggeranong_out.csv
+0.7759194708631417,flag,Turbidity (NTU),TLT100 ,Tuggeranong_out.csv
+0.5263925136030211,flag,Dissolved Oxygen (% Saturation),TLT100 ,Tuggeranong_out.csv
+0.62800906337749,flag,Total Phosphorus (mg/L),TLT100 ,Tuggeranong_out.csv
+0.9656945800638802,???,Year,TLT100 ,Tuggeranong_out.csv
+1,???,???,TLT100 ,Tuggeranong_out.csv
+0.9999990802344412,???,date,TLT100 ,Tuggeranong_out.csv
+0.8210736027256494,Temperature (Degrees C),temp,TLT100 ,Tuggeranong_out.csv
+0.7389376341982344,Temperature (Degrees C),Month,TLT100 ,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),TLT100 ,Tuggeranong_out.csv
+1,pH (units),pH (units),TLT100 ,Tuggeranong_out.csv
+0.6336540814505702,pH (units),Electrical Conductivity (�S/cm),TLT100 ,Tuggeranong_out.csv
+0.6336540814505702,Electrical Conductivity (�S/cm),pH (units),TLT100 ,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),TLT100 ,Tuggeranong_out.csv
+0.8097219553555366,Turbidity (NTU),rain,TLT100 ,Tuggeranong_out.csv
+0.8738350990657169,Turbidity (NTU),minQ,TLT100 ,Tuggeranong_out.csv
+0.868701941173537,Turbidity (NTU),maxQ,TLT100 ,Tuggeranong_out.csv
+0.8176428608609603,Turbidity (NTU),medianQ,TLT100 ,Tuggeranong_out.csv
+0.8861158483428708,Turbidity (NTU),i6,TLT100 ,Tuggeranong_out.csv
+0.8861158483428708,Turbidity (NTU),i30,TLT100 ,Tuggeranong_out.csv
+0.8660180313098697,Turbidity (NTU),U,TLT100 ,Tuggeranong_out.csv
+0.7759194708631417,Turbidity (NTU),flag,TLT100 ,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),TLT100 ,Tuggeranong_out.csv
+0.6086467235212553,Turbidity (NTU),Total Phosphorus (mg/L),TLT100 ,Tuggeranong_out.csv
+0.5051582543667746,Dissolved Oxygen (mg/L),rain,TLT100 ,Tuggeranong_out.csv
+0.5652758710264889,Dissolved Oxygen (mg/L),minQ,TLT100 ,Tuggeranong_out.csv
+0.5468601217795003,Dissolved Oxygen (mg/L),maxQ,TLT100 ,Tuggeranong_out.csv
+0.5867038241569703,Dissolved Oxygen (mg/L),i6,TLT100 ,Tuggeranong_out.csv
+0.5867038241569703,Dissolved Oxygen (mg/L),i30,TLT100 ,Tuggeranong_out.csv
+0.5484566125132565,Dissolved Oxygen (mg/L),U,TLT100 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),TLT100 ,Tuggeranong_out.csv
+0.9023474694886702,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),TLT100 ,Tuggeranong_out.csv
+0.5303736529281791,Dissolved Oxygen (% Saturation),maxQ,TLT100 ,Tuggeranong_out.csv
+0.5032562494673261,Dissolved Oxygen (% Saturation),medianQ,TLT100 ,Tuggeranong_out.csv
+0.5091713731135074,Dissolved Oxygen (% Saturation),i6,TLT100 ,Tuggeranong_out.csv
+0.5091713731135074,Dissolved Oxygen (% Saturation),i30,TLT100 ,Tuggeranong_out.csv
+0.5132815903709435,Dissolved Oxygen (% Saturation),U,TLT100 ,Tuggeranong_out.csv
+0.5263925136030211,Dissolved Oxygen (% Saturation),flag,TLT100 ,Tuggeranong_out.csv
+0.9023474694886702,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),TLT100 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),TLT100 ,Tuggeranong_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),TLT100 ,Tuggeranong_out.csv
+0.6354349523316599,Total Phosphorus (mg/L),rain,TLT100 ,Tuggeranong_out.csv
+0.6897993784574227,Total Phosphorus (mg/L),minQ,TLT100 ,Tuggeranong_out.csv
+0.7045496591667106,Total Phosphorus (mg/L),maxQ,TLT100 ,Tuggeranong_out.csv
+0.6470498329952242,Total Phosphorus (mg/L),medianQ,TLT100 ,Tuggeranong_out.csv
+0.7221834311848855,Total Phosphorus (mg/L),i6,TLT100 ,Tuggeranong_out.csv
+0.7221834311848855,Total Phosphorus (mg/L),i30,TLT100 ,Tuggeranong_out.csv
+0.7040981010865993,Total Phosphorus (mg/L),U,TLT100 ,Tuggeranong_out.csv
+0.62800906337749,Total Phosphorus (mg/L),flag,TLT100 ,Tuggeranong_out.csv
+0.6086467235212553,Total Phosphorus (mg/L),Turbidity (NTU),TLT100 ,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),TLT100 ,Tuggeranong_out.csv
+0.9657166568073602,date,Year,TLT100 ,Tuggeranong_out.csv
+0.9999990802344412,date,???,TLT100 ,Tuggeranong_out.csv
+1,date,date,TLT100 ,Tuggeranong_out.csv
+1,rain,rain,TIP100 ,Tuggeranong_out.csv
+0.9999999999999997,rain,U,TIP100 ,Tuggeranong_out.csv
+0.5516630508746972,rain,CMD,TIP100 ,Tuggeranong_out.csv
+0.6530757990951452,rain,pH (units),TIP100 ,Tuggeranong_out.csv
+0.6319062201935017,rain,Electrical Conductivity (�S/cm),TIP100 ,Tuggeranong_out.csv
+0.5068605340260999,rain,Dissolved Oxygen (mg/L),TIP100 ,Tuggeranong_out.csv
+0.5258413961123227,rain,Dissolved Oxygen (% Saturation),TIP100 ,Tuggeranong_out.csv
+0.5472727272727275,rain,Nitrate (mg/L),TIP100 ,Tuggeranong_out.csv
+0.9337593572911469,rain,Total Phosphorus (mg/L),TIP100 ,Tuggeranong_out.csv
+1,temp,temp,TIP100 ,Tuggeranong_out.csv
+0.5650078924669184,temp,Year,TIP100 ,Tuggeranong_out.csv
+0.5662040400553413,temp,Month,TIP100 ,Tuggeranong_out.csv
+0.9148665213459855,temp,Temperature (Degrees C),TIP100 ,Tuggeranong_out.csv
+0.6005567500670648,temp,pH (units),TIP100 ,Tuggeranong_out.csv
+0.6149407682590403,temp,Nitrate (mg/L),TIP100 ,Tuggeranong_out.csv
+0.9999999999999997,U,rain,TIP100 ,Tuggeranong_out.csv
+1,U,U,TIP100 ,Tuggeranong_out.csv
+0.551663050874697,U,CMD,TIP100 ,Tuggeranong_out.csv
+0.6530757990951452,U,pH (units),TIP100 ,Tuggeranong_out.csv
+0.6319062201935016,U,Electrical Conductivity (�S/cm),TIP100 ,Tuggeranong_out.csv
+0.5068605340261,U,Dissolved Oxygen (mg/L),TIP100 ,Tuggeranong_out.csv
+0.5258413961123228,U,Dissolved Oxygen (% Saturation),TIP100 ,Tuggeranong_out.csv
+0.5472727272727274,U,Nitrate (mg/L),TIP100 ,Tuggeranong_out.csv
+0.9337593572911469,U,Total Phosphorus (mg/L),TIP100 ,Tuggeranong_out.csv
+0.5516630508746972,CMD,rain,TIP100 ,Tuggeranong_out.csv
+0.551663050874697,CMD,U,TIP100 ,Tuggeranong_out.csv
+1,CMD,CMD,TIP100 ,Tuggeranong_out.csv
+0.5425401986730001,CMD,day,TIP100 ,Tuggeranong_out.csv
+0.5101405736299999,CMD,Temperature (Degrees C),TIP100 ,Tuggeranong_out.csv
+0.5821158286517977,CMD,pH (units),TIP100 ,Tuggeranong_out.csv
+0.5926453296682285,CMD,Dissolved Oxygen (mg/L),TIP100 ,Tuggeranong_out.csv
+0.6360716243397466,CMD,Dissolved Oxygen (% Saturation),TIP100 ,Tuggeranong_out.csv
+0.5237157673637082,CMD,Nitrate (mg/L),TIP100 ,Tuggeranong_out.csv
+0.5650078924669184,Year,temp,TIP100 ,Tuggeranong_out.csv
+1,Year,Year,TIP100 ,Tuggeranong_out.csv
+0.5568838069419833,Year,day,TIP100 ,Tuggeranong_out.csv
+0.590678104083279,Year,???,TIP100 ,Tuggeranong_out.csv
+0.5380470384342307,Year,Temperature (Degrees C),TIP100 ,Tuggeranong_out.csv
+0.5907070471368646,Year,date,TIP100 ,Tuggeranong_out.csv
+0.5662040400553413,Month,temp,TIP100 ,Tuggeranong_out.csv
+1,Month,Month,TIP100 ,Tuggeranong_out.csv
+0.8498402168003841,Month,???,TIP100 ,Tuggeranong_out.csv
+0.7069520187050096,Month,Temperature (Degrees C),TIP100 ,Tuggeranong_out.csv
+0.5385800328267275,Month,Electrical Conductivity (�S/cm),TIP100 ,Tuggeranong_out.csv
+0.6381865332973201,Month,Nitrate (mg/L),TIP100 ,Tuggeranong_out.csv
+0.8496838856191026,Month,date,TIP100 ,Tuggeranong_out.csv
+0.5425401986730001,day,CMD,TIP100 ,Tuggeranong_out.csv
+0.5568838069419833,day,Year,TIP100 ,Tuggeranong_out.csv
+1,day,day,TIP100 ,Tuggeranong_out.csv
+0.590678104083279,???,Year,TIP100 ,Tuggeranong_out.csv
+0.8498402168003841,???,Month,TIP100 ,Tuggeranong_out.csv
+1,???,???,TIP100 ,Tuggeranong_out.csv
+0.5412892991570688,???,Temperature (Degrees C),TIP100 ,Tuggeranong_out.csv
+0.5003220961659794,???,Electrical Conductivity (�S/cm),TIP100 ,Tuggeranong_out.csv
+0.9999962306568652,???,date,TIP100 ,Tuggeranong_out.csv
+0.9148665213459855,Temperature (Degrees C),temp,TIP100 ,Tuggeranong_out.csv
+0.5101405736299999,Temperature (Degrees C),CMD,TIP100 ,Tuggeranong_out.csv
+0.5380470384342307,Temperature (Degrees C),Year,TIP100 ,Tuggeranong_out.csv
+0.7069520187050096,Temperature (Degrees C),Month,TIP100 ,Tuggeranong_out.csv
+0.5412892991570688,Temperature (Degrees C),???,TIP100 ,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),TIP100 ,Tuggeranong_out.csv
+0.5526949887169333,Temperature (Degrees C),pH (units),TIP100 ,Tuggeranong_out.csv
+0.6658365074580519,Temperature (Degrees C),Nitrate (mg/L),TIP100 ,Tuggeranong_out.csv
+0.5698762549492287,Temperature (Degrees C),Total Phosphorus (mg/L),TIP100 ,Tuggeranong_out.csv
+0.5413605256148919,Temperature (Degrees C),date,TIP100 ,Tuggeranong_out.csv
+0.6530757990951452,pH (units),rain,TIP100 ,Tuggeranong_out.csv
+0.6005567500670648,pH (units),temp,TIP100 ,Tuggeranong_out.csv
+0.6530757990951452,pH (units),U,TIP100 ,Tuggeranong_out.csv
+0.5821158286517977,pH (units),CMD,TIP100 ,Tuggeranong_out.csv
+0.5526949887169333,pH (units),Temperature (Degrees C),TIP100 ,Tuggeranong_out.csv
+1,pH (units),pH (units),TIP100 ,Tuggeranong_out.csv
+0.5092742527547462,pH (units),Turbidity (NTU),TIP100 ,Tuggeranong_out.csv
+0.5679946152200791,pH (units),Nitrate (mg/L),TIP100 ,Tuggeranong_out.csv
+0.5966298710243255,pH (units),Total Phosphorus (mg/L),TIP100 ,Tuggeranong_out.csv
+0.6319062201935017,Electrical Conductivity (�S/cm),rain,TIP100 ,Tuggeranong_out.csv
+0.6319062201935016,Electrical Conductivity (�S/cm),U,TIP100 ,Tuggeranong_out.csv
+0.5385800328267275,Electrical Conductivity (�S/cm),Month,TIP100 ,Tuggeranong_out.csv
+0.5003220961659794,Electrical Conductivity (�S/cm),???,TIP100 ,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),TIP100 ,Tuggeranong_out.csv
+0.5460870186246658,Electrical Conductivity (�S/cm),Turbidity (NTU),TIP100 ,Tuggeranong_out.csv
+0.7101645028372031,Electrical Conductivity (�S/cm),Total Phosphorus (mg/L),TIP100 ,Tuggeranong_out.csv
+0.5011967183974622,Electrical Conductivity (�S/cm),date,TIP100 ,Tuggeranong_out.csv
+0.5092742527547462,Turbidity (NTU),pH (units),TIP100 ,Tuggeranong_out.csv
+0.5460870186246658,Turbidity (NTU),Electrical Conductivity (�S/cm),TIP100 ,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),TIP100 ,Tuggeranong_out.csv
+0.5068605340260999,Dissolved Oxygen (mg/L),rain,TIP100 ,Tuggeranong_out.csv
+0.5068605340261,Dissolved Oxygen (mg/L),U,TIP100 ,Tuggeranong_out.csv
+0.5926453296682285,Dissolved Oxygen (mg/L),CMD,TIP100 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),TIP100 ,Tuggeranong_out.csv
+0.9314336186221721,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),TIP100 ,Tuggeranong_out.csv
+0.5274979084401901,Dissolved Oxygen (mg/L),Total Phosphorus (mg/L),TIP100 ,Tuggeranong_out.csv
+0.5258413961123227,Dissolved Oxygen (% Saturation),rain,TIP100 ,Tuggeranong_out.csv
+0.5258413961123228,Dissolved Oxygen (% Saturation),U,TIP100 ,Tuggeranong_out.csv
+0.6360716243397466,Dissolved Oxygen (% Saturation),CMD,TIP100 ,Tuggeranong_out.csv
+0.9314336186221721,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),TIP100 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),TIP100 ,Tuggeranong_out.csv
+0.5273982488792789,Dissolved Oxygen (% Saturation),Total Phosphorus (mg/L),TIP100 ,Tuggeranong_out.csv
+0.5472727272727275,Nitrate (mg/L),rain,TIP100 ,Tuggeranong_out.csv
+0.6149407682590403,Nitrate (mg/L),temp,TIP100 ,Tuggeranong_out.csv
+0.5472727272727274,Nitrate (mg/L),U,TIP100 ,Tuggeranong_out.csv
+0.5237157673637082,Nitrate (mg/L),CMD,TIP100 ,Tuggeranong_out.csv
+0.6381865332973201,Nitrate (mg/L),Month,TIP100 ,Tuggeranong_out.csv
+0.6658365074580519,Nitrate (mg/L),Temperature (Degrees C),TIP100 ,Tuggeranong_out.csv
+0.5679946152200791,Nitrate (mg/L),pH (units),TIP100 ,Tuggeranong_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),TIP100 ,Tuggeranong_out.csv
+0.5122264052992473,Nitrate (mg/L),Total Phosphorus (mg/L),TIP100 ,Tuggeranong_out.csv
+0.9337593572911469,Total Phosphorus (mg/L),rain,TIP100 ,Tuggeranong_out.csv
+0.9337593572911469,Total Phosphorus (mg/L),U,TIP100 ,Tuggeranong_out.csv
+0.5698762549492287,Total Phosphorus (mg/L),Temperature (Degrees C),TIP100 ,Tuggeranong_out.csv
+0.5966298710243255,Total Phosphorus (mg/L),pH (units),TIP100 ,Tuggeranong_out.csv
+0.7101645028372031,Total Phosphorus (mg/L),Electrical Conductivity (�S/cm),TIP100 ,Tuggeranong_out.csv
+0.5274979084401901,Total Phosphorus (mg/L),Dissolved Oxygen (mg/L),TIP100 ,Tuggeranong_out.csv
+0.5273982488792789,Total Phosphorus (mg/L),Dissolved Oxygen (% Saturation),TIP100 ,Tuggeranong_out.csv
+0.5122264052992473,Total Phosphorus (mg/L),Nitrate (mg/L),TIP100 ,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),TIP100 ,Tuggeranong_out.csv
+0.5907070471368646,date,Year,TIP100 ,Tuggeranong_out.csv
+0.8496838856191026,date,Month,TIP100 ,Tuggeranong_out.csv
+0.9999962306568652,date,???,TIP100 ,Tuggeranong_out.csv
+0.5413605256148919,date,Temperature (Degrees C),TIP100 ,Tuggeranong_out.csv
+0.5011967183974622,date,Electrical Conductivity (�S/cm),TIP100 ,Tuggeranong_out.csv
+1,date,date,TIP100 ,Tuggeranong_out.csv
+1,rain,rain,TLT200 ,Tuggeranong_out.csv
+0.880627320023379,rain,U,TLT200 ,Tuggeranong_out.csv
+0.7120400448146679,rain,Turbidity (NTU),TLT200 ,Tuggeranong_out.csv
+0.6458857296352739,rain,Dissolved Oxygen (mg/L),TLT200 ,Tuggeranong_out.csv
+0.6343622656050194,rain,Dissolved Oxygen (% Saturation),TLT200 ,Tuggeranong_out.csv
+1,temp,temp,TLT200 ,Tuggeranong_out.csv
+0.5756530475137595,temp,Month,TLT200 ,Tuggeranong_out.csv
+0.8901785246272966,temp,Temperature (Degrees C),TLT200 ,Tuggeranong_out.csv
+0.6317474553604192,temp,pH (units),TLT200 ,Tuggeranong_out.csv
+0.880627320023379,U,rain,TLT200 ,Tuggeranong_out.csv
+1,U,U,TLT200 ,Tuggeranong_out.csv
+0.6268892865657855,U,Turbidity (NTU),TLT200 ,Tuggeranong_out.csv
+0.5775745034442595,U,Dissolved Oxygen (mg/L),TLT200 ,Tuggeranong_out.csv
+0.5895044183738075,U,Dissolved Oxygen (% Saturation),TLT200 ,Tuggeranong_out.csv
+1,CMD,CMD,TLT200 ,Tuggeranong_out.csv
+0.5150410625151497,CMD,Month,TLT200 ,Tuggeranong_out.csv
+0.6606099139329963,CMD,pH (units),TLT200 ,Tuggeranong_out.csv
+0.6483295642998473,CMD,Nitrate (mg/L),TLT200 ,Tuggeranong_out.csv
+1,Year,Year,TLT200 ,Tuggeranong_out.csv
+0.8893127744456459,Year,???,TLT200 ,Tuggeranong_out.csv
+0.5026110800600413,Year,pH (units),TLT200 ,Tuggeranong_out.csv
+0.5926148570863099,Year,Total Phosphorus (mg/L),TLT200 ,Tuggeranong_out.csv
+0.8890983145931692,Year,date,TLT200 ,Tuggeranong_out.csv
+0.5756530475137595,Month,temp,TLT200 ,Tuggeranong_out.csv
+0.5150410625151497,Month,CMD,TLT200 ,Tuggeranong_out.csv
+1,Month,Month,TLT200 ,Tuggeranong_out.csv
+0.5077774946631013,Month,day,TLT200 ,Tuggeranong_out.csv
+0.5966634802235211,Month,Temperature (Degrees C),TLT200 ,Tuggeranong_out.csv
+0.5001992626614826,Month,Nitrate (mg/L),TLT200 ,Tuggeranong_out.csv
+0.5077774946631013,day,Month,TLT200 ,Tuggeranong_out.csv
+1,day,day,TLT200 ,Tuggeranong_out.csv
+0.8893127744456459,???,Year,TLT200 ,Tuggeranong_out.csv
+1,???,???,TLT200 ,Tuggeranong_out.csv
+0.6012357957982484,???,Total Phosphorus (mg/L),TLT200 ,Tuggeranong_out.csv
+0.9999976197120282,???,date,TLT200 ,Tuggeranong_out.csv
+0.8901785246272966,Temperature (Degrees C),temp,TLT200 ,Tuggeranong_out.csv
+0.5966634802235211,Temperature (Degrees C),Month,TLT200 ,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),TLT200 ,Tuggeranong_out.csv
+0.5042222056526513,Temperature (Degrees C),pH (units),TLT200 ,Tuggeranong_out.csv
+0.5463796264090913,Temperature (Degrees C),Dissolved Oxygen (mg/L),TLT200 ,Tuggeranong_out.csv
+0.6317474553604192,pH (units),temp,TLT200 ,Tuggeranong_out.csv
+0.6606099139329963,pH (units),CMD,TLT200 ,Tuggeranong_out.csv
+0.5026110800600413,pH (units),Year,TLT200 ,Tuggeranong_out.csv
+0.5042222056526513,pH (units),Temperature (Degrees C),TLT200 ,Tuggeranong_out.csv
+1,pH (units),pH (units),TLT200 ,Tuggeranong_out.csv
+0.5279414545979088,pH (units),Dissolved Oxygen (mg/L),TLT200 ,Tuggeranong_out.csv
+0.6133969944510189,pH (units),Nitrate (mg/L),TLT200 ,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),TLT200 ,Tuggeranong_out.csv
+0.7120400448146679,Turbidity (NTU),rain,TLT200 ,Tuggeranong_out.csv
+0.6268892865657855,Turbidity (NTU),U,TLT200 ,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),TLT200 ,Tuggeranong_out.csv
+0.553148748484947,Turbidity (NTU),Nitrate (mg/L),TLT200 ,Tuggeranong_out.csv
+0.529695372225252,Turbidity (NTU),Total Phosphorus (mg/L),TLT200 ,Tuggeranong_out.csv
+0.6458857296352739,Dissolved Oxygen (mg/L),rain,TLT200 ,Tuggeranong_out.csv
+0.5775745034442595,Dissolved Oxygen (mg/L),U,TLT200 ,Tuggeranong_out.csv
+0.5463796264090913,Dissolved Oxygen (mg/L),Temperature (Degrees C),TLT200 ,Tuggeranong_out.csv
+0.5279414545979088,Dissolved Oxygen (mg/L),pH (units),TLT200 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),TLT200 ,Tuggeranong_out.csv
+0.9370376190405286,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),TLT200 ,Tuggeranong_out.csv
+0.5347103841011799,Dissolved Oxygen (mg/L),Nitrate (mg/L),TLT200 ,Tuggeranong_out.csv
+0.5366254242068429,Dissolved Oxygen (mg/L),Total Phosphorus (mg/L),TLT200 ,Tuggeranong_out.csv
+0.6343622656050194,Dissolved Oxygen (% Saturation),rain,TLT200 ,Tuggeranong_out.csv
+0.5895044183738075,Dissolved Oxygen (% Saturation),U,TLT200 ,Tuggeranong_out.csv
+0.9370376190405286,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),TLT200 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),TLT200 ,Tuggeranong_out.csv
+0.60557008479794,Dissolved Oxygen (% Saturation),Nitrate (mg/L),TLT200 ,Tuggeranong_out.csv
+0.6483295642998473,Nitrate (mg/L),CMD,TLT200 ,Tuggeranong_out.csv
+0.5001992626614826,Nitrate (mg/L),Month,TLT200 ,Tuggeranong_out.csv
+0.6133969944510189,Nitrate (mg/L),pH (units),TLT200 ,Tuggeranong_out.csv
+0.553148748484947,Nitrate (mg/L),Turbidity (NTU),TLT200 ,Tuggeranong_out.csv
+0.5347103841011799,Nitrate (mg/L),Dissolved Oxygen (mg/L),TLT200 ,Tuggeranong_out.csv
+0.60557008479794,Nitrate (mg/L),Dissolved Oxygen (% Saturation),TLT200 ,Tuggeranong_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),TLT200 ,Tuggeranong_out.csv
+0.5573908697975263,Nitrate (mg/L),Total Phosphorus (mg/L),TLT200 ,Tuggeranong_out.csv
+0.5926148570863099,Total Phosphorus (mg/L),Year,TLT200 ,Tuggeranong_out.csv
+0.6012357957982484,Total Phosphorus (mg/L),???,TLT200 ,Tuggeranong_out.csv
+0.529695372225252,Total Phosphorus (mg/L),Turbidity (NTU),TLT200 ,Tuggeranong_out.csv
+0.5366254242068429,Total Phosphorus (mg/L),Dissolved Oxygen (mg/L),TLT200 ,Tuggeranong_out.csv
+0.5573908697975263,Total Phosphorus (mg/L),Nitrate (mg/L),TLT200 ,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),TLT200 ,Tuggeranong_out.csv
+0.6014664195230798,Total Phosphorus (mg/L),date,TLT200 ,Tuggeranong_out.csv
+0.8890983145931692,date,Year,TLT200 ,Tuggeranong_out.csv
+0.9999976197120282,date,???,TLT200 ,Tuggeranong_out.csv
+0.6014664195230798,date,Total Phosphorus (mg/L),TLT200 ,Tuggeranong_out.csv
+1,date,date,TLT200 ,Tuggeranong_out.csv
+1,rain,rain,TIP200 ,Tuggeranong_out.csv
+0.9886230654859623,rain,U,TIP200 ,Tuggeranong_out.csv
+0.5690694587130898,rain,Year,TIP200 ,Tuggeranong_out.csv
+0.5508587858908306,rain,pH (units),TIP200 ,Tuggeranong_out.csv
+0.7868241227344007,rain,Turbidity (NTU),TIP200 ,Tuggeranong_out.csv
+0.574105198154947,rain,Dissolved Oxygen (mg/L),TIP200 ,Tuggeranong_out.csv
+0.6482758475251813,rain,Dissolved Oxygen (% Saturation),TIP200 ,Tuggeranong_out.csv
+0.6712087177686078,rain,Nitrate (mg/L),TIP200 ,Tuggeranong_out.csv
+0.5547031777069195,rain,Total Phosphorus (mg/L),TIP200 ,Tuggeranong_out.csv
+1,temp,temp,TIP200 ,Tuggeranong_out.csv
+0.6226759826595276,temp,Year,TIP200 ,Tuggeranong_out.csv
+0.7247393051216349,temp,Temperature (Degrees C),TIP200 ,Tuggeranong_out.csv
+0.6215702880011283,temp,pH (units),TIP200 ,Tuggeranong_out.csv
+0.5960331171417009,temp,Electrical Conductivity (�S/cm),TIP200 ,Tuggeranong_out.csv
+0.5411775986473928,temp,Turbidity (NTU),TIP200 ,Tuggeranong_out.csv
+0.5313321735338339,temp,Dissolved Oxygen (mg/L),TIP200 ,Tuggeranong_out.csv
+0.9886230654859623,U,rain,TIP200 ,Tuggeranong_out.csv
+1,U,U,TIP200 ,Tuggeranong_out.csv
+0.5325537018725125,U,Year,TIP200 ,Tuggeranong_out.csv
+0.51662618174757,U,pH (units),TIP200 ,Tuggeranong_out.csv
+0.7334006967171041,U,Turbidity (NTU),TIP200 ,Tuggeranong_out.csv
+0.5844291242305087,U,Dissolved Oxygen (mg/L),TIP200 ,Tuggeranong_out.csv
+0.6473016419746368,U,Dissolved Oxygen (% Saturation),TIP200 ,Tuggeranong_out.csv
+0.6031824848706573,U,Nitrate (mg/L),TIP200 ,Tuggeranong_out.csv
+1,CMD,CMD,TIP200 ,Tuggeranong_out.csv
+0.5246688549033872,CMD,Temperature (Degrees C),TIP200 ,Tuggeranong_out.csv
+0.5278907263039961,CMD,Turbidity (NTU),TIP200 ,Tuggeranong_out.csv
+0.5505120557550535,CMD,Nitrate (mg/L),TIP200 ,Tuggeranong_out.csv
+0.5479092032265458,CMD,Total Phosphorus (mg/L),TIP200 ,Tuggeranong_out.csv
+0.5690694587130898,Year,rain,TIP200 ,Tuggeranong_out.csv
+0.6226759826595276,Year,temp,TIP200 ,Tuggeranong_out.csv
+0.5325537018725125,Year,U,TIP200 ,Tuggeranong_out.csv
+1,Year,Year,TIP200 ,Tuggeranong_out.csv
+0.7411695802409135,Year,???,TIP200 ,Tuggeranong_out.csv
+0.5110554010212537,Year,Temperature (Degrees C),TIP200 ,Tuggeranong_out.csv
+0.5062619068213643,Year,Turbidity (NTU),TIP200 ,Tuggeranong_out.csv
+0.7411386544174391,Year,date,TIP200 ,Tuggeranong_out.csv
+1,Month,Month,TIP200 ,Tuggeranong_out.csv
+0.7102929332625316,Month,Temperature (Degrees C),TIP200 ,Tuggeranong_out.csv
+0.5977204701577582,Month,Electrical Conductivity (�S/cm),TIP200 ,Tuggeranong_out.csv
+0.6043500489059437,Month,Dissolved Oxygen (mg/L),TIP200 ,Tuggeranong_out.csv
+0.5692135076639258,Month,Dissolved Oxygen (% Saturation),TIP200 ,Tuggeranong_out.csv
+0.5764333250443984,Month,Nitrate (mg/L),TIP200 ,Tuggeranong_out.csv
+0.516135702870222,Month,Total Phosphorus (mg/L),TIP200 ,Tuggeranong_out.csv
+1,day,day,TIP200 ,Tuggeranong_out.csv
+0.7411695802409135,???,Year,TIP200 ,Tuggeranong_out.csv
+1,???,???,TIP200 ,Tuggeranong_out.csv
+0.9999951133196802,???,date,TIP200 ,Tuggeranong_out.csv
+0.7247393051216349,Temperature (Degrees C),temp,TIP200 ,Tuggeranong_out.csv
+0.5246688549033872,Temperature (Degrees C),CMD,TIP200 ,Tuggeranong_out.csv
+0.5110554010212537,Temperature (Degrees C),Year,TIP200 ,Tuggeranong_out.csv
+0.7102929332625316,Temperature (Degrees C),Month,TIP200 ,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),TIP200 ,Tuggeranong_out.csv
+0.6374055111162261,Temperature (Degrees C),Electrical Conductivity (�S/cm),TIP200 ,Tuggeranong_out.csv
+0.5805702964642534,Temperature (Degrees C),Turbidity (NTU),TIP200 ,Tuggeranong_out.csv
+0.664311895717169,Temperature (Degrees C),Dissolved Oxygen (mg/L),TIP200 ,Tuggeranong_out.csv
+0.6634841047043096,Temperature (Degrees C),Dissolved Oxygen (% Saturation),TIP200 ,Tuggeranong_out.csv
+0.5068736808310639,Temperature (Degrees C),Total Phosphorus (mg/L),TIP200 ,Tuggeranong_out.csv
+0.5508587858908306,pH (units),rain,TIP200 ,Tuggeranong_out.csv
+0.6215702880011283,pH (units),temp,TIP200 ,Tuggeranong_out.csv
+0.51662618174757,pH (units),U,TIP200 ,Tuggeranong_out.csv
+1,pH (units),pH (units),TIP200 ,Tuggeranong_out.csv
+0.53891794174474,pH (units),Turbidity (NTU),TIP200 ,Tuggeranong_out.csv
+0.534015158289169,pH (units),Nitrate (mg/L),TIP200 ,Tuggeranong_out.csv
+0.5960331171417009,Electrical Conductivity (�S/cm),temp,TIP200 ,Tuggeranong_out.csv
+0.5977204701577582,Electrical Conductivity (�S/cm),Month,TIP200 ,Tuggeranong_out.csv
+0.6374055111162261,Electrical Conductivity (�S/cm),Temperature (Degrees C),TIP200 ,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),TIP200 ,Tuggeranong_out.csv
+0.7341641484316815,Electrical Conductivity (�S/cm),Dissolved Oxygen (mg/L),TIP200 ,Tuggeranong_out.csv
+0.6435694431283087,Electrical Conductivity (�S/cm),Dissolved Oxygen (% Saturation),TIP200 ,Tuggeranong_out.csv
+0.6617723755447669,Electrical Conductivity (�S/cm),Nitrate (mg/L),TIP200 ,Tuggeranong_out.csv
+0.5752690869417085,Electrical Conductivity (�S/cm),Total Phosphorus (mg/L),TIP200 ,Tuggeranong_out.csv
+0.7868241227344007,Turbidity (NTU),rain,TIP200 ,Tuggeranong_out.csv
+0.5411775986473928,Turbidity (NTU),temp,TIP200 ,Tuggeranong_out.csv
+0.7334006967171041,Turbidity (NTU),U,TIP200 ,Tuggeranong_out.csv
+0.5278907263039961,Turbidity (NTU),CMD,TIP200 ,Tuggeranong_out.csv
+0.5062619068213643,Turbidity (NTU),Year,TIP200 ,Tuggeranong_out.csv
+0.5805702964642534,Turbidity (NTU),Temperature (Degrees C),TIP200 ,Tuggeranong_out.csv
+0.53891794174474,Turbidity (NTU),pH (units),TIP200 ,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),TIP200 ,Tuggeranong_out.csv
+0.7073772140855187,Turbidity (NTU),Nitrate (mg/L),TIP200 ,Tuggeranong_out.csv
+0.6900421287635818,Turbidity (NTU),Total Phosphorus (mg/L),TIP200 ,Tuggeranong_out.csv
+0.574105198154947,Dissolved Oxygen (mg/L),rain,TIP200 ,Tuggeranong_out.csv
+0.5313321735338339,Dissolved Oxygen (mg/L),temp,TIP200 ,Tuggeranong_out.csv
+0.5844291242305087,Dissolved Oxygen (mg/L),U,TIP200 ,Tuggeranong_out.csv
+0.6043500489059437,Dissolved Oxygen (mg/L),Month,TIP200 ,Tuggeranong_out.csv
+0.664311895717169,Dissolved Oxygen (mg/L),Temperature (Degrees C),TIP200 ,Tuggeranong_out.csv
+0.7341641484316815,Dissolved Oxygen (mg/L),Electrical Conductivity (�S/cm),TIP200 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),TIP200 ,Tuggeranong_out.csv
+0.9751125459984452,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),TIP200 ,Tuggeranong_out.csv
+0.58548458821467,Dissolved Oxygen (mg/L),Nitrate (mg/L),TIP200 ,Tuggeranong_out.csv
+0.5001167967393745,Dissolved Oxygen (mg/L),Total Phosphorus (mg/L),TIP200 ,Tuggeranong_out.csv
+0.6482758475251813,Dissolved Oxygen (% Saturation),rain,TIP200 ,Tuggeranong_out.csv
+0.6473016419746368,Dissolved Oxygen (% Saturation),U,TIP200 ,Tuggeranong_out.csv
+0.5692135076639258,Dissolved Oxygen (% Saturation),Month,TIP200 ,Tuggeranong_out.csv
+0.6634841047043096,Dissolved Oxygen (% Saturation),Temperature (Degrees C),TIP200 ,Tuggeranong_out.csv
+0.6435694431283087,Dissolved Oxygen (% Saturation),Electrical Conductivity (�S/cm),TIP200 ,Tuggeranong_out.csv
+0.9751125459984452,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),TIP200 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),TIP200 ,Tuggeranong_out.csv
+0.6601326375518264,Dissolved Oxygen (% Saturation),Nitrate (mg/L),TIP200 ,Tuggeranong_out.csv
+0.6712087177686078,Nitrate (mg/L),rain,TIP200 ,Tuggeranong_out.csv
+0.6031824848706573,Nitrate (mg/L),U,TIP200 ,Tuggeranong_out.csv
+0.5505120557550535,Nitrate (mg/L),CMD,TIP200 ,Tuggeranong_out.csv
+0.5764333250443984,Nitrate (mg/L),Month,TIP200 ,Tuggeranong_out.csv
+0.534015158289169,Nitrate (mg/L),pH (units),TIP200 ,Tuggeranong_out.csv
+0.6617723755447669,Nitrate (mg/L),Electrical Conductivity (�S/cm),TIP200 ,Tuggeranong_out.csv
+0.7073772140855187,Nitrate (mg/L),Turbidity (NTU),TIP200 ,Tuggeranong_out.csv
+0.58548458821467,Nitrate (mg/L),Dissolved Oxygen (mg/L),TIP200 ,Tuggeranong_out.csv
+0.6601326375518264,Nitrate (mg/L),Dissolved Oxygen (% Saturation),TIP200 ,Tuggeranong_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),TIP200 ,Tuggeranong_out.csv
+0.869506575812893,Nitrate (mg/L),Total Phosphorus (mg/L),TIP200 ,Tuggeranong_out.csv
+0.5547031777069195,Total Phosphorus (mg/L),rain,TIP200 ,Tuggeranong_out.csv
+0.5479092032265458,Total Phosphorus (mg/L),CMD,TIP200 ,Tuggeranong_out.csv
+0.516135702870222,Total Phosphorus (mg/L),Month,TIP200 ,Tuggeranong_out.csv
+0.5068736808310639,Total Phosphorus (mg/L),Temperature (Degrees C),TIP200 ,Tuggeranong_out.csv
+0.5752690869417085,Total Phosphorus (mg/L),Electrical Conductivity (�S/cm),TIP200 ,Tuggeranong_out.csv
+0.6900421287635818,Total Phosphorus (mg/L),Turbidity (NTU),TIP200 ,Tuggeranong_out.csv
+0.5001167967393745,Total Phosphorus (mg/L),Dissolved Oxygen (mg/L),TIP200 ,Tuggeranong_out.csv
+0.869506575812893,Total Phosphorus (mg/L),Nitrate (mg/L),TIP200 ,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),TIP200 ,Tuggeranong_out.csv
+0.7411386544174391,date,Year,TIP200 ,Tuggeranong_out.csv
+0.9999951133196802,date,???,TIP200 ,Tuggeranong_out.csv
+1,date,date,TIP200 ,Tuggeranong_out.csv
+1,rain,rain,TLT300 ,Tuggeranong_out.csv
+0.9999611930591958,rain,U,TLT300 ,Tuggeranong_out.csv
+0.507868439895467,rain,day,TLT300 ,Tuggeranong_out.csv
+0.5708732657685178,rain,Turbidity (NTU),TLT300 ,Tuggeranong_out.csv
+0.7275621796555354,rain,Dissolved Oxygen (mg/L),TLT300 ,Tuggeranong_out.csv
+0.6928221915140734,rain,Dissolved Oxygen (% Saturation),TLT300 ,Tuggeranong_out.csv
+0.5984972914975977,rain,Nitrate (mg/L),TLT300 ,Tuggeranong_out.csv
+0.9310263992225001,rain,Total Phosphorus (mg/L),TLT300 ,Tuggeranong_out.csv
+1,temp,temp,TLT300 ,Tuggeranong_out.csv
+0.5169604764377845,temp,CMD,TLT300 ,Tuggeranong_out.csv
+0.9153593123963488,temp,Temperature (Degrees C),TLT300 ,Tuggeranong_out.csv
+0.9999611930591958,U,rain,TLT300 ,Tuggeranong_out.csv
+1,U,U,TLT300 ,Tuggeranong_out.csv
+0.5090851225652974,U,day,TLT300 ,Tuggeranong_out.csv
+0.5718243868681823,U,Turbidity (NTU),TLT300 ,Tuggeranong_out.csv
+0.7275849814451638,U,Dissolved Oxygen (mg/L),TLT300 ,Tuggeranong_out.csv
+0.6927242574741048,U,Dissolved Oxygen (% Saturation),TLT300 ,Tuggeranong_out.csv
+0.5985260338846643,U,Nitrate (mg/L),TLT300 ,Tuggeranong_out.csv
+0.9313776575146977,U,Total Phosphorus (mg/L),TLT300 ,Tuggeranong_out.csv
+0.5169604764377845,CMD,temp,TLT300 ,Tuggeranong_out.csv
+1,CMD,CMD,TLT300 ,Tuggeranong_out.csv
+0.6237543932570238,CMD,pH (units),TLT300 ,Tuggeranong_out.csv
+0.5235636619525522,CMD,Dissolved Oxygen (mg/L),TLT300 ,Tuggeranong_out.csv
+0.524856477117885,CMD,Dissolved Oxygen (% Saturation),TLT300 ,Tuggeranong_out.csv
+0.6295735160631092,CMD,Nitrate (mg/L),TLT300 ,Tuggeranong_out.csv
+1,Year,Year,TLT300 ,Tuggeranong_out.csv
+0.8720608578802346,Year,???,TLT300 ,Tuggeranong_out.csv
+0.8718362388855593,Year,date,TLT300 ,Tuggeranong_out.csv
+1,Month,Month,TLT300 ,Tuggeranong_out.csv
+0.5487158830956711,Month,Temperature (Degrees C),TLT300 ,Tuggeranong_out.csv
+0.564260835778811,Month,Nitrate (mg/L),TLT300 ,Tuggeranong_out.csv
+0.507868439895467,day,rain,TLT300 ,Tuggeranong_out.csv
+0.5090851225652974,day,U,TLT300 ,Tuggeranong_out.csv
+1,day,day,TLT300 ,Tuggeranong_out.csv
+0.8720608578802346,???,Year,TLT300 ,Tuggeranong_out.csv
+1,???,???,TLT300 ,Tuggeranong_out.csv
+0.9999973107085316,???,date,TLT300 ,Tuggeranong_out.csv
+0.9153593123963488,Temperature (Degrees C),temp,TLT300 ,Tuggeranong_out.csv
+0.5487158830956711,Temperature (Degrees C),Month,TLT300 ,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),TLT300 ,Tuggeranong_out.csv
+0.6237543932570238,pH (units),CMD,TLT300 ,Tuggeranong_out.csv
+1,pH (units),pH (units),TLT300 ,Tuggeranong_out.csv
+0.5429183286761493,pH (units),Dissolved Oxygen (mg/L),TLT300 ,Tuggeranong_out.csv
+0.5292908079799131,pH (units),Dissolved Oxygen (% Saturation),TLT300 ,Tuggeranong_out.csv
+0.5582532458934514,pH (units),Nitrate (mg/L),TLT300 ,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),TLT300 ,Tuggeranong_out.csv
+0.5708732657685178,Turbidity (NTU),rain,TLT300 ,Tuggeranong_out.csv
+0.5718243868681823,Turbidity (NTU),U,TLT300 ,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),TLT300 ,Tuggeranong_out.csv
+0.6096555797098626,Turbidity (NTU),Dissolved Oxygen (mg/L),TLT300 ,Tuggeranong_out.csv
+0.6225605741662206,Turbidity (NTU),Dissolved Oxygen (% Saturation),TLT300 ,Tuggeranong_out.csv
+0.5373567254410186,Turbidity (NTU),Nitrate (mg/L),TLT300 ,Tuggeranong_out.csv
+0.6720246515931533,Turbidity (NTU),Total Phosphorus (mg/L),TLT300 ,Tuggeranong_out.csv
+0.7275621796555354,Dissolved Oxygen (mg/L),rain,TLT300 ,Tuggeranong_out.csv
+0.7275849814451638,Dissolved Oxygen (mg/L),U,TLT300 ,Tuggeranong_out.csv
+0.5235636619525522,Dissolved Oxygen (mg/L),CMD,TLT300 ,Tuggeranong_out.csv
+0.5429183286761493,Dissolved Oxygen (mg/L),pH (units),TLT300 ,Tuggeranong_out.csv
+0.6096555797098626,Dissolved Oxygen (mg/L),Turbidity (NTU),TLT300 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),TLT300 ,Tuggeranong_out.csv
+0.9553586904628928,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),TLT300 ,Tuggeranong_out.csv
+0.6845210262820324,Dissolved Oxygen (mg/L),Nitrate (mg/L),TLT300 ,Tuggeranong_out.csv
+0.6670504986403009,Dissolved Oxygen (mg/L),Total Phosphorus (mg/L),TLT300 ,Tuggeranong_out.csv
+0.6928221915140734,Dissolved Oxygen (% Saturation),rain,TLT300 ,Tuggeranong_out.csv
+0.6927242574741048,Dissolved Oxygen (% Saturation),U,TLT300 ,Tuggeranong_out.csv
+0.524856477117885,Dissolved Oxygen (% Saturation),CMD,TLT300 ,Tuggeranong_out.csv
+0.5292908079799131,Dissolved Oxygen (% Saturation),pH (units),TLT300 ,Tuggeranong_out.csv
+0.6225605741662206,Dissolved Oxygen (% Saturation),Turbidity (NTU),TLT300 ,Tuggeranong_out.csv
+0.9553586904628928,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),TLT300 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),TLT300 ,Tuggeranong_out.csv
+0.7170786949998409,Dissolved Oxygen (% Saturation),Nitrate (mg/L),TLT300 ,Tuggeranong_out.csv
+0.6518875669385475,Dissolved Oxygen (% Saturation),Total Phosphorus (mg/L),TLT300 ,Tuggeranong_out.csv
+0.5984972914975977,Nitrate (mg/L),rain,TLT300 ,Tuggeranong_out.csv
+0.5985260338846643,Nitrate (mg/L),U,TLT300 ,Tuggeranong_out.csv
+0.6295735160631092,Nitrate (mg/L),CMD,TLT300 ,Tuggeranong_out.csv
+0.564260835778811,Nitrate (mg/L),Month,TLT300 ,Tuggeranong_out.csv
+0.5582532458934514,Nitrate (mg/L),pH (units),TLT300 ,Tuggeranong_out.csv
+0.5373567254410186,Nitrate (mg/L),Turbidity (NTU),TLT300 ,Tuggeranong_out.csv
+0.6845210262820324,Nitrate (mg/L),Dissolved Oxygen (mg/L),TLT300 ,Tuggeranong_out.csv
+0.7170786949998409,Nitrate (mg/L),Dissolved Oxygen (% Saturation),TLT300 ,Tuggeranong_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),TLT300 ,Tuggeranong_out.csv
+0.5745705122461828,Nitrate (mg/L),Total Phosphorus (mg/L),TLT300 ,Tuggeranong_out.csv
+0.9310263992225001,Total Phosphorus (mg/L),rain,TLT300 ,Tuggeranong_out.csv
+0.9313776575146977,Total Phosphorus (mg/L),U,TLT300 ,Tuggeranong_out.csv
+0.6720246515931533,Total Phosphorus (mg/L),Turbidity (NTU),TLT300 ,Tuggeranong_out.csv
+0.6670504986403009,Total Phosphorus (mg/L),Dissolved Oxygen (mg/L),TLT300 ,Tuggeranong_out.csv
+0.6518875669385475,Total Phosphorus (mg/L),Dissolved Oxygen (% Saturation),TLT300 ,Tuggeranong_out.csv
+0.5745705122461828,Total Phosphorus (mg/L),Nitrate (mg/L),TLT300 ,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),TLT300 ,Tuggeranong_out.csv
+0.8718362388855593,date,Year,TLT300 ,Tuggeranong_out.csv
+0.9999973107085316,date,???,TLT300 ,Tuggeranong_out.csv
+1,date,date,TLT300 ,Tuggeranong_out.csv
+1,rain,rain,TLT250 ,Tuggeranong_out.csv
+0.609373531777496,rain,temp,TLT250 ,Tuggeranong_out.csv
+0.9999701054669524,rain,U,TLT250 ,Tuggeranong_out.csv
+0.7934713643788704,rain,CMD,TLT250 ,Tuggeranong_out.csv
+0.8331802658598247,rain,Year,TLT250 ,Tuggeranong_out.csv
+0.6952222530806095,rain,Month,TLT250 ,Tuggeranong_out.csv
+0.503270539108367,rain,day,TLT250 ,Tuggeranong_out.csv
+0.7593414385025223,rain,???,TLT250 ,Tuggeranong_out.csv
+0.8931062631832013,rain,Temperature (Degrees C),TLT250 ,Tuggeranong_out.csv
+0.6606957759088112,rain,pH (units),TLT250 ,Tuggeranong_out.csv
+0.550222863076329,rain,Turbidity (NTU),TLT250 ,Tuggeranong_out.csv
+0.7311600915905665,rain,Nitrate (mg/L),TLT250 ,Tuggeranong_out.csv
+0.7607252237244075,rain,date,TLT250 ,Tuggeranong_out.csv
+0.609373531777496,temp,rain,TLT250 ,Tuggeranong_out.csv
+1,temp,temp,TLT250 ,Tuggeranong_out.csv
+0.6050988808625967,temp,U,TLT250 ,Tuggeranong_out.csv
+0.5489145352196654,temp,CMD,TLT250 ,Tuggeranong_out.csv
+0.516509929765568,temp,Year,TLT250 ,Tuggeranong_out.csv
+0.5175359016517985,temp,Month,TLT250 ,Tuggeranong_out.csv
+0.8026229471132893,temp,Temperature (Degrees C),TLT250 ,Tuggeranong_out.csv
+0.6205781967872706,temp,Dissolved Oxygen (mg/L),TLT250 ,Tuggeranong_out.csv
+0.7156225157604408,temp,Dissolved Oxygen (% Saturation),TLT250 ,Tuggeranong_out.csv
+0.6380695652102011,temp,Nitrate (mg/L),TLT250 ,Tuggeranong_out.csv
+0.5186029020243291,temp,Total Phosphorus (mg/L),TLT250 ,Tuggeranong_out.csv
+0.9999701054669524,U,rain,TLT250 ,Tuggeranong_out.csv
+0.6050988808625967,U,temp,TLT250 ,Tuggeranong_out.csv
+1,U,U,TLT250 ,Tuggeranong_out.csv
+0.7919226644386614,U,CMD,TLT250 ,Tuggeranong_out.csv
+0.8330318621440369,U,Year,TLT250 ,Tuggeranong_out.csv
+0.6960727768886592,U,Month,TLT250 ,Tuggeranong_out.csv
+0.5031808979813378,U,day,TLT250 ,Tuggeranong_out.csv
+0.7592061867501189,U,???,TLT250 ,Tuggeranong_out.csv
+0.8903914508094295,U,Temperature (Degrees C),TLT250 ,Tuggeranong_out.csv
+0.6590614809654587,U,pH (units),TLT250 ,Tuggeranong_out.csv
+0.5517566449348482,U,Turbidity (NTU),TLT250 ,Tuggeranong_out.csv
+0.7300479652102434,U,Nitrate (mg/L),TLT250 ,Tuggeranong_out.csv
+0.7605897254960886,U,date,TLT250 ,Tuggeranong_out.csv
+0.7934713643788704,CMD,rain,TLT250 ,Tuggeranong_out.csv
+0.5489145352196654,CMD,temp,TLT250 ,Tuggeranong_out.csv
+0.7919226644386614,CMD,U,TLT250 ,Tuggeranong_out.csv
+1,CMD,CMD,TLT250 ,Tuggeranong_out.csv
+0.6230713438279177,CMD,Year,TLT250 ,Tuggeranong_out.csv
+0.5021062438624209,CMD,day,TLT250 ,Tuggeranong_out.csv
+0.6000597346045655,CMD,???,TLT250 ,Tuggeranong_out.csv
+0.6292439601360061,CMD,Temperature (Degrees C),TLT250 ,Tuggeranong_out.csv
+0.8240750210748558,CMD,pH (units),TLT250 ,Tuggeranong_out.csv
+0.7841174841462908,CMD,Turbidity (NTU),TLT250 ,Tuggeranong_out.csv
+0.8449258930762243,CMD,Nitrate (mg/L),TLT250 ,Tuggeranong_out.csv
+0.5459063944621895,CMD,Total Phosphorus (mg/L),TLT250 ,Tuggeranong_out.csv
+0.6004921484228468,CMD,date,TLT250 ,Tuggeranong_out.csv
+0.8331802658598247,Year,rain,TLT250 ,Tuggeranong_out.csv
+0.516509929765568,Year,temp,TLT250 ,Tuggeranong_out.csv
+0.8330318621440369,Year,U,TLT250 ,Tuggeranong_out.csv
+0.6230713438279177,Year,CMD,TLT250 ,Tuggeranong_out.csv
+1,Year,Year,TLT250 ,Tuggeranong_out.csv
+0.6929348671835546,Year,Month,TLT250 ,Tuggeranong_out.csv
+0.6040355967732343,Year,day,TLT250 ,Tuggeranong_out.csv
+0.9113771288363568,Year,???,TLT250 ,Tuggeranong_out.csv
+0.7496709788189428,Year,Temperature (Degrees C),TLT250 ,Tuggeranong_out.csv
+0.5538136225478408,Year,pH (units),TLT250 ,Tuggeranong_out.csv
+0.541145099526616,Year,Electrical Conductivity (�S/cm),TLT250 ,Tuggeranong_out.csv
+0.5240915804096097,Year,Nitrate (mg/L),TLT250 ,Tuggeranong_out.csv
+0.5238227218271996,Year,Total Phosphorus (mg/L),TLT250 ,Tuggeranong_out.csv
+0.9130379761686815,Year,date,TLT250 ,Tuggeranong_out.csv
+0.6952222530806095,Month,rain,TLT250 ,Tuggeranong_out.csv
+0.5175359016517985,Month,temp,TLT250 ,Tuggeranong_out.csv
+0.6960727768886592,Month,U,TLT250 ,Tuggeranong_out.csv
+0.6929348671835546,Month,Year,TLT250 ,Tuggeranong_out.csv
+1,Month,Month,TLT250 ,Tuggeranong_out.csv
+0.7680905871338326,Month,???,TLT250 ,Tuggeranong_out.csv
+0.6129590535224845,Month,Temperature (Degrees C),TLT250 ,Tuggeranong_out.csv
+0.6746151819146871,Month,Nitrate (mg/L),TLT250 ,Tuggeranong_out.csv
+0.6423558074406198,Month,Total Phosphorus (mg/L),TLT250 ,Tuggeranong_out.csv
+0.76712183500387,Month,date,TLT250 ,Tuggeranong_out.csv
+0.503270539108367,day,rain,TLT250 ,Tuggeranong_out.csv
+0.5031808979813378,day,U,TLT250 ,Tuggeranong_out.csv
+0.5021062438624209,day,CMD,TLT250 ,Tuggeranong_out.csv
+0.6040355967732343,day,Year,TLT250 ,Tuggeranong_out.csv
+1,day,day,TLT250 ,Tuggeranong_out.csv
+0.6274436320777775,day,pH (units),TLT250 ,Tuggeranong_out.csv
+0.7657809726677164,day,Turbidity (NTU),TLT250 ,Tuggeranong_out.csv
+0.5154217841794598,day,Dissolved Oxygen (mg/L),TLT250 ,Tuggeranong_out.csv
+0.7593414385025223,???,rain,TLT250 ,Tuggeranong_out.csv
+0.7592061867501189,???,U,TLT250 ,Tuggeranong_out.csv
+0.6000597346045655,???,CMD,TLT250 ,Tuggeranong_out.csv
+0.9113771288363568,???,Year,TLT250 ,Tuggeranong_out.csv
+0.7680905871338326,???,Month,TLT250 ,Tuggeranong_out.csv
+1,???,???,TLT250 ,Tuggeranong_out.csv
+0.6832329842480239,???,Temperature (Degrees C),TLT250 ,Tuggeranong_out.csv
+0.5047330692281681,???,pH (units),TLT250 ,Tuggeranong_out.csv
+0.5383875476986124,???,Electrical Conductivity (�S/cm),TLT250 ,Tuggeranong_out.csv
+0.5323973023748555,???,Nitrate (mg/L),TLT250 ,Tuggeranong_out.csv
+0.5348788662337028,???,Total Phosphorus (mg/L),TLT250 ,Tuggeranong_out.csv
+0.9999836053074012,???,date,TLT250 ,Tuggeranong_out.csv
+0.8931062631832013,Temperature (Degrees C),rain,TLT250 ,Tuggeranong_out.csv
+0.8026229471132893,Temperature (Degrees C),temp,TLT250 ,Tuggeranong_out.csv
+0.8903914508094295,Temperature (Degrees C),U,TLT250 ,Tuggeranong_out.csv
+0.6292439601360061,Temperature (Degrees C),CMD,TLT250 ,Tuggeranong_out.csv
+0.7496709788189428,Temperature (Degrees C),Year,TLT250 ,Tuggeranong_out.csv
+0.6129590535224845,Temperature (Degrees C),Month,TLT250 ,Tuggeranong_out.csv
+0.6832329842480239,Temperature (Degrees C),???,TLT250 ,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),TLT250 ,Tuggeranong_out.csv
+0.5420510636154022,Temperature (Degrees C),pH (units),TLT250 ,Tuggeranong_out.csv
+0.529230670374873,Temperature (Degrees C),Dissolved Oxygen (mg/L),TLT250 ,Tuggeranong_out.csv
+0.6854949173802112,Temperature (Degrees C),Dissolved Oxygen (% Saturation),TLT250 ,Tuggeranong_out.csv
+0.6887689190769951,Temperature (Degrees C),Nitrate (mg/L),TLT250 ,Tuggeranong_out.csv
+0.6844780732933043,Temperature (Degrees C),date,TLT250 ,Tuggeranong_out.csv
+0.6606957759088112,pH (units),rain,TLT250 ,Tuggeranong_out.csv
+0.6590614809654587,pH (units),U,TLT250 ,Tuggeranong_out.csv
+0.8240750210748558,pH (units),CMD,TLT250 ,Tuggeranong_out.csv
+0.5538136225478408,pH (units),Year,TLT250 ,Tuggeranong_out.csv
+0.6274436320777775,pH (units),day,TLT250 ,Tuggeranong_out.csv
+0.5047330692281681,pH (units),???,TLT250 ,Tuggeranong_out.csv
+0.5420510636154022,pH (units),Temperature (Degrees C),TLT250 ,Tuggeranong_out.csv
+1,pH (units),pH (units),TLT250 ,Tuggeranong_out.csv
+0.6315040952151639,pH (units),Electrical Conductivity (�S/cm),TLT250 ,Tuggeranong_out.csv
+0.8719486824395197,pH (units),Turbidity (NTU),TLT250 ,Tuggeranong_out.csv
+0.7645399448460957,pH (units),Dissolved Oxygen (mg/L),TLT250 ,Tuggeranong_out.csv
+0.7156043761726202,pH (units),Dissolved Oxygen (% Saturation),TLT250 ,Tuggeranong_out.csv
+0.5487054205919826,pH (units),Nitrate (mg/L),TLT250 ,Tuggeranong_out.csv
+0.5056528691057727,pH (units),date,TLT250 ,Tuggeranong_out.csv
+0.541145099526616,Electrical Conductivity (�S/cm),Year,TLT250 ,Tuggeranong_out.csv
+0.5383875476986124,Electrical Conductivity (�S/cm),???,TLT250 ,Tuggeranong_out.csv
+0.6315040952151639,Electrical Conductivity (�S/cm),pH (units),TLT250 ,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),TLT250 ,Tuggeranong_out.csv
+0.6640216559604362,Electrical Conductivity (�S/cm),Dissolved Oxygen (mg/L),TLT250 ,Tuggeranong_out.csv
+0.5381504862139612,Electrical Conductivity (�S/cm),Dissolved Oxygen (% Saturation),TLT250 ,Tuggeranong_out.csv
+0.6317199919177587,Electrical Conductivity (�S/cm),Total Phosphorus (mg/L),TLT250 ,Tuggeranong_out.csv
+0.5360448799575531,Electrical Conductivity (�S/cm),date,TLT250 ,Tuggeranong_out.csv
+0.550222863076329,Turbidity (NTU),rain,TLT250 ,Tuggeranong_out.csv
+0.5517566449348482,Turbidity (NTU),U,TLT250 ,Tuggeranong_out.csv
+0.7841174841462908,Turbidity (NTU),CMD,TLT250 ,Tuggeranong_out.csv
+0.7657809726677164,Turbidity (NTU),day,TLT250 ,Tuggeranong_out.csv
+0.8719486824395197,Turbidity (NTU),pH (units),TLT250 ,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),TLT250 ,Tuggeranong_out.csv
+0.6205781967872706,Dissolved Oxygen (mg/L),temp,TLT250 ,Tuggeranong_out.csv
+0.5154217841794598,Dissolved Oxygen (mg/L),day,TLT250 ,Tuggeranong_out.csv
+0.529230670374873,Dissolved Oxygen (mg/L),Temperature (Degrees C),TLT250 ,Tuggeranong_out.csv
+0.7645399448460957,Dissolved Oxygen (mg/L),pH (units),TLT250 ,Tuggeranong_out.csv
+0.6640216559604362,Dissolved Oxygen (mg/L),Electrical Conductivity (�S/cm),TLT250 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),TLT250 ,Tuggeranong_out.csv
+0.9799580088155684,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),TLT250 ,Tuggeranong_out.csv
+0.7351897850206085,Dissolved Oxygen (mg/L),Total Phosphorus (mg/L),TLT250 ,Tuggeranong_out.csv
+0.7156225157604408,Dissolved Oxygen (% Saturation),temp,TLT250 ,Tuggeranong_out.csv
+0.6854949173802112,Dissolved Oxygen (% Saturation),Temperature (Degrees C),TLT250 ,Tuggeranong_out.csv
+0.7156043761726202,Dissolved Oxygen (% Saturation),pH (units),TLT250 ,Tuggeranong_out.csv
+0.5381504862139612,Dissolved Oxygen (% Saturation),Electrical Conductivity (�S/cm),TLT250 ,Tuggeranong_out.csv
+0.9799580088155684,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),TLT250 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),TLT250 ,Tuggeranong_out.csv
+0.5710615527689463,Dissolved Oxygen (% Saturation),Nitrate (mg/L),TLT250 ,Tuggeranong_out.csv
+0.6816059258825334,Dissolved Oxygen (% Saturation),Total Phosphorus (mg/L),TLT250 ,Tuggeranong_out.csv
+0.7311600915905665,Nitrate (mg/L),rain,TLT250 ,Tuggeranong_out.csv
+0.6380695652102011,Nitrate (mg/L),temp,TLT250 ,Tuggeranong_out.csv
+0.7300479652102434,Nitrate (mg/L),U,TLT250 ,Tuggeranong_out.csv
+0.8449258930762243,Nitrate (mg/L),CMD,TLT250 ,Tuggeranong_out.csv
+0.5240915804096097,Nitrate (mg/L),Year,TLT250 ,Tuggeranong_out.csv
+0.6746151819146871,Nitrate (mg/L),Month,TLT250 ,Tuggeranong_out.csv
+0.5323973023748555,Nitrate (mg/L),???,TLT250 ,Tuggeranong_out.csv
+0.6887689190769951,Nitrate (mg/L),Temperature (Degrees C),TLT250 ,Tuggeranong_out.csv
+0.5487054205919826,Nitrate (mg/L),pH (units),TLT250 ,Tuggeranong_out.csv
+0.5710615527689463,Nitrate (mg/L),Dissolved Oxygen (% Saturation),TLT250 ,Tuggeranong_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),TLT250 ,Tuggeranong_out.csv
+0.6042261475613958,Nitrate (mg/L),Total Phosphorus (mg/L),TLT250 ,Tuggeranong_out.csv
+0.5302827103379877,Nitrate (mg/L),date,TLT250 ,Tuggeranong_out.csv
+0.5186029020243291,Total Phosphorus (mg/L),temp,TLT250 ,Tuggeranong_out.csv
+0.5459063944621895,Total Phosphorus (mg/L),CMD,TLT250 ,Tuggeranong_out.csv
+0.5238227218271996,Total Phosphorus (mg/L),Year,TLT250 ,Tuggeranong_out.csv
+0.6423558074406198,Total Phosphorus (mg/L),Month,TLT250 ,Tuggeranong_out.csv
+0.5348788662337028,Total Phosphorus (mg/L),???,TLT250 ,Tuggeranong_out.csv
+0.6317199919177587,Total Phosphorus (mg/L),Electrical Conductivity (�S/cm),TLT250 ,Tuggeranong_out.csv
+0.7351897850206085,Total Phosphorus (mg/L),Dissolved Oxygen (mg/L),TLT250 ,Tuggeranong_out.csv
+0.6816059258825334,Total Phosphorus (mg/L),Dissolved Oxygen (% Saturation),TLT250 ,Tuggeranong_out.csv
+0.6042261475613958,Total Phosphorus (mg/L),Nitrate (mg/L),TLT250 ,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),TLT250 ,Tuggeranong_out.csv
+0.5326127627378355,Total Phosphorus (mg/L),date,TLT250 ,Tuggeranong_out.csv
+0.7607252237244075,date,rain,TLT250 ,Tuggeranong_out.csv
+0.7605897254960886,date,U,TLT250 ,Tuggeranong_out.csv
+0.6004921484228468,date,CMD,TLT250 ,Tuggeranong_out.csv
+0.9130379761686815,date,Year,TLT250 ,Tuggeranong_out.csv
+0.76712183500387,date,Month,TLT250 ,Tuggeranong_out.csv
+0.9999836053074012,date,???,TLT250 ,Tuggeranong_out.csv
+0.6844780732933043,date,Temperature (Degrees C),TLT250 ,Tuggeranong_out.csv
+0.5056528691057727,date,pH (units),TLT250 ,Tuggeranong_out.csv
+0.5360448799575531,date,Electrical Conductivity (�S/cm),TLT250 ,Tuggeranong_out.csv
+0.5302827103379877,date,Nitrate (mg/L),TLT250 ,Tuggeranong_out.csv
+0.5326127627378355,date,Total Phosphorus (mg/L),TLT250 ,Tuggeranong_out.csv
+1,date,date,TLT250 ,Tuggeranong_out.csv
+1,rain,rain,TLT350 ,Tuggeranong_out.csv
+0.5275961623979638,rain,temp,TLT350 ,Tuggeranong_out.csv
+1,rain,U,TLT350 ,Tuggeranong_out.csv
+0.5807810559337834,rain,CMD,TLT350 ,Tuggeranong_out.csv
+1,rain,Year,TLT350 ,Tuggeranong_out.csv
+0.8061672657565293,rain,Month,TLT350 ,Tuggeranong_out.csv
+0.7716686082411814,rain,day,TLT350 ,Tuggeranong_out.csv
+0.9214495057044749,rain,???,TLT350 ,Tuggeranong_out.csv
+0.7945167277037619,rain,Temperature (Degrees C),TLT350 ,Tuggeranong_out.csv
+0.5491251783869155,rain,pH (units),TLT350 ,Tuggeranong_out.csv
+0.5405989188032436,rain,Electrical Conductivity (�S/cm),TLT350 ,Tuggeranong_out.csv
+0.5964809080634605,rain,Turbidity (NTU),TLT350 ,Tuggeranong_out.csv
+0.8922373748933063,rain,Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
+0.7261843774138907,rain,Dissolved Oxygen (% Saturation),TLT350 ,Tuggeranong_out.csv
+0.7706746355884525,rain,Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
+0.6345447650272829,rain,Total Phosphorus (mg/L),TLT350 ,Tuggeranong_out.csv
+0.9233317888535886,rain,date,TLT350 ,Tuggeranong_out.csv
+0.5275961623979638,temp,rain,TLT350 ,Tuggeranong_out.csv
+1,temp,temp,TLT350 ,Tuggeranong_out.csv
+0.5275961623979637,temp,U,TLT350 ,Tuggeranong_out.csv
+0.5275961623979337,temp,Year,TLT350 ,Tuggeranong_out.csv
+0.5818719165787904,temp,Month,TLT350 ,Tuggeranong_out.csv
+0.697644523760597,temp,day,TLT350 ,Tuggeranong_out.csv
+0.68665912365259,temp,Temperature (Degrees C),TLT350 ,Tuggeranong_out.csv
+0.646054243680194,temp,pH (units),TLT350 ,Tuggeranong_out.csv
+0.6606797045561607,temp,Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
+0.6292157877104323,temp,Total Phosphorus (mg/L),TLT350 ,Tuggeranong_out.csv
+1,U,rain,TLT350 ,Tuggeranong_out.csv
+0.5275961623979637,U,temp,TLT350 ,Tuggeranong_out.csv
+1,U,U,TLT350 ,Tuggeranong_out.csv
+0.5807810559337834,U,CMD,TLT350 ,Tuggeranong_out.csv
+1,U,Year,TLT350 ,Tuggeranong_out.csv
+0.8061672657565293,U,Month,TLT350 ,Tuggeranong_out.csv
+0.7716686082411814,U,day,TLT350 ,Tuggeranong_out.csv
+0.9214495057044748,U,???,TLT350 ,Tuggeranong_out.csv
+0.7945167277037619,U,Temperature (Degrees C),TLT350 ,Tuggeranong_out.csv
+0.5491251783869155,U,pH (units),TLT350 ,Tuggeranong_out.csv
+0.5405989188032436,U,Electrical Conductivity (�S/cm),TLT350 ,Tuggeranong_out.csv
+0.5964809080634605,U,Turbidity (NTU),TLT350 ,Tuggeranong_out.csv
+0.8922373748933063,U,Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
+0.7261843774138906,U,Dissolved Oxygen (% Saturation),TLT350 ,Tuggeranong_out.csv
+0.7706746355884525,U,Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
+0.6345447650272827,U,Total Phosphorus (mg/L),TLT350 ,Tuggeranong_out.csv
+0.9233317888535885,U,date,TLT350 ,Tuggeranong_out.csv
+0.5807810559337834,CMD,rain,TLT350 ,Tuggeranong_out.csv
+0.5807810559337834,CMD,U,TLT350 ,Tuggeranong_out.csv
+1,CMD,CMD,TLT350 ,Tuggeranong_out.csv
+0.5807810559337461,CMD,Year,TLT350 ,Tuggeranong_out.csv
+0.6454592641964333,CMD,day,TLT350 ,Tuggeranong_out.csv
+0.5549111853865407,CMD,???,TLT350 ,Tuggeranong_out.csv
+0.6964457456957546,CMD,Temperature (Degrees C),TLT350 ,Tuggeranong_out.csv
+0.6003299876323828,CMD,pH (units),TLT350 ,Tuggeranong_out.csv
+0.9759640981160105,CMD,Turbidity (NTU),TLT350 ,Tuggeranong_out.csv
+0.5030868514765667,CMD,Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
+0.7384330754173889,CMD,Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
+0.5556955303579656,CMD,date,TLT350 ,Tuggeranong_out.csv
+1,Year,rain,TLT350 ,Tuggeranong_out.csv
+0.5275961623979337,Year,temp,TLT350 ,Tuggeranong_out.csv
+1,Year,U,TLT350 ,Tuggeranong_out.csv
+0.5807810559337461,Year,CMD,TLT350 ,Tuggeranong_out.csv
+1,Year,Year,TLT350 ,Tuggeranong_out.csv
+0.8061672657565139,Year,Month,TLT350 ,Tuggeranong_out.csv
+0.7716686082411813,Year,day,TLT350 ,Tuggeranong_out.csv
+0.9214495057044747,Year,???,TLT350 ,Tuggeranong_out.csv
+0.7945167277037168,Year,Temperature (Degrees C),TLT350 ,Tuggeranong_out.csv
+0.5491251783868843,Year,pH (units),TLT350 ,Tuggeranong_out.csv
+0.5405989188032642,Year,Electrical Conductivity (�S/cm),TLT350 ,Tuggeranong_out.csv
+0.5964809080634267,Year,Turbidity (NTU),TLT350 ,Tuggeranong_out.csv
+0.8922373748933065,Year,Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
+0.7261843774138906,Year,Dissolved Oxygen (% Saturation),TLT350 ,Tuggeranong_out.csv
+0.7706746355884085,Year,Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
+0.6345447650273099,Year,Total Phosphorus (mg/L),TLT350 ,Tuggeranong_out.csv
+0.9233317888535885,Year,date,TLT350 ,Tuggeranong_out.csv
+0.8061672657565293,Month,rain,TLT350 ,Tuggeranong_out.csv
+0.5818719165787904,Month,temp,TLT350 ,Tuggeranong_out.csv
+0.8061672657565293,Month,U,TLT350 ,Tuggeranong_out.csv
+0.8061672657565139,Month,Year,TLT350 ,Tuggeranong_out.csv
+1,Month,Month,TLT350 ,Tuggeranong_out.csv
+0.5123928443876304,Month,day,TLT350 ,Tuggeranong_out.csv
+0.8146754137435848,Month,???,TLT350 ,Tuggeranong_out.csv
+0.7798260530779147,Month,Temperature (Degrees C),TLT350 ,Tuggeranong_out.csv
+0.5155789383505678,Month,pH (units),TLT350 ,Tuggeranong_out.csv
+0.5136191367893783,Month,Turbidity (NTU),TLT350 ,Tuggeranong_out.csv
+0.7909211581848984,Month,Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
+0.7210066774523087,Month,Dissolved Oxygen (% Saturation),TLT350 ,Tuggeranong_out.csv
+0.7859726469256202,Month,Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
+0.8146293676899973,Month,date,TLT350 ,Tuggeranong_out.csv
+0.7716686082411814,day,rain,TLT350 ,Tuggeranong_out.csv
+0.697644523760597,day,temp,TLT350 ,Tuggeranong_out.csv
+0.7716686082411814,day,U,TLT350 ,Tuggeranong_out.csv
+0.6454592641964333,day,CMD,TLT350 ,Tuggeranong_out.csv
+0.7716686082411813,day,Year,TLT350 ,Tuggeranong_out.csv
+0.5123928443876304,day,Month,TLT350 ,Tuggeranong_out.csv
+1,day,day,TLT350 ,Tuggeranong_out.csv
+0.6131036174914996,day,Temperature (Degrees C),TLT350 ,Tuggeranong_out.csv
+0.6328624175057462,day,pH (units),TLT350 ,Tuggeranong_out.csv
+0.582987452383308,day,Electrical Conductivity (�S/cm),TLT350 ,Tuggeranong_out.csv
+0.6437560729619115,day,Turbidity (NTU),TLT350 ,Tuggeranong_out.csv
+0.8635135872986377,day,Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
+0.8603717227526344,day,Dissolved Oxygen (% Saturation),TLT350 ,Tuggeranong_out.csv
+0.5947054234513207,day,Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
+0.6833560211178079,day,Total Phosphorus (mg/L),TLT350 ,Tuggeranong_out.csv
+0.9214495057044749,???,rain,TLT350 ,Tuggeranong_out.csv
+0.9214495057044748,???,U,TLT350 ,Tuggeranong_out.csv
+0.5549111853865407,???,CMD,TLT350 ,Tuggeranong_out.csv
+0.9214495057044747,???,Year,TLT350 ,Tuggeranong_out.csv
+0.8146754137435848,???,Month,TLT350 ,Tuggeranong_out.csv
+1,???,???,TLT350 ,Tuggeranong_out.csv
+0.7321070460165519,???,Temperature (Degrees C),TLT350 ,Tuggeranong_out.csv
+0.5059911241944935,???,pH (units),TLT350 ,Tuggeranong_out.csv
+0.636227763901538,???,Electrical Conductivity (�S/cm),TLT350 ,Tuggeranong_out.csv
+0.5496270378972197,???,Turbidity (NTU),TLT350 ,Tuggeranong_out.csv
+0.7106809193625363,???,Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
+0.7101377620219398,???,Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
+0.6961939442497878,???,Total Phosphorus (mg/L),TLT350 ,Tuggeranong_out.csv
+0.999984237019652,???,date,TLT350 ,Tuggeranong_out.csv
+0.7945167277037619,Temperature (Degrees C),rain,TLT350 ,Tuggeranong_out.csv
+0.68665912365259,Temperature (Degrees C),temp,TLT350 ,Tuggeranong_out.csv
+0.7945167277037619,Temperature (Degrees C),U,TLT350 ,Tuggeranong_out.csv
+0.6964457456957546,Temperature (Degrees C),CMD,TLT350 ,Tuggeranong_out.csv
+0.7945167277037168,Temperature (Degrees C),Year,TLT350 ,Tuggeranong_out.csv
+0.7798260530779147,Temperature (Degrees C),Month,TLT350 ,Tuggeranong_out.csv
+0.6131036174914996,Temperature (Degrees C),day,TLT350 ,Tuggeranong_out.csv
+0.7321070460165519,Temperature (Degrees C),???,TLT350 ,Tuggeranong_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),TLT350 ,Tuggeranong_out.csv
+0.6219033791460871,Temperature (Degrees C),pH (units),TLT350 ,Tuggeranong_out.csv
+0.6955216456051678,Temperature (Degrees C),Turbidity (NTU),TLT350 ,Tuggeranong_out.csv
+0.7088975194352242,Temperature (Degrees C),Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
+0.576965635252478,Temperature (Degrees C),Dissolved Oxygen (% Saturation),TLT350 ,Tuggeranong_out.csv
+0.9495469152507923,Temperature (Degrees C),Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
+0.733602551464814,Temperature (Degrees C),date,TLT350 ,Tuggeranong_out.csv
+0.5491251783869155,pH (units),rain,TLT350 ,Tuggeranong_out.csv
+0.646054243680194,pH (units),temp,TLT350 ,Tuggeranong_out.csv
+0.5491251783869155,pH (units),U,TLT350 ,Tuggeranong_out.csv
+0.6003299876323828,pH (units),CMD,TLT350 ,Tuggeranong_out.csv
+0.5491251783868843,pH (units),Year,TLT350 ,Tuggeranong_out.csv
+0.5155789383505678,pH (units),Month,TLT350 ,Tuggeranong_out.csv
+0.6328624175057462,pH (units),day,TLT350 ,Tuggeranong_out.csv
+0.5059911241944935,pH (units),???,TLT350 ,Tuggeranong_out.csv
+0.6219033791460871,pH (units),Temperature (Degrees C),TLT350 ,Tuggeranong_out.csv
+1,pH (units),pH (units),TLT350 ,Tuggeranong_out.csv
+0.531656968170143,pH (units),Turbidity (NTU),TLT350 ,Tuggeranong_out.csv
+0.5907646307988057,pH (units),Dissolved Oxygen (% Saturation),TLT350 ,Tuggeranong_out.csv
+0.7737017181151591,pH (units),Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
+0.6681883087030035,pH (units),Total Phosphorus (mg/L),TLT350 ,Tuggeranong_out.csv
+0.5070247332645367,pH (units),date,TLT350 ,Tuggeranong_out.csv
+0.5405989188032436,Electrical Conductivity (�S/cm),rain,TLT350 ,Tuggeranong_out.csv
+0.5405989188032436,Electrical Conductivity (�S/cm),U,TLT350 ,Tuggeranong_out.csv
+0.5405989188032642,Electrical Conductivity (�S/cm),Year,TLT350 ,Tuggeranong_out.csv
+0.582987452383308,Electrical Conductivity (�S/cm),day,TLT350 ,Tuggeranong_out.csv
+0.636227763901538,Electrical Conductivity (�S/cm),???,TLT350 ,Tuggeranong_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),TLT350 ,Tuggeranong_out.csv
+0.7786194028727056,Electrical Conductivity (�S/cm),Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
+0.7526482583179633,Electrical Conductivity (�S/cm),Dissolved Oxygen (% Saturation),TLT350 ,Tuggeranong_out.csv
+0.6340493761596815,Electrical Conductivity (�S/cm),date,TLT350 ,Tuggeranong_out.csv
+0.5964809080634605,Turbidity (NTU),rain,TLT350 ,Tuggeranong_out.csv
+0.5964809080634605,Turbidity (NTU),U,TLT350 ,Tuggeranong_out.csv
+0.9759640981160105,Turbidity (NTU),CMD,TLT350 ,Tuggeranong_out.csv
+0.5964809080634267,Turbidity (NTU),Year,TLT350 ,Tuggeranong_out.csv
+0.5136191367893783,Turbidity (NTU),Month,TLT350 ,Tuggeranong_out.csv
+0.6437560729619115,Turbidity (NTU),day,TLT350 ,Tuggeranong_out.csv
+0.5496270378972197,Turbidity (NTU),???,TLT350 ,Tuggeranong_out.csv
+0.6955216456051678,Turbidity (NTU),Temperature (Degrees C),TLT350 ,Tuggeranong_out.csv
+0.531656968170143,Turbidity (NTU),pH (units),TLT350 ,Tuggeranong_out.csv
+1,Turbidity (NTU),Turbidity (NTU),TLT350 ,Tuggeranong_out.csv
+0.5322025595845173,Turbidity (NTU),Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
+0.5645825241141349,Turbidity (NTU),Dissolved Oxygen (% Saturation),TLT350 ,Tuggeranong_out.csv
+0.7419490797902475,Turbidity (NTU),Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
+0.5055764879217773,Turbidity (NTU),Total Phosphorus (mg/L),TLT350 ,Tuggeranong_out.csv
+0.5507497838592479,Turbidity (NTU),date,TLT350 ,Tuggeranong_out.csv
+0.8922373748933063,Dissolved Oxygen (mg/L),rain,TLT350 ,Tuggeranong_out.csv
+0.8922373748933063,Dissolved Oxygen (mg/L),U,TLT350 ,Tuggeranong_out.csv
+0.5030868514765667,Dissolved Oxygen (mg/L),CMD,TLT350 ,Tuggeranong_out.csv
+0.8922373748933065,Dissolved Oxygen (mg/L),Year,TLT350 ,Tuggeranong_out.csv
+0.7909211581848984,Dissolved Oxygen (mg/L),Month,TLT350 ,Tuggeranong_out.csv
+0.8635135872986377,Dissolved Oxygen (mg/L),day,TLT350 ,Tuggeranong_out.csv
+0.7106809193625363,Dissolved Oxygen (mg/L),???,TLT350 ,Tuggeranong_out.csv
+0.7088975194352242,Dissolved Oxygen (mg/L),Temperature (Degrees C),TLT350 ,Tuggeranong_out.csv
+0.7786194028727056,Dissolved Oxygen (mg/L),Electrical Conductivity (�S/cm),TLT350 ,Tuggeranong_out.csv
+0.5322025595845173,Dissolved Oxygen (mg/L),Turbidity (NTU),TLT350 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
+0.9403048962790747,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),TLT350 ,Tuggeranong_out.csv
+0.687624713754296,Dissolved Oxygen (mg/L),Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
+0.5083926619920459,Dissolved Oxygen (mg/L),Total Phosphorus (mg/L),TLT350 ,Tuggeranong_out.csv
+0.7136908378078431,Dissolved Oxygen (mg/L),date,TLT350 ,Tuggeranong_out.csv
+0.7261843774138907,Dissolved Oxygen (% Saturation),rain,TLT350 ,Tuggeranong_out.csv
+0.7261843774138906,Dissolved Oxygen (% Saturation),U,TLT350 ,Tuggeranong_out.csv
+0.7261843774138906,Dissolved Oxygen (% Saturation),Year,TLT350 ,Tuggeranong_out.csv
+0.7210066774523087,Dissolved Oxygen (% Saturation),Month,TLT350 ,Tuggeranong_out.csv
+0.8603717227526344,Dissolved Oxygen (% Saturation),day,TLT350 ,Tuggeranong_out.csv
+0.576965635252478,Dissolved Oxygen (% Saturation),Temperature (Degrees C),TLT350 ,Tuggeranong_out.csv
+0.5907646307988057,Dissolved Oxygen (% Saturation),pH (units),TLT350 ,Tuggeranong_out.csv
+0.7526482583179633,Dissolved Oxygen (% Saturation),Electrical Conductivity (�S/cm),TLT350 ,Tuggeranong_out.csv
+0.5645825241141349,Dissolved Oxygen (% Saturation),Turbidity (NTU),TLT350 ,Tuggeranong_out.csv
+0.9403048962790747,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),TLT350 ,Tuggeranong_out.csv
+0.6218354227038638,Dissolved Oxygen (% Saturation),Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
+0.7706746355884525,Nitrate (mg/L),rain,TLT350 ,Tuggeranong_out.csv
+0.6606797045561607,Nitrate (mg/L),temp,TLT350 ,Tuggeranong_out.csv
+0.7706746355884525,Nitrate (mg/L),U,TLT350 ,Tuggeranong_out.csv
+0.7384330754173889,Nitrate (mg/L),CMD,TLT350 ,Tuggeranong_out.csv
+0.7706746355884085,Nitrate (mg/L),Year,TLT350 ,Tuggeranong_out.csv
+0.7859726469256202,Nitrate (mg/L),Month,TLT350 ,Tuggeranong_out.csv
+0.5947054234513207,Nitrate (mg/L),day,TLT350 ,Tuggeranong_out.csv
+0.7101377620219398,Nitrate (mg/L),???,TLT350 ,Tuggeranong_out.csv
+0.9495469152507923,Nitrate (mg/L),Temperature (Degrees C),TLT350 ,Tuggeranong_out.csv
+0.7737017181151591,Nitrate (mg/L),pH (units),TLT350 ,Tuggeranong_out.csv
+0.7419490797902475,Nitrate (mg/L),Turbidity (NTU),TLT350 ,Tuggeranong_out.csv
+0.687624713754296,Nitrate (mg/L),Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
+0.6218354227038638,Nitrate (mg/L),Dissolved Oxygen (% Saturation),TLT350 ,Tuggeranong_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
+0.7115883899019733,Nitrate (mg/L),date,TLT350 ,Tuggeranong_out.csv
+0.6345447650272829,Total Phosphorus (mg/L),rain,TLT350 ,Tuggeranong_out.csv
+0.6292157877104323,Total Phosphorus (mg/L),temp,TLT350 ,Tuggeranong_out.csv
+0.6345447650272827,Total Phosphorus (mg/L),U,TLT350 ,Tuggeranong_out.csv
+0.6345447650273099,Total Phosphorus (mg/L),Year,TLT350 ,Tuggeranong_out.csv
+0.6833560211178079,Total Phosphorus (mg/L),day,TLT350 ,Tuggeranong_out.csv
+0.6961939442497878,Total Phosphorus (mg/L),???,TLT350 ,Tuggeranong_out.csv
+0.6681883087030035,Total Phosphorus (mg/L),pH (units),TLT350 ,Tuggeranong_out.csv
+0.5055764879217773,Total Phosphorus (mg/L),Turbidity (NTU),TLT350 ,Tuggeranong_out.csv
+0.5083926619920459,Total Phosphorus (mg/L),Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),TLT350 ,Tuggeranong_out.csv
+0.6961292208984899,Total Phosphorus (mg/L),date,TLT350 ,Tuggeranong_out.csv
+0.9233317888535886,date,rain,TLT350 ,Tuggeranong_out.csv
+0.9233317888535885,date,U,TLT350 ,Tuggeranong_out.csv
+0.5556955303579656,date,CMD,TLT350 ,Tuggeranong_out.csv
+0.9233317888535885,date,Year,TLT350 ,Tuggeranong_out.csv
+0.8146293676899973,date,Month,TLT350 ,Tuggeranong_out.csv
+0.999984237019652,date,???,TLT350 ,Tuggeranong_out.csv
+0.733602551464814,date,Temperature (Degrees C),TLT350 ,Tuggeranong_out.csv
+0.5070247332645367,date,pH (units),TLT350 ,Tuggeranong_out.csv
+0.6340493761596815,date,Electrical Conductivity (�S/cm),TLT350 ,Tuggeranong_out.csv
+0.5507497838592479,date,Turbidity (NTU),TLT350 ,Tuggeranong_out.csv
+0.7136908378078431,date,Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
+0.7115883899019733,date,Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
+0.6961292208984899,date,Total Phosphorus (mg/L),TLT350 ,Tuggeranong_out.csv
+1,date,date,TLT350 ,Tuggeranong_out.csv
