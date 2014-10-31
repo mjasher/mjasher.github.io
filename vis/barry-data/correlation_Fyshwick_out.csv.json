@@ -4713,3 +4713,1787 @@ cor,species_x,species_y,site,catchment
 0.7136908378078431,date,Dissolved Oxygen (mg/L),TLT350 ,Tuggeranong_out.csv
 0.7115883899019733,date,Nitrate (mg/L),TLT350 ,Tuggeranong_out.csv
 1,date,date,TLT350 ,Tuggeranong_out.csv
+1,rain,rain,MOL440,Fyshwick_out.csv
+0.8186894764540569,rain,U,MOL440,Fyshwick_out.csv
+1,temp,temp,MOL440,Fyshwick_out.csv
+0.7657433113379752,temp,Temperature (Degrees C),MOL440,Fyshwick_out.csv
+1,minQ,minQ,MOL440,Fyshwick_out.csv
+0.9490402764074364,minQ,maxQ,MOL440,Fyshwick_out.csv
+0.9841441500547047,minQ,medianQ,MOL440,Fyshwick_out.csv
+0.8134125028384853,minQ,U,MOL440,Fyshwick_out.csv
+0.9490402764074364,maxQ,minQ,MOL440,Fyshwick_out.csv
+1,maxQ,maxQ,MOL440,Fyshwick_out.csv
+0.9789110521209917,maxQ,medianQ,MOL440,Fyshwick_out.csv
+0.8191180000363013,maxQ,U,MOL440,Fyshwick_out.csv
+0.7329194498322797,maxQ,flag,MOL440,Fyshwick_out.csv
+0.7102395525897804,maxQ,Total Nitrogen (mg/L),MOL440,Fyshwick_out.csv
+0.7368377682231587,maxQ,Ammonia (mg/L),MOL440,Fyshwick_out.csv
+0.7368377682231578,maxQ,Nitrite (mg/L),MOL440,Fyshwick_out.csv
+0.7368377682231584,maxQ,Nitrate (mg/L),MOL440,Fyshwick_out.csv
+0.7368377682231584,maxQ, Oxidised Nitrogen (mg/L as N),MOL440,Fyshwick_out.csv
+0.7368377682231587,maxQ,Orthophosphate (mg/L),MOL440,Fyshwick_out.csv
+0.7368377682231586,maxQ,Chloride (mg/L),MOL440,Fyshwick_out.csv
+0.7368377682231587,maxQ,Sulphate (mg/L),MOL440,Fyshwick_out.csv
+0.9841441500547047,medianQ,minQ,MOL440,Fyshwick_out.csv
+0.9789110521209917,medianQ,maxQ,MOL440,Fyshwick_out.csv
+1,medianQ,medianQ,MOL440,Fyshwick_out.csv
+0.814612116427769,medianQ,U,MOL440,Fyshwick_out.csv
+0.7217789175443147,medianQ,flag,MOL440,Fyshwick_out.csv
+1,i6,i6,MOL440,Fyshwick_out.csv
+0.9324072176052903,i6,i30,MOL440,Fyshwick_out.csv
+0.9324072176052903,i30,i6,MOL440,Fyshwick_out.csv
+1,i30,i30,MOL440,Fyshwick_out.csv
+0.8186894764540569,U,rain,MOL440,Fyshwick_out.csv
+0.8134125028384853,U,minQ,MOL440,Fyshwick_out.csv
+0.8191180000363013,U,maxQ,MOL440,Fyshwick_out.csv
+0.814612116427769,U,medianQ,MOL440,Fyshwick_out.csv
+1,U,U,MOL440,Fyshwick_out.csv
+1,CMD,CMD,MOL440,Fyshwick_out.csv
+1,Year,Year,MOL440,Fyshwick_out.csv
+0.9922097843510526,Year,???,MOL440,Fyshwick_out.csv
+0.9921989354578868,Year,date,MOL440,Fyshwick_out.csv
+1,Month,Month,MOL440,Fyshwick_out.csv
+1,day,day,MOL440,Fyshwick_out.csv
+0.7329194498322797,flag,maxQ,MOL440,Fyshwick_out.csv
+0.7217789175443147,flag,medianQ,MOL440,Fyshwick_out.csv
+1,flag,flag,MOL440,Fyshwick_out.csv
+0.9922097843510526,???,Year,MOL440,Fyshwick_out.csv
+1,???,???,MOL440,Fyshwick_out.csv
+0.9999982054091302,???,date,MOL440,Fyshwick_out.csv
+0.7657433113379752,Temperature (Degrees C),temp,MOL440,Fyshwick_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),MOL440,Fyshwick_out.csv
+1,pH (units),pH (units),MOL440,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),MOL440,Fyshwick_out.csv
+0.7608798200434893,Electrical Conductivity (�S/cm),Dissolved Oxygen (mg/L),MOL440,Fyshwick_out.csv
+1,Turbidity (NTU),Turbidity (NTU),MOL440,Fyshwick_out.csv
+0.7157595173612111,Turbidity (NTU),Ammonia (mg/L),MOL440,Fyshwick_out.csv
+0.7157595173612101,Turbidity (NTU),Nitrite (mg/L),MOL440,Fyshwick_out.csv
+0.7157595173612121,Turbidity (NTU),Nitrate (mg/L),MOL440,Fyshwick_out.csv
+0.7157595173612121,Turbidity (NTU), Oxidised Nitrogen (mg/L as N),MOL440,Fyshwick_out.csv
+0.7157595173612107,Turbidity (NTU),Orthophosphate (mg/L),MOL440,Fyshwick_out.csv
+0.7157595173612108,Turbidity (NTU),Chloride (mg/L),MOL440,Fyshwick_out.csv
+0.7157595173612102,Turbidity (NTU),Sulphate (mg/L),MOL440,Fyshwick_out.csv
+0.7608798200434893,Dissolved Oxygen (mg/L),Electrical Conductivity (�S/cm),MOL440,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),MOL440,Fyshwick_out.csv
+0.7102395525897804,Total Nitrogen (mg/L),maxQ,MOL440,Fyshwick_out.csv
+1,Total Nitrogen (mg/L),Total Nitrogen (mg/L),MOL440,Fyshwick_out.csv
+0.9695276116384973,Total Nitrogen (mg/L),Ammonia (mg/L),MOL440,Fyshwick_out.csv
+0.9695276116384969,Total Nitrogen (mg/L),Nitrite (mg/L),MOL440,Fyshwick_out.csv
+0.9695276116384969,Total Nitrogen (mg/L),Nitrate (mg/L),MOL440,Fyshwick_out.csv
+0.9695276116384969,Total Nitrogen (mg/L), Oxidised Nitrogen (mg/L as N),MOL440,Fyshwick_out.csv
+0.9695276116384988,Total Nitrogen (mg/L),Orthophosphate (mg/L),MOL440,Fyshwick_out.csv
+0.969527611638497,Total Nitrogen (mg/L),Chloride (mg/L),MOL440,Fyshwick_out.csv
+0.9695276116384979,Total Nitrogen (mg/L),Sulphate (mg/L),MOL440,Fyshwick_out.csv
+0.7364425875970458,Total Nitrogen (mg/L),Gauged Effluent Flow (L/s),MOL440,Fyshwick_out.csv
+0.7368377682231587,Ammonia (mg/L),maxQ,MOL440,Fyshwick_out.csv
+0.7157595173612111,Ammonia (mg/L),Turbidity (NTU),MOL440,Fyshwick_out.csv
+0.9695276116384973,Ammonia (mg/L),Total Nitrogen (mg/L),MOL440,Fyshwick_out.csv
+1,Ammonia (mg/L),Ammonia (mg/L),MOL440,Fyshwick_out.csv
+0.9999999999999976,Ammonia (mg/L),Nitrite (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000002,Ammonia (mg/L),Nitrate (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000002,Ammonia (mg/L), Oxidised Nitrogen (mg/L as N),MOL440,Fyshwick_out.csv
+0.9999999999999994,Ammonia (mg/L),Orthophosphate (mg/L),MOL440,Fyshwick_out.csv
+0.7217073173873192,Ammonia (mg/L),Biological Oxygen Demand (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000022,Ammonia (mg/L),Chloride (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000004,Ammonia (mg/L),Sulphate (mg/L),MOL440,Fyshwick_out.csv
+0.7613057048057474,Ammonia (mg/L),Gauged Effluent Flow (L/s),MOL440,Fyshwick_out.csv
+0.7368377682231578,Nitrite (mg/L),maxQ,MOL440,Fyshwick_out.csv
+0.7157595173612101,Nitrite (mg/L),Turbidity (NTU),MOL440,Fyshwick_out.csv
+0.9695276116384969,Nitrite (mg/L),Total Nitrogen (mg/L),MOL440,Fyshwick_out.csv
+0.9999999999999976,Nitrite (mg/L),Ammonia (mg/L),MOL440,Fyshwick_out.csv
+1,Nitrite (mg/L),Nitrite (mg/L),MOL440,Fyshwick_out.csv
+0.9999999999999983,Nitrite (mg/L),Nitrate (mg/L),MOL440,Fyshwick_out.csv
+0.9999999999999983,Nitrite (mg/L), Oxidised Nitrogen (mg/L as N),MOL440,Fyshwick_out.csv
+0.9999999999999981,Nitrite (mg/L),Orthophosphate (mg/L),MOL440,Fyshwick_out.csv
+0.7217073173873176,Nitrite (mg/L),Biological Oxygen Demand (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000002,Nitrite (mg/L),Chloride (mg/L),MOL440,Fyshwick_out.csv
+0.9999999999999976,Nitrite (mg/L),Sulphate (mg/L),MOL440,Fyshwick_out.csv
+0.7613057048057473,Nitrite (mg/L),Gauged Effluent Flow (L/s),MOL440,Fyshwick_out.csv
+0.7368377682231584,Nitrate (mg/L),maxQ,MOL440,Fyshwick_out.csv
+0.7157595173612121,Nitrate (mg/L),Turbidity (NTU),MOL440,Fyshwick_out.csv
+0.9695276116384969,Nitrate (mg/L),Total Nitrogen (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000002,Nitrate (mg/L),Ammonia (mg/L),MOL440,Fyshwick_out.csv
+0.9999999999999983,Nitrate (mg/L),Nitrite (mg/L),MOL440,Fyshwick_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),MOL440,Fyshwick_out.csv
+1,Nitrate (mg/L), Oxidised Nitrogen (mg/L as N),MOL440,Fyshwick_out.csv
+1.0000000000000004,Nitrate (mg/L),Orthophosphate (mg/L),MOL440,Fyshwick_out.csv
+0.7217073173873205,Nitrate (mg/L),Biological Oxygen Demand (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000027,Nitrate (mg/L),Chloride (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000013,Nitrate (mg/L),Sulphate (mg/L),MOL440,Fyshwick_out.csv
+0.7613057048057472,Nitrate (mg/L),Gauged Effluent Flow (L/s),MOL440,Fyshwick_out.csv
+0.7368377682231584, Oxidised Nitrogen (mg/L as N),maxQ,MOL440,Fyshwick_out.csv
+0.7157595173612121, Oxidised Nitrogen (mg/L as N),Turbidity (NTU),MOL440,Fyshwick_out.csv
+0.9695276116384969, Oxidised Nitrogen (mg/L as N),Total Nitrogen (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000002, Oxidised Nitrogen (mg/L as N),Ammonia (mg/L),MOL440,Fyshwick_out.csv
+0.9999999999999983, Oxidised Nitrogen (mg/L as N),Nitrite (mg/L),MOL440,Fyshwick_out.csv
+1, Oxidised Nitrogen (mg/L as N),Nitrate (mg/L),MOL440,Fyshwick_out.csv
+1, Oxidised Nitrogen (mg/L as N), Oxidised Nitrogen (mg/L as N),MOL440,Fyshwick_out.csv
+1.0000000000000004, Oxidised Nitrogen (mg/L as N),Orthophosphate (mg/L),MOL440,Fyshwick_out.csv
+0.7217073173873205, Oxidised Nitrogen (mg/L as N),Biological Oxygen Demand (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000027, Oxidised Nitrogen (mg/L as N),Chloride (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000013, Oxidised Nitrogen (mg/L as N),Sulphate (mg/L),MOL440,Fyshwick_out.csv
+0.7613057048057472, Oxidised Nitrogen (mg/L as N),Gauged Effluent Flow (L/s),MOL440,Fyshwick_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),MOL440,Fyshwick_out.csv
+0.7368377682231587,Orthophosphate (mg/L),maxQ,MOL440,Fyshwick_out.csv
+0.7157595173612107,Orthophosphate (mg/L),Turbidity (NTU),MOL440,Fyshwick_out.csv
+0.9695276116384988,Orthophosphate (mg/L),Total Nitrogen (mg/L),MOL440,Fyshwick_out.csv
+0.9999999999999994,Orthophosphate (mg/L),Ammonia (mg/L),MOL440,Fyshwick_out.csv
+0.9999999999999981,Orthophosphate (mg/L),Nitrite (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000004,Orthophosphate (mg/L),Nitrate (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000004,Orthophosphate (mg/L), Oxidised Nitrogen (mg/L as N),MOL440,Fyshwick_out.csv
+1,Orthophosphate (mg/L),Orthophosphate (mg/L),MOL440,Fyshwick_out.csv
+0.7217073173873204,Orthophosphate (mg/L),Biological Oxygen Demand (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000013,Orthophosphate (mg/L),Chloride (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000004,Orthophosphate (mg/L),Sulphate (mg/L),MOL440,Fyshwick_out.csv
+0.7613057048057478,Orthophosphate (mg/L),Gauged Effluent Flow (L/s),MOL440,Fyshwick_out.csv
+0.7217073173873192,Biological Oxygen Demand (mg/L),Ammonia (mg/L),MOL440,Fyshwick_out.csv
+0.7217073173873176,Biological Oxygen Demand (mg/L),Nitrite (mg/L),MOL440,Fyshwick_out.csv
+0.7217073173873205,Biological Oxygen Demand (mg/L),Nitrate (mg/L),MOL440,Fyshwick_out.csv
+0.7217073173873205,Biological Oxygen Demand (mg/L), Oxidised Nitrogen (mg/L as N),MOL440,Fyshwick_out.csv
+0.7217073173873204,Biological Oxygen Demand (mg/L),Orthophosphate (mg/L),MOL440,Fyshwick_out.csv
+1,Biological Oxygen Demand (mg/L),Biological Oxygen Demand (mg/L),MOL440,Fyshwick_out.csv
+0.7217073173873207,Biological Oxygen Demand (mg/L),Chloride (mg/L),MOL440,Fyshwick_out.csv
+0.7217073173873195,Biological Oxygen Demand (mg/L),Sulphate (mg/L),MOL440,Fyshwick_out.csv
+0.7368377682231586,Chloride (mg/L),maxQ,MOL440,Fyshwick_out.csv
+0.7157595173612108,Chloride (mg/L),Turbidity (NTU),MOL440,Fyshwick_out.csv
+0.969527611638497,Chloride (mg/L),Total Nitrogen (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000022,Chloride (mg/L),Ammonia (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000002,Chloride (mg/L),Nitrite (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000027,Chloride (mg/L),Nitrate (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000027,Chloride (mg/L), Oxidised Nitrogen (mg/L as N),MOL440,Fyshwick_out.csv
+1.0000000000000013,Chloride (mg/L),Orthophosphate (mg/L),MOL440,Fyshwick_out.csv
+0.7217073173873207,Chloride (mg/L),Biological Oxygen Demand (mg/L),MOL440,Fyshwick_out.csv
+1,Chloride (mg/L),Chloride (mg/L),MOL440,Fyshwick_out.csv
+0.9999999999999994,Chloride (mg/L),Sulphate (mg/L),MOL440,Fyshwick_out.csv
+0.7613057048057466,Chloride (mg/L),Gauged Effluent Flow (L/s),MOL440,Fyshwick_out.csv
+0.7368377682231587,Sulphate (mg/L),maxQ,MOL440,Fyshwick_out.csv
+0.7157595173612102,Sulphate (mg/L),Turbidity (NTU),MOL440,Fyshwick_out.csv
+0.9695276116384979,Sulphate (mg/L),Total Nitrogen (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000004,Sulphate (mg/L),Ammonia (mg/L),MOL440,Fyshwick_out.csv
+0.9999999999999976,Sulphate (mg/L),Nitrite (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000013,Sulphate (mg/L),Nitrate (mg/L),MOL440,Fyshwick_out.csv
+1.0000000000000013,Sulphate (mg/L), Oxidised Nitrogen (mg/L as N),MOL440,Fyshwick_out.csv
+1.0000000000000004,Sulphate (mg/L),Orthophosphate (mg/L),MOL440,Fyshwick_out.csv
+0.7217073173873195,Sulphate (mg/L),Biological Oxygen Demand (mg/L),MOL440,Fyshwick_out.csv
+0.9999999999999994,Sulphate (mg/L),Chloride (mg/L),MOL440,Fyshwick_out.csv
+1,Sulphate (mg/L),Sulphate (mg/L),MOL440,Fyshwick_out.csv
+0.7613057048057472,Sulphate (mg/L),Gauged Effluent Flow (L/s),MOL440,Fyshwick_out.csv
+0.7364425875970458,Gauged Effluent Flow (L/s),Total Nitrogen (mg/L),MOL440,Fyshwick_out.csv
+0.7613057048057474,Gauged Effluent Flow (L/s),Ammonia (mg/L),MOL440,Fyshwick_out.csv
+0.7613057048057473,Gauged Effluent Flow (L/s),Nitrite (mg/L),MOL440,Fyshwick_out.csv
+0.7613057048057472,Gauged Effluent Flow (L/s),Nitrate (mg/L),MOL440,Fyshwick_out.csv
+0.7613057048057472,Gauged Effluent Flow (L/s), Oxidised Nitrogen (mg/L as N),MOL440,Fyshwick_out.csv
+0.7613057048057478,Gauged Effluent Flow (L/s),Orthophosphate (mg/L),MOL440,Fyshwick_out.csv
+0.7613057048057466,Gauged Effluent Flow (L/s),Chloride (mg/L),MOL440,Fyshwick_out.csv
+0.7613057048057472,Gauged Effluent Flow (L/s),Sulphate (mg/L),MOL440,Fyshwick_out.csv
+1,Gauged Effluent Flow (L/s),Gauged Effluent Flow (L/s),MOL440,Fyshwick_out.csv
+0.9921989354578868,date,Year,MOL440,Fyshwick_out.csv
+0.9999982054091302,date,???,MOL440,Fyshwick_out.csv
+1,date,date,MOL440,Fyshwick_out.csv
+1,rain,rain,JER089,Fyshwick_out.csv
+0.9152486615790799,rain,temp,JER089,Fyshwick_out.csv
+0.7373572176882414,rain,minQ,JER089,Fyshwick_out.csv
+0.8989586885780846,rain,maxQ,JER089,Fyshwick_out.csv
+0.8428309208888783,rain,medianQ,JER089,Fyshwick_out.csv
+0.9997855237440759,rain,i6,JER089,Fyshwick_out.csv
+0.9960919063170683,rain,i30,JER089,Fyshwick_out.csv
+1.0000000000000002,rain,U,JER089,Fyshwick_out.csv
+0.9818780510034092,rain,flag,JER089,Fyshwick_out.csv
+0.8614753239062124,rain,Temperature (Degrees C),JER089,Fyshwick_out.csv
+0.9651651893975587,rain,Turbidity (NTU),JER089,Fyshwick_out.csv
+0.9152486615790799,temp,rain,JER089,Fyshwick_out.csv
+1,temp,temp,JER089,Fyshwick_out.csv
+0.8056567907055361,temp,maxQ,JER089,Fyshwick_out.csv
+0.7477425608402061,temp,medianQ,JER089,Fyshwick_out.csv
+0.9193822265475021,temp,i6,JER089,Fyshwick_out.csv
+0.9301374805466388,temp,i30,JER089,Fyshwick_out.csv
+0.9152486615790799,temp,U,JER089,Fyshwick_out.csv
+0.7132508433197028,temp,Month,JER089,Fyshwick_out.csv
+0.9083011013563774,temp,flag,JER089,Fyshwick_out.csv
+0.8081908324774899,temp,Temperature (Degrees C),JER089,Fyshwick_out.csv
+0.8430189316442869,temp,Turbidity (NTU),JER089,Fyshwick_out.csv
+0.7373572176882414,minQ,rain,JER089,Fyshwick_out.csv
+1,minQ,minQ,JER089,Fyshwick_out.csv
+0.9582501861230733,minQ,maxQ,JER089,Fyshwick_out.csv
+0.98485722023931,minQ,medianQ,JER089,Fyshwick_out.csv
+0.7290128953713623,minQ,i6,JER089,Fyshwick_out.csv
+0.7373572176882414,minQ,U,JER089,Fyshwick_out.csv
+0.8130563640871002,minQ,flag,JER089,Fyshwick_out.csv
+0.8121089281243532,minQ,pH (units),JER089,Fyshwick_out.csv
+0.8276968157439816,minQ,Electrical Conductivity (�S/cm),JER089,Fyshwick_out.csv
+0.8535068204248801,minQ,Turbidity (NTU),JER089,Fyshwick_out.csv
+0.8989586885780846,maxQ,rain,JER089,Fyshwick_out.csv
+0.8056567907055361,maxQ,temp,JER089,Fyshwick_out.csv
+0.9582501861230733,maxQ,minQ,JER089,Fyshwick_out.csv
+1,maxQ,maxQ,JER089,Fyshwick_out.csv
+0.9933105309700102,maxQ,medianQ,JER089,Fyshwick_out.csv
+0.8934467007662795,maxQ,i6,JER089,Fyshwick_out.csv
+0.8727606023623175,maxQ,i30,JER089,Fyshwick_out.csv
+0.8989586885780846,maxQ,U,JER089,Fyshwick_out.csv
+0.9428106066193666,maxQ,flag,JER089,Fyshwick_out.csv
+0.71584356461793,maxQ,Temperature (Degrees C),JER089,Fyshwick_out.csv
+0.7055816283103983,maxQ,pH (units),JER089,Fyshwick_out.csv
+0.7765816404613678,maxQ,Electrical Conductivity (�S/cm),JER089,Fyshwick_out.csv
+0.9556065510794248,maxQ,Turbidity (NTU),JER089,Fyshwick_out.csv
+0.8428309208888783,medianQ,rain,JER089,Fyshwick_out.csv
+0.7477425608402061,medianQ,temp,JER089,Fyshwick_out.csv
+0.98485722023931,medianQ,minQ,JER089,Fyshwick_out.csv
+0.9933105309700102,medianQ,maxQ,JER089,Fyshwick_out.csv
+1,medianQ,medianQ,JER089,Fyshwick_out.csv
+0.8361205829039831,medianQ,i6,JER089,Fyshwick_out.csv
+0.8116902095042623,medianQ,i30,JER089,Fyshwick_out.csv
+0.8428309208888783,medianQ,U,JER089,Fyshwick_out.csv
+0.8999602461666623,medianQ,flag,JER089,Fyshwick_out.csv
+0.755683391405105,medianQ,pH (units),JER089,Fyshwick_out.csv
+0.8049582507448196,medianQ,Electrical Conductivity (�S/cm),JER089,Fyshwick_out.csv
+0.9240595070297198,medianQ,Turbidity (NTU),JER089,Fyshwick_out.csv
+0.9997855237440759,i6,rain,JER089,Fyshwick_out.csv
+0.9193822265475021,i6,temp,JER089,Fyshwick_out.csv
+0.7290128953713623,i6,minQ,JER089,Fyshwick_out.csv
+0.8934467007662795,i6,maxQ,JER089,Fyshwick_out.csv
+0.8361205829039831,i6,medianQ,JER089,Fyshwick_out.csv
+1,i6,i6,JER089,Fyshwick_out.csv
+0.9977074382534392,i6,i30,JER089,Fyshwick_out.csv
+0.999785523744076,i6,U,JER089,Fyshwick_out.csv
+0.9796481466582109,i6,flag,JER089,Fyshwick_out.csv
+0.8587468435569554,i6,Temperature (Degrees C),JER089,Fyshwick_out.csv
+0.9620944479897389,i6,Turbidity (NTU),JER089,Fyshwick_out.csv
+0.9960919063170683,i30,rain,JER089,Fyshwick_out.csv
+0.9301374805466388,i30,temp,JER089,Fyshwick_out.csv
+0.8727606023623175,i30,maxQ,JER089,Fyshwick_out.csv
+0.8116902095042623,i30,medianQ,JER089,Fyshwick_out.csv
+0.9977074382534392,i30,i6,JER089,Fyshwick_out.csv
+1,i30,i30,JER089,Fyshwick_out.csv
+0.9960919063170681,i30,U,JER089,Fyshwick_out.csv
+0.9694289493232786,i30,flag,JER089,Fyshwick_out.csv
+0.8472603455283847,i30,Temperature (Degrees C),JER089,Fyshwick_out.csv
+0.9491801740477989,i30,Turbidity (NTU),JER089,Fyshwick_out.csv
+1.0000000000000002,U,rain,JER089,Fyshwick_out.csv
+0.9152486615790799,U,temp,JER089,Fyshwick_out.csv
+0.7373572176882414,U,minQ,JER089,Fyshwick_out.csv
+0.8989586885780846,U,maxQ,JER089,Fyshwick_out.csv
+0.8428309208888783,U,medianQ,JER089,Fyshwick_out.csv
+0.999785523744076,U,i6,JER089,Fyshwick_out.csv
+0.9960919063170681,U,i30,JER089,Fyshwick_out.csv
+1,U,U,JER089,Fyshwick_out.csv
+0.9818780510034094,U,flag,JER089,Fyshwick_out.csv
+0.8614753239062123,U,Temperature (Degrees C),JER089,Fyshwick_out.csv
+0.9651651893975589,U,Turbidity (NTU),JER089,Fyshwick_out.csv
+1,CMD,CMD,JER089,Fyshwick_out.csv
+0.7970073485539904,CMD,Month,JER089,Fyshwick_out.csv
+0.7637698482241819,CMD,day,JER089,Fyshwick_out.csv
+0.7096014012871525,CMD,Temperature (Degrees C),JER089,Fyshwick_out.csv
+1,Year,Year,JER089,Fyshwick_out.csv
+0.9906811761363362,Year,???,JER089,Fyshwick_out.csv
+0.876986644166363,Year,Electrical Conductivity (�S/cm),JER089,Fyshwick_out.csv
+0.9907112743401392,Year,date,JER089,Fyshwick_out.csv
+0.7132508433197028,Month,temp,JER089,Fyshwick_out.csv
+0.7970073485539904,Month,CMD,JER089,Fyshwick_out.csv
+1,Month,Month,JER089,Fyshwick_out.csv
+0.85040206101475,Month,day,JER089,Fyshwick_out.csv
+0.7637698482241819,day,CMD,JER089,Fyshwick_out.csv
+0.85040206101475,day,Month,JER089,Fyshwick_out.csv
+1,day,day,JER089,Fyshwick_out.csv
+0.9818780510034092,flag,rain,JER089,Fyshwick_out.csv
+0.9083011013563774,flag,temp,JER089,Fyshwick_out.csv
+0.8130563640871002,flag,minQ,JER089,Fyshwick_out.csv
+0.9428106066193666,flag,maxQ,JER089,Fyshwick_out.csv
+0.8999602461666623,flag,medianQ,JER089,Fyshwick_out.csv
+0.9796481466582109,flag,i6,JER089,Fyshwick_out.csv
+0.9694289493232786,flag,i30,JER089,Fyshwick_out.csv
+0.9818780510034094,flag,U,JER089,Fyshwick_out.csv
+1,flag,flag,JER089,Fyshwick_out.csv
+0.8270520216343845,flag,Temperature (Degrees C),JER089,Fyshwick_out.csv
+0.9614692370741333,flag,Turbidity (NTU),JER089,Fyshwick_out.csv
+0.9906811761363362,???,Year,JER089,Fyshwick_out.csv
+1,???,???,JER089,Fyshwick_out.csv
+0.8946051323851983,???,Electrical Conductivity (�S/cm),JER089,Fyshwick_out.csv
+0.9999998845610459,???,date,JER089,Fyshwick_out.csv
+0.8614753239062124,Temperature (Degrees C),rain,JER089,Fyshwick_out.csv
+0.8081908324774899,Temperature (Degrees C),temp,JER089,Fyshwick_out.csv
+0.71584356461793,Temperature (Degrees C),maxQ,JER089,Fyshwick_out.csv
+0.8587468435569554,Temperature (Degrees C),i6,JER089,Fyshwick_out.csv
+0.8472603455283847,Temperature (Degrees C),i30,JER089,Fyshwick_out.csv
+0.8614753239062123,Temperature (Degrees C),U,JER089,Fyshwick_out.csv
+0.7096014012871525,Temperature (Degrees C),CMD,JER089,Fyshwick_out.csv
+0.8270520216343845,Temperature (Degrees C),flag,JER089,Fyshwick_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),JER089,Fyshwick_out.csv
+0.7693928251365324,Temperature (Degrees C),Turbidity (NTU),JER089,Fyshwick_out.csv
+0.8121089281243532,pH (units),minQ,JER089,Fyshwick_out.csv
+0.7055816283103983,pH (units),maxQ,JER089,Fyshwick_out.csv
+0.755683391405105,pH (units),medianQ,JER089,Fyshwick_out.csv
+1,pH (units),pH (units),JER089,Fyshwick_out.csv
+0.7351696996832562,pH (units),Electrical Conductivity (�S/cm),JER089,Fyshwick_out.csv
+0.8276968157439816,Electrical Conductivity (�S/cm),minQ,JER089,Fyshwick_out.csv
+0.7765816404613678,Electrical Conductivity (�S/cm),maxQ,JER089,Fyshwick_out.csv
+0.8049582507448196,Electrical Conductivity (�S/cm),medianQ,JER089,Fyshwick_out.csv
+0.876986644166363,Electrical Conductivity (�S/cm),Year,JER089,Fyshwick_out.csv
+0.8946051323851983,Electrical Conductivity (�S/cm),???,JER089,Fyshwick_out.csv
+0.7351696996832562,Electrical Conductivity (�S/cm),pH (units),JER089,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),JER089,Fyshwick_out.csv
+0.894672006321407,Electrical Conductivity (�S/cm),date,JER089,Fyshwick_out.csv
+0.9651651893975587,Turbidity (NTU),rain,JER089,Fyshwick_out.csv
+0.8430189316442869,Turbidity (NTU),temp,JER089,Fyshwick_out.csv
+0.8535068204248801,Turbidity (NTU),minQ,JER089,Fyshwick_out.csv
+0.9556065510794248,Turbidity (NTU),maxQ,JER089,Fyshwick_out.csv
+0.9240595070297198,Turbidity (NTU),medianQ,JER089,Fyshwick_out.csv
+0.9620944479897389,Turbidity (NTU),i6,JER089,Fyshwick_out.csv
+0.9491801740477989,Turbidity (NTU),i30,JER089,Fyshwick_out.csv
+0.9651651893975589,Turbidity (NTU),U,JER089,Fyshwick_out.csv
+0.9614692370741333,Turbidity (NTU),flag,JER089,Fyshwick_out.csv
+0.7693928251365324,Turbidity (NTU),Temperature (Degrees C),JER089,Fyshwick_out.csv
+1,Turbidity (NTU),Turbidity (NTU),JER089,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),JER089,Fyshwick_out.csv
+0.9907112743401392,date,Year,JER089,Fyshwick_out.csv
+0.9999998845610459,date,???,JER089,Fyshwick_out.csv
+0.894672006321407,date,Electrical Conductivity (�S/cm),JER089,Fyshwick_out.csv
+1,date,date,JER089,Fyshwick_out.csv
+1,temp,temp,WAT221,Fyshwick_out.csv
+1,temp,CMD,WAT221,Fyshwick_out.csv
+1,temp,day,WAT221,Fyshwick_out.csv
+1.0000000000000002,temp,pH (units),WAT221,Fyshwick_out.csv
+0.9999999999999998,temp,Turbidity (NTU),WAT221,Fyshwick_out.csv
+1,minQ,minQ,WAT221,Fyshwick_out.csv
+0.9999999999999999,minQ,maxQ,WAT221,Fyshwick_out.csv
+0.9999999999999999,minQ,medianQ,WAT221,Fyshwick_out.csv
+1,minQ,Month,WAT221,Fyshwick_out.csv
+1.0000000000000002,minQ,???,WAT221,Fyshwick_out.csv
+1,minQ,Temperature (Degrees C),WAT221,Fyshwick_out.csv
+1,minQ,Electrical Conductivity (�S/cm),WAT221,Fyshwick_out.csv
+1.0000000000000002,minQ,Dissolved Oxygen (mg/L),WAT221,Fyshwick_out.csv
+1,minQ,date,WAT221,Fyshwick_out.csv
+0.9999999999999999,maxQ,minQ,WAT221,Fyshwick_out.csv
+1,maxQ,maxQ,WAT221,Fyshwick_out.csv
+0.9999999999999999,maxQ,medianQ,WAT221,Fyshwick_out.csv
+0.9999999999999999,maxQ,Month,WAT221,Fyshwick_out.csv
+1,maxQ,???,WAT221,Fyshwick_out.csv
+0.9999999999999999,maxQ,Temperature (Degrees C),WAT221,Fyshwick_out.csv
+1,maxQ,Electrical Conductivity (�S/cm),WAT221,Fyshwick_out.csv
+1.0000000000000002,maxQ,Dissolved Oxygen (mg/L),WAT221,Fyshwick_out.csv
+1,maxQ,date,WAT221,Fyshwick_out.csv
+0.9999999999999999,medianQ,minQ,WAT221,Fyshwick_out.csv
+0.9999999999999999,medianQ,maxQ,WAT221,Fyshwick_out.csv
+1,medianQ,medianQ,WAT221,Fyshwick_out.csv
+1,medianQ,Month,WAT221,Fyshwick_out.csv
+1,medianQ,???,WAT221,Fyshwick_out.csv
+1,medianQ,Temperature (Degrees C),WAT221,Fyshwick_out.csv
+1,medianQ,Electrical Conductivity (�S/cm),WAT221,Fyshwick_out.csv
+1,medianQ,Dissolved Oxygen (mg/L),WAT221,Fyshwick_out.csv
+0.9999999999999998,medianQ,date,WAT221,Fyshwick_out.csv
+1,CMD,temp,WAT221,Fyshwick_out.csv
+1,CMD,CMD,WAT221,Fyshwick_out.csv
+1.0000000000000002,CMD,day,WAT221,Fyshwick_out.csv
+1,CMD,pH (units),WAT221,Fyshwick_out.csv
+1,CMD,Turbidity (NTU),WAT221,Fyshwick_out.csv
+1,Month,minQ,WAT221,Fyshwick_out.csv
+0.9999999999999999,Month,maxQ,WAT221,Fyshwick_out.csv
+1,Month,medianQ,WAT221,Fyshwick_out.csv
+1,Month,Month,WAT221,Fyshwick_out.csv
+1,Month,???,WAT221,Fyshwick_out.csv
+1,Month,Temperature (Degrees C),WAT221,Fyshwick_out.csv
+1,Month,Electrical Conductivity (�S/cm),WAT221,Fyshwick_out.csv
+1,Month,Dissolved Oxygen (mg/L),WAT221,Fyshwick_out.csv
+1,Month,date,WAT221,Fyshwick_out.csv
+1,day,temp,WAT221,Fyshwick_out.csv
+1.0000000000000002,day,CMD,WAT221,Fyshwick_out.csv
+1,day,day,WAT221,Fyshwick_out.csv
+1,day,pH (units),WAT221,Fyshwick_out.csv
+1,day,Turbidity (NTU),WAT221,Fyshwick_out.csv
+1.0000000000000002,???,minQ,WAT221,Fyshwick_out.csv
+1,???,maxQ,WAT221,Fyshwick_out.csv
+1,???,medianQ,WAT221,Fyshwick_out.csv
+1,???,Month,WAT221,Fyshwick_out.csv
+1,???,???,WAT221,Fyshwick_out.csv
+1,???,Temperature (Degrees C),WAT221,Fyshwick_out.csv
+1,???,Electrical Conductivity (�S/cm),WAT221,Fyshwick_out.csv
+0.9999999999999999,???,Dissolved Oxygen (mg/L),WAT221,Fyshwick_out.csv
+1,???,date,WAT221,Fyshwick_out.csv
+1,Temperature (Degrees C),minQ,WAT221,Fyshwick_out.csv
+0.9999999999999999,Temperature (Degrees C),maxQ,WAT221,Fyshwick_out.csv
+1,Temperature (Degrees C),medianQ,WAT221,Fyshwick_out.csv
+1,Temperature (Degrees C),Month,WAT221,Fyshwick_out.csv
+1,Temperature (Degrees C),???,WAT221,Fyshwick_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),WAT221,Fyshwick_out.csv
+1,Temperature (Degrees C),Electrical Conductivity (�S/cm),WAT221,Fyshwick_out.csv
+1,Temperature (Degrees C),Dissolved Oxygen (mg/L),WAT221,Fyshwick_out.csv
+1.0000000000000002,Temperature (Degrees C),date,WAT221,Fyshwick_out.csv
+1.0000000000000002,pH (units),temp,WAT221,Fyshwick_out.csv
+1,pH (units),CMD,WAT221,Fyshwick_out.csv
+1,pH (units),day,WAT221,Fyshwick_out.csv
+1,pH (units),pH (units),WAT221,Fyshwick_out.csv
+1,pH (units),Turbidity (NTU),WAT221,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),minQ,WAT221,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),maxQ,WAT221,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),medianQ,WAT221,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Month,WAT221,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),???,WAT221,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Temperature (Degrees C),WAT221,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),WAT221,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Dissolved Oxygen (mg/L),WAT221,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),date,WAT221,Fyshwick_out.csv
+0.9999999999999998,Turbidity (NTU),temp,WAT221,Fyshwick_out.csv
+1,Turbidity (NTU),CMD,WAT221,Fyshwick_out.csv
+1,Turbidity (NTU),day,WAT221,Fyshwick_out.csv
+1,Turbidity (NTU),pH (units),WAT221,Fyshwick_out.csv
+1,Turbidity (NTU),Turbidity (NTU),WAT221,Fyshwick_out.csv
+1.0000000000000002,Dissolved Oxygen (mg/L),minQ,WAT221,Fyshwick_out.csv
+1.0000000000000002,Dissolved Oxygen (mg/L),maxQ,WAT221,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),medianQ,WAT221,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Month,WAT221,Fyshwick_out.csv
+0.9999999999999999,Dissolved Oxygen (mg/L),???,WAT221,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Temperature (Degrees C),WAT221,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Electrical Conductivity (�S/cm),WAT221,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),WAT221,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),date,WAT221,Fyshwick_out.csv
+1,date,minQ,WAT221,Fyshwick_out.csv
+1,date,maxQ,WAT221,Fyshwick_out.csv
+0.9999999999999998,date,medianQ,WAT221,Fyshwick_out.csv
+1,date,Month,WAT221,Fyshwick_out.csv
+1,date,???,WAT221,Fyshwick_out.csv
+1.0000000000000002,date,Temperature (Degrees C),WAT221,Fyshwick_out.csv
+1,date,Electrical Conductivity (�S/cm),WAT221,Fyshwick_out.csv
+1,date,Dissolved Oxygen (mg/L),WAT221,Fyshwick_out.csv
+1,date,date,WAT221,Fyshwick_out.csv
+1,temp,temp,MOL413,Fyshwick_out.csv
+1,temp,CMD,MOL413,Fyshwick_out.csv
+1,temp,day,MOL413,Fyshwick_out.csv
+1,temp,Temperature (Degrees C),MOL413,Fyshwick_out.csv
+1,temp,Electrical Conductivity (�S/cm),MOL413,Fyshwick_out.csv
+1,minQ,minQ,MOL413,Fyshwick_out.csv
+1,minQ,maxQ,MOL413,Fyshwick_out.csv
+1,minQ,medianQ,MOL413,Fyshwick_out.csv
+1,minQ,Month,MOL413,Fyshwick_out.csv
+1,minQ,flag,MOL413,Fyshwick_out.csv
+1,minQ,???,MOL413,Fyshwick_out.csv
+1,minQ,pH (units),MOL413,Fyshwick_out.csv
+1,minQ,Turbidity (NTU),MOL413,Fyshwick_out.csv
+1,minQ,Dissolved Oxygen (mg/L),MOL413,Fyshwick_out.csv
+1,minQ,Total Phosphorus (mg/L),MOL413,Fyshwick_out.csv
+1,minQ,date,MOL413,Fyshwick_out.csv
+1,maxQ,minQ,MOL413,Fyshwick_out.csv
+1,maxQ,maxQ,MOL413,Fyshwick_out.csv
+1,maxQ,medianQ,MOL413,Fyshwick_out.csv
+1,maxQ,Month,MOL413,Fyshwick_out.csv
+1,maxQ,flag,MOL413,Fyshwick_out.csv
+1,maxQ,???,MOL413,Fyshwick_out.csv
+0.9999999999999998,maxQ,pH (units),MOL413,Fyshwick_out.csv
+1,maxQ,Turbidity (NTU),MOL413,Fyshwick_out.csv
+1.0000000000000002,maxQ,Dissolved Oxygen (mg/L),MOL413,Fyshwick_out.csv
+0.9999999999999998,maxQ,Total Phosphorus (mg/L),MOL413,Fyshwick_out.csv
+1,maxQ,date,MOL413,Fyshwick_out.csv
+1,medianQ,minQ,MOL413,Fyshwick_out.csv
+1,medianQ,maxQ,MOL413,Fyshwick_out.csv
+1,medianQ,medianQ,MOL413,Fyshwick_out.csv
+1,medianQ,Month,MOL413,Fyshwick_out.csv
+1,medianQ,flag,MOL413,Fyshwick_out.csv
+1,medianQ,???,MOL413,Fyshwick_out.csv
+1,medianQ,pH (units),MOL413,Fyshwick_out.csv
+1,medianQ,Turbidity (NTU),MOL413,Fyshwick_out.csv
+1,medianQ,Dissolved Oxygen (mg/L),MOL413,Fyshwick_out.csv
+1,medianQ,Total Phosphorus (mg/L),MOL413,Fyshwick_out.csv
+1,medianQ,date,MOL413,Fyshwick_out.csv
+1,CMD,temp,MOL413,Fyshwick_out.csv
+1,CMD,CMD,MOL413,Fyshwick_out.csv
+1,CMD,day,MOL413,Fyshwick_out.csv
+1,CMD,Temperature (Degrees C),MOL413,Fyshwick_out.csv
+0.9999999999999999,CMD,Electrical Conductivity (�S/cm),MOL413,Fyshwick_out.csv
+1,Month,minQ,MOL413,Fyshwick_out.csv
+1,Month,maxQ,MOL413,Fyshwick_out.csv
+1,Month,medianQ,MOL413,Fyshwick_out.csv
+1,Month,Month,MOL413,Fyshwick_out.csv
+1,Month,flag,MOL413,Fyshwick_out.csv
+1,Month,???,MOL413,Fyshwick_out.csv
+1,Month,pH (units),MOL413,Fyshwick_out.csv
+1,Month,Turbidity (NTU),MOL413,Fyshwick_out.csv
+0.9999999999999999,Month,Dissolved Oxygen (mg/L),MOL413,Fyshwick_out.csv
+1,Month,Total Phosphorus (mg/L),MOL413,Fyshwick_out.csv
+1,Month,date,MOL413,Fyshwick_out.csv
+1,day,temp,MOL413,Fyshwick_out.csv
+1,day,CMD,MOL413,Fyshwick_out.csv
+1,day,day,MOL413,Fyshwick_out.csv
+1,day,Temperature (Degrees C),MOL413,Fyshwick_out.csv
+1,day,Electrical Conductivity (�S/cm),MOL413,Fyshwick_out.csv
+1,flag,minQ,MOL413,Fyshwick_out.csv
+1,flag,maxQ,MOL413,Fyshwick_out.csv
+1,flag,medianQ,MOL413,Fyshwick_out.csv
+1,flag,Month,MOL413,Fyshwick_out.csv
+1,flag,flag,MOL413,Fyshwick_out.csv
+1,flag,???,MOL413,Fyshwick_out.csv
+1,flag,pH (units),MOL413,Fyshwick_out.csv
+1,flag,Turbidity (NTU),MOL413,Fyshwick_out.csv
+1,flag,Dissolved Oxygen (mg/L),MOL413,Fyshwick_out.csv
+1,flag,Total Phosphorus (mg/L),MOL413,Fyshwick_out.csv
+1,flag,date,MOL413,Fyshwick_out.csv
+1,???,minQ,MOL413,Fyshwick_out.csv
+1,???,maxQ,MOL413,Fyshwick_out.csv
+1,???,medianQ,MOL413,Fyshwick_out.csv
+1,???,Month,MOL413,Fyshwick_out.csv
+1,???,flag,MOL413,Fyshwick_out.csv
+1,???,???,MOL413,Fyshwick_out.csv
+1,???,pH (units),MOL413,Fyshwick_out.csv
+1.0000000000000002,???,Turbidity (NTU),MOL413,Fyshwick_out.csv
+0.9999999999999998,???,Dissolved Oxygen (mg/L),MOL413,Fyshwick_out.csv
+1,???,Total Phosphorus (mg/L),MOL413,Fyshwick_out.csv
+1,???,date,MOL413,Fyshwick_out.csv
+1,Temperature (Degrees C),temp,MOL413,Fyshwick_out.csv
+1,Temperature (Degrees C),CMD,MOL413,Fyshwick_out.csv
+1,Temperature (Degrees C),day,MOL413,Fyshwick_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),MOL413,Fyshwick_out.csv
+1,Temperature (Degrees C),Electrical Conductivity (�S/cm),MOL413,Fyshwick_out.csv
+1,pH (units),minQ,MOL413,Fyshwick_out.csv
+0.9999999999999998,pH (units),maxQ,MOL413,Fyshwick_out.csv
+1,pH (units),medianQ,MOL413,Fyshwick_out.csv
+1,pH (units),Month,MOL413,Fyshwick_out.csv
+1,pH (units),flag,MOL413,Fyshwick_out.csv
+1,pH (units),???,MOL413,Fyshwick_out.csv
+1,pH (units),pH (units),MOL413,Fyshwick_out.csv
+1.0000000000000002,pH (units),Turbidity (NTU),MOL413,Fyshwick_out.csv
+0.9999999999999998,pH (units),Dissolved Oxygen (mg/L),MOL413,Fyshwick_out.csv
+1,pH (units),Total Phosphorus (mg/L),MOL413,Fyshwick_out.csv
+1,pH (units),date,MOL413,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),temp,MOL413,Fyshwick_out.csv
+0.9999999999999999,Electrical Conductivity (�S/cm),CMD,MOL413,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),day,MOL413,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Temperature (Degrees C),MOL413,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),MOL413,Fyshwick_out.csv
+1,Turbidity (NTU),minQ,MOL413,Fyshwick_out.csv
+1,Turbidity (NTU),maxQ,MOL413,Fyshwick_out.csv
+1,Turbidity (NTU),medianQ,MOL413,Fyshwick_out.csv
+1,Turbidity (NTU),Month,MOL413,Fyshwick_out.csv
+1,Turbidity (NTU),flag,MOL413,Fyshwick_out.csv
+1.0000000000000002,Turbidity (NTU),???,MOL413,Fyshwick_out.csv
+1.0000000000000002,Turbidity (NTU),pH (units),MOL413,Fyshwick_out.csv
+1,Turbidity (NTU),Turbidity (NTU),MOL413,Fyshwick_out.csv
+1,Turbidity (NTU),Dissolved Oxygen (mg/L),MOL413,Fyshwick_out.csv
+1.0000000000000002,Turbidity (NTU),Total Phosphorus (mg/L),MOL413,Fyshwick_out.csv
+1,Turbidity (NTU),date,MOL413,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),minQ,MOL413,Fyshwick_out.csv
+1.0000000000000002,Dissolved Oxygen (mg/L),maxQ,MOL413,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),medianQ,MOL413,Fyshwick_out.csv
+0.9999999999999999,Dissolved Oxygen (mg/L),Month,MOL413,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),flag,MOL413,Fyshwick_out.csv
+0.9999999999999998,Dissolved Oxygen (mg/L),???,MOL413,Fyshwick_out.csv
+0.9999999999999998,Dissolved Oxygen (mg/L),pH (units),MOL413,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Turbidity (NTU),MOL413,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),MOL413,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Total Phosphorus (mg/L),MOL413,Fyshwick_out.csv
+0.9999999999999999,Dissolved Oxygen (mg/L),date,MOL413,Fyshwick_out.csv
+1,Total Phosphorus (mg/L),minQ,MOL413,Fyshwick_out.csv
+0.9999999999999998,Total Phosphorus (mg/L),maxQ,MOL413,Fyshwick_out.csv
+1,Total Phosphorus (mg/L),medianQ,MOL413,Fyshwick_out.csv
+1,Total Phosphorus (mg/L),Month,MOL413,Fyshwick_out.csv
+1,Total Phosphorus (mg/L),flag,MOL413,Fyshwick_out.csv
+1,Total Phosphorus (mg/L),???,MOL413,Fyshwick_out.csv
+1,Total Phosphorus (mg/L),pH (units),MOL413,Fyshwick_out.csv
+1.0000000000000002,Total Phosphorus (mg/L),Turbidity (NTU),MOL413,Fyshwick_out.csv
+1,Total Phosphorus (mg/L),Dissolved Oxygen (mg/L),MOL413,Fyshwick_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),MOL413,Fyshwick_out.csv
+1.0000000000000002,Total Phosphorus (mg/L),date,MOL413,Fyshwick_out.csv
+1,date,minQ,MOL413,Fyshwick_out.csv
+1,date,maxQ,MOL413,Fyshwick_out.csv
+1,date,medianQ,MOL413,Fyshwick_out.csv
+1,date,Month,MOL413,Fyshwick_out.csv
+1,date,flag,MOL413,Fyshwick_out.csv
+1,date,???,MOL413,Fyshwick_out.csv
+1,date,pH (units),MOL413,Fyshwick_out.csv
+1,date,Turbidity (NTU),MOL413,Fyshwick_out.csv
+0.9999999999999999,date,Dissolved Oxygen (mg/L),MOL413,Fyshwick_out.csv
+1.0000000000000002,date,Total Phosphorus (mg/L),MOL413,Fyshwick_out.csv
+1,date,date,MOL413,Fyshwick_out.csv
+1,rain,rain,JER570,Fyshwick_out.csv
+0.7105855729241616,rain,minQ,JER570,Fyshwick_out.csv
+0.7292287545410722,rain,i6,JER570,Fyshwick_out.csv
+0.8156296433959698,rain,i30,JER570,Fyshwick_out.csv
+1,temp,temp,JER570,Fyshwick_out.csv
+0.7150020275842379,temp,CMD,JER570,Fyshwick_out.csv
+0.704370581046476,temp,Year,JER570,Fyshwick_out.csv
+0.7105855729241616,minQ,rain,JER570,Fyshwick_out.csv
+1,minQ,minQ,JER570,Fyshwick_out.csv
+0.8267832150143638,minQ,maxQ,JER570,Fyshwick_out.csv
+0.8747146987260409,minQ,medianQ,JER570,Fyshwick_out.csv
+0.7106507622735537,minQ,U,JER570,Fyshwick_out.csv
+0.8005034635631942,minQ,flag,JER570,Fyshwick_out.csv
+0.8263315909032498,minQ,Ammonia (mg/L),JER570,Fyshwick_out.csv
+0.7750149158044136,minQ,Total Phosphorus (mg/L),JER570,Fyshwick_out.csv
+0.7015277691949241,minQ,Biological Oxygen Demand (mg/L),JER570,Fyshwick_out.csv
+0.8267832150143638,maxQ,minQ,JER570,Fyshwick_out.csv
+1,maxQ,maxQ,JER570,Fyshwick_out.csv
+0.995488030093783,maxQ,medianQ,JER570,Fyshwick_out.csv
+0.883823095939467,maxQ,U,JER570,Fyshwick_out.csv
+0.9848726131052171,maxQ,flag,JER570,Fyshwick_out.csv
+0.9449252523529011,maxQ,Ammonia (mg/L),JER570,Fyshwick_out.csv
+0.7693039716663681,maxQ,Total Phosphorus (mg/L),JER570,Fyshwick_out.csv
+0.9634955872701471,maxQ,Orthophosphate (mg/L),JER570,Fyshwick_out.csv
+0.8747146987260409,medianQ,minQ,JER570,Fyshwick_out.csv
+0.995488030093783,medianQ,maxQ,JER570,Fyshwick_out.csv
+1,medianQ,medianQ,JER570,Fyshwick_out.csv
+0.8711382591158171,medianQ,U,JER570,Fyshwick_out.csv
+0.9774990946900952,medianQ,flag,JER570,Fyshwick_out.csv
+0.950726026590048,medianQ,Ammonia (mg/L),JER570,Fyshwick_out.csv
+0.7971846274268174,medianQ,Total Phosphorus (mg/L),JER570,Fyshwick_out.csv
+0.9437906610859843,medianQ,Orthophosphate (mg/L),JER570,Fyshwick_out.csv
+0.7244525698025539,medianQ,Biological Oxygen Demand (mg/L),JER570,Fyshwick_out.csv
+0.7292287545410722,i6,rain,JER570,Fyshwick_out.csv
+1,i6,i6,JER570,Fyshwick_out.csv
+0.9547089101065666,i6,i30,JER570,Fyshwick_out.csv
+0.7355254706651458,i6,Ammonia (mg/L),JER570,Fyshwick_out.csv
+0.7898378132152218,i6, Oxidised Nitrogen (mg/L as N),JER570,Fyshwick_out.csv
+0.7742339269479273,i6,Total Phosphorus (mg/L),JER570,Fyshwick_out.csv
+0.7291017673183525,i6,Biological Oxygen Demand (mg/L),JER570,Fyshwick_out.csv
+0.8156296433959698,i30,rain,JER570,Fyshwick_out.csv
+0.9547089101065666,i30,i6,JER570,Fyshwick_out.csv
+1,i30,i30,JER570,Fyshwick_out.csv
+0.791363812446863,i30, Oxidised Nitrogen (mg/L as N),JER570,Fyshwick_out.csv
+0.7380999016931828,i30,Total Phosphorus (mg/L),JER570,Fyshwick_out.csv
+0.7071396070475882,i30,Biological Oxygen Demand (mg/L),JER570,Fyshwick_out.csv
+0.7106507622735537,U,minQ,JER570,Fyshwick_out.csv
+0.883823095939467,U,maxQ,JER570,Fyshwick_out.csv
+0.8711382591158171,U,medianQ,JER570,Fyshwick_out.csv
+1,U,U,JER570,Fyshwick_out.csv
+0.8752620663363258,U,flag,JER570,Fyshwick_out.csv
+0.7839097291636337,U,Ammonia (mg/L),JER570,Fyshwick_out.csv
+0.8549322117075683,U,Orthophosphate (mg/L),JER570,Fyshwick_out.csv
+0.7150020275842379,CMD,temp,JER570,Fyshwick_out.csv
+1,CMD,CMD,JER570,Fyshwick_out.csv
+0.7882514608439571,CMD,Year,JER570,Fyshwick_out.csv
+0.7788667984473046,CMD,???,JER570,Fyshwick_out.csv
+0.7783279436854551,CMD,date,JER570,Fyshwick_out.csv
+0.704370581046476,Year,temp,JER570,Fyshwick_out.csv
+0.7882514608439571,Year,CMD,JER570,Fyshwick_out.csv
+1,Year,Year,JER570,Fyshwick_out.csv
+0.9991905771251886,Year,???,JER570,Fyshwick_out.csv
+0.9991581193294864,Year,date,JER570,Fyshwick_out.csv
+1,Month,Month,JER570,Fyshwick_out.csv
+1,day,day,JER570,Fyshwick_out.csv
+0.8005034635631942,flag,minQ,JER570,Fyshwick_out.csv
+0.9848726131052171,flag,maxQ,JER570,Fyshwick_out.csv
+0.9774990946900952,flag,medianQ,JER570,Fyshwick_out.csv
+0.8752620663363258,flag,U,JER570,Fyshwick_out.csv
+1,flag,flag,JER570,Fyshwick_out.csv
+0.9141244182036337,flag,Ammonia (mg/L),JER570,Fyshwick_out.csv
+0.7352022685248712,flag,Total Phosphorus (mg/L),JER570,Fyshwick_out.csv
+0.9391386446427449,flag,Orthophosphate (mg/L),JER570,Fyshwick_out.csv
+0.7788667984473046,???,CMD,JER570,Fyshwick_out.csv
+0.9991905771251886,???,Year,JER570,Fyshwick_out.csv
+1,???,???,JER570,Fyshwick_out.csv
+0.9999972660525175,???,date,JER570,Fyshwick_out.csv
+1,pH (units),pH (units),JER570,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),JER570,Fyshwick_out.csv
+0.8263315909032498,Ammonia (mg/L),minQ,JER570,Fyshwick_out.csv
+0.9449252523529011,Ammonia (mg/L),maxQ,JER570,Fyshwick_out.csv
+0.950726026590048,Ammonia (mg/L),medianQ,JER570,Fyshwick_out.csv
+0.7355254706651458,Ammonia (mg/L),i6,JER570,Fyshwick_out.csv
+0.7839097291636337,Ammonia (mg/L),U,JER570,Fyshwick_out.csv
+0.9141244182036337,Ammonia (mg/L),flag,JER570,Fyshwick_out.csv
+1,Ammonia (mg/L),Ammonia (mg/L),JER570,Fyshwick_out.csv
+0.8392632834508198,Ammonia (mg/L),Total Phosphorus (mg/L),JER570,Fyshwick_out.csv
+0.8952421179062477,Ammonia (mg/L),Orthophosphate (mg/L),JER570,Fyshwick_out.csv
+0.721748916800444,Ammonia (mg/L),Biological Oxygen Demand (mg/L),JER570,Fyshwick_out.csv
+0.7898378132152218, Oxidised Nitrogen (mg/L as N),i6,JER570,Fyshwick_out.csv
+0.791363812446863, Oxidised Nitrogen (mg/L as N),i30,JER570,Fyshwick_out.csv
+1, Oxidised Nitrogen (mg/L as N), Oxidised Nitrogen (mg/L as N),JER570,Fyshwick_out.csv
+0.7750149158044136,Total Phosphorus (mg/L),minQ,JER570,Fyshwick_out.csv
+0.7693039716663681,Total Phosphorus (mg/L),maxQ,JER570,Fyshwick_out.csv
+0.7971846274268174,Total Phosphorus (mg/L),medianQ,JER570,Fyshwick_out.csv
+0.7742339269479273,Total Phosphorus (mg/L),i6,JER570,Fyshwick_out.csv
+0.7380999016931828,Total Phosphorus (mg/L),i30,JER570,Fyshwick_out.csv
+0.7352022685248712,Total Phosphorus (mg/L),flag,JER570,Fyshwick_out.csv
+0.8392632834508198,Total Phosphorus (mg/L),Ammonia (mg/L),JER570,Fyshwick_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),JER570,Fyshwick_out.csv
+0.8663292273693471,Total Phosphorus (mg/L),Biological Oxygen Demand (mg/L),JER570,Fyshwick_out.csv
+0.9634955872701471,Orthophosphate (mg/L),maxQ,JER570,Fyshwick_out.csv
+0.9437906610859843,Orthophosphate (mg/L),medianQ,JER570,Fyshwick_out.csv
+0.8549322117075683,Orthophosphate (mg/L),U,JER570,Fyshwick_out.csv
+0.9391386446427449,Orthophosphate (mg/L),flag,JER570,Fyshwick_out.csv
+0.8952421179062477,Orthophosphate (mg/L),Ammonia (mg/L),JER570,Fyshwick_out.csv
+1,Orthophosphate (mg/L),Orthophosphate (mg/L),JER570,Fyshwick_out.csv
+0.7015277691949241,Biological Oxygen Demand (mg/L),minQ,JER570,Fyshwick_out.csv
+0.7244525698025539,Biological Oxygen Demand (mg/L),medianQ,JER570,Fyshwick_out.csv
+0.7291017673183525,Biological Oxygen Demand (mg/L),i6,JER570,Fyshwick_out.csv
+0.7071396070475882,Biological Oxygen Demand (mg/L),i30,JER570,Fyshwick_out.csv
+0.721748916800444,Biological Oxygen Demand (mg/L),Ammonia (mg/L),JER570,Fyshwick_out.csv
+0.8663292273693471,Biological Oxygen Demand (mg/L),Total Phosphorus (mg/L),JER570,Fyshwick_out.csv
+1,Biological Oxygen Demand (mg/L),Biological Oxygen Demand (mg/L),JER570,Fyshwick_out.csv
+0.7783279436854551,date,CMD,JER570,Fyshwick_out.csv
+0.9991581193294864,date,Year,JER570,Fyshwick_out.csv
+0.9999972660525175,date,???,JER570,Fyshwick_out.csv
+1,date,date,JER570,Fyshwick_out.csv
+1,temp,temp,MOL280,Fyshwick_out.csv
+1,temp,minQ,MOL280,Fyshwick_out.csv
+1,temp,maxQ,MOL280,Fyshwick_out.csv
+1.0000000000000002,temp,medianQ,MOL280,Fyshwick_out.csv
+1,temp,Month,MOL280,Fyshwick_out.csv
+1.0000000000000002,temp,???,MOL280,Fyshwick_out.csv
+0.9999999999999999,temp,Temperature (Degrees C),MOL280,Fyshwick_out.csv
+1,temp,pH (units),MOL280,Fyshwick_out.csv
+1,temp,Dissolved Oxygen (mg/L),MOL280,Fyshwick_out.csv
+1,temp,date,MOL280,Fyshwick_out.csv
+1,minQ,temp,MOL280,Fyshwick_out.csv
+1,minQ,minQ,MOL280,Fyshwick_out.csv
+1,minQ,maxQ,MOL280,Fyshwick_out.csv
+1.0000000000000002,minQ,medianQ,MOL280,Fyshwick_out.csv
+1.0000000000000002,minQ,Month,MOL280,Fyshwick_out.csv
+1.0000000000000002,minQ,???,MOL280,Fyshwick_out.csv
+1,minQ,Temperature (Degrees C),MOL280,Fyshwick_out.csv
+0.9999999999999998,minQ,pH (units),MOL280,Fyshwick_out.csv
+1.0000000000000002,minQ,Dissolved Oxygen (mg/L),MOL280,Fyshwick_out.csv
+1,minQ,date,MOL280,Fyshwick_out.csv
+1,maxQ,temp,MOL280,Fyshwick_out.csv
+1,maxQ,minQ,MOL280,Fyshwick_out.csv
+1,maxQ,maxQ,MOL280,Fyshwick_out.csv
+1,maxQ,medianQ,MOL280,Fyshwick_out.csv
+1,maxQ,Month,MOL280,Fyshwick_out.csv
+1,maxQ,???,MOL280,Fyshwick_out.csv
+1,maxQ,Temperature (Degrees C),MOL280,Fyshwick_out.csv
+1,maxQ,pH (units),MOL280,Fyshwick_out.csv
+1,maxQ,Dissolved Oxygen (mg/L),MOL280,Fyshwick_out.csv
+1.0000000000000002,maxQ,date,MOL280,Fyshwick_out.csv
+1.0000000000000002,medianQ,temp,MOL280,Fyshwick_out.csv
+1.0000000000000002,medianQ,minQ,MOL280,Fyshwick_out.csv
+1,medianQ,maxQ,MOL280,Fyshwick_out.csv
+1,medianQ,medianQ,MOL280,Fyshwick_out.csv
+0.9999999999999999,medianQ,Month,MOL280,Fyshwick_out.csv
+1,medianQ,???,MOL280,Fyshwick_out.csv
+0.9999999999999999,medianQ,Temperature (Degrees C),MOL280,Fyshwick_out.csv
+1,medianQ,pH (units),MOL280,Fyshwick_out.csv
+1,medianQ,Dissolved Oxygen (mg/L),MOL280,Fyshwick_out.csv
+1,medianQ,date,MOL280,Fyshwick_out.csv
+1,CMD,CMD,MOL280,Fyshwick_out.csv
+1,CMD,day,MOL280,Fyshwick_out.csv
+1,CMD,flag,MOL280,Fyshwick_out.csv
+1.0000000000000002,CMD,Electrical Conductivity (�S/cm),MOL280,Fyshwick_out.csv
+1,CMD,Turbidity (NTU),MOL280,Fyshwick_out.csv
+1,Month,temp,MOL280,Fyshwick_out.csv
+1.0000000000000002,Month,minQ,MOL280,Fyshwick_out.csv
+1,Month,maxQ,MOL280,Fyshwick_out.csv
+0.9999999999999999,Month,medianQ,MOL280,Fyshwick_out.csv
+1,Month,Month,MOL280,Fyshwick_out.csv
+1,Month,???,MOL280,Fyshwick_out.csv
+1,Month,Temperature (Degrees C),MOL280,Fyshwick_out.csv
+1,Month,pH (units),MOL280,Fyshwick_out.csv
+1,Month,Dissolved Oxygen (mg/L),MOL280,Fyshwick_out.csv
+1,Month,date,MOL280,Fyshwick_out.csv
+1,day,CMD,MOL280,Fyshwick_out.csv
+1,day,day,MOL280,Fyshwick_out.csv
+1,day,flag,MOL280,Fyshwick_out.csv
+0.9999999999999999,day,Electrical Conductivity (�S/cm),MOL280,Fyshwick_out.csv
+1,day,Turbidity (NTU),MOL280,Fyshwick_out.csv
+1,flag,CMD,MOL280,Fyshwick_out.csv
+1,flag,day,MOL280,Fyshwick_out.csv
+1,flag,flag,MOL280,Fyshwick_out.csv
+1,flag,Electrical Conductivity (�S/cm),MOL280,Fyshwick_out.csv
+1,flag,Turbidity (NTU),MOL280,Fyshwick_out.csv
+1.0000000000000002,???,temp,MOL280,Fyshwick_out.csv
+1.0000000000000002,???,minQ,MOL280,Fyshwick_out.csv
+1,???,maxQ,MOL280,Fyshwick_out.csv
+1,???,medianQ,MOL280,Fyshwick_out.csv
+1,???,Month,MOL280,Fyshwick_out.csv
+1,???,???,MOL280,Fyshwick_out.csv
+1,???,Temperature (Degrees C),MOL280,Fyshwick_out.csv
+1,???,pH (units),MOL280,Fyshwick_out.csv
+1,???,Dissolved Oxygen (mg/L),MOL280,Fyshwick_out.csv
+1,???,date,MOL280,Fyshwick_out.csv
+0.9999999999999999,Temperature (Degrees C),temp,MOL280,Fyshwick_out.csv
+1,Temperature (Degrees C),minQ,MOL280,Fyshwick_out.csv
+1,Temperature (Degrees C),maxQ,MOL280,Fyshwick_out.csv
+0.9999999999999999,Temperature (Degrees C),medianQ,MOL280,Fyshwick_out.csv
+1,Temperature (Degrees C),Month,MOL280,Fyshwick_out.csv
+1,Temperature (Degrees C),???,MOL280,Fyshwick_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),MOL280,Fyshwick_out.csv
+1,Temperature (Degrees C),pH (units),MOL280,Fyshwick_out.csv
+1,Temperature (Degrees C),Dissolved Oxygen (mg/L),MOL280,Fyshwick_out.csv
+0.9999999999999999,Temperature (Degrees C),date,MOL280,Fyshwick_out.csv
+1,pH (units),temp,MOL280,Fyshwick_out.csv
+0.9999999999999998,pH (units),minQ,MOL280,Fyshwick_out.csv
+1,pH (units),maxQ,MOL280,Fyshwick_out.csv
+1,pH (units),medianQ,MOL280,Fyshwick_out.csv
+1,pH (units),Month,MOL280,Fyshwick_out.csv
+1,pH (units),???,MOL280,Fyshwick_out.csv
+1,pH (units),Temperature (Degrees C),MOL280,Fyshwick_out.csv
+1,pH (units),pH (units),MOL280,Fyshwick_out.csv
+1,pH (units),Dissolved Oxygen (mg/L),MOL280,Fyshwick_out.csv
+1,pH (units),date,MOL280,Fyshwick_out.csv
+1.0000000000000002,Electrical Conductivity (�S/cm),CMD,MOL280,Fyshwick_out.csv
+0.9999999999999999,Electrical Conductivity (�S/cm),day,MOL280,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),flag,MOL280,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),MOL280,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Turbidity (NTU),MOL280,Fyshwick_out.csv
+1,Turbidity (NTU),CMD,MOL280,Fyshwick_out.csv
+1,Turbidity (NTU),day,MOL280,Fyshwick_out.csv
+1,Turbidity (NTU),flag,MOL280,Fyshwick_out.csv
+1,Turbidity (NTU),Electrical Conductivity (�S/cm),MOL280,Fyshwick_out.csv
+1,Turbidity (NTU),Turbidity (NTU),MOL280,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),temp,MOL280,Fyshwick_out.csv
+1.0000000000000002,Dissolved Oxygen (mg/L),minQ,MOL280,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),maxQ,MOL280,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),medianQ,MOL280,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Month,MOL280,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),???,MOL280,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Temperature (Degrees C),MOL280,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),pH (units),MOL280,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),MOL280,Fyshwick_out.csv
+0.9999999999999999,Dissolved Oxygen (mg/L),date,MOL280,Fyshwick_out.csv
+1,date,temp,MOL280,Fyshwick_out.csv
+1,date,minQ,MOL280,Fyshwick_out.csv
+1.0000000000000002,date,maxQ,MOL280,Fyshwick_out.csv
+1,date,medianQ,MOL280,Fyshwick_out.csv
+1,date,Month,MOL280,Fyshwick_out.csv
+1,date,???,MOL280,Fyshwick_out.csv
+0.9999999999999999,date,Temperature (Degrees C),MOL280,Fyshwick_out.csv
+1,date,pH (units),MOL280,Fyshwick_out.csv
+0.9999999999999999,date,Dissolved Oxygen (mg/L),MOL280,Fyshwick_out.csv
+1,date,date,MOL280,Fyshwick_out.csv
+1,temp,temp,ING,Fyshwick_out.csv
+1,temp,minQ,ING,Fyshwick_out.csv
+1,temp,maxQ,ING,Fyshwick_out.csv
+1,temp,medianQ,ING,Fyshwick_out.csv
+1,temp,Month,ING,Fyshwick_out.csv
+1.0000000000000002,temp,day,ING,Fyshwick_out.csv
+1,temp,???,ING,Fyshwick_out.csv
+1.0000000000000002,temp,Temperature (Degrees C),ING,Fyshwick_out.csv
+0.9999999999999999,temp,Dissolved Oxygen (mg/L),ING,Fyshwick_out.csv
+1,temp,date,ING,Fyshwick_out.csv
+1,minQ,temp,ING,Fyshwick_out.csv
+1,minQ,minQ,ING,Fyshwick_out.csv
+1,minQ,maxQ,ING,Fyshwick_out.csv
+1,minQ,medianQ,ING,Fyshwick_out.csv
+1,minQ,Month,ING,Fyshwick_out.csv
+1,minQ,day,ING,Fyshwick_out.csv
+1,minQ,???,ING,Fyshwick_out.csv
+1,minQ,Temperature (Degrees C),ING,Fyshwick_out.csv
+0.9999999999999999,minQ,Dissolved Oxygen (mg/L),ING,Fyshwick_out.csv
+1,minQ,date,ING,Fyshwick_out.csv
+1,maxQ,temp,ING,Fyshwick_out.csv
+1,maxQ,minQ,ING,Fyshwick_out.csv
+1,maxQ,maxQ,ING,Fyshwick_out.csv
+1,maxQ,medianQ,ING,Fyshwick_out.csv
+0.9999999999999999,maxQ,Month,ING,Fyshwick_out.csv
+1,maxQ,day,ING,Fyshwick_out.csv
+1.0000000000000002,maxQ,???,ING,Fyshwick_out.csv
+1.0000000000000002,maxQ,Temperature (Degrees C),ING,Fyshwick_out.csv
+1,maxQ,Dissolved Oxygen (mg/L),ING,Fyshwick_out.csv
+0.9999999999999999,maxQ,date,ING,Fyshwick_out.csv
+1,medianQ,temp,ING,Fyshwick_out.csv
+1,medianQ,minQ,ING,Fyshwick_out.csv
+1,medianQ,maxQ,ING,Fyshwick_out.csv
+1,medianQ,medianQ,ING,Fyshwick_out.csv
+1,medianQ,Month,ING,Fyshwick_out.csv
+1,medianQ,day,ING,Fyshwick_out.csv
+1,medianQ,???,ING,Fyshwick_out.csv
+1,medianQ,Temperature (Degrees C),ING,Fyshwick_out.csv
+0.9999999999999999,medianQ,Dissolved Oxygen (mg/L),ING,Fyshwick_out.csv
+1,medianQ,date,ING,Fyshwick_out.csv
+1,CMD,CMD,ING,Fyshwick_out.csv
+1,CMD,pH (units),ING,Fyshwick_out.csv
+1.0000000000000002,CMD,Electrical Conductivity (�S/cm),ING,Fyshwick_out.csv
+1,CMD,Turbidity (NTU),ING,Fyshwick_out.csv
+1,Month,temp,ING,Fyshwick_out.csv
+1,Month,minQ,ING,Fyshwick_out.csv
+0.9999999999999999,Month,maxQ,ING,Fyshwick_out.csv
+1,Month,medianQ,ING,Fyshwick_out.csv
+1,Month,Month,ING,Fyshwick_out.csv
+1,Month,day,ING,Fyshwick_out.csv
+1,Month,???,ING,Fyshwick_out.csv
+1,Month,Temperature (Degrees C),ING,Fyshwick_out.csv
+1,Month,Dissolved Oxygen (mg/L),ING,Fyshwick_out.csv
+1,Month,date,ING,Fyshwick_out.csv
+1.0000000000000002,day,temp,ING,Fyshwick_out.csv
+1,day,minQ,ING,Fyshwick_out.csv
+1,day,maxQ,ING,Fyshwick_out.csv
+1,day,medianQ,ING,Fyshwick_out.csv
+1,day,Month,ING,Fyshwick_out.csv
+1,day,day,ING,Fyshwick_out.csv
+1,day,???,ING,Fyshwick_out.csv
+1,day,Temperature (Degrees C),ING,Fyshwick_out.csv
+1,day,Dissolved Oxygen (mg/L),ING,Fyshwick_out.csv
+1,day,date,ING,Fyshwick_out.csv
+1,???,temp,ING,Fyshwick_out.csv
+1,???,minQ,ING,Fyshwick_out.csv
+1.0000000000000002,???,maxQ,ING,Fyshwick_out.csv
+1,???,medianQ,ING,Fyshwick_out.csv
+1,???,Month,ING,Fyshwick_out.csv
+1,???,day,ING,Fyshwick_out.csv
+1,???,???,ING,Fyshwick_out.csv
+1,???,Temperature (Degrees C),ING,Fyshwick_out.csv
+1,???,Dissolved Oxygen (mg/L),ING,Fyshwick_out.csv
+1,???,date,ING,Fyshwick_out.csv
+1.0000000000000002,Temperature (Degrees C),temp,ING,Fyshwick_out.csv
+1,Temperature (Degrees C),minQ,ING,Fyshwick_out.csv
+1.0000000000000002,Temperature (Degrees C),maxQ,ING,Fyshwick_out.csv
+1,Temperature (Degrees C),medianQ,ING,Fyshwick_out.csv
+1,Temperature (Degrees C),Month,ING,Fyshwick_out.csv
+1,Temperature (Degrees C),day,ING,Fyshwick_out.csv
+1,Temperature (Degrees C),???,ING,Fyshwick_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),ING,Fyshwick_out.csv
+1.0000000000000002,Temperature (Degrees C),Dissolved Oxygen (mg/L),ING,Fyshwick_out.csv
+1.0000000000000002,Temperature (Degrees C),date,ING,Fyshwick_out.csv
+1,pH (units),CMD,ING,Fyshwick_out.csv
+1,pH (units),pH (units),ING,Fyshwick_out.csv
+1.0000000000000002,pH (units),Electrical Conductivity (�S/cm),ING,Fyshwick_out.csv
+1,pH (units),Turbidity (NTU),ING,Fyshwick_out.csv
+1.0000000000000002,Electrical Conductivity (�S/cm),CMD,ING,Fyshwick_out.csv
+1.0000000000000002,Electrical Conductivity (�S/cm),pH (units),ING,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),ING,Fyshwick_out.csv
+0.9999999999999999,Electrical Conductivity (�S/cm),Turbidity (NTU),ING,Fyshwick_out.csv
+1,Turbidity (NTU),CMD,ING,Fyshwick_out.csv
+1,Turbidity (NTU),pH (units),ING,Fyshwick_out.csv
+0.9999999999999999,Turbidity (NTU),Electrical Conductivity (�S/cm),ING,Fyshwick_out.csv
+1,Turbidity (NTU),Turbidity (NTU),ING,Fyshwick_out.csv
+0.9999999999999999,Dissolved Oxygen (mg/L),temp,ING,Fyshwick_out.csv
+0.9999999999999999,Dissolved Oxygen (mg/L),minQ,ING,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),maxQ,ING,Fyshwick_out.csv
+0.9999999999999999,Dissolved Oxygen (mg/L),medianQ,ING,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Month,ING,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),day,ING,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),???,ING,Fyshwick_out.csv
+1.0000000000000002,Dissolved Oxygen (mg/L),Temperature (Degrees C),ING,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),ING,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),date,ING,Fyshwick_out.csv
+1,date,temp,ING,Fyshwick_out.csv
+1,date,minQ,ING,Fyshwick_out.csv
+0.9999999999999999,date,maxQ,ING,Fyshwick_out.csv
+1,date,medianQ,ING,Fyshwick_out.csv
+1,date,Month,ING,Fyshwick_out.csv
+1,date,day,ING,Fyshwick_out.csv
+1,date,???,ING,Fyshwick_out.csv
+1.0000000000000002,date,Temperature (Degrees C),ING,Fyshwick_out.csv
+1,date,Dissolved Oxygen (mg/L),ING,Fyshwick_out.csv
+1,date,date,ING,Fyshwick_out.csv
+1,temp,temp,MIC344,Fyshwick_out.csv
+1.0000000000000002,temp,minQ,MIC344,Fyshwick_out.csv
+1,temp,maxQ,MIC344,Fyshwick_out.csv
+1,temp,medianQ,MIC344,Fyshwick_out.csv
+1,temp,Month,MIC344,Fyshwick_out.csv
+1,temp,flag,MIC344,Fyshwick_out.csv
+1,temp,???,MIC344,Fyshwick_out.csv
+1,temp,Temperature (Degrees C),MIC344,Fyshwick_out.csv
+0.9999999999999998,temp,Turbidity (NTU),MIC344,Fyshwick_out.csv
+1,temp,date,MIC344,Fyshwick_out.csv
+1.0000000000000002,minQ,temp,MIC344,Fyshwick_out.csv
+1,minQ,minQ,MIC344,Fyshwick_out.csv
+1,minQ,maxQ,MIC344,Fyshwick_out.csv
+0.9999999999999998,minQ,medianQ,MIC344,Fyshwick_out.csv
+1,minQ,Month,MIC344,Fyshwick_out.csv
+1,minQ,flag,MIC344,Fyshwick_out.csv
+1,minQ,???,MIC344,Fyshwick_out.csv
+1,minQ,Temperature (Degrees C),MIC344,Fyshwick_out.csv
+1,minQ,Turbidity (NTU),MIC344,Fyshwick_out.csv
+1,minQ,date,MIC344,Fyshwick_out.csv
+1,maxQ,temp,MIC344,Fyshwick_out.csv
+1,maxQ,minQ,MIC344,Fyshwick_out.csv
+1,maxQ,maxQ,MIC344,Fyshwick_out.csv
+1,maxQ,medianQ,MIC344,Fyshwick_out.csv
+1,maxQ,Month,MIC344,Fyshwick_out.csv
+1,maxQ,flag,MIC344,Fyshwick_out.csv
+1,maxQ,???,MIC344,Fyshwick_out.csv
+0.9999999999999998,maxQ,Temperature (Degrees C),MIC344,Fyshwick_out.csv
+1,maxQ,Turbidity (NTU),MIC344,Fyshwick_out.csv
+1,maxQ,date,MIC344,Fyshwick_out.csv
+1,medianQ,temp,MIC344,Fyshwick_out.csv
+0.9999999999999998,medianQ,minQ,MIC344,Fyshwick_out.csv
+1,medianQ,maxQ,MIC344,Fyshwick_out.csv
+1,medianQ,medianQ,MIC344,Fyshwick_out.csv
+1,medianQ,Month,MIC344,Fyshwick_out.csv
+0.9999999999999998,medianQ,flag,MIC344,Fyshwick_out.csv
+1,medianQ,???,MIC344,Fyshwick_out.csv
+0.9999999999999998,medianQ,Temperature (Degrees C),MIC344,Fyshwick_out.csv
+1,medianQ,Turbidity (NTU),MIC344,Fyshwick_out.csv
+1,medianQ,date,MIC344,Fyshwick_out.csv
+1,CMD,CMD,MIC344,Fyshwick_out.csv
+1,CMD,day,MIC344,Fyshwick_out.csv
+0.9999999999999999,CMD,pH (units),MIC344,Fyshwick_out.csv
+1.0000000000000002,CMD,Electrical Conductivity (�S/cm),MIC344,Fyshwick_out.csv
+0.9999999999999999,CMD,Dissolved Oxygen (mg/L),MIC344,Fyshwick_out.csv
+1,Month,temp,MIC344,Fyshwick_out.csv
+1,Month,minQ,MIC344,Fyshwick_out.csv
+1,Month,maxQ,MIC344,Fyshwick_out.csv
+1,Month,medianQ,MIC344,Fyshwick_out.csv
+1,Month,Month,MIC344,Fyshwick_out.csv
+1,Month,flag,MIC344,Fyshwick_out.csv
+1,Month,???,MIC344,Fyshwick_out.csv
+0.9999999999999999,Month,Temperature (Degrees C),MIC344,Fyshwick_out.csv
+1.0000000000000002,Month,Turbidity (NTU),MIC344,Fyshwick_out.csv
+1,Month,date,MIC344,Fyshwick_out.csv
+1,day,CMD,MIC344,Fyshwick_out.csv
+1,day,day,MIC344,Fyshwick_out.csv
+1,day,pH (units),MIC344,Fyshwick_out.csv
+1,day,Electrical Conductivity (�S/cm),MIC344,Fyshwick_out.csv
+0.9999999999999999,day,Dissolved Oxygen (mg/L),MIC344,Fyshwick_out.csv
+1,flag,temp,MIC344,Fyshwick_out.csv
+1,flag,minQ,MIC344,Fyshwick_out.csv
+1,flag,maxQ,MIC344,Fyshwick_out.csv
+0.9999999999999998,flag,medianQ,MIC344,Fyshwick_out.csv
+1,flag,Month,MIC344,Fyshwick_out.csv
+1,flag,flag,MIC344,Fyshwick_out.csv
+1,flag,???,MIC344,Fyshwick_out.csv
+1.0000000000000002,flag,Temperature (Degrees C),MIC344,Fyshwick_out.csv
+1.0000000000000002,flag,Turbidity (NTU),MIC344,Fyshwick_out.csv
+1,flag,date,MIC344,Fyshwick_out.csv
+1,???,temp,MIC344,Fyshwick_out.csv
+1,???,minQ,MIC344,Fyshwick_out.csv
+1,???,maxQ,MIC344,Fyshwick_out.csv
+1,???,medianQ,MIC344,Fyshwick_out.csv
+1,???,Month,MIC344,Fyshwick_out.csv
+1,???,flag,MIC344,Fyshwick_out.csv
+1,???,???,MIC344,Fyshwick_out.csv
+1,???,Temperature (Degrees C),MIC344,Fyshwick_out.csv
+1,???,Turbidity (NTU),MIC344,Fyshwick_out.csv
+1,???,date,MIC344,Fyshwick_out.csv
+1,Temperature (Degrees C),temp,MIC344,Fyshwick_out.csv
+1,Temperature (Degrees C),minQ,MIC344,Fyshwick_out.csv
+0.9999999999999998,Temperature (Degrees C),maxQ,MIC344,Fyshwick_out.csv
+0.9999999999999998,Temperature (Degrees C),medianQ,MIC344,Fyshwick_out.csv
+0.9999999999999999,Temperature (Degrees C),Month,MIC344,Fyshwick_out.csv
+1.0000000000000002,Temperature (Degrees C),flag,MIC344,Fyshwick_out.csv
+1,Temperature (Degrees C),???,MIC344,Fyshwick_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),MIC344,Fyshwick_out.csv
+1,Temperature (Degrees C),Turbidity (NTU),MIC344,Fyshwick_out.csv
+0.9999999999999998,Temperature (Degrees C),date,MIC344,Fyshwick_out.csv
+0.9999999999999999,pH (units),CMD,MIC344,Fyshwick_out.csv
+1,pH (units),day,MIC344,Fyshwick_out.csv
+1,pH (units),pH (units),MIC344,Fyshwick_out.csv
+0.9999999999999999,pH (units),Electrical Conductivity (�S/cm),MIC344,Fyshwick_out.csv
+0.9999999999999999,pH (units),Dissolved Oxygen (mg/L),MIC344,Fyshwick_out.csv
+1.0000000000000002,Electrical Conductivity (�S/cm),CMD,MIC344,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),day,MIC344,Fyshwick_out.csv
+0.9999999999999999,Electrical Conductivity (�S/cm),pH (units),MIC344,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),MIC344,Fyshwick_out.csv
+0.9999999999999999,Electrical Conductivity (�S/cm),Dissolved Oxygen (mg/L),MIC344,Fyshwick_out.csv
+0.9999999999999998,Turbidity (NTU),temp,MIC344,Fyshwick_out.csv
+1,Turbidity (NTU),minQ,MIC344,Fyshwick_out.csv
+1,Turbidity (NTU),maxQ,MIC344,Fyshwick_out.csv
+1,Turbidity (NTU),medianQ,MIC344,Fyshwick_out.csv
+1.0000000000000002,Turbidity (NTU),Month,MIC344,Fyshwick_out.csv
+1.0000000000000002,Turbidity (NTU),flag,MIC344,Fyshwick_out.csv
+1,Turbidity (NTU),???,MIC344,Fyshwick_out.csv
+1,Turbidity (NTU),Temperature (Degrees C),MIC344,Fyshwick_out.csv
+1,Turbidity (NTU),Turbidity (NTU),MIC344,Fyshwick_out.csv
+1,Turbidity (NTU),date,MIC344,Fyshwick_out.csv
+0.9999999999999999,Dissolved Oxygen (mg/L),CMD,MIC344,Fyshwick_out.csv
+0.9999999999999999,Dissolved Oxygen (mg/L),day,MIC344,Fyshwick_out.csv
+0.9999999999999999,Dissolved Oxygen (mg/L),pH (units),MIC344,Fyshwick_out.csv
+0.9999999999999999,Dissolved Oxygen (mg/L),Electrical Conductivity (�S/cm),MIC344,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),MIC344,Fyshwick_out.csv
+1,date,temp,MIC344,Fyshwick_out.csv
+1,date,minQ,MIC344,Fyshwick_out.csv
+1,date,maxQ,MIC344,Fyshwick_out.csv
+1,date,medianQ,MIC344,Fyshwick_out.csv
+1,date,Month,MIC344,Fyshwick_out.csv
+1,date,flag,MIC344,Fyshwick_out.csv
+1,date,???,MIC344,Fyshwick_out.csv
+0.9999999999999998,date,Temperature (Degrees C),MIC344,Fyshwick_out.csv
+1,date,Turbidity (NTU),MIC344,Fyshwick_out.csv
+1,date,date,MIC344,Fyshwick_out.csv
+1,temp,temp,WOD,Fyshwick_out.csv
+1,temp,Month,WOD,Fyshwick_out.csv
+1,temp,day,WOD,Fyshwick_out.csv
+1,temp,flag,WOD,Fyshwick_out.csv
+1.0000000000000002,temp,???,WOD,Fyshwick_out.csv
+1,temp,Temperature (Degrees C),WOD,Fyshwick_out.csv
+1,temp,pH (units),WOD,Fyshwick_out.csv
+1.0000000000000002,temp,Turbidity (NTU),WOD,Fyshwick_out.csv
+0.9999999999999998,temp,date,WOD,Fyshwick_out.csv
+1,CMD,CMD,WOD,Fyshwick_out.csv
+0.9999999999999999,CMD,Electrical Conductivity (�S/cm),WOD,Fyshwick_out.csv
+1.0000000000000002,CMD,Dissolved Oxygen (mg/L),WOD,Fyshwick_out.csv
+1,Month,temp,WOD,Fyshwick_out.csv
+1,Month,Month,WOD,Fyshwick_out.csv
+1,Month,day,WOD,Fyshwick_out.csv
+1,Month,flag,WOD,Fyshwick_out.csv
+1,Month,???,WOD,Fyshwick_out.csv
+1,Month,Temperature (Degrees C),WOD,Fyshwick_out.csv
+1,Month,pH (units),WOD,Fyshwick_out.csv
+1,Month,Turbidity (NTU),WOD,Fyshwick_out.csv
+1,Month,date,WOD,Fyshwick_out.csv
+1,day,temp,WOD,Fyshwick_out.csv
+1,day,Month,WOD,Fyshwick_out.csv
+1,day,day,WOD,Fyshwick_out.csv
+1,day,flag,WOD,Fyshwick_out.csv
+1,day,???,WOD,Fyshwick_out.csv
+1,day,Temperature (Degrees C),WOD,Fyshwick_out.csv
+1,day,pH (units),WOD,Fyshwick_out.csv
+1,day,Turbidity (NTU),WOD,Fyshwick_out.csv
+1,day,date,WOD,Fyshwick_out.csv
+1,flag,temp,WOD,Fyshwick_out.csv
+1,flag,Month,WOD,Fyshwick_out.csv
+1,flag,day,WOD,Fyshwick_out.csv
+1,flag,flag,WOD,Fyshwick_out.csv
+1,flag,???,WOD,Fyshwick_out.csv
+1,flag,Temperature (Degrees C),WOD,Fyshwick_out.csv
+1,flag,pH (units),WOD,Fyshwick_out.csv
+1,flag,Turbidity (NTU),WOD,Fyshwick_out.csv
+1,flag,date,WOD,Fyshwick_out.csv
+1.0000000000000002,???,temp,WOD,Fyshwick_out.csv
+1,???,Month,WOD,Fyshwick_out.csv
+1,???,day,WOD,Fyshwick_out.csv
+1,???,flag,WOD,Fyshwick_out.csv
+1,???,???,WOD,Fyshwick_out.csv
+0.9999999999999999,???,Temperature (Degrees C),WOD,Fyshwick_out.csv
+1,???,pH (units),WOD,Fyshwick_out.csv
+1,???,Turbidity (NTU),WOD,Fyshwick_out.csv
+1,???,date,WOD,Fyshwick_out.csv
+1,Temperature (Degrees C),temp,WOD,Fyshwick_out.csv
+1,Temperature (Degrees C),Month,WOD,Fyshwick_out.csv
+1,Temperature (Degrees C),day,WOD,Fyshwick_out.csv
+1,Temperature (Degrees C),flag,WOD,Fyshwick_out.csv
+0.9999999999999999,Temperature (Degrees C),???,WOD,Fyshwick_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),WOD,Fyshwick_out.csv
+1,Temperature (Degrees C),pH (units),WOD,Fyshwick_out.csv
+1,Temperature (Degrees C),Turbidity (NTU),WOD,Fyshwick_out.csv
+1,Temperature (Degrees C),date,WOD,Fyshwick_out.csv
+1,pH (units),temp,WOD,Fyshwick_out.csv
+1,pH (units),Month,WOD,Fyshwick_out.csv
+1,pH (units),day,WOD,Fyshwick_out.csv
+1,pH (units),flag,WOD,Fyshwick_out.csv
+1,pH (units),???,WOD,Fyshwick_out.csv
+1,pH (units),Temperature (Degrees C),WOD,Fyshwick_out.csv
+1,pH (units),pH (units),WOD,Fyshwick_out.csv
+0.9999999999999998,pH (units),Turbidity (NTU),WOD,Fyshwick_out.csv
+1,pH (units),date,WOD,Fyshwick_out.csv
+0.9999999999999999,Electrical Conductivity (�S/cm),CMD,WOD,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),WOD,Fyshwick_out.csv
+0.9999999999999999,Electrical Conductivity (�S/cm),Dissolved Oxygen (mg/L),WOD,Fyshwick_out.csv
+1.0000000000000002,Turbidity (NTU),temp,WOD,Fyshwick_out.csv
+1,Turbidity (NTU),Month,WOD,Fyshwick_out.csv
+1,Turbidity (NTU),day,WOD,Fyshwick_out.csv
+1,Turbidity (NTU),flag,WOD,Fyshwick_out.csv
+1,Turbidity (NTU),???,WOD,Fyshwick_out.csv
+1,Turbidity (NTU),Temperature (Degrees C),WOD,Fyshwick_out.csv
+0.9999999999999998,Turbidity (NTU),pH (units),WOD,Fyshwick_out.csv
+1,Turbidity (NTU),Turbidity (NTU),WOD,Fyshwick_out.csv
+1,Turbidity (NTU),date,WOD,Fyshwick_out.csv
+1.0000000000000002,Dissolved Oxygen (mg/L),CMD,WOD,Fyshwick_out.csv
+0.9999999999999999,Dissolved Oxygen (mg/L),Electrical Conductivity (�S/cm),WOD,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),WOD,Fyshwick_out.csv
+0.9999999999999998,date,temp,WOD,Fyshwick_out.csv
+1,date,Month,WOD,Fyshwick_out.csv
+1,date,day,WOD,Fyshwick_out.csv
+1,date,flag,WOD,Fyshwick_out.csv
+1,date,???,WOD,Fyshwick_out.csv
+1,date,Temperature (Degrees C),WOD,Fyshwick_out.csv
+1,date,pH (units),WOD,Fyshwick_out.csv
+1,date,Turbidity (NTU),WOD,Fyshwick_out.csv
+1,date,date,WOD,Fyshwick_out.csv
+1,rain,rain,WHI,Fyshwick_out.csv
+1,rain,temp,WHI,Fyshwick_out.csv
+1,rain,minQ,WHI,Fyshwick_out.csv
+0.9999999999999999,rain,maxQ,WHI,Fyshwick_out.csv
+0.9999999999999998,rain,medianQ,WHI,Fyshwick_out.csv
+1.0000000000000002,rain,i6,WHI,Fyshwick_out.csv
+1,rain,i30,WHI,Fyshwick_out.csv
+1,rain,U,WHI,Fyshwick_out.csv
+1,rain,Month,WHI,Fyshwick_out.csv
+1,rain,flag,WHI,Fyshwick_out.csv
+1,rain,???,WHI,Fyshwick_out.csv
+0.9999999999999999,rain,Temperature (Degrees C),WHI,Fyshwick_out.csv
+1,rain,pH (units),WHI,Fyshwick_out.csv
+1,rain,Turbidity (NTU),WHI,Fyshwick_out.csv
+1,rain,Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+1,rain,date,WHI,Fyshwick_out.csv
+1,temp,rain,WHI,Fyshwick_out.csv
+1,temp,temp,WHI,Fyshwick_out.csv
+0.9999999999999998,temp,minQ,WHI,Fyshwick_out.csv
+1,temp,maxQ,WHI,Fyshwick_out.csv
+1,temp,medianQ,WHI,Fyshwick_out.csv
+1,temp,i6,WHI,Fyshwick_out.csv
+0.9999999999999998,temp,i30,WHI,Fyshwick_out.csv
+1.0000000000000002,temp,U,WHI,Fyshwick_out.csv
+1,temp,Month,WHI,Fyshwick_out.csv
+1,temp,flag,WHI,Fyshwick_out.csv
+1,temp,???,WHI,Fyshwick_out.csv
+1,temp,Temperature (Degrees C),WHI,Fyshwick_out.csv
+1,temp,pH (units),WHI,Fyshwick_out.csv
+0.9999999999999999,temp,Turbidity (NTU),WHI,Fyshwick_out.csv
+1,temp,Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+1,temp,date,WHI,Fyshwick_out.csv
+1,minQ,rain,WHI,Fyshwick_out.csv
+0.9999999999999998,minQ,temp,WHI,Fyshwick_out.csv
+1,minQ,minQ,WHI,Fyshwick_out.csv
+1,minQ,maxQ,WHI,Fyshwick_out.csv
+1,minQ,medianQ,WHI,Fyshwick_out.csv
+1,minQ,i6,WHI,Fyshwick_out.csv
+1,minQ,i30,WHI,Fyshwick_out.csv
+1,minQ,U,WHI,Fyshwick_out.csv
+1,minQ,Month,WHI,Fyshwick_out.csv
+0.9999999999999999,minQ,flag,WHI,Fyshwick_out.csv
+1,minQ,???,WHI,Fyshwick_out.csv
+0.9999999999999999,minQ,Temperature (Degrees C),WHI,Fyshwick_out.csv
+1,minQ,pH (units),WHI,Fyshwick_out.csv
+1,minQ,Turbidity (NTU),WHI,Fyshwick_out.csv
+1,minQ,Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+1,minQ,date,WHI,Fyshwick_out.csv
+0.9999999999999999,maxQ,rain,WHI,Fyshwick_out.csv
+1,maxQ,temp,WHI,Fyshwick_out.csv
+1,maxQ,minQ,WHI,Fyshwick_out.csv
+1,maxQ,maxQ,WHI,Fyshwick_out.csv
+0.9999999999999998,maxQ,medianQ,WHI,Fyshwick_out.csv
+1.0000000000000002,maxQ,i6,WHI,Fyshwick_out.csv
+0.9999999999999999,maxQ,i30,WHI,Fyshwick_out.csv
+1,maxQ,U,WHI,Fyshwick_out.csv
+1,maxQ,Month,WHI,Fyshwick_out.csv
+1,maxQ,flag,WHI,Fyshwick_out.csv
+0.9999999999999999,maxQ,???,WHI,Fyshwick_out.csv
+0.9999999999999998,maxQ,Temperature (Degrees C),WHI,Fyshwick_out.csv
+1,maxQ,pH (units),WHI,Fyshwick_out.csv
+1,maxQ,Turbidity (NTU),WHI,Fyshwick_out.csv
+1,maxQ,Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+1,maxQ,date,WHI,Fyshwick_out.csv
+0.9999999999999998,medianQ,rain,WHI,Fyshwick_out.csv
+1,medianQ,temp,WHI,Fyshwick_out.csv
+1,medianQ,minQ,WHI,Fyshwick_out.csv
+0.9999999999999998,medianQ,maxQ,WHI,Fyshwick_out.csv
+1,medianQ,medianQ,WHI,Fyshwick_out.csv
+1,medianQ,i6,WHI,Fyshwick_out.csv
+0.9999999999999999,medianQ,i30,WHI,Fyshwick_out.csv
+0.9999999999999998,medianQ,U,WHI,Fyshwick_out.csv
+1,medianQ,Month,WHI,Fyshwick_out.csv
+1,medianQ,flag,WHI,Fyshwick_out.csv
+0.9999999999999998,medianQ,???,WHI,Fyshwick_out.csv
+1,medianQ,Temperature (Degrees C),WHI,Fyshwick_out.csv
+0.9999999999999998,medianQ,pH (units),WHI,Fyshwick_out.csv
+1,medianQ,Turbidity (NTU),WHI,Fyshwick_out.csv
+0.9999999999999998,medianQ,Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+0.9999999999999999,medianQ,date,WHI,Fyshwick_out.csv
+1.0000000000000002,i6,rain,WHI,Fyshwick_out.csv
+1,i6,temp,WHI,Fyshwick_out.csv
+1,i6,minQ,WHI,Fyshwick_out.csv
+1.0000000000000002,i6,maxQ,WHI,Fyshwick_out.csv
+1,i6,medianQ,WHI,Fyshwick_out.csv
+1,i6,i6,WHI,Fyshwick_out.csv
+1,i6,i30,WHI,Fyshwick_out.csv
+1.0000000000000002,i6,U,WHI,Fyshwick_out.csv
+0.9999999999999999,i6,Month,WHI,Fyshwick_out.csv
+1,i6,flag,WHI,Fyshwick_out.csv
+0.9999999999999999,i6,???,WHI,Fyshwick_out.csv
+0.9999999999999999,i6,Temperature (Degrees C),WHI,Fyshwick_out.csv
+1,i6,pH (units),WHI,Fyshwick_out.csv
+1,i6,Turbidity (NTU),WHI,Fyshwick_out.csv
+1,i6,Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+1,i6,date,WHI,Fyshwick_out.csv
+1,i30,rain,WHI,Fyshwick_out.csv
+0.9999999999999998,i30,temp,WHI,Fyshwick_out.csv
+1,i30,minQ,WHI,Fyshwick_out.csv
+0.9999999999999999,i30,maxQ,WHI,Fyshwick_out.csv
+0.9999999999999999,i30,medianQ,WHI,Fyshwick_out.csv
+1,i30,i6,WHI,Fyshwick_out.csv
+1,i30,i30,WHI,Fyshwick_out.csv
+1,i30,U,WHI,Fyshwick_out.csv
+1,i30,Month,WHI,Fyshwick_out.csv
+1,i30,flag,WHI,Fyshwick_out.csv
+1,i30,???,WHI,Fyshwick_out.csv
+0.9999999999999999,i30,Temperature (Degrees C),WHI,Fyshwick_out.csv
+1,i30,pH (units),WHI,Fyshwick_out.csv
+1,i30,Turbidity (NTU),WHI,Fyshwick_out.csv
+1,i30,Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+1,i30,date,WHI,Fyshwick_out.csv
+1,U,rain,WHI,Fyshwick_out.csv
+1.0000000000000002,U,temp,WHI,Fyshwick_out.csv
+1,U,minQ,WHI,Fyshwick_out.csv
+1,U,maxQ,WHI,Fyshwick_out.csv
+0.9999999999999998,U,medianQ,WHI,Fyshwick_out.csv
+1.0000000000000002,U,i6,WHI,Fyshwick_out.csv
+1,U,i30,WHI,Fyshwick_out.csv
+1,U,U,WHI,Fyshwick_out.csv
+1,U,Month,WHI,Fyshwick_out.csv
+1,U,flag,WHI,Fyshwick_out.csv
+1,U,???,WHI,Fyshwick_out.csv
+1,U,Temperature (Degrees C),WHI,Fyshwick_out.csv
+0.9999999999999999,U,pH (units),WHI,Fyshwick_out.csv
+1.0000000000000002,U,Turbidity (NTU),WHI,Fyshwick_out.csv
+1.0000000000000002,U,Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+1.0000000000000002,U,date,WHI,Fyshwick_out.csv
+1,CMD,CMD,WHI,Fyshwick_out.csv
+1,CMD,day,WHI,Fyshwick_out.csv
+1,CMD,Electrical Conductivity (�S/cm),WHI,Fyshwick_out.csv
+1,Month,rain,WHI,Fyshwick_out.csv
+1,Month,temp,WHI,Fyshwick_out.csv
+1,Month,minQ,WHI,Fyshwick_out.csv
+1,Month,maxQ,WHI,Fyshwick_out.csv
+1,Month,medianQ,WHI,Fyshwick_out.csv
+0.9999999999999999,Month,i6,WHI,Fyshwick_out.csv
+1,Month,i30,WHI,Fyshwick_out.csv
+1,Month,U,WHI,Fyshwick_out.csv
+1,Month,Month,WHI,Fyshwick_out.csv
+1,Month,flag,WHI,Fyshwick_out.csv
+1,Month,???,WHI,Fyshwick_out.csv
+1,Month,Temperature (Degrees C),WHI,Fyshwick_out.csv
+1,Month,pH (units),WHI,Fyshwick_out.csv
+1,Month,Turbidity (NTU),WHI,Fyshwick_out.csv
+1,Month,Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+1,Month,date,WHI,Fyshwick_out.csv
+1,day,CMD,WHI,Fyshwick_out.csv
+1,day,day,WHI,Fyshwick_out.csv
+1,day,Electrical Conductivity (�S/cm),WHI,Fyshwick_out.csv
+1,flag,rain,WHI,Fyshwick_out.csv
+1,flag,temp,WHI,Fyshwick_out.csv
+0.9999999999999999,flag,minQ,WHI,Fyshwick_out.csv
+1,flag,maxQ,WHI,Fyshwick_out.csv
+1,flag,medianQ,WHI,Fyshwick_out.csv
+1,flag,i6,WHI,Fyshwick_out.csv
+1,flag,i30,WHI,Fyshwick_out.csv
+1,flag,U,WHI,Fyshwick_out.csv
+1,flag,Month,WHI,Fyshwick_out.csv
+1,flag,flag,WHI,Fyshwick_out.csv
+1,flag,???,WHI,Fyshwick_out.csv
+1,flag,Temperature (Degrees C),WHI,Fyshwick_out.csv
+1,flag,pH (units),WHI,Fyshwick_out.csv
+1,flag,Turbidity (NTU),WHI,Fyshwick_out.csv
+1,flag,Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+1,flag,date,WHI,Fyshwick_out.csv
+1,???,rain,WHI,Fyshwick_out.csv
+1,???,temp,WHI,Fyshwick_out.csv
+1,???,minQ,WHI,Fyshwick_out.csv
+0.9999999999999999,???,maxQ,WHI,Fyshwick_out.csv
+0.9999999999999998,???,medianQ,WHI,Fyshwick_out.csv
+0.9999999999999999,???,i6,WHI,Fyshwick_out.csv
+1,???,i30,WHI,Fyshwick_out.csv
+1,???,U,WHI,Fyshwick_out.csv
+1,???,Month,WHI,Fyshwick_out.csv
+1,???,flag,WHI,Fyshwick_out.csv
+1,???,???,WHI,Fyshwick_out.csv
+1,???,Temperature (Degrees C),WHI,Fyshwick_out.csv
+1,???,pH (units),WHI,Fyshwick_out.csv
+1,???,Turbidity (NTU),WHI,Fyshwick_out.csv
+1,???,Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+1,???,date,WHI,Fyshwick_out.csv
+0.9999999999999999,Temperature (Degrees C),rain,WHI,Fyshwick_out.csv
+1,Temperature (Degrees C),temp,WHI,Fyshwick_out.csv
+0.9999999999999999,Temperature (Degrees C),minQ,WHI,Fyshwick_out.csv
+0.9999999999999998,Temperature (Degrees C),maxQ,WHI,Fyshwick_out.csv
+1,Temperature (Degrees C),medianQ,WHI,Fyshwick_out.csv
+0.9999999999999999,Temperature (Degrees C),i6,WHI,Fyshwick_out.csv
+0.9999999999999999,Temperature (Degrees C),i30,WHI,Fyshwick_out.csv
+1,Temperature (Degrees C),U,WHI,Fyshwick_out.csv
+1,Temperature (Degrees C),Month,WHI,Fyshwick_out.csv
+1,Temperature (Degrees C),flag,WHI,Fyshwick_out.csv
+1,Temperature (Degrees C),???,WHI,Fyshwick_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),WHI,Fyshwick_out.csv
+1,Temperature (Degrees C),pH (units),WHI,Fyshwick_out.csv
+0.9999999999999999,Temperature (Degrees C),Turbidity (NTU),WHI,Fyshwick_out.csv
+0.9999999999999999,Temperature (Degrees C),Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+0.9999999999999999,Temperature (Degrees C),date,WHI,Fyshwick_out.csv
+1,pH (units),rain,WHI,Fyshwick_out.csv
+1,pH (units),temp,WHI,Fyshwick_out.csv
+1,pH (units),minQ,WHI,Fyshwick_out.csv
+1,pH (units),maxQ,WHI,Fyshwick_out.csv
+0.9999999999999998,pH (units),medianQ,WHI,Fyshwick_out.csv
+1,pH (units),i6,WHI,Fyshwick_out.csv
+1,pH (units),i30,WHI,Fyshwick_out.csv
+0.9999999999999999,pH (units),U,WHI,Fyshwick_out.csv
+1,pH (units),Month,WHI,Fyshwick_out.csv
+1,pH (units),flag,WHI,Fyshwick_out.csv
+1,pH (units),???,WHI,Fyshwick_out.csv
+1,pH (units),Temperature (Degrees C),WHI,Fyshwick_out.csv
+1,pH (units),pH (units),WHI,Fyshwick_out.csv
+0.9999999999999999,pH (units),Turbidity (NTU),WHI,Fyshwick_out.csv
+1,pH (units),Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+1,pH (units),date,WHI,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),CMD,WHI,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),day,WHI,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),WHI,Fyshwick_out.csv
+1,Turbidity (NTU),rain,WHI,Fyshwick_out.csv
+0.9999999999999999,Turbidity (NTU),temp,WHI,Fyshwick_out.csv
+1,Turbidity (NTU),minQ,WHI,Fyshwick_out.csv
+1,Turbidity (NTU),maxQ,WHI,Fyshwick_out.csv
+1,Turbidity (NTU),medianQ,WHI,Fyshwick_out.csv
+1,Turbidity (NTU),i6,WHI,Fyshwick_out.csv
+1,Turbidity (NTU),i30,WHI,Fyshwick_out.csv
+1.0000000000000002,Turbidity (NTU),U,WHI,Fyshwick_out.csv
+1,Turbidity (NTU),Month,WHI,Fyshwick_out.csv
+1,Turbidity (NTU),flag,WHI,Fyshwick_out.csv
+1,Turbidity (NTU),???,WHI,Fyshwick_out.csv
+0.9999999999999999,Turbidity (NTU),Temperature (Degrees C),WHI,Fyshwick_out.csv
+0.9999999999999999,Turbidity (NTU),pH (units),WHI,Fyshwick_out.csv
+1,Turbidity (NTU),Turbidity (NTU),WHI,Fyshwick_out.csv
+1,Turbidity (NTU),Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+1,Turbidity (NTU),date,WHI,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),rain,WHI,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),temp,WHI,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),minQ,WHI,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),maxQ,WHI,Fyshwick_out.csv
+0.9999999999999998,Dissolved Oxygen (mg/L),medianQ,WHI,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),i6,WHI,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),i30,WHI,Fyshwick_out.csv
+1.0000000000000002,Dissolved Oxygen (mg/L),U,WHI,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Month,WHI,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),flag,WHI,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),???,WHI,Fyshwick_out.csv
+0.9999999999999999,Dissolved Oxygen (mg/L),Temperature (Degrees C),WHI,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),pH (units),WHI,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Turbidity (NTU),WHI,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),date,WHI,Fyshwick_out.csv
+1,date,rain,WHI,Fyshwick_out.csv
+1,date,temp,WHI,Fyshwick_out.csv
+1,date,minQ,WHI,Fyshwick_out.csv
+1,date,maxQ,WHI,Fyshwick_out.csv
+0.9999999999999999,date,medianQ,WHI,Fyshwick_out.csv
+1,date,i6,WHI,Fyshwick_out.csv
+1,date,i30,WHI,Fyshwick_out.csv
+1.0000000000000002,date,U,WHI,Fyshwick_out.csv
+1,date,Month,WHI,Fyshwick_out.csv
+1,date,flag,WHI,Fyshwick_out.csv
+1,date,???,WHI,Fyshwick_out.csv
+0.9999999999999999,date,Temperature (Degrees C),WHI,Fyshwick_out.csv
+1,date,pH (units),WHI,Fyshwick_out.csv
+1,date,Turbidity (NTU),WHI,Fyshwick_out.csv
+1,date,Dissolved Oxygen (mg/L),WHI,Fyshwick_out.csv
+1,date,date,WHI,Fyshwick_out.csv
+1,rain,rain,618,Fyshwick_out.csv
+0.7041221108920722,rain,i6,618,Fyshwick_out.csv
+0.775188939725774,rain,i30,618,Fyshwick_out.csv
+0.8343990980162242,rain,U,618,Fyshwick_out.csv
+1,temp,temp,618,Fyshwick_out.csv
+0.7285386236904455,temp,Temperature (Degrees C),618,Fyshwick_out.csv
+1,minQ,minQ,618,Fyshwick_out.csv
+0.9264667432103438,minQ,maxQ,618,Fyshwick_out.csv
+0.9670256743174028,minQ,medianQ,618,Fyshwick_out.csv
+0.9264667432103438,maxQ,minQ,618,Fyshwick_out.csv
+1,maxQ,maxQ,618,Fyshwick_out.csv
+0.9859747346030492,maxQ,medianQ,618,Fyshwick_out.csv
+0.9670256743174028,medianQ,minQ,618,Fyshwick_out.csv
+0.9859747346030492,medianQ,maxQ,618,Fyshwick_out.csv
+1,medianQ,medianQ,618,Fyshwick_out.csv
+0.7041221108920722,i6,rain,618,Fyshwick_out.csv
+1,i6,i6,618,Fyshwick_out.csv
+0.9557043750626835,i6,i30,618,Fyshwick_out.csv
+0.775188939725774,i30,rain,618,Fyshwick_out.csv
+0.9557043750626835,i30,i6,618,Fyshwick_out.csv
+1,i30,i30,618,Fyshwick_out.csv
+0.8343990980162242,U,rain,618,Fyshwick_out.csv
+1,U,U,618,Fyshwick_out.csv
+1,CMD,CMD,618,Fyshwick_out.csv
+1,Year,Year,618,Fyshwick_out.csv
+0.989450792367852,Year,???,618,Fyshwick_out.csv
+0.9892911958500048,Year,date,618,Fyshwick_out.csv
+1,Month,Month,618,Fyshwick_out.csv
+1,day,day,618,Fyshwick_out.csv
+1,flag,flag,618,Fyshwick_out.csv
+0.989450792367852,???,Year,618,Fyshwick_out.csv
+1,???,???,618,Fyshwick_out.csv
+0.9999757816909439,???,date,618,Fyshwick_out.csv
+0.7285386236904455,Temperature (Degrees C),temp,618,Fyshwick_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),618,Fyshwick_out.csv
+1,pH (units),pH (units),618,Fyshwick_out.csv
+1,Total Nitrogen (mg/L),Total Nitrogen (mg/L),618,Fyshwick_out.csv
+0.9957560483023039,Total Nitrogen (mg/L),Ammonia (mg/L),618,Fyshwick_out.csv
+0.9957560483023039,Ammonia (mg/L),Total Nitrogen (mg/L),618,Fyshwick_out.csv
+1,Ammonia (mg/L),Ammonia (mg/L),618,Fyshwick_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),618,Fyshwick_out.csv
+1,Total Dissolved Solids (mg/L),Total Dissolved Solids (mg/L),618,Fyshwick_out.csv
+0.9892911958500048,date,Year,618,Fyshwick_out.csv
+0.9999757816909439,date,???,618,Fyshwick_out.csv
+1,date,date,618,Fyshwick_out.csv
+1,rain,rain,MOL270 ,Fyshwick_out.csv
+1,temp,temp,MOL270 ,Fyshwick_out.csv
+0.8160170623669254,temp,Temperature (Degrees C),MOL270 ,Fyshwick_out.csv
+1,minQ,minQ,MOL270 ,Fyshwick_out.csv
+0.9894111844375938,minQ,maxQ,MOL270 ,Fyshwick_out.csv
+0.9990061815723731,minQ,medianQ,MOL270 ,Fyshwick_out.csv
+0.9894111844375938,maxQ,minQ,MOL270 ,Fyshwick_out.csv
+1,maxQ,maxQ,MOL270 ,Fyshwick_out.csv
+0.992005859506645,maxQ,medianQ,MOL270 ,Fyshwick_out.csv
+0.9990061815723731,medianQ,minQ,MOL270 ,Fyshwick_out.csv
+0.992005859506645,medianQ,maxQ,MOL270 ,Fyshwick_out.csv
+1,medianQ,medianQ,MOL270 ,Fyshwick_out.csv
+1,i6,i6,MOL270 ,Fyshwick_out.csv
+0.9572753420406468,i6,i30,MOL270 ,Fyshwick_out.csv
+0.7481812807852585,i6,Orthophosphate (mg/L),MOL270 ,Fyshwick_out.csv
+0.9572753420406468,i30,i6,MOL270 ,Fyshwick_out.csv
+1,i30,i30,MOL270 ,Fyshwick_out.csv
+1,U,U,MOL270 ,Fyshwick_out.csv
+1,CMD,CMD,MOL270 ,Fyshwick_out.csv
+1,Year,Year,MOL270 ,Fyshwick_out.csv
+0.9918814320032864,Year,???,MOL270 ,Fyshwick_out.csv
+0.742440228608378,Year,Dissolved Oxygen (mg/L),MOL270 ,Fyshwick_out.csv
+0.7771795345755408,Year,Dissolved Oxygen (% Saturation),MOL270 ,Fyshwick_out.csv
+0.9917376662856607,Year,date,MOL270 ,Fyshwick_out.csv
+1,Month,Month,MOL270 ,Fyshwick_out.csv
+1,day,day,MOL270 ,Fyshwick_out.csv
+1,flag,flag,MOL270 ,Fyshwick_out.csv
+0.9918814320032864,???,Year,MOL270 ,Fyshwick_out.csv
+1,???,???,MOL270 ,Fyshwick_out.csv
+0.7402053191511277,???,Dissolved Oxygen (mg/L),MOL270 ,Fyshwick_out.csv
+0.778093714694975,???,Dissolved Oxygen (% Saturation),MOL270 ,Fyshwick_out.csv
+0.9999778984264023,???,date,MOL270 ,Fyshwick_out.csv
+0.8160170623669254,Temperature (Degrees C),temp,MOL270 ,Fyshwick_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),MOL270 ,Fyshwick_out.csv
+1,pH (units),pH (units),MOL270 ,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),MOL270 ,Fyshwick_out.csv
+1,Turbidity (NTU),Turbidity (NTU),MOL270 ,Fyshwick_out.csv
+0.742440228608378,Dissolved Oxygen (mg/L),Year,MOL270 ,Fyshwick_out.csv
+0.7402053191511277,Dissolved Oxygen (mg/L),???,MOL270 ,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),MOL270 ,Fyshwick_out.csv
+0.9844041501037338,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),MOL270 ,Fyshwick_out.csv
+0.7417715882685122,Dissolved Oxygen (mg/L),date,MOL270 ,Fyshwick_out.csv
+0.7771795345755408,Dissolved Oxygen (% Saturation),Year,MOL270 ,Fyshwick_out.csv
+0.778093714694975,Dissolved Oxygen (% Saturation),???,MOL270 ,Fyshwick_out.csv
+0.9844041501037338,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),MOL270 ,Fyshwick_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),MOL270 ,Fyshwick_out.csv
+0.7796605524590158,Dissolved Oxygen (% Saturation),date,MOL270 ,Fyshwick_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),MOL270 ,Fyshwick_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),MOL270 ,Fyshwick_out.csv
+0.7481812807852585,Orthophosphate (mg/L),i6,MOL270 ,Fyshwick_out.csv
+1,Orthophosphate (mg/L),Orthophosphate (mg/L),MOL270 ,Fyshwick_out.csv
+0.9917376662856607,date,Year,MOL270 ,Fyshwick_out.csv
+0.9999778984264023,date,???,MOL270 ,Fyshwick_out.csv
+0.7417715882685122,date,Dissolved Oxygen (mg/L),MOL270 ,Fyshwick_out.csv
+0.7796605524590158,date,Dissolved Oxygen (% Saturation),MOL270 ,Fyshwick_out.csv
+1,date,date,MOL270 ,Fyshwick_out.csv
+1,rain,rain,MOL280 ,Fyshwick_out.csv
+0.9605601124741246,rain,U,MOL280 ,Fyshwick_out.csv
+1,temp,temp,MOL280 ,Fyshwick_out.csv
+0.885166916666834,temp,Temperature (Degrees C),MOL280 ,Fyshwick_out.csv
+1,minQ,minQ,MOL280 ,Fyshwick_out.csv
+0.9918678754949449,minQ,maxQ,MOL280 ,Fyshwick_out.csv
+0.9965822044789254,minQ,medianQ,MOL280 ,Fyshwick_out.csv
+0.9918678754949449,maxQ,minQ,MOL280 ,Fyshwick_out.csv
+1,maxQ,maxQ,MOL280 ,Fyshwick_out.csv
+0.9967525040023562,maxQ,medianQ,MOL280 ,Fyshwick_out.csv
+0.7000310271960436,maxQ,i6,MOL280 ,Fyshwick_out.csv
+0.7000310271960436,maxQ,i30,MOL280 ,Fyshwick_out.csv
+0.9965822044789254,medianQ,minQ,MOL280 ,Fyshwick_out.csv
+0.9967525040023562,medianQ,maxQ,MOL280 ,Fyshwick_out.csv
+1,medianQ,medianQ,MOL280 ,Fyshwick_out.csv
+0.7000310271960436,i6,maxQ,MOL280 ,Fyshwick_out.csv
+1,i6,i6,MOL280 ,Fyshwick_out.csv
+1,i6,i30,MOL280 ,Fyshwick_out.csv
+0.7233411525002478,i6,U,MOL280 ,Fyshwick_out.csv
+0.7106920838900052,i6,Turbidity (NTU),MOL280 ,Fyshwick_out.csv
+0.7000310271960436,i30,maxQ,MOL280 ,Fyshwick_out.csv
+1,i30,i6,MOL280 ,Fyshwick_out.csv
+1,i30,i30,MOL280 ,Fyshwick_out.csv
+0.7233411525002478,i30,U,MOL280 ,Fyshwick_out.csv
+0.7106920838900052,i30,Turbidity (NTU),MOL280 ,Fyshwick_out.csv
+0.9605601124741246,U,rain,MOL280 ,Fyshwick_out.csv
+0.7233411525002478,U,i6,MOL280 ,Fyshwick_out.csv
+0.7233411525002478,U,i30,MOL280 ,Fyshwick_out.csv
+1,U,U,MOL280 ,Fyshwick_out.csv
+1,CMD,CMD,MOL280 ,Fyshwick_out.csv
+0.7137737479406383,CMD,Electrical Conductivity (�S/cm),MOL280 ,Fyshwick_out.csv
+1,Year,Year,MOL280 ,Fyshwick_out.csv
+0.9857043010151785,Year,???,MOL280 ,Fyshwick_out.csv
+0.9857172379391983,Year,date,MOL280 ,Fyshwick_out.csv
+1,Month,Month,MOL280 ,Fyshwick_out.csv
+1,day,day,MOL280 ,Fyshwick_out.csv
+1,flag,flag,MOL280 ,Fyshwick_out.csv
+0.9857043010151785,???,Year,MOL280 ,Fyshwick_out.csv
+1,???,???,MOL280 ,Fyshwick_out.csv
+0.999999881700522,???,date,MOL280 ,Fyshwick_out.csv
+0.885166916666834,Temperature (Degrees C),temp,MOL280 ,Fyshwick_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),MOL280 ,Fyshwick_out.csv
+1,pH (units),pH (units),MOL280 ,Fyshwick_out.csv
+0.7137737479406383,Electrical Conductivity (�S/cm),CMD,MOL280 ,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),MOL280 ,Fyshwick_out.csv
+0.7106920838900052,Turbidity (NTU),i6,MOL280 ,Fyshwick_out.csv
+0.7106920838900052,Turbidity (NTU),i30,MOL280 ,Fyshwick_out.csv
+1,Turbidity (NTU),Turbidity (NTU),MOL280 ,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),MOL280 ,Fyshwick_out.csv
+0.8316458761846303,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),MOL280 ,Fyshwick_out.csv
+0.8316458761846303,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),MOL280 ,Fyshwick_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),MOL280 ,Fyshwick_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),MOL280 ,Fyshwick_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),MOL280 ,Fyshwick_out.csv
+0.9857172379391983,date,Year,MOL280 ,Fyshwick_out.csv
+0.999999881700522,date,???,MOL280 ,Fyshwick_out.csv
+1,date,date,MOL280 ,Fyshwick_out.csv
+1,rain,rain,MOL295 ,Fyshwick_out.csv
+0.9827019822964801,rain,U,MOL295 ,Fyshwick_out.csv
+1,temp,temp,MOL295 ,Fyshwick_out.csv
+0.7940868528037066,temp,Temperature (Degrees C),MOL295 ,Fyshwick_out.csv
+1,minQ,minQ,MOL295 ,Fyshwick_out.csv
+0.9729449892924451,minQ,maxQ,MOL295 ,Fyshwick_out.csv
+0.9896928899878374,minQ,medianQ,MOL295 ,Fyshwick_out.csv
+0.9729449892924451,maxQ,minQ,MOL295 ,Fyshwick_out.csv
+1,maxQ,maxQ,MOL295 ,Fyshwick_out.csv
+0.9908421848759456,maxQ,medianQ,MOL295 ,Fyshwick_out.csv
+0.9896928899878374,medianQ,minQ,MOL295 ,Fyshwick_out.csv
+0.9908421848759456,medianQ,maxQ,MOL295 ,Fyshwick_out.csv
+1,medianQ,medianQ,MOL295 ,Fyshwick_out.csv
+1,i6,i6,MOL295 ,Fyshwick_out.csv
+0.9620220960375273,i6,i30,MOL295 ,Fyshwick_out.csv
+0.9620220960375273,i30,i6,MOL295 ,Fyshwick_out.csv
+1,i30,i30,MOL295 ,Fyshwick_out.csv
+0.9827019822964801,U,rain,MOL295 ,Fyshwick_out.csv
+1,U,U,MOL295 ,Fyshwick_out.csv
+0.7749267919711267,U,Orthophosphate (mg/L),MOL295 ,Fyshwick_out.csv
+1,CMD,CMD,MOL295 ,Fyshwick_out.csv
+1,Year,Year,MOL295 ,Fyshwick_out.csv
+0.9912087556256609,Year,???,MOL295 ,Fyshwick_out.csv
+0.7108124816445605,Year,Dissolved Oxygen (% Saturation),MOL295 ,Fyshwick_out.csv
+0.9910164971510972,Year,date,MOL295 ,Fyshwick_out.csv
+1,Month,Month,MOL295 ,Fyshwick_out.csv
+1,day,day,MOL295 ,Fyshwick_out.csv
+1,flag,flag,MOL295 ,Fyshwick_out.csv
+0.9912087556256609,???,Year,MOL295 ,Fyshwick_out.csv
+1,???,???,MOL295 ,Fyshwick_out.csv
+0.7077225139721046,???,Dissolved Oxygen (mg/L),MOL295 ,Fyshwick_out.csv
+0.7232690549580538,???,Dissolved Oxygen (% Saturation),MOL295 ,Fyshwick_out.csv
+0.9999776630028896,???,date,MOL295 ,Fyshwick_out.csv
+0.7940868528037066,Temperature (Degrees C),temp,MOL295 ,Fyshwick_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),MOL295 ,Fyshwick_out.csv
+1,pH (units),pH (units),MOL295 ,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),MOL295 ,Fyshwick_out.csv
+1,Turbidity (NTU),Turbidity (NTU),MOL295 ,Fyshwick_out.csv
+0.7077225139721046,Dissolved Oxygen (mg/L),???,MOL295 ,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),MOL295 ,Fyshwick_out.csv
+0.958543391780751,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),MOL295 ,Fyshwick_out.csv
+0.7092605209348687,Dissolved Oxygen (mg/L),date,MOL295 ,Fyshwick_out.csv
+0.7108124816445605,Dissolved Oxygen (% Saturation),Year,MOL295 ,Fyshwick_out.csv
+0.7232690549580538,Dissolved Oxygen (% Saturation),???,MOL295 ,Fyshwick_out.csv
+0.958543391780751,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),MOL295 ,Fyshwick_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),MOL295 ,Fyshwick_out.csv
+0.7246944168800626,Dissolved Oxygen (% Saturation),date,MOL295 ,Fyshwick_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),MOL295 ,Fyshwick_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),MOL295 ,Fyshwick_out.csv
+0.7749267919711267,Orthophosphate (mg/L),U,MOL295 ,Fyshwick_out.csv
+1,Orthophosphate (mg/L),Orthophosphate (mg/L),MOL295 ,Fyshwick_out.csv
+0.9910164971510972,date,Year,MOL295 ,Fyshwick_out.csv
+0.9999776630028896,date,???,MOL295 ,Fyshwick_out.csv
+0.7092605209348687,date,Dissolved Oxygen (mg/L),MOL295 ,Fyshwick_out.csv
+0.7246944168800626,date,Dissolved Oxygen (% Saturation),MOL295 ,Fyshwick_out.csv
+1,date,date,MOL295 ,Fyshwick_out.csv
+1,rain,rain,JER175,Fyshwick_out.csv
+0.7405418613741254,rain,maxQ,JER175,Fyshwick_out.csv
+0.9275135084097901,rain,i6,JER175,Fyshwick_out.csv
+0.9680132721980844,rain,i30,JER175,Fyshwick_out.csv
+0.9963965605637428,rain,U,JER175,Fyshwick_out.csv
+0.7524638866663772,rain,flag,JER175,Fyshwick_out.csv
+0.7475292236149557,rain,Turbidity (NTU),JER175,Fyshwick_out.csv
+1,temp,temp,JER175,Fyshwick_out.csv
+0.706919753092994,temp,Month,JER175,Fyshwick_out.csv
+0.8782275456219446,temp,Temperature (Degrees C),JER175,Fyshwick_out.csv
+0.7160664792251084,temp,Turbidity (NTU),JER175,Fyshwick_out.csv
+1,minQ,minQ,JER175,Fyshwick_out.csv
+0.9547391806715105,minQ,maxQ,JER175,Fyshwick_out.csv
+0.9798967420659804,minQ,medianQ,JER175,Fyshwick_out.csv
+0.7528514091889684,minQ,flag,JER175,Fyshwick_out.csv
+0.7405418613741254,maxQ,rain,JER175,Fyshwick_out.csv
+0.9547391806715105,maxQ,minQ,JER175,Fyshwick_out.csv
+1,maxQ,maxQ,JER175,Fyshwick_out.csv
+0.9945321929386245,maxQ,medianQ,JER175,Fyshwick_out.csv
+0.7358516300006065,maxQ,i30,JER175,Fyshwick_out.csv
+0.7520578527645381,maxQ,U,JER175,Fyshwick_out.csv
+0.8606693573751145,maxQ,flag,JER175,Fyshwick_out.csv
+0.9798967420659804,medianQ,minQ,JER175,Fyshwick_out.csv
+0.9945321929386245,medianQ,maxQ,JER175,Fyshwick_out.csv
+1,medianQ,medianQ,JER175,Fyshwick_out.csv
+0.8272356035167884,medianQ,flag,JER175,Fyshwick_out.csv
+0.9275135084097901,i6,rain,JER175,Fyshwick_out.csv
+1,i6,i6,JER175,Fyshwick_out.csv
+0.9902586898447742,i6,i30,JER175,Fyshwick_out.csv
+0.9537831849902938,i6,U,JER175,Fyshwick_out.csv
+0.9680132721980844,i30,rain,JER175,Fyshwick_out.csv
+0.7358516300006065,i30,maxQ,JER175,Fyshwick_out.csv
+0.9902586898447742,i30,i6,JER175,Fyshwick_out.csv
+1,i30,i30,JER175,Fyshwick_out.csv
+0.9854057791016594,i30,U,JER175,Fyshwick_out.csv
+0.9963965605637428,U,rain,JER175,Fyshwick_out.csv
+0.7520578527645381,U,maxQ,JER175,Fyshwick_out.csv
+0.9537831849902938,U,i6,JER175,Fyshwick_out.csv
+0.9854057791016594,U,i30,JER175,Fyshwick_out.csv
+1,U,U,JER175,Fyshwick_out.csv
+0.7362907426193986,U,flag,JER175,Fyshwick_out.csv
+0.711830062464621,U,Turbidity (NTU),JER175,Fyshwick_out.csv
+1,CMD,CMD,JER175,Fyshwick_out.csv
+1,Year,Year,JER175,Fyshwick_out.csv
+0.8977277116709852,Year,???,JER175,Fyshwick_out.csv
+0.8935452987490597,Year,date,JER175,Fyshwick_out.csv
+0.706919753092994,Month,temp,JER175,Fyshwick_out.csv
+1,Month,Month,JER175,Fyshwick_out.csv
+1,day,day,JER175,Fyshwick_out.csv
+0.7524638866663772,flag,rain,JER175,Fyshwick_out.csv
+0.7528514091889684,flag,minQ,JER175,Fyshwick_out.csv
+0.8606693573751145,flag,maxQ,JER175,Fyshwick_out.csv
+0.8272356035167884,flag,medianQ,JER175,Fyshwick_out.csv
+0.7362907426193986,flag,U,JER175,Fyshwick_out.csv
+1,flag,flag,JER175,Fyshwick_out.csv
+0.8977277116709852,???,Year,JER175,Fyshwick_out.csv
+1,???,???,JER175,Fyshwick_out.csv
+0.9994648063609434,???,date,JER175,Fyshwick_out.csv
+0.8782275456219446,Temperature (Degrees C),temp,JER175,Fyshwick_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),JER175,Fyshwick_out.csv
+1,pH (units),pH (units),JER175,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),JER175,Fyshwick_out.csv
+0.7475292236149557,Turbidity (NTU),rain,JER175,Fyshwick_out.csv
+0.7160664792251084,Turbidity (NTU),temp,JER175,Fyshwick_out.csv
+0.711830062464621,Turbidity (NTU),U,JER175,Fyshwick_out.csv
+1,Turbidity (NTU),Turbidity (NTU),JER175,Fyshwick_out.csv
+0.8935452987490597,date,Year,JER175,Fyshwick_out.csv
+0.9994648063609434,date,???,JER175,Fyshwick_out.csv
+1,date,date,JER175,Fyshwick_out.csv
+1,rain,rain,JER175 ,Fyshwick_out.csv
+0.8487771520454904,rain,minQ,JER175 ,Fyshwick_out.csv
+0.8261693349691127,rain,maxQ,JER175 ,Fyshwick_out.csv
+0.8378926437715966,rain,medianQ,JER175 ,Fyshwick_out.csv
+0.8630904060387193,rain,U,JER175 ,Fyshwick_out.csv
+0.7958464060508247,rain,flag,JER175 ,Fyshwick_out.csv
+1,temp,temp,JER175 ,Fyshwick_out.csv
+0.8885010005588957,temp,Temperature (Degrees C),JER175 ,Fyshwick_out.csv
+0.8487771520454904,minQ,rain,JER175 ,Fyshwick_out.csv
+1,minQ,minQ,JER175 ,Fyshwick_out.csv
+0.9888320091397361,minQ,maxQ,JER175 ,Fyshwick_out.csv
+0.9962648696924292,minQ,medianQ,JER175 ,Fyshwick_out.csv
+0.9124990941260608,minQ,U,JER175 ,Fyshwick_out.csv
+0.870965417837416,minQ,flag,JER175 ,Fyshwick_out.csv
+0.8246552494938314,minQ,Total Phosphorus (mg/L),JER175 ,Fyshwick_out.csv
+0.8261693349691127,maxQ,rain,JER175 ,Fyshwick_out.csv
+0.9888320091397361,maxQ,minQ,JER175 ,Fyshwick_out.csv
+1,maxQ,maxQ,JER175 ,Fyshwick_out.csv
+0.9979592919767628,maxQ,medianQ,JER175 ,Fyshwick_out.csv
+0.8519211122290998,maxQ,U,JER175 ,Fyshwick_out.csv
+0.8606171683714937,maxQ,flag,JER175 ,Fyshwick_out.csv
+0.8660811354530279,maxQ,Total Phosphorus (mg/L),JER175 ,Fyshwick_out.csv
+0.8378926437715966,medianQ,rain,JER175 ,Fyshwick_out.csv
+0.9962648696924292,medianQ,minQ,JER175 ,Fyshwick_out.csv
+0.9979592919767628,medianQ,maxQ,JER175 ,Fyshwick_out.csv
+1,medianQ,medianQ,JER175 ,Fyshwick_out.csv
+0.8800130002922579,medianQ,U,JER175 ,Fyshwick_out.csv
+0.8663468381553029,medianQ,flag,JER175 ,Fyshwick_out.csv
+0.8508475813454126,medianQ,Total Phosphorus (mg/L),JER175 ,Fyshwick_out.csv
+1,i6,i6,JER175 ,Fyshwick_out.csv
+1,i6,i30,JER175 ,Fyshwick_out.csv
+1,i30,i6,JER175 ,Fyshwick_out.csv
+1,i30,i30,JER175 ,Fyshwick_out.csv
+0.8630904060387193,U,rain,JER175 ,Fyshwick_out.csv
+0.9124990941260608,U,minQ,JER175 ,Fyshwick_out.csv
+0.8519211122290998,U,maxQ,JER175 ,Fyshwick_out.csv
+0.8800130002922579,U,medianQ,JER175 ,Fyshwick_out.csv
+1,U,U,JER175 ,Fyshwick_out.csv
+0.7462638347053234,U,flag,JER175 ,Fyshwick_out.csv
+1,CMD,CMD,JER175 ,Fyshwick_out.csv
+0.7731760597410124,CMD,Electrical Conductivity (�S/cm),JER175 ,Fyshwick_out.csv
+1,Year,Year,JER175 ,Fyshwick_out.csv
+0.9800462267751939,Year,???,JER175 ,Fyshwick_out.csv
+0.9800478084399532,Year,date,JER175 ,Fyshwick_out.csv
+1,Month,Month,JER175 ,Fyshwick_out.csv
+1,day,day,JER175 ,Fyshwick_out.csv
+0.7958464060508247,flag,rain,JER175 ,Fyshwick_out.csv
+0.870965417837416,flag,minQ,JER175 ,Fyshwick_out.csv
+0.8606171683714937,flag,maxQ,JER175 ,Fyshwick_out.csv
+0.8663468381553029,flag,medianQ,JER175 ,Fyshwick_out.csv
+0.7462638347053234,flag,U,JER175 ,Fyshwick_out.csv
+1,flag,flag,JER175 ,Fyshwick_out.csv
+0.723885900726385,flag,Total Phosphorus (mg/L),JER175 ,Fyshwick_out.csv
+0.9800462267751939,???,Year,JER175 ,Fyshwick_out.csv
+1,???,???,JER175 ,Fyshwick_out.csv
+0.999999652725063,???,date,JER175 ,Fyshwick_out.csv
+0.8885010005588957,Temperature (Degrees C),temp,JER175 ,Fyshwick_out.csv
+1,Temperature (Degrees C),Temperature (Degrees C),JER175 ,Fyshwick_out.csv
+1,pH (units),pH (units),JER175 ,Fyshwick_out.csv
+0.7731760597410124,Electrical Conductivity (�S/cm),CMD,JER175 ,Fyshwick_out.csv
+1,Electrical Conductivity (�S/cm),Electrical Conductivity (�S/cm),JER175 ,Fyshwick_out.csv
+1,Turbidity (NTU),Turbidity (NTU),JER175 ,Fyshwick_out.csv
+1,Dissolved Oxygen (mg/L),Dissolved Oxygen (mg/L),JER175 ,Fyshwick_out.csv
+0.9876257067701566,Dissolved Oxygen (mg/L),Dissolved Oxygen (% Saturation),JER175 ,Fyshwick_out.csv
+0.9876257067701566,Dissolved Oxygen (% Saturation),Dissolved Oxygen (mg/L),JER175 ,Fyshwick_out.csv
+1,Dissolved Oxygen (% Saturation),Dissolved Oxygen (% Saturation),JER175 ,Fyshwick_out.csv
+1,Nitrate (mg/L),Nitrate (mg/L),JER175 ,Fyshwick_out.csv
+0.8246552494938314,Total Phosphorus (mg/L),minQ,JER175 ,Fyshwick_out.csv
+0.8660811354530279,Total Phosphorus (mg/L),maxQ,JER175 ,Fyshwick_out.csv
+0.8508475813454126,Total Phosphorus (mg/L),medianQ,JER175 ,Fyshwick_out.csv
+0.723885900726385,Total Phosphorus (mg/L),flag,JER175 ,Fyshwick_out.csv
+1,Total Phosphorus (mg/L),Total Phosphorus (mg/L),JER175 ,Fyshwick_out.csv
+0.9800478084399532,date,Year,JER175 ,Fyshwick_out.csv
+0.999999652725063,date,???,JER175 ,Fyshwick_out.csv
+1,date,date,JER175 ,Fyshwick_out.csv

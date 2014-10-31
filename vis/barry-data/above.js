@@ -77,7 +77,7 @@ var catchment_files = [
 'Tugg_out.csv',
 'Yarralumla_out.csv'
 ]
-var catchment_files = ['Tuggeranong_out.csv']
+// var catchment_files = ['Tuggeranong_out.csv']
 
 var correlations = [];
 
@@ -132,7 +132,7 @@ function catchment_correlations(catchment_files, i){
                   species[k].values.map(function(d){ return d.v; }), 
                   species[l].values.map(function(d){ return d.v; }) 
             ));
-            if (temp>0.5) {
+            if (temp>0.7) {
               correlations.push({cor:temp, species_x :species[k].key, species_y: species[l].key, site: nested[j].key, catchment: catchment_files[i]});
             }
             // species[l].values.map(function(d){ return d.v; }) ));
