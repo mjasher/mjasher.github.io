@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title> M. Asher</title>
+        <meta name="description" content="Template for using javascript for everyday data manipulation">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style type="text/css">
+
+		</style>
+
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+	<div id='chart'></div>
+	<script src="../../third/d3.min.js"></script>
+
+	<script>
+		var fusiontable_api_key = "AIzaSyDpfNMH_IkouFwgI8y0_6tTQ0437Ncx8cQ";
+		var spreadSheet = "1pZ5SIVRIhTkx-DSg5dHVP3AOVlfF3xEZUEFvw6BhCSU";
+
+		var url = "https://docs.google.com/spreadsheets/d/"+spreadSheet+"/export?format=csv&id="+spreadSheet;
+
+        d3.text(url, function(error, data){
+
+            console.log(data)
+
+            var csv=data;
+			var a=document.createElement('a');
+			a.textContent='download';
+			a.download="myFileName.csv";
+			a.href='data:text/csv;charset=utf-8,'+escape(csv);
+			document.body.appendChild(a);
+			a.click();
+
+        });
+
+	</script>
+
+    </body>
+</html>
