@@ -77,6 +77,70 @@ body {
     </div>
 
 
+    <script id="init-editor" type="text/template">
+
+var inputs = [{
+    name: "sale_price_per_m2",
+    val: 580000 / (112 + 17),
+    min: 0.9 * 580000 / (112 + 17),
+    max: 1.1 * 580000 / (112 + 17)
+}, {
+    name: "construction_cost_per_m2",
+    val: 1800,
+    min: 0.9 * 1800,
+    max: 1.1 * 1800
+}, ];
+
+function interest(principal, rate, years) {
+    return principal * Math.pow(Math.E, (rate * years)) - principal;
+}
+
+// should take {input_1_name: {val: input_1_value, min: m1, max: M1}, ... } and return outputs {output_1_name: output_1_value, ... }
+
+function model(inputs) {
+
+    var sale_price_per_m2 = inputs.filter(function(d) {
+        return d.name === "sale_price_per_m2";
+    })[0].val;
+    var construction_cost_per_m2 = inputs.filter(function(d) {
+        return d.name === "construction_cost_per_m2";
+    })[0].val;
+    // var construction_cost_per_m2 = inputs[0]["construction_cost_per_m2"].val;
+
+
+    var property_area = 2100;
+
+    var land_cost = 1650000;
+
+    var floor_ratio = 0.65;
+
+    var for_sale_ratio = 0.8;
+
+
+    var sale_price = for_sale_ratio * sale_price_per_m2 * floor_ratio * property_area;
+
+    var parking_area = 300;
+    var parking_cost_per_m2 = 1000;
+    var parking_cost = parking_area * parking_cost_per_m2;
+
+    var construction_cost = construction_cost_per_m2 * floor_ratio * property_area;
+
+
+    var planning_years = 1;
+    var construction_years = 1;
+    var interest_rate = 0.05;
+    var interest_cost = interest(land_cost, interest_rate, planning_years + construction_years) + interest(construction_cost + parking_cost, interest_rate, construction_years);
+
+    var profit = sale_price - construction_cost - parking_cost - land_cost - interest_cost;
+
+    // define outputs
+    return {
+        "profit": profit,
+        "junk": sale_price_per_m2
+    };
+
+}
+    </script>
 
     <script src="../../third/jquery-1.11.0.min.js"></script>
     <script src="../../third/underscore.min.js"></script>
@@ -96,6 +160,7 @@ body {
     // https://github.com/jashkenas/backbone/wiki/Using-Backbone-without-jQuery
 
 
+    var inputs, model;
 
     var AppView = Backbone.View.extend({
 
@@ -116,7 +181,7 @@ body {
                     Ace 
             ----------------------*/
 
-            var editor = ace.edit("editor");
+
 
             var language_tools = ace.require("ace/ext/language_tools");
             editor.setOptions({
@@ -128,11 +193,53 @@ body {
             editor.getSession().setMode("ace/mode/javascript");
             editor.setTheme("ace/theme/twilight");
 
-            editor.on('input', function() {
-                console.log("CHANGES", editor.getSession().getValue());
+            editor.on('change', function() {
 
                 // should define inputs and model
-                eval(editor.getSession().getValue())
+                console.log("EDITOR CHANGE", editor.getSession().getValue().slice(0,10));
+
+                
+                // equivalent to eval but ensures inputs and model are global
+                // eval(editor.getSession().getValue());
+                var oldScript = document.getElementById('model-input-script');
+                oldScript && oldScript.parentNode.removeChild(oldScript);
+                var code = editor.getSession().getValue();
+                var script = document.createElement('script');
+                script.id = 'model-input-script';
+                try {
+                  script.appendChild(document.createTextNode(code));
+                  document.body.appendChild(script);
+                } catch (e) {
+                  script.text = code;
+                  document.body.appendChild(script);
+                }
+
+
+                var now = 0;
+                function check_until(){
+                    if (inputs && model){
+
+                        // callback
+                        // remove old inputs
+                        var temp_model;
+                        while (temp_model = inputCollection.first()) {
+                            temp_model.destroy();
+                        }
+                        // add new
+                        inputCollection.add(inputs);
+
+                         console.log("CHANGES", inputs, model, editor.getSession().getValue().slice(0,10));
+                    }
+                    else if(now>100) {}
+                    else {
+                        now += 1;
+                        setTimeout(check_until, 100);
+                    }
+                }
+                check_until()
+
+
+
             })
 
 
@@ -330,7 +437,6 @@ body {
             var drag = d3.behavior.drag()
                 .on("drag", mousemove)
                 .on("dragend", function() {
-                    // console.log(inputs)
                     this_model.set(input);
                     this_model.collection.trigger('change');
                 });
@@ -425,9 +531,7 @@ body {
 
     ----------------------*/
 
-    function interest(principal, rate, years) {
-        return principal * Math.pow(Math.E, (rate * years)) - principal;
-    }
+
 
 
     /*----------------------
@@ -450,21 +554,14 @@ body {
     //     },
     // }
 
-    var inputs = [{
-        name: "sale_price_per_m2",
-        val: 580000 / (112 + 17),
-        min: 0.9 * 580000 / (112 + 17),
-        max: 1.1 * 580000 / (112 + 17)
-    }, {
-        name: "construction_cost_per_m2",
-        val: 1800,
-        min: 0.9 * 1800,
-        max: 1.1 * 1800
-    }, ]
+    var editor = ace.edit("editor");
 
     var inputCollection = new Backbone.Collection;
 
     var appView = new AppView;
+
+    editor.setValue(d3.select("#init-editor").html());
+
 
     // on init and editor change
 
@@ -474,71 +571,21 @@ body {
 
 
 
-    inputCollection.add([{
-        name: "sale_price_per_m2",
-        val: 38000000 / (112 + 17),
-        min: 0.9 * 38000000 / (112 + 17),
-        max: 1.1 * 38000000 / (112 + 17)
-    }, {
-        name: "construction_cost_per_m2",
-        val: 480000,
-        min: 0.9 * 480000,
-        max: 1.1 * 480000
-    }, ]);
+    // inputCollection.add([{
+    //     name: "sale_price_per_m2",
+    //     val: 38000000 / (112 + 17),
+    //     min: 0.9 * 38000000 / (112 + 17),
+    //     max: 1.1 * 38000000 / (112 + 17)
+    // }, {
+    //     name: "construction_cost_per_m2",
+    //     val: 480000,
+    //     min: 0.9 * 480000,
+    //     max: 1.1 * 480000
+    // }, ]);
 
     // it looks like 'reset' event is triggered only after models 'removed', no other events called
-    var temp_model;
-    while (temp_model = inputCollection.first()) {
-        temp_model.destroy();
-    }
-
-    inputCollection.add(inputs);
 
 
-    // should take {input_1_name: {val: input_1_value, min: m1, max: M1}, ... } and return outputs {output_1_name: output_1_value, ... }
-    function model(inputs) {
-
-        var sale_price_per_m2 = inputs.filter(function(d) {
-            return d.name === "sale_price_per_m2";
-        })[0].val;
-        var construction_cost_per_m2 = inputs.filter(function(d) {
-            return d.name === "construction_cost_per_m2";
-        })[0].val;
-        // var construction_cost_per_m2 = inputs[0]["construction_cost_per_m2"].val;
-
-
-        var property_area = 2100;
-
-        var land_cost = 1650000;
-
-        var floor_ratio = 0.65;
-
-        var for_sale_ratio = 0.8;
-
-
-        var sale_price = for_sale_ratio * sale_price_per_m2 * floor_ratio * property_area;
-
-        var parking_area = 300;
-        var parking_cost_per_m2 = 1000;
-        var parking_cost = parking_area * parking_cost_per_m2;
-
-        var construction_cost = construction_cost_per_m2 * floor_ratio * property_area;
-
-
-        var planning_years = 1;
-        var construction_years = 1;
-        var interest_rate = 0.05;
-        var interest_cost = interest(land_cost, interest_rate, planning_years + construction_years) + interest(construction_cost + parking_cost, interest_rate, construction_years);
-
-        var profit = sale_price - construction_cost - parking_cost - land_cost - interest_cost;
-
-        // define outputs
-        return {
-            "profit": profit,
-            "junk": sale_price_per_m2
-        };
-
-    }
 
 
 
@@ -576,10 +623,6 @@ body {
     </script>
 
 
-
-    <script>
-
-    </script>
 
 
 </body>
