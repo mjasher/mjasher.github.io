@@ -63,12 +63,27 @@ body {
 .hidden {
     display: none;
 }
+
+.legend-box{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+.legend-label{
+    display: inline-block;
+    line-height: 10px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle
+}
+
 </style>
 
 <body>
 
     <div id="app" class="container">
-
+        <div id="legend"></div>
         <div id="editor-button"> <i class="fa fa-code"></i> </div>
 
         <div id="editor" class="hidden"></div>
@@ -78,68 +93,55 @@ body {
 
 
     <script id="init-editor" type="text/template">
+var inputs = [
+    {val: 0.04, min: 0, max: 0.1, tickFormat : '%', name: "Mortgage rate"}, // real rate (exclude inflation)
+    {val: 0.03, min: 0, max: 0.1, tickFormat : '%',name: "Saving rate"}, // real rate (exclude inflation)
+    {val: 0.02, min: 0, max: 0.1, tickFormat : '%',name: "House price increase rate"}, // real rate (exclude inflation)
+    {val: 350000, min: 0, max: 2000000, tickFormat : '$,',name: "Purchase price of house"},
+    {val: 350, min: 0, max: 2000,tickFormat : '$,', name: "Weekly rent"},
+    {val: 15, min: 1, max: 50, tickFormat : '', name: "Mortgage term in years"}, 
+    {val: 3000, min: 0, max: 10000, tickFormat : '$,', name: "Rates per year"}, // include land tax
+    {val: 1000, min: 0, max: 20000, tickFormat : '$,', name: "Upkeep per year"}, // fixing stuff
+    {val: 200, min: 0, max: 1000, tickFormat : '$,', name: "Annual cost of moving"}, // annual moving cost for renting
+];
 
-var inputs = [{
-    name: "sale_price_per_m2",
-    val: 580000 / (112 + 17),
-    min: 0.9 * 580000 / (112 + 17),
-    max: 1.1 * 580000 / (112 + 17)
-}, {
-    name: "construction_cost_per_m2",
-    val: 1800,
-    min: 0.9 * 1800,
-    max: 1.1 * 1800
-}, ];
 
-function interest(principal, rate, years) {
-    return principal * Math.pow(Math.E, (rate * years)) - principal;
+function yearly_repayment(h){
+    if (h["Mortgage rate"] === 0) return h["Purchase price of house"]/h["Mortgage term in years"]; // TODOD fix
+    return h["Purchase price of house"]*h["Mortgage rate"]/(1-(1/Math.pow(1+h["Mortgage rate"],h["Mortgage term in years"])));
 }
 
-// should take {input_1_name: {val: input_1_value, min: m1, max: M1}, ... } and return outputs {output_1_name: output_1_value, ... }
+function end_buying(h){
+    return h["Purchase price of house"]*Math.pow(1+h["House price increase rate"],h["Mortgage term in years"]);
+}
 
-function model(inputs) {
+function end_renting(h){
+    var buying_cost = yearly_repayment(h) + h["Upkeep per year"] + h["Rates per year"];
+    var renting_cost = h["Weekly rent"]*52 + h["Annual cost of moving"];
+    
+    var rent_savings = 0;
+    for (var i=0;i<h["Mortgage term in years"];i++){
+      rent_savings += (buying_cost - renting_cost) * Math.exp(h["Saving rate"] * (h["Mortgage term in years"]-i-1));
+    }
 
-    var sale_price_per_m2 = inputs.filter(function(d) {
-        return d.name === "sale_price_per_m2";
-    })[0].val;
-    var construction_cost_per_m2 = inputs.filter(function(d) {
-        return d.name === "construction_cost_per_m2";
-    })[0].val;
-    // var construction_cost_per_m2 = inputs[0]["construction_cost_per_m2"].val;
+    return rent_savings;
+}
 
+function model(inputs){
+    var p = {};
 
-    var property_area = 2100;
+    for (var i = 0; i < inputs.length; i++) {
+        p[inputs[i].name] = inputs[i].val;
+    }
 
-    var land_cost = 1650000;
-
-    var floor_ratio = 0.65;
-
-    var for_sale_ratio = 0.8;
-
-
-    var sale_price = for_sale_ratio * sale_price_per_m2 * floor_ratio * property_area;
-
-    var parking_area = 300;
-    var parking_cost_per_m2 = 1000;
-    var parking_cost = parking_area * parking_cost_per_m2;
-
-    var construction_cost = construction_cost_per_m2 * floor_ratio * property_area;
-
-
-    var planning_years = 1;
-    var construction_years = 1;
-    var interest_rate = 0.05;
-    var interest_cost = interest(land_cost, interest_rate, planning_years + construction_years) + interest(construction_cost + parking_cost, interest_rate, construction_years);
-
-    var profit = sale_price - construction_cost - parking_cost - land_cost - interest_cost;
-
-    // define outputs
     return {
-        "profit": profit,
-        "junk": sale_price_per_m2
-    };
+        buying: end_buying(p),
+        renting: end_renting(p)
+    }
 
 }
+
+
     </script>
 
     <script src="../../third/jquery-1.11.0.min.js"></script>
@@ -150,17 +152,11 @@ function model(inputs) {
 
     <script src="../../third/d3.min.js"></script>
     <script>
-    /*----------------------
 
-            Nav
-
-            ----------------------*/
 
     // TODO replace jquery event listening with d3
     // https://github.com/jashkenas/backbone/wiki/Using-Backbone-without-jQuery
 
-
-    var inputs, model;
 
     var AppView = Backbone.View.extend({
 
@@ -168,20 +164,15 @@ function model(inputs) {
 
         events: {
             "click #editor-button": "toggleEditor",
-            // window.onresize = draw;
-            // TODO 
-
+            // TODO window.onresize = draw;
         },
 
         initialize: function() {
-            // this.listenTo(inputCollection, 'reset', this.resetInputs);          
             this.listenTo(inputCollection, 'add', this.addInput);
 
             /*----------------------
                     Ace 
             ----------------------*/
-
-
 
             var language_tools = ace.require("ace/ext/language_tools");
             editor.setOptions({
@@ -193,12 +184,11 @@ function model(inputs) {
             editor.getSession().setMode("ace/mode/javascript");
             editor.setTheme("ace/theme/twilight");
 
+
+            // editor is the model and view
             editor.on('change', function() {
 
                 // should define inputs and model
-                console.log("EDITOR CHANGE", editor.getSession().getValue().slice(0,10));
-
-                
                 // equivalent to eval but ensures inputs and model are global
                 // eval(editor.getSession().getValue());
                 var oldScript = document.getElementById('model-input-script');
@@ -215,36 +205,39 @@ function model(inputs) {
                 }
 
 
-                var now = 0;
-                function check_until(){
-                    if (inputs && model){
-
-                        // callback
-                        // remove old inputs
-                        var temp_model;
-                        while (temp_model = inputCollection.first()) {
-                            temp_model.destroy();
-                        }
-                        // add new
-                        inputCollection.add(inputs);
-
-                         console.log("CHANGES", inputs, model, editor.getSession().getValue().slice(0,10));
-                    }
-                    else if(now>100) {}
-                    else {
-                        now += 1;
-                        setTimeout(check_until, 100);
-                    }
+                // remove old inputs
+                var temp_model;
+                while (temp_model = inputCollection.first()) {
+                    temp_model.destroy();
                 }
-                check_until()
+                // add new
+                inputCollection.add(inputs);
 
 
+                if (inputs){
+                    d3.selectAll("#legend div").remove();
+                    var legend = d3.selectAll("#legend").append('div');
 
-            })
+                    // TODO duplication
+                    // var inputs = inputCollection.toJSON();
+                    var outputs = Object.keys(model(inputs));
+                    var color = d3.scale.ordinal().range(["#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#ffff33","#a65628","#f781bf","#999999"]).domain(outputs);
+
+                    for (var i = 0; i < outputs.length; i++) {
+                        legend.append('div').attr('class','legend-box').style('background-color', color(outputs[i]));
+                        legend.append('div').attr('class','legend-label').html(outputs[i]);
+                    };
+                }
+
+
+            });
 
 
         },
 
+    /*----------------------
+    Nav
+    ----------------------*/
         toggleEditor: function() {
             var icon = this.$("#editor-button i");
             if (icon.hasClass('fa-code')) {
@@ -258,18 +251,12 @@ function model(inputs) {
             }
         },
 
-        // resetInputs: function(inputs) {
-        //   inputCollection.each(this.addInput);
-        // },
-
         addInput: function(input) {
             var view = new InputView({
                 model: input,
                 el: d3.select("#graphs").append('div').attr('class', 'block').node()
             });
             view.render();
-
-            // this.$("#graphs").append(view.render().el);
         },
 
     });
@@ -281,7 +268,6 @@ function model(inputs) {
         // className: "block",
 
         events: {
-            // "keypress #new-todo": "createOnEnter",
             // TODO drag event here
         },
 
@@ -304,7 +290,6 @@ function model(inputs) {
 
             var index = this.model.collection.indexOf(this.model);
 
-
             /*----------------------
             Set up plot 
             ----------------------*/
@@ -312,11 +297,9 @@ function model(inputs) {
             var margin = {
                     top: 20,
                     right: 20,
-                    bottom: 30,
+                    bottom: 60,
                     left: 60
                 },
-                // width = parseInt(el.style('width'), 10) - margin.left - margin.right,
-                // width = 300 - margin.left - margin.right,
                 width = el.node().clientWidth - margin.left - margin.right,
                 height = 500 - margin.top - margin.bottom;
 
@@ -348,7 +331,7 @@ function model(inputs) {
                 .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-            var color = d3.scale.category10().domain(outputs);
+            var color = d3.scale.ordinal().range(["#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#ffff33","#a65628","#f781bf","#999999"]).domain(outputs);
 
 
             /*----------------------
@@ -409,17 +392,23 @@ function model(inputs) {
             svg.append("g")
                 .attr("class", "x axis")
                 .attr("transform", "translate(0," + height + ")")
-                .call(xAxis);
+                .call(xAxis)                
+                .append("text")
+                .attr("y", 25)
+                .attr("x", width/2)
+                .attr("dy", ".71em")
+                .style("text-anchor", "middle")
+                .text(input.name);
 
             svg.append("g")
                 .attr("class", "y axis")
                 .call(yAxis)
-                .append("text")
-                .attr("transform", "rotate(-90)")
-                .attr("y", 6)
-                .attr("dy", ".71em")
-                .style("text-anchor", "end")
-                .text("Price ($)");
+                // .append("text")
+                // .attr("transform", "rotate(-90)")
+                // .attr("y", 6)
+                // .attr("dy", ".71em")
+                // .style("text-anchor", "end")
+                // .text("Price ($)");
 
             for (var i = 0; i < data.length; i++) {
                 svg.append("path")
@@ -500,59 +489,11 @@ function model(inputs) {
     });
 
 
-
-
-
     /*----------------------
-    Nav
+    Initialize
     ----------------------*/
 
-    // d3.select("#editor-button")
-    //     .on('click', function() {
-    //         var icon = d3.select(this).select('i')
-    //         if (icon.classed('fa-code')) {
-    //             icon.classed('fa-code', false);
-    //             icon.classed('fa-times', true);
-    //             d3.select("#editor").classed('hidden', false);
-    //         } else {
-    //             icon.classed('fa-times', false);
-    //             icon.classed('fa-code', true);
-    //             d3.select("#editor").classed('hidden', true);
-    //         }
-    //     });
-
-
-
-
-
-    /*----------------------
-
-    Helpers
-
-    ----------------------*/
-
-
-
-
-    /*----------------------
-
-    Model globals used in visualisation
-
-    ----------------------*/
-
-
-    // var inputs = {
-    //     "sale_price_per_m2": {
-    //         val: 580000 / (112 + 17),
-    //         min: 0.9 * 580000 / (112 + 17),
-    //         max: 1.1 * 580000 / (112 + 17)
-    //     },
-    //     "construction_cost_per_m2": {
-    //         val: 1800,
-    //         min: 0.9 * 1800,
-    //         max: 1.1 * 1800
-    //     },
-    // }
+    var inputs, model;
 
     var editor = ace.edit("editor");
 
@@ -563,31 +504,9 @@ function model(inputs) {
     editor.setValue(d3.select("#init-editor").html());
 
 
-    // on init and editor change
-
-    // eval(editor.getSession().getValue())
-    // error if inputs not defines!
-
-
-
-
-    // inputCollection.add([{
-    //     name: "sale_price_per_m2",
-    //     val: 38000000 / (112 + 17),
-    //     min: 0.9 * 38000000 / (112 + 17),
-    //     max: 1.1 * 38000000 / (112 + 17)
-    // }, {
-    //     name: "construction_cost_per_m2",
-    //     val: 480000,
-    //     min: 0.9 * 480000,
-    //     max: 1.1 * 480000
-    // }, ]);
-
-    // it looks like 'reset' event is triggered only after models 'removed', no other events called
-
-
-
-
+    /*----------------------
+    Helpers
+    ----------------------*/
 
     function isObject(obj) {
         var type = typeof obj;
@@ -604,26 +523,7 @@ function model(inputs) {
         return copy;
     }
 
-
-
-
-
-
-    // var input_keys = Object.keys(inputs);
-    // function draw() {
-    //     d3.selectAll("#graphs div").remove();
-    //     for (var i = 0; i < input_keys.length; i++) {
-    //         plot(d3.select("#graphs").append('div').attr("class", "block"), input_keys[i]);
-    //     };
-
-    // }
-
-    // draw();
-    // window.onresize = draw;
     </script>
-
-
-
 
 </body>
 
