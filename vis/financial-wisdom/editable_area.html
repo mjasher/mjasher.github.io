@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+body {
+    font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.area {
+    fill: steelblue;
+}
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+.focus circle {
+    fill: none;
+    stroke: darkred;
+}
+</style>
+
+<body>
+
+    <div id="graph"></div>
+
+    <script src="../../third/d3.min.js"></script>
+    <script>
+    var el = d3.select("#graph");
+
+    var margin = {
+            top: 20,
+            right: 20,
+            bottom: 30,
+            left: 50
+        },
+        width = el.node().clientWidth - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
+
+    var parseDate = d3.time.format("%d-%b-%y").parse;
+
+    var x = d3.time.scale()
+        .range([0, width]);
+
+    var y = d3.scale.linear()
+        .range([height, 0]);
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left");
+
+    var area = d3.svg.area()
+        .x(function(d) {
+            return x(d.date);
+        })
+        .y0(height)
+        .y1(function(d) {
+            return y(d.value);
+        });
+
+    var svg = el.append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+
+
+    var parseDate = d3.time.format("%b-%Y").parse;
+
+
+    // http://www.rba.gov.au/statistics/tables/index.html#interest-rates > Indicator Lending Rates
+
+    d3.csv('housing.csv', function(error, data) {
+
+        // parse historic values
+        data.forEach(function(d) {
+            d.date = parseDate(d.date);
+            d.value = +d["housing loan rate"];
+        });
+
+
+        var final_year = data[data.length - 1].date.getFullYear();
+        var final_month = data[data.length - 1].date.getMonth();
+
+        // add another hundred months
+        for (var i = 0; i < 100; i++) {
+            data.push({
+                date: new Date(final_year, final_month + i),
+                value: 5
+            });
+        };
+
+
+        // rolling average
+        var avgs = d3.nest()
+            .key(function(d) {
+                // return d3.time.month(d.date);
+                var year = d.date.getFullYear() / 5;
+                var ceil = Math.ceil(year);
+                var floor = Math.floor(year);
+                return (year - floor > ceil - year) ? ceil * 5 : floor * 5;
+                // return (year - floor > ceil - year) ? new Date(ceil*5,1) : new Date(floor*5,1);
+            })
+            .rollup(function(d) {
+                return d3.mean(d, function(g) {
+                    return g.value;
+                });
+            })
+            .entries(data);
+
+        avgs.forEach(function(d) {
+            d.date = new Date(+d.key, 1);
+            d.value = d.values;
+        });
+
+
+        plot(avgs);
+
+
+    })
+
+
+
+    function plot(data) {
+
+
+        x.domain(d3.extent(data, function(d) {
+            return d.date;
+        }));
+        y.domain([0, d3.max(data, function(d) {
+            return d.value;
+        })]);
+
+        var path = svg.append("path")
+            .datum(data)
+            .attr("class", "area")
+            .attr("d", area);
+
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
+
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis);
+        // .append("text")
+        //   .attr("transform", "rotate(-90)")
+        //   .attr("y", 6)
+        //   .attr("dy", ".71em")
+        //   .style("text-anchor", "end")
+        //   .text("Price ($)");
+
+
+
+        /*----------------------
+        Hover/ Drag
+        ----------------------*/
+
+
+        var bisectX = d3.bisector(function(d) {
+            return d.date;
+        }).left;
+        var bisectY = d3.bisector(function(d) {
+            return d.value;
+        }).left;
+
+        var editing_i;
+
+        var drag = d3.behavior.drag()
+            .on("dragstart", function() {
+                focus.style("display", null);
+
+                var x0 = x.invert(d3.mouse(this)[0]),
+                    i = bisectX(data, x0, 1),
+                    d0 = data[i - 1],
+                    d1 = data[i];
+
+                editing_i = x0 - d0.date > d1.date - x0 ? i : i - 1;
+
+
+            })
+            .on("drag", function() {
+
+                data[editing_i].value = y.invert(d3.mouse(this)[1]);
+                path.datum(data).attr("d", area);
+
+                focus.attr("transform", function() {
+                    return "translate(" + x(data[editing_i].date) + "," + y(data[editing_i].value) + ")";
+                });
+
+            })
+            .on("dragend", function() {
+                focus.style("display", "none");
+            })
+
+        var focus = svg
+            .append("g")
+            .attr("class", "focus")
+            .style("display", "none");
+
+
+        focus.append("circle")
+            // .style('stroke', 'red')
+            .attr("r", width / 100);
+
+
+        // focus.append("text")
+        //     .attr("x", 9)
+        //     .attr("dy", ".35em")
+        //     .text(function(e, j) {
+        //         return model(inputs)[e].toFixed(2);
+        //     });
+
+        svg.append("rect")
+            .attr("class", "overlay")
+            .attr("width", width)
+            .attr("height", height)
+            .call(drag);
+
+
+
+
+
+
+
+
+    }
+    </script>
+
+</body>
+
+</html>
