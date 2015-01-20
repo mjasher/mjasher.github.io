@@ -1,259 +1,294 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
-
 body {
-  font: 10px sans-serif;
+    font: 10px sans-serif;
 }
-
 .axis path,
 .axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
 }
-
 .area {
-  fill: steelblue;
+    fill: steelblue;
 }
-
-
-.drag-icon circle{
-  fill: transparent;
-  stroke: black;
+.drag-icon circle {
+    fill: transparent;
+    stroke: black;
 }
-
 .overlay {
-  fill: none;
-  pointer-events: all;
+    fill: none;
+    pointer-events: all;
 }
-
-.focus circle {
-  fill: none;
-  stroke: darkred;
-}
-
+/*.focus circle {
+    fill: none;
+    stroke: darkred;
+}*/
 </style>
 
+<link rel="stylesheet" href="../../third/reset.css">
 <link rel="stylesheet" href="../../third/font-awesome-4.2.0/css/font-awesome.min.css">
+
 <body>
 
-<div id="graph"></div>
+    <div id="graph"></div>
 
-<script src="../../third/d3.min.js"></script>
-<script src="d3.mouseenter.js"></script>
-<script>
+    <script src="../../third/d3.min.js"></script>
+    <script>
+    var el = d3.select("#graph");
 
-
-/*
-set up graph
-*/
-
-var el = d3.select("#graph");
-
-var margin = {top: 120, right: 20, bottom: 30, left: 50},
-    width = el.node().clientWidth - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
-
-// var parseDate = d3.time.format("%d-%b-%y").parse;
-
-var x = d3.time.scale()
-    .range([0, width]);
-
-var y = d3.scale.linear()
-    .range([height, 0]);
-
-var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
-
-var yAxis = d3.svg.axis()
-    .scale(y)
-    .orient("left");
-
-var area = d3.svg.area()
-    .x(function(d) { return x(d.date); })
-    .y0(height)
-    .y1(function(d) { return y(d.value); });
-
-var svg = el.append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-
-var graphic = svg.append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    var margin = {
+            top: 120,
+            right: 20,
+            bottom: 30,
+            left: 50
+        },
+        width = el.node().clientWidth - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
 
 
+    // var top_bar = svg.append('g')
+    //     .attr("transform", "translate(" + margin.left + "," + 0 + ")");
 
-/* 
-generate data
-*/
-
-
-var now = new Date().getFullYear();
-var data = [];
-for (var i = 0; i < 100; i++) {
-  data.push({
-    date: new Date(now+i, 1),
-    value: i>0 ? data[i-1].value - 0.5 + Math.random() : Math.random()
-  });
-};
-
-plot(data);
+    // top_bar.append('rect')
+    //     .attr('width', width)
+    //     .attr('height', 120)
+    //     .style('fill', 'darkred');
 
 
-/*
-drag and drop events on SVG
-*/
+    var svg = el.append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
 
-var top_bar = svg.append('g')
-  .attr("transform", "translate(" + margin.left + "," + 0 + ")");
-
-top_bar.append('rect')
-  .attr('width', width)
-  .attr('height', 120)
-  .style('fill', 'darkred')
+    var graphic = svg.append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
-var over_graphic = false;
+    var area_data = make_area_data();
 
-var drag = d3.behavior.drag()
-    .on("dragstart", function(){
-        // d3.event.sourceEvent.stopPropagation(); // silence other listeners
-        // it's important that we suppress the mouseover event on the node being dragged. Otherwise it will absorb the mouseover event and the underlying node will not detect it
-        d3.select(this).attr( 'pointer-events', 'none' );
-
-        // duplicate
-        // TODO
-    })
-    .on("drag", function(){
-      d3.select(this)
-        .attr('transform', "translate("+(d3.event.x)+","+d3.event.y+")");
-        // .attr("cx", d.x = Math.max(radius, Math.min(width - radius, )))
-        // .attr("cy", d.y = Math.max(radius, Math.min(height - radius, d3.event.y)));
-
-      if (over_graphic) {
-  //   var x0 = x.invert(d3.mouse(this)[0]),
-        var x0 = x.invert(d3.event.x-margin.left),
-          i = bisectDate(data, x0, 1),
-          d0 = data[i - 1],
-          d1 = data[i],
-          d = x0 - d0.date > d1.date - x0 ? d1 : d0;
-        focus.attr("transform", "translate(" + x(d.date) + "," + y(d.value) + ")");
-        focus.select('line').attr("transform", "translate(0," + -y(d.value) + ")");  
-        focus.select("text").text(d.value);
-
-        // TODO
-        // make focus and drag-icon the same thing
-
-      }
-      else{
-        // remove
-        // TODO
-      }
+    var x = d3.time.scale()
+        .range([0, width])
+        .domain(d3.extent(area_data, function(d) {
+            return d.date;
+        }));
 
 
-    })
-    .on("dragend", function(){
-      // now restore the mouseover event or we won't be able to drag a 2nd time
-      d3.select(this).attr( 'pointer-events', '' );
-    });
+    plot_area(graphic, width, height, area_data);
 
-var drag_icons = svg.append('g')
-.attr('class', 'drag-icon')
-.attr('transform', "translate("+(width/2)+",0)")
-.call(drag);
+    function make_area_data() {
 
+        var now = new Date().getFullYear();
+        var data = [];
+        for (var i = 0; i < 100; i++) {
+            data.push({
+                date: new Date(now + i, 1),
+                value: i > 0 ? data[i - 1].value - 0.5 + Math.random() : Math.random()
+            });
+        };
 
-// selection.on("click", function() {
-//   if (d3.event.defaultPrevented) return; // click suppressed
-//   console.log("clicked!");
-// });
-
-
-drag_icons.append('circle')
-  .attr('r', 20);
-
-drag_icons.append("foreignObject")
-.attr("width", 20)
-.attr("height", 20)
-.append("xhtml:body")
-// // .style("font", "14px 'Helvetica Neue'")
-.html("<i class='fa fa-home'></i>");
-
-// var drag_region_function = null;
-
-/*
-horizontal drag on graph
-*/
-
-var bisectDate = d3.bisector(function(d) { return d.date; }).left;
+        return data;
+    }
 
 
-  var focus = graphic.append("g")
-      .attr("class", "focus")
-      // .style("display", "none");
 
-  focus.append("circle")
-      .attr("r", 4.5);
+    function plot_area(graphic, width, height, data) {
 
-  focus.append('line')
-  .attr('x1', 0)
-  .attr('y1', 0)
-  .attr('x2', 0)
-  .attr('y2', height)
-  .attr("stroke", "darkred")
-  .attr('class', 'verticalLine');
-
-  focus.append("text")
-      .attr("x", 9)
-      .attr("dy", ".35em");
-
-  graphic.append("rect")
-      .attr("class", "overlay")
-      .attr("width", width)
-      .attr("height", height)
-      .on("mouseover", function() { over_graphic = true; })
-      .on("mouseout", function() { over_graphic = false; })
+        /*
+        set up graph
+        */
 
 
-/*
-plot data
-*/
+        var y = d3.scale.linear()
+            .range([height, 0]);
 
-function plot(data){
+        var xAxis = d3.svg.axis()
+            .scale(x)
+            .orient("bottom");
 
-  // data.forEach(function(d) {
-  //   d.date = parseDate(d.date);
-  //   d.value = +d.value;
-  // });
+        var yAxis = d3.svg.axis()
+            .scale(y)
+            .orient("left");
 
-  x.domain(d3.extent(data, function(d) { return d.date; }));
-  y.domain(d3.extent(data, function(d) { return d.value; }));
-  // y.domain([0, d3.max(data, function(d) { return d.value; })]);
+        var area = d3.svg.area()
+            .x(function(d) {
+                return x(d.date);
+            })
+            .y0(height)
+            .y1(function(d) {
+                return y(d.value);
+            });
 
-  graphic.append("path")
-      .datum(data)
-      .attr("class", "area")
-      .attr("d", area);
+        graphic.append("rect")
+            .attr("class", "overlay")
+            .attr("width", width)
+            .attr("height", height)
+            .on("mouseover", function() {
+                over_area = true;
+            })
+            .on("mouseout", function() {
+                over_area = false;
+            });
 
-  graphic.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
+        /*
+        plot with data
+        */
 
-  graphic.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
-    .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Price ($)");
-}
+        // x.domain(d3.extent(data, function(d) {
+        //     return d.date;
+        // }));
+        y.domain(d3.extent(data, function(d) {
+            return d.value;
+        }));
+        // y.domain([0, d3.max(data, function(d) { return d.value; })]);
 
-</script>
+        graphic.append("path")
+            .datum(data)
+            .attr("class", "area")
+            .attr("d", area)
+            .attr('pointer-events', 'none');
+
+        graphic.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
+
+        graphic.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Price ($)");
+
+    }
+
+
+
+    /*
+    drag and drop events on SVG
+    */
+
+    var over_area = false;
+
+    var bisectDate = d3.bisector(function(d) {
+        return d.date;
+    }).left;
+
+    var drag = d3.behavior.drag()
+        .on("dragstart", function() {
+            d3.event.sourceEvent.stopPropagation(); // silence other listeners
+            d3.select(this).attr('pointer-events', 'none'); // it's important that we suppress the mouseover event on the node being dragged. Otherwise it will absorb the mouseover event and the underlying node will not detect it
+            // duplicate
+            // TODO
+        })
+        .on("drag", function() {
+            if (over_area) {
+
+                // horizontal drag on graph
+
+                //   var x0 = x.invert(d3.mouse(this)[0]),
+                var x0 = x.invert(d3.event.x - margin.left),
+                    i = bisectDate(area_data, x0, 1),
+                    d0 = area_data[i - 1],
+                    d1 = area_data[i],
+                    d = x0 - d0.date > d1.date - x0 ? d1 : d0;
+
+                verticalLine.attr("transform", "translate(" + (margin.left + x(d.date)) + ",0)");
+
+                d3.select(this)
+                    .attr("transform", "translate(" + (margin.left + x(d.date)) + "," + d3.event.y + ")");
+            } else {
+                d3.select(this)
+                    .attr('transform', "translate(" + (d3.event.x) + "," + d3.event.y + ")");
+
+                // remove
+                // TODO
+            }
+
+        })
+        .on("dragend", function() {
+            d3.select(this).attr('pointer-events', ''); // now restore the mouseover event or we won't be able to drag a 2nd time
+        });
+
+    var verticalLine = svg.append('line')
+        .attr('x1', 0)
+        .attr('y1', 0)
+        .attr('x2', 0)
+        .attr('y2', margin.top + height)
+        .attr("stroke", "black")
+        .attr('class', 'verticalLine')
+        .attr('pointer-events', 'none');
+
+    var drag_icons = svg.append('g')
+        .attr('class', 'drag-icon')
+        .attr('transform', "translate(" + (margin.left + 40) + ",40)")
+        .call(drag);
+
+    drag_icons.append('circle')
+        .attr('r', 20);
+
+    drag_icons.append("foreignObject")
+        .attr("width", 40)
+        .attr("height", 40)
+        .attr('x', -20)
+        .attr('y', -20)
+        .append("xhtml:body")
+        .style({
+            "font-size": "30px",
+            "line-height": "40px",
+            "text-align": "center"
+        })
+        // // .style("font", "14px 'Helvetica Neue'")
+        .html("<i class='fa fa-home'></i>");
+
+
+
+
+
+
+
+    // var drag_region_function = null;
+
+
+
+
+
+                // focus.select('line').attr("transform", "translate(0," + -y(d.value) + ")");
+                // focus.select("text").text(d.value);
+
+
+
+    // var focus = graphic.append("g")
+    //     .attr("class", "focus")
+    //     // .style("display", "none");
+
+    // focus.append("circle")
+    //     .attr("r", 4.5);
+
+    // focus.append("text")
+    //     .attr("x", 9)
+    //     .attr("dy", ".35em");
+
+
+    // focus.append('line')
+    //     .attr('x1', 0)
+    //     .attr('y1', 0)
+    //     .attr('x2', 0)
+    //     .attr('y2', height)
+                // focus.select('line').attr("transform", "translate(0," + -y(d.value) + ")");
+                // focus.select("text").text(d.value);
+    //     .attr("stroke", "darkred")
+    //     .attr('class', 'verticalLine');
+
+    // selection.on("click", function() {
+    //   if (d3.event.defaultPrevented) return; // click suppressed
+    //   console.log("clicked!");
+    // });
+    </script>
 
 </body>
+
 </html>

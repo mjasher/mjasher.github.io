@@ -87,7 +87,6 @@ body {
             d.value = +d["housing loan rate"];
         });
 
-
         var final_year = data[data.length - 1].date.getFullYear();
         var final_month = data[data.length - 1].date.getMonth();
 
@@ -98,7 +97,6 @@ body {
                 value: 5
             });
         };
-
 
         // rolling average
         var avgs = d3.nest()
@@ -122,13 +120,9 @@ body {
             d.value = d.values;
         });
 
-
         plot(avgs);
 
-
-    })
-
-
+    });
 
     function plot(data) {
 
@@ -178,6 +172,7 @@ body {
 
         var drag = d3.behavior.drag()
             .on("dragstart", function() {
+                d3.event.sourceEvent.stopPropagation(); // silence other listeners
                 focus.style("display", null);
 
                 var x0 = x.invert(d3.mouse(this)[0]),
@@ -186,8 +181,6 @@ body {
                     d1 = data[i];
 
                 editing_i = x0 - d0.date > d1.date - x0 ? i : i - 1;
-
-
             })
             .on("drag", function() {
 
@@ -197,7 +190,6 @@ body {
                 focus.attr("transform", function() {
                     return "translate(" + x(data[editing_i].date) + "," + y(data[editing_i].value) + ")";
                 });
-
             })
             .on("dragend", function() {
                 focus.style("display", "none");
@@ -212,7 +204,6 @@ body {
         focus.append("circle")
             // .style('stroke', 'red')
             .attr("r", width / 100);
-
 
         // focus.append("text")
         //     .attr("x", 9)
