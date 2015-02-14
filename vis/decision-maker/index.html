@@ -4,86 +4,16 @@
 <link rel="stylesheet" href="../../third/reset.css">
 <link rel="stylesheet" href="../../third/pocketgrid.css">
 <link rel="stylesheet" href="../../third/font-awesome-4.2.0/css/font-awesome.min.css">
-<style>
-.container {
-    margin: auto;
-    width: 100%;
-    max-width: 1200px;
-}
-.block {
-    width: 33%;
-}
-@media screen and (max-width: 700px) {
-    .block {
-        width: 100%;
-    }
-}
-body {
-    font: 10px sans-serif;
-}
-.axis path,
-.axis line {
-    fill: none;
-    stroke: #000;
-    shape-rendering: crispEdges;
-}
-.line {
-    fill: none;
-    stroke-width: 1.5px;
-}
-.focus circle {
-    fill: none;
-}
-.overlay {
-    fill: none;
-    pointer-events: all;
-}
-#editor {
-    margin: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-#editor-button {
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    background-color: darkred;
-    cursor: pointer;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 10;
-    text-align: center;
-    line-height: 48px;
-    font-size: 35px;
-}
-.hidden {
-    display: none;
-}
-
-.legend-box{
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.legend-label{
-    display: inline-block;
-    line-height: 30px;
-    height: 30px;
-    padding: 10px;
-    vertical-align: top;
-}
-
-</style>
+<link rel="stylesheet" href="css/main.css">
 
 <body>
 
     <div id="app" class="container">
+        <div class="heading">
+            <p>This app is a graphic aid to decision making. One can specify a model and a number of inputs by editing the code (click on <i class="fa fa-code"></i>). A graph will be created which indicates the sensitivity of model outputs to changes in inputs. You can adjust the values for each input by dragging the graphs. </p>
+            <p>The example deals with the decision to buy or rent a home. From the slopes and intersections of the graphs, one can see which factors are likely to make one option a better financial choice than the other.</p>
+        </div>
+
         <div id="legend"></div>
         <div id="editor-button"> <i class="fa fa-code"></i> </div>
 
@@ -94,54 +24,55 @@ body {
 
 
     <script id="init-editor" type="text/template">
-var inputs = [
-    {val: 0.04, min: 0, max: 0.1, tickFormat : '%', name: "Mortgage rate"}, // real rate (exclude inflation)
-    {val: 0.03, min: 0, max: 0.1, tickFormat : '%',name: "Saving rate"}, // real rate (exclude inflation)
-    {val: 0.02, min: 0, max: 0.1, tickFormat : '%',name: "House price increase rate"}, // real rate (exclude inflation)
-    {val: 350000, min: 0, max: 2000000, tickFormat : '$,',name: "Purchase price of house"},
-    {val: 350, min: 0, max: 2000,tickFormat : '$,', name: "Weekly rent"},
-    {val: 15, min: 1, max: 50, tickFormat : '', name: "Mortgage term in years"}, 
-    {val: 3000, min: 0, max: 10000, tickFormat : '$,', name: "Rates per year"}, // include land tax
-    {val: 1000, min: 0, max: 20000, tickFormat : '$,', name: "Upkeep per year"}, // fixing stuff
-    {val: 200, min: 0, max: 1000, tickFormat : '$,', name: "Annual cost of moving"}, // annual moving cost for renting
-];
+
+        // initial values    
+        var inputs = [
+            {val: 0.04, min: 0, max: 0.1, tickFormat : '%', name: "Mortgage rate"}, // real rate (exclude inflation)
+            {val: 0.03, min: 0, max: 0.1, tickFormat : '%',name: "Saving rate"}, // real rate (exclude inflation)
+            {val: 0.02, min: 0, max: 0.1, tickFormat : '%',name: "House price increase rate"}, // real rate (exclude inflation)
+            {val: 350000, min: 0, max: 2000000, tickFormat : '$,',name: "Purchase price of house"},
+            {val: 350, min: 0, max: 2000,tickFormat : '$,', name: "Weekly rent"},
+            {val: 15, min: 1, max: 50, tickFormat : '', name: "Mortgage term in years"}, 
+            {val: 3000, min: 0, max: 10000, tickFormat : '$,', name: "Rates per year"}, // include land tax
+            {val: 1000, min: 0, max: 20000, tickFormat : '$,', name: "Upkeep per year"}, // fixing stuff
+            {val: 200, min: 0, max: 1000, tickFormat : '$,', name: "Annual cost of moving"}, // annual moving cost for renting
+        ];
 
 
-function yearly_repayment(h){
-    if (h["Mortgage rate"] === 0) return h["Purchase price of house"]/h["Mortgage term in years"]; // TODOD fix
-    return h["Purchase price of house"]*h["Mortgage rate"]/(1-(1/Math.pow(1+h["Mortgage rate"],h["Mortgage term in years"])));
-}
+        function yearly_repayment(h){
+            if (h["Mortgage rate"] === 0) return h["Purchase price of house"]/h["Mortgage term in years"]; // TODOD fix
+            return h["Purchase price of house"]*h["Mortgage rate"]/(1-(1/Math.pow(1+h["Mortgage rate"],h["Mortgage term in years"])));
+        }
 
-function end_buying(h){
-    return h["Purchase price of house"]*Math.pow(1+h["House price increase rate"],h["Mortgage term in years"]);
-}
+        function end_buying(h){
+            return h["Purchase price of house"]*Math.pow(1+h["House price increase rate"],h["Mortgage term in years"]);
+        }
 
-function end_renting(h){
-    var buying_cost = yearly_repayment(h) + h["Upkeep per year"] + h["Rates per year"];
-    var renting_cost = h["Weekly rent"]*52 + h["Annual cost of moving"];
-    
-    var rent_savings = 0;
-    for (var i=0;i<h["Mortgage term in years"];i++){
-      rent_savings += (buying_cost - renting_cost) * Math.exp(h["Saving rate"] * (h["Mortgage term in years"]-i-1));
-    }
+        function end_renting(h){
+            var buying_cost = yearly_repayment(h) + h["Upkeep per year"] + h["Rates per year"];
+            var renting_cost = h["Weekly rent"]*52 + h["Annual cost of moving"];
+            
+            var rent_savings = 0;
+            for (var i=0;i<h["Mortgage term in years"];i++){
+              rent_savings += (buying_cost - renting_cost) * Math.exp(h["Saving rate"] * (h["Mortgage term in years"]-i-1));
+            }
 
-    return rent_savings;
-}
+            return rent_savings;
+        }
 
-function model(inputs){
-    var p = {};
+        function model(inputs){
+            var p = {};
 
-    for (var i = 0; i < inputs.length; i++) {
-        p[inputs[i].name] = inputs[i].val;
-    }
+            for (var i = 0; i < inputs.length; i++) {
+                p[inputs[i].name] = inputs[i].val;
+            }
 
-    return {
-        buying: end_buying(p),
-        renting: end_renting(p)
-    }
+            return {
+                "value of home if buying ($)": end_buying(p),
+                "saved cash if renting ($)": end_renting(p)
+            }
 
-}
-
+        }
 
     </script>
 
@@ -152,356 +83,19 @@ function model(inputs){
     <script src="../../third/ace/ext-language_tools.js"></script>
 
     <script src="../../third/d3.min.js"></script>
+
+    <script src='js/views.js'></script>
     <script>
 
 
-    // TODO replace jquery event listening with d3
-    // https://github.com/jashkenas/backbone/wiki/Using-Backbone-without-jQuery
+    /* 
+    TODO 
+    ----
 
+    * replace jquery event listening with d3 - see https://github.com/jashkenas/backbone/wiki/Using-Backbone-without-jQuery
+    * window.onresize = draw
+    */
 
-    var AppView = Backbone.View.extend({
-
-        el: $("#app"),
-
-        events: {
-            "click #editor-button": "toggleEditor",
-            // TODO window.onresize = draw;
-        },
-
-        initialize: function() {
-            this.listenTo(inputCollection, 'add', this.addInput);
-
-            /*----------------------
-                    Ace 
-            ----------------------*/
-
-            var language_tools = ace.require("ace/ext/language_tools");
-            editor.setOptions({
-                enableBasicAutocompletion: true,
-                enableSnippets: true,
-                enableLiveAutocompletion: true
-            });
-
-            editor.getSession().setMode("ace/mode/javascript");
-            editor.setTheme("ace/theme/twilight");
-
-
-            // editor is the model and view
-            editor.on('change', function() {
-
-                // should define inputs and model
-                // equivalent to eval but ensures inputs and model are global
-                // eval(editor.getSession().getValue());
-                var oldScript = document.getElementById('model-input-script');
-                oldScript && oldScript.parentNode.removeChild(oldScript);
-                var code = editor.getSession().getValue();
-                var script = document.createElement('script');
-                script.id = 'model-input-script';
-                try {
-                  script.appendChild(document.createTextNode(code));
-                  document.body.appendChild(script);
-                } catch (e) {
-                  script.text = code;
-                  document.body.appendChild(script);
-                }
-
-
-                // remove old inputs
-                var temp_model;
-                while (temp_model = inputCollection.first()) {
-                    temp_model.destroy();
-                }
-                // add new
-                inputCollection.add(inputs);
-
-
-                if (inputs){
-                    d3.selectAll("#legend div").remove();
-                    var legend = d3.selectAll("#legend").append('div');
-
-                    // TODO duplication
-                    // var inputs = inputCollection.toJSON();
-                    var outputs = Object.keys(model(inputs));
-                    var color = d3.scale.ordinal().range(["#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#ffff33","#a65628","#f781bf","#999999"]).domain(outputs);
-
-                    for (var i = 0; i < outputs.length; i++) {
-                        legend.append('div').attr('class','legend-box').style('background-color', color(outputs[i]));
-                        legend.append('div').attr('class','legend-label').html(outputs[i]);
-                    };
-                }
-
-
-            });
-
-
-        },
-
-    /*----------------------
-    Nav
-    ----------------------*/
-        toggleEditor: function() {
-            var icon = this.$("#editor-button i");
-            if (icon.hasClass('fa-code')) {
-                icon.toggleClass('fa-code', false);
-                icon.toggleClass('fa-times', true);
-                $("#editor").toggleClass('hidden', false);
-            } else {
-                icon.toggleClass('fa-times', false);
-                icon.toggleClass('fa-code', true);
-                $("#editor").toggleClass('hidden', true);
-            }
-        },
-
-        addInput: function(input) {
-            var view = new InputView({
-                model: input,
-                el: d3.select("#graphs").append('div').attr('class', 'block').node()
-            });
-            view.render();
-        },
-
-    });
-
-
-
-    var InputView = Backbone.View.extend({
-        // tagname: "div",
-        // className: "block",
-
-        events: {
-            // TODO drag event here
-        },
-
-        initialize: function() {
-            this.listenTo(this.model.collection, "change", this.render);
-            this.listenTo(this.model, "destroy", this.remove);
-        },
-
-        render: function() {
-
-            var this_model = this.model;
-
-            var el = d3.select(this.el);
-
-            el.selectAll('svg').remove();
-
-            var input = this.model.toJSON();
-            var inputs = this.model.collection.toJSON();
-            var outputs = Object.keys(model(inputs));
-
-            var index = this.model.collection.indexOf(this.model);
-
-            /*----------------------
-            Set up plot 
-            ----------------------*/
-
-            var margin = {
-                    top: 20,
-                    right: 20,
-                    bottom: 60,
-                    left: 60
-                },
-                width = el.node().clientWidth - margin.left - margin.right,
-                height = el.node().clientWidth - margin.top - margin.bottom;
-
-            var x = d3.scale.linear()
-                .range([0, width]);
-
-            var y = d3.scale.linear()
-                .range([height, 0]);
-
-            var xAxis = d3.svg.axis()
-                .scale(x)
-                .orient("bottom");
-
-            var yAxis = d3.svg.axis()
-                .scale(y)
-                .orient("left");
-
-            var line = d3.svg.line()
-                .x(function(d) {
-                    return x(d.x);
-                })
-                .y(function(d) {
-                    return y(d.y);
-                });
-
-            var svg = el.append("svg")
-                .attr("width", width + margin.left + margin.right)
-                .attr("height", height + margin.top + margin.bottom)
-                .append("g")
-                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-            var color = d3.scale.ordinal().range(["#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#ffff33","#a65628","#f781bf","#999999"]).domain(outputs);
-
-
-            /*----------------------
-            Create data and plot it
-            ----------------------*/
-
-            var points = 100;
-
-            var step = (input.max - input.min) / points;
-            var domain = [];
-            for (var i = 0; i < points; i++) {
-                domain.push(input.min + i * step);
-            };
-
-
-            var data = outputs.map(function(output) {
-                var temp_inputs = clone(inputs);
-
-                return {
-                    name: output,
-                    data: domain.map(function(d) {
-                        temp_inputs[index].val = d; // changes object
-                        return {
-                            x: d,
-                            y: model(temp_inputs)[output]
-                        };
-                    })
-                };
-
-            });
-
-            x.domain([
-                d3.min(data, function(l) {
-                    return d3.min(l.data, function(d) {
-                        return d.x;
-                    });
-                }),
-                d3.max(data, function(l) {
-                    return d3.max(l.data, function(d) {
-                        return d.x;
-                    });
-                })
-            ]);
-
-            y.domain([
-                d3.min(data, function(l) {
-                    return d3.min(l.data, function(d) {
-                        return d.y;
-                    });
-                }),
-                d3.max(data, function(l) {
-                    return d3.max(l.data, function(d) {
-                        return d.y;
-                    });
-                })
-            ]);
-
-            svg.append("g")
-                .attr("class", "x axis")
-                .attr("transform", "translate(0," + height + ")")
-                .call(xAxis);                
-                // .append("text")
-                // .attr("y", 25)
-                // .attr("x", width/2)
-                // .attr("dy", ".71em")
-                // .style("text-anchor", "middle")
-                // .text(input.name);
-
-            svg.append("g")
-                .attr("class", "y axis")
-                .call(yAxis);
-                // .append("text")
-                // .attr("transform", "rotate(-90)")
-                // .attr("y", 6)
-                // .attr("dy", ".71em")
-                // .style("text-anchor", "end")
-                // .text("Price ($)");
-
-            for (var i = 0; i < data.length; i++) {
-                svg.append("path")
-                    .datum(data[i].data)
-                    .attr("class", "line")
-                    .style('stroke', color(data[i].name))
-                    .attr("d", line);
-            }
-
-            svg.append("text")
-                .attr("y", 0)
-                .attr("x", width/2)
-                // .attr("dy", ".71em")
-                .style("text-anchor", "middle")
-                .text(input.name);
-
-            var value = svg.append('text')
-                .style("text-anchor", "middle")
-                .attr("transform", "translate("+(width/2) + ",20)")
-                .text(input.val.toFixed(2));
-
-
-            /*----------------------
-            Hover/ Drag
-            ----------------------*/
-
-            var drag = d3.behavior.drag()
-                .on("drag", mousemove)
-                .on("dragend", function() {
-                    this_model.set(input);
-                });
-            // TODO
-
-            var bisectX = d3.bisector(function(d) {
-                return d.x;
-            }).left;
-
-            var focus = svg.selectAll(".focus")
-                .data(outputs)
-                .enter()
-                .append("g")
-                .attr("class", "focus")
-                .attr("transform", function(e, j) {
-                    return "translate(" + x(input.val) + "," + y(model(inputs)[e]) + ")";
-                });
-
-            focus.append("circle")
-                .style('stroke', function(d) {
-                    return color(d);
-                })
-                .attr("r", width / 100);
-
-            // focus.append("text")
-            //     .attr("x", 9)
-            //     .attr("dy", ".35em")
-            //     .text(function(e, j) {
-            //         return model(inputs)[e].toFixed(2);
-            //     });
-
-            svg.append("rect")
-                .attr("class", "overlay")
-                .attr("width", width)
-                .attr("height", height)
-                .call(drag);
-
-            function mousemove() {
-                var x0 = x.invert(d3.mouse(this)[0]),
-                    i = bisectX(data[0].data, x0, 1),
-                    d0 = data[0].data[i - 1],
-                    d1 = data[0].data[i],
-                    i_b = x0 - d0.x > d1.x - x0 ? i : i - 1;
-
-                input.val = x0 - d0.x > d1.x - x0 ? d1.x : d0.x;
-
-                value.text(input.val.toFixed(2));
-
-
-                focus.attr("transform", function(e, j) {
-                    return "translate(" + x(data[j].data[i_b].x) + "," + y(data[j].data[i_b].y) + ")";
-                });
-                // focus.select("text").text(function(e, j) {
-                //     return data[j].data[i_b].y.toFixed(2)
-                // });
-
-
-            }
-
-            return this;
-
-        }
-
-    });
 
 
     /*----------------------
@@ -519,24 +113,7 @@ function model(inputs){
     editor.setValue(d3.select("#init-editor").html());
 
 
-    /*----------------------
-    Helpers
-    ----------------------*/
 
-    function isObject(obj) {
-        var type = typeof obj;
-        return type === 'function' || type === 'object' && !!obj;
-    };
-
-    function clone(obj) {
-        if (null == obj || "object" != typeof obj) return obj;
-        var copy = obj.constructor();
-        for (var attr in obj) {
-            if (isObject(obj[attr])) copy[attr] = clone(obj[attr]); // mja
-            else if (obj.hasOwnProperty(attr)) copy[attr] = obj[attr];
-        }
-        return copy;
-    }
 
     </script>
 
