@@ -1,0 +1,12 @@
+# Site settings
+title: Michael Asher's Hompage
+email: michael@asher.org.au
+description: "Home page of an environmental modeler, GIS enthusiast and web devotee."
+baseurl: ""
+url: "asher.org.au"
+# twitter_username: jekyllrb
+github_username:  mjasher
+
+# Build settings
+markdown: kramdown
+permalink: pretty
