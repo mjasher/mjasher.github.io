@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html class="no-js">
 
-  {% include head.html %}
+{% include head.html %}
 
-    <body>
+<body>
+
+<div id="outer-wrap">
+<div id="inner-wrap">
+
+    {% include header.html %}
 
     {% include header.html %}
 
@@ -15,5 +20,12 @@
 
     {% include footer.html %}
 
-    </body>
+</div>
+<!--/#inner-wrap-->
+</div>
+<!--/#outer-wrap-->
+
+<script src="js/main.js"></script>
+
+</body>
 </html>
