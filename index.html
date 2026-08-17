@@ -4,216 +4,779 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Data science, software, digital agriculture and agtech consultants.">
-    <title>Asher &amp; Co.</title>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-    <!--<![endif]-->
-    <!--[if lte IE 8]>
-            <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
-        <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="css/layouts/blog.css">
-    <!--<![endif]-->
+    <meta name="description"
+        content="Michael Asher — co-founder of Precip and Giraffe. Weather modelling, remote sensing and geospatial software. Blog, CV and projects.">
+    <meta name="author" content="Michael Asher">
+    <title>Michael Asher</title>
+    <link rel="canonical" href="https://www.asher.cc/">
+    <meta property="og:title" content="Michael Asher">
+    <meta property="og:description" content="Co-founder of Precip and Giraffe. Weather modelling, remote sensing and geospatial software.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.asher.cc/img/precip/screenshot.png">
+
+    <style>
+        /* ------------------------------------------------------------------
+           Design system — "Paper & Ink"
+           Latin Modern Roman (the site's own webfont) for display, a neutral
+           grotesque for reading, monospace for labels. Warm paper, near-black
+           ink, one vermilion accent.
+           ------------------------------------------------------------------ */
+
+        @font-face {
+            font-family: 'LMRoman';
+            src: url('fonts/lmroman10-regular-webfont.woff') format('woff'),
+                 url('fonts/lmroman10-regular-webfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        :root {
+            --paper: #fbfaf7;
+            --paper-2: #f2f0e8;
+            --card: #ffffff;
+            --ink: #16150f;
+            --ink-2: #43423a;
+            --muted: #76746a;
+            --rule: #e3e0d6;
+            --rule-soft: #edebe3;
+            --accent: #9a3b22;
+            --accent-soft: #f2e6e0;
+            --shadow: 0 1px 2px rgba(22, 21, 15, .05), 0 8px 24px -12px rgba(22, 21, 15, .16);
+
+            --serif: 'LMRoman', 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+            --sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            --mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+
+            --measure: 68ch;
+            --gutter: clamp(20px, 5vw, 56px);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --paper: #131310;
+                --paper-2: #1a1a16;
+                --card: #1a1a16;
+                --ink: #f1efe6;
+                --ink-2: #cbc8bc;
+                --muted: #8e8c81;
+                --rule: #2d2d26;
+                --rule-soft: #232320;
+                --accent: #e07a54;
+                --accent-soft: #2a1f1a;
+                --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 10px 30px -14px rgba(0, 0, 0, .7);
+            }
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            * { animation: none !important; transition: none !important; }
+        }
+
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink-2);
+            font-family: var(--sans);
+            font-size: 17px;
+            line-height: 1.62;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        /* --- primitives ------------------------------------------------- */
+
+        .wrap {
+            max-width: 1040px;
+            margin: 0 auto;
+            padding-inline: var(--gutter);
+        }
+
+        .measure { max-width: var(--measure); }
+
+        a { color: inherit; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); text-underline-offset: 3px; }
+        a:hover { color: var(--accent); text-decoration-color: currentColor; }
+
+        h1, h2, h3, h4 {
+            font-family: var(--serif);
+            font-weight: 400;
+            color: var(--ink);
+            line-height: 1.15;
+            letter-spacing: -.01em;
+            margin: 0;
+        }
+
+        p { margin: 0 0 1.1em; }
+        p:last-child { margin-bottom: 0; }
+
+        .label {
+            font-family: var(--mono);
+            font-size: 11px;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .rule { border: 0; border-top: 1px solid var(--rule); margin: 0; }
+
+        /* --- masthead --------------------------------------------------- */
+
+        .masthead {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            background: color-mix(in srgb, var(--paper) 88%, transparent);
+            backdrop-filter: saturate(1.6) blur(10px);
+            -webkit-backdrop-filter: saturate(1.6) blur(10px);
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .masthead .wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            height: 58px;
+        }
+
+        .wordmark {
+            font-family: var(--serif);
+            font-size: 19px;
+            color: var(--ink);
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .wordmark:hover { color: var(--ink); }
+        .wordmark .dot { color: var(--accent); }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: clamp(12px, 2.4vw, 26px);
+            font-family: var(--mono);
+            font-size: 11.5px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+        }
+        .menu a { text-decoration: none; color: var(--muted); }
+        .menu a:hover { color: var(--accent); }
+        .menu .ext::after { content: '↗'; margin-left: .35em; opacity: .6; font-size: .9em; }
+        @media (max-width: 640px) { .menu .hide-sm { display: none; } }
+
+        /* --- hero ------------------------------------------------------- */
+
+        .hero { padding: clamp(64px, 12vw, 132px) 0 clamp(48px, 8vw, 80px); }
+
+        .hero h1 {
+            font-size: clamp(44px, 9vw, 84px);
+            line-height: 1.02;
+            letter-spacing: -.02em;
+            margin-bottom: .38em;
+        }
+
+        .hero .lede {
+            font-family: var(--serif);
+            font-size: clamp(20px, 2.6vw, 25px);
+            line-height: 1.5;
+            color: var(--ink);
+            max-width: 30ch;
+            margin-bottom: 1.4em;
+        }
+
+        .hero .bio { max-width: 58ch; color: var(--ink-2); }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 8px;
+            margin-top: 30px;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: .5em;
+            padding: 7px 14px;
+            border: 1px solid var(--rule);
+            border-radius: 999px;
+            background: var(--card);
+            font-family: var(--mono);
+            font-size: 11.5px;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--ink-2);
+            text-decoration: none;
+            transition: border-color .18s ease, color .18s ease, transform .18s ease;
+        }
+        .chip:hover { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 45%, var(--rule)); transform: translateY(-1px); }
+
+        /* --- sections --------------------------------------------------- */
+
+        .section { padding: clamp(48px, 8vw, 88px) 0; border-top: 1px solid var(--rule); scroll-margin-top: 58px; }
+
+        .section-head {
+            display: flex;
+            align-items: baseline;
+            gap: 16px;
+            margin-bottom: clamp(32px, 5vw, 52px);
+        }
+        .section-head h2 { font-size: clamp(26px, 3.6vw, 34px); }
+        .section-head .label { flex: none; }
+
+        /* --- project entries -------------------------------------------- */
+
+        .entry { padding: clamp(34px, 5vw, 52px) 0; border-top: 1px solid var(--rule-soft); }
+        .entry:first-of-type { border-top: 0; padding-top: 0; }
+
+        .entry-grid { display: grid; gap: 22px; }
+        @media (min-width: 900px) {
+            .entry-grid { grid-template-columns: 190px minmax(0, 1fr); gap: 44px; }
+            .entry-aside { position: sticky; top: 88px; align-self: start; }
+        }
+
+        .entry-aside .num {
+            font-family: var(--mono);
+            font-size: 12px;
+            color: var(--accent);
+            letter-spacing: .1em;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .entry-aside .years { display: block; margin-top: 4px; }
+        .entry-aside .role {
+            display: block;
+            margin-top: 10px;
+            font-family: var(--sans);
+            font-size: 14px;
+            letter-spacing: 0;
+            text-transform: none;
+            color: var(--ink-2);
+            line-height: 1.45;
+        }
+
+        .entry h3 { font-size: clamp(28px, 4.2vw, 40px); margin-bottom: .3em; }
+
+        .entry .site {
+            font-family: var(--mono);
+            font-size: 12px;
+            letter-spacing: .06em;
+            color: var(--muted);
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 1.3em;
+            border-bottom: 1px solid var(--rule);
+            padding-bottom: 2px;
+        }
+        .entry .site:hover { color: var(--accent); border-color: currentColor; }
+
+        .entry .body { max-width: var(--measure); }
+
+        .entry ul.points {
+            margin: 1.3em 0 0;
+            padding: 0;
+            list-style: none;
+            max-width: var(--measure);
+        }
+        .entry ul.points li {
+            position: relative;
+            padding-left: 22px;
+            margin-bottom: .5em;
+            color: var(--ink-2);
+        }
+        .entry ul.points li::before {
+            content: '';
+            position: absolute;
+            left: 2px;
+            top: .72em;
+            width: 8px;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        /* --- figures ----------------------------------------------------- */
+
+        .figs {
+            display: grid;
+            gap: 18px;
+            align-items: start;
+            margin-top: clamp(26px, 4vw, 38px);
+        }
+        .figs.two { grid-template-columns: 1fr; }
+        @media (min-width: 620px) { .figs.two { grid-template-columns: 1fr 1fr; } }
+
+        figure {
+            margin: 0;
+            background: var(--card);
+            border: 1px solid var(--rule);
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        figure img { display: block; width: 100%; height: auto; }
+        figure.dark { background: #3f3f3f; }
+
+        /* a legend that belongs to the image directly above it */
+        .fig-legend {
+            background: #fff;
+            border-top: 1px solid var(--rule);
+            padding: 10px 14px 12px;
+        }
+        .fig-legend img { max-width: 320px; }
+
+        figcaption {
+            font-family: var(--mono);
+            font-size: 11px;
+            letter-spacing: .09em;
+            text-transform: uppercase;
+            color: var(--muted);
+            padding: 11px 14px;
+            border-top: 1px solid var(--rule);
+            background: var(--card);
+        }
+
+        /* --- sub-collection (portfolio / farmlogs) ----------------------- */
+
+        .subcollection { margin-top: clamp(30px, 4vw, 44px); }
+
+        .subcollection > .label {
+            display: block;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--rule);
+            margin-bottom: 6px;
+        }
+
+        .case { padding: clamp(26px, 3.6vw, 38px) 0; border-bottom: 1px solid var(--rule-soft); }
+        .case:last-child { border-bottom: 0; padding-bottom: 0; }
+        .case h4 { font-size: clamp(20px, 2.6vw, 25px); margin-bottom: .5em; }
+        .case p { max-width: var(--measure); }
+
+        /* --- writing list ------------------------------------------------ */
+
+        .list { border-top: 1px solid var(--rule); }
+
+        .list a.row {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: baseline;
+            gap: 10px 20px;
+            padding: 20px 4px;
+            border-bottom: 1px solid var(--rule-soft);
+            text-decoration: none;
+            transition: padding-left .18s ease, background-color .18s ease;
+        }
+        .list a.row:hover { padding-left: 12px; background: var(--paper-2); color: inherit; }
+        .list a.row:hover .row-title { color: var(--accent); }
+
+        .row-title { font-family: var(--serif); font-size: clamp(19px, 2.4vw, 23px); color: var(--ink); }
+        .row-note { color: var(--muted); font-size: 14.5px; grid-column: 1 / -1; max-width: 60ch; }
+
+        /* --- CV ---------------------------------------------------------- */
+
+        .cv-grid { display: grid; gap: clamp(36px, 5vw, 56px); }
+        @media (min-width: 860px) { .cv-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); } }
+
+        .cv-block + .cv-block { margin-top: 36px; }
+
+        .cv-block > .label {
+            display: block;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--rule);
+            margin-bottom: 16px;
+        }
+
+        .cv-list { list-style: none; margin: 0; padding: 0; }
+        .cv-list li { display: grid; grid-template-columns: 1fr auto; gap: 6px 18px; padding: 9px 0; align-items: baseline; }
+        .cv-list li + li { border-top: 1px solid var(--rule-soft); }
+        .cv-list .what { color: var(--ink); }
+        .cv-list .what small { display: block; color: var(--muted); font-size: 14px; font-weight: 400; }
+        .cv-list .when { font-family: var(--mono); font-size: 12px; color: var(--muted); white-space: nowrap; }
+
+        .refs { list-style: none; margin: 0; padding: 0; font-size: 15px; }
+        .refs li { padding: 11px 0; color: var(--ink-2); }
+        .refs li + li { border-top: 1px solid var(--rule-soft); }
+        .refs em { color: var(--ink); font-style: normal; }
+
+        .portrait-row { display: flex; align-items: center; gap: 18px; margin-bottom: 26px; }
+        .portrait-row img {
+            width: 64px; height: 64px; border-radius: 50%;
+            object-fit: cover; border: 1px solid var(--rule); filter: grayscale(1); flex: none;
+        }
+
+        /* --- footer ------------------------------------------------------ */
+
+        .footer { border-top: 1px solid var(--rule); padding: 46px 0 60px; }
+        .footer .inner { display: flex; flex-wrap: wrap; gap: 18px 28px; align-items: baseline; justify-content: space-between; }
+        .footer .mail { font-family: var(--serif); font-size: clamp(22px, 3.6vw, 32px); color: var(--ink); text-decoration: none; }
+        .footer .mail:hover { color: var(--accent); }
+        .footer .colophon { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+    </style>
 </head>
 
 <body>
 
-    <div id="layout" class="pure-g">
-        <div class="sidebar pure-u-1 pure-u-md-1-4">
-            <div class="header">
-                <h1 class="brand-title">Asher &amp; Co.</h1>
-                <h2 class="brand-tagline">Technology for Agriculture</h2>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a class="pure-button" href="https://github.com/mjasher">Github</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="pure-button" href="https://www.linkedin.com/in/michael-asher-1276065b/">LinkedIn</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="pure-button" href="mailto:michael.james.asher@gmail.com">Email</a>
-                        </li>
-                    </ul>
+    <header class="masthead">
+        <div class="wrap">
+            <a class="wordmark" href="#top">Michael Asher<span class="dot">.</span></a>
+            <nav class="menu">
+                <a href="#work">Work</a>
+                <!-- <a href="#writing">Writing</a> -->
+                <a href="#cv">CV</a>
+                <a class="ext hide-sm" href="https://github.com/mjasher">Github</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <!-- ============================ HERO ============================ -->
+        <section class="hero">
+            <div class="wrap">
+                <span class="label">Data &amp; software</span>
+                <h1>Michael Asher</h1>
+                <p class="lede">Modelling weather with modern compute @ precip.ai
+                </p>
+                <div class="bio">
+                    <p>
+                        I've worked across the software stack. Machine learning, web app and devops. Models to estimate crop yields and predict the weather. Front end apps to manage farms and model cities in 3D.
+                    </p>
+                    <p>
+                        I have enjoyed working on software products that touch the physical world be it weather, urban planning or agriculture.
+                    </p>
+                </div>
+                <div class="hero-meta">
+                    <a class="chip" href="mailto:michael.james.asher@gmail.com">Email</a>
+                    <a class="chip" href="https://github.com/mjasher">Github</a>
+                    <a class="chip" href="https://www.linkedin.com/in/michael-asher-1276065b/">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ WORK ============================ -->
+        <section class="section" id="work">
+            <div class="wrap">
+                <div class="section-head">
+                    <span class="label">01</span>
+                    <h2>Work</h2>
+                </div>
+
+                <!-- ---------------------------- Precip ------------------- -->
+                <article class="entry">
+                    <div class="entry-grid">
+                        <div class="entry-aside label">
+                            <span class="num">01</span>
+                            Precip
+                            <span class="years">2024 &ndash; present</span>
+                            <span class="role">Co-founder</span>
+                        </div>
+                        <div>
+                            <h3>Precip</h3>
+                            <a class="site" href="https://precip.ai/">precip.ai</a>
+                            <div class="body">
+                                <p>
+                                    Modelling weather with modern compute. Focussed on hyperlocal rainfall.
+                                </p>
+                            </div>
+                            <div class="figs">
+                                <figure>
+                                    <img src="img/precip/screenshot.png" alt="Precip web app showing a continental radar rainfall map of the United States" loading="lazy" decoding="async">
+                                    <figcaption>Rainfall obvservations at less than 1 mile resolution</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ---------------------------- Giraffe ------------------ -->
+                <article class="entry">
+                    <div class="entry-grid">
+                        <div class="entry-aside label">
+                            <span class="num">02</span>
+                            Giraffe
+                            <span class="years">2018 &ndash; 2024</span>
+                            <span class="role">Co-founder</span>
+                        </div>
+                        <div>
+                            <h3>Giraffe</h3>
+                            <a class="site" href="https://www.giraffe.build/">giraffe.build</a>
+                            <div class="body">
+                                <p>
+                                    Software to empower city makers. Draw simply in 3D on a map &mdash; buildings,
+                                    roads, landscape &mdash; and the areas, yields and feasibility update as you move
+                                    things.
+                                </p>
+                            </div>
+                            <div class="figs">
+                                <figure>
+                                    <img src="img/giraffe/screenshot.png" alt="Giraffe urban design app: a 3D masterplan on a map with a properties panel and live urban metrics" loading="lazy" decoding="async">
+                                    <figcaption>A precinct in progress, metrics recomputing live</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ---------------------------- Granular ----------------- -->
+                <article class="entry">
+                    <div class="entry-grid">
+                        <div class="entry-aside label">
+                            <span class="num">03</span>
+                            Granular
+                            <span class="years">2018 &ndash; 2021</span>
+                            <span class="role">Data science lead</span>
+                        </div>
+                        <div>
+                            <h3>Granular</h3>
+                            <a class="site" href="https://granular.ag/">granular.ag</a>
+                            <div class="body">
+                                <p>
+                                    Farm management software, then part of Corteva. Developed the satellite data based yield model covering the entire United States. Used in
+                                    Profit Maps. It reached growers through a
+                                    <a href="https://www.agriculture.com/news/technology/john-deere-and-granular-collaborate-to-deliver-advanced-business-software-tools-to">collaboration
+                                    with John Deere</a>.
+                                </p>
+                         
+                            </div>
+                            <div class="figs two">
+                                <figure>
+                                    <img src="img/granular/1OwrkzyQcKs6bG1vLsIfPPZDSe1iCWkFuqN3clngYyQ.png" alt="Satellite-derived yield map across several sections of farmland, red through green" loading="lazy" decoding="async">
+                                    <div class="fig-legend">
+                                        <img src="img/granular/1oNUrn4kUDUZ9PQoF-Z6Xa0qGKMQkeIRsgP-MySykWg.png" alt="Legend: yield in bushels per acre, 122 to 216, red to green" loading="lazy" decoding="async">
+                                    </div>
+                                    <figcaption>Estimated yield</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="img/granular/1UcnbVrIF-sfSyHMEeriI8zdCzGCU9V_Fj_g2r4xxSg.png" alt="Granular blog post, Remote Sensing Powers New Granular Profitability Insights" loading="lazy" decoding="async">
+                                    <figcaption>Remote sensing powers Granular profitability insights</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ---------------------------- FarmLogs ----------------- -->
+                <article class="entry">
+                    <div class="entry-grid">
+                        <div class="entry-aside label">
+                            <span class="num">04</span>
+                            FarmLogs
+                            <span class="years">2015 &ndash; 2018</span>
+                            <span class="role">Lead data scientist</span>
+                        </div>
+                        <div>
+                            <h3>FarmLogs</h3>
+                            <div class="body">
+                                <p>
+                                    Machine learning on satellite imagery for farmers. Since
+                                    <a href="https://www.bushelpowered.com/blog/bushel-acquires-farmlogs">acquired by
+                                    Bushel</a>.
+                                </p>
+                            </div>
+
+                            <div class="subcollection">
+                                <span class="label">Portfolio / farmlogs</span>
+
+                                <section class="case">
+                                    <h4>Crop Area Estimation</h4>
+                                    <p>
+                                        A machine learning model to estimate crop areas. This involved cleaning and
+                                        processing large volumes of satellite imagery.
+                                    </p>
+                                    <div class="figs two">
+                                        <figure>
+                                            <img src="img/crop_class_empty.png" alt="Satellite view of a field before classification" loading="lazy" decoding="async">
+                                            <figcaption>5 in season images</figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="img/crop_class_full.png" alt="Classified crop areas over the same field" loading="lazy" decoding="async">
+                                            <figcaption>56 ac. corn, 20 ac. replant and 46 ac. beans</figcaption>
+                                        </figure>
+                                    </div>
+                                </section>
+
+                                <section class="case">
+                                    <h4>Cloud Filter</h4>
+                                    <p>
+                                        A deep learning based cloud filter to improve the quality of data going into our
+                                        models.
+                                    </p>
+                                    <div class="figs two">
+                                        <figure>
+                                            <img src="img/clear.png" alt="Cloud-free satellite scene" loading="lazy" decoding="async">
+                                            <figcaption>Clear</figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="img/cloud.png" alt="Cloudy satellite scene" loading="lazy" decoding="async">
+                                            <figcaption>Cloudy</figcaption>
+                                        </figure>
+                                    </div>
+                                </section>
+
+                                <section class="case">
+                                    <h4>Yield Estimation</h4>
+                                    <p>
+                                        A model to estimate corn and soy yields based on real time satellite imagery.
+                                        The model was trained on millions of acres of historical yield files and 8
+                                        growing seasons of satellite imagery.
+                                    </p>
+                                    <div class="figs two">
+                                        <figure class="dark">
+                                            <img src="img/f2_sat.png" alt="Estimated yield map derived from satellite imagery" loading="lazy" decoding="async">
+                                            <figcaption>Estimated yield</figcaption>
+                                        </figure>
+                                        <figure class="dark">
+                                            <img src="img/f2_yield.png" alt="Measured yield map from combine yield monitor data" loading="lazy" decoding="async">
+                                            <figcaption>Measured yield</figcaption>
+                                        </figure>
+                                    </div>
+                                </section>
+
+                                <section class="case">
+                                    <h4>Prescription Generator</h4>
+                                    <p>
+                                        App to automatically generate variable rate seeding and nitrogen prescriptions
+                                        based on soil maps, climate data, satellite imagery and historical yield files.
+                                        Users can customize rates and download in the format appropriate for their
+                                        machinery.
+                                    </p>
+                                    <div class="figs">
+                                        <figure>
+                                            <img src="img/rx.png" alt="Variable rate prescription editor showing zoned rates over a field" loading="lazy" decoding="async">
+                                            <figcaption>Variable rate prescriptions, ready for the machine</figcaption>
+                                        </figure>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ========================== WRITING ===========================
+             Hidden for now. To restore: uncomment this block, put the nav
+             link back in the masthead, and renumber CV from 02 to 03.
+        <section class="section" id="writing">
+            <div class="wrap">
+                <div class="section-head">
+                    <span class="label">02</span>
+                    <h2>Writing &amp; experiments</h2>
+                </div>
+                <nav class="list">
+                    <a class="row" href="blog/AgTechandPropTech/index.html">
+                        <span class="row-title">AgTech and PropTech</span>
+                        <span class="label">Essay</span>
+                        <span class="row-note">Two of the least digitised industries, heading opposite ways on
+                            productivity &mdash; and what citymakers might take from farmers.</span>
+                    </a>
+                    <a class="row" href="vis/rent-or-buy/">
+                        <span class="row-title">Rent or buy</span>
+                        <span class="label">D3 · Interactive</span>
+                        <span class="row-note">Drag the assumptions and watch the two futures cross. One of a pile of
+                            visualisation sketches built to think with.</span>
+                    </a>
+                    <a class="row" href="https://github.com/mjasher">
+                        <span class="row-title">Code</span>
+                        <span class="label">Github ↗</span>
+                        <span class="row-note">Groundwater surrogate models, geospatial odds and ends, whatever's
+                            half-finished.</span>
+                    </a>
                 </nav>
             </div>
-        </div>
-        <div id="banner" class="content pure-u-1 pure-u-md-3-4">
-            <!-- <h1 class="content-subhead">About</h1> -->
-            <section class="post">
-                <header class="post-header">
-                    <h1 class="brand-title">Asher &amp; Co. build Technology for Agriculture</h1>
-                    <!-- <p class="post-meta">
-                        By <a class="post-author" href="#">Andrew Wooldridge</a> under <a class="post-category post-category-yui" href="#">YUI</a>
-                    </p> -->
-                </header>
-                <div class="post-description">
-                    <p class="brand-tagline">We create productivity enhancing apps, trend revealing analysis and machine learning driven innovation.</p>
-                    <p class="brand-tagline"><a href="mailto:michael.james.asher@gmail.com">Contact us</a> for your next digital agriculture project.</p>
-                    <!-- 20150904_005921_5522409_RapidEye-3 -->
-                </div>
-            </section>
-        </div>
-        <div class="content pure-u-1 pure-u-md-3-4">
-            <div>
-                <!-- A wrapper for all the blog posts -->
-                <div class="posts">
-                    <h1 class="content-subhead">Portfolio</h1>
-                    <!-- A single blog post -->
-                    <section class="post">
-                        <header class="post-header">
-                            <!-- <img width="48" height="48" alt="Tilo Mitra&#x27;s avatar" class="post-avatar" src="img/common/tilo-avatar.png"> -->
-                            <h2 class="post-title">Crop Area Estimation</h2>
-                            <!--      <p class="post-meta">
-                            By <a href="#" class="post-author">Tilo Mitra</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
-                        </p> -->
-                        </header>
-                        <div class="post-description">
-                            <p>
-                                A machine learning model to esimate crop areas. This involved cleaning and processing large volumes of satellite imagery.
-                            </p>
-                            <div class="post-images pure-g">
-                                <div class="pure-u-1 pure-u-md-1-3 img-cont">
-                                    <img class="pure-img-responsive" src="img/crop_class_empty.png">
-                                    <div class="post-image-meta">
-                                        <h3>5 in season images</h3>
-                                    </div>
-                                </div>
-                                <div class="pure-u-1 pure-u-md-1-3 img-cont">
-                                    <img class="pure-img-responsive" src="img/crop_class_full.png">
-                                    <div class="post-image-meta">
-                                        <h3>56 ac. corn, 20 ac. replant and 46 ac. beans </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="post">
-                        <header class="post-header">
-                            <!-- <img width="48" height="48" alt="Tilo Mitra&#x27;s avatar" class="post-avatar" src="img/common/tilo-avatar.png"> -->
-                            <h2 class="post-title">Cloud Filter</h2>
-                            <!--      <p class="post-meta">
-                            By <a href="#" class="post-author">Tilo Mitra</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
-                        </p> -->
-                        </header>
-                        <div class="post-description">
-                            <p>
-                                A deep learning based cloud filter to improve the quality of data going into our models.
-                            </p>
-                            <div class="post-images pure-g">
-                                <div class="pure-u-1 pure-u-md-1-3 img-cont">
-                                    <img class="pure-img-responsive" src="img/clear.png">
-                                    <div class="post-image-meta">
-                                        <h3>Clear</h3>
-                                    </div>
-                                </div>
-                                <div class="pure-u-1 pure-u-md-1-3 img-cont">
-                                    <img class="pure-img-responsive" src="img/cloud.png">
-                                    <div class="post-image-meta">
-                                        <h3>Cloudy</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="post">
-                        <header class="post-header">
-                            <!-- <img width="48" height="48" alt="Tilo Mitra&#x27;s avatar" class="post-avatar" src="img/common/tilo-avatar.png"> -->
-                            <h2 class="post-title">Yield Estimation</h2>
-                            <!--      <p class="post-meta">
-                            By <a href="#" class="post-author">Tilo Mitra</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
-                        </p> -->
-                        </header>
-                        <div class="post-description">
-                            <p>
-                                A model to estimate corn and soy yields based on real time satellite imagery. The model was trained on millions of acres of historical yield files and 8 growing seasons of satellite imagery.
-                            </p>
-                            <div class="post-images pure-g">
-                                <div style="background-color: #444;" class="pure-u-1 pure-u-md-1-3 img-cont">
-                                    <img class="pure-img-responsive" src="img/f2_sat.png">
-                                    <div class="post-image-meta">
-                                        <h3>Estimated yield</h3>
-                                    </div>
-                                </div>
-                                <div style="background-color: #444;" class="pure-u-1 pure-u-md-1-3 img-cont">
-                                    <img class="pure-img-responsive" src="img/f2_yield.png">
-                                    <div class="post-image-meta">
-                                        <h3>Measured yield</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="post">
-                        <header class="post-header">
-                            <!-- <img width="48" height="48" alt="Tilo Mitra&#x27;s avatar" class="post-avatar" src="img/common/tilo-avatar.png"> -->
-                            <h2 class="post-title">Prescription Generator</h2>
-                            <!--      <p class="post-meta">
-                            By <a href="#" class="post-author">Tilo Mitra</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
-                        </p> -->
-                        </header>
-                        <div class="post-description">
-                            <p>
-                                App to automatically generate variable rate seeding and nitrogen prescriptions based on soil maps, climate data, satellite imagery and historical yield files. Users can customize rates and download in the format appropriate for their machinery.
-                            </p>
-                            <div class="post-images pure-g">
-                                <div class="pure-u-1 pure-u-md-3-4">
-                                    <img class="pure-img-responsive" src="img/rx.png">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="posts">
-                    <h1 class="content-subhead">Team</h1>
-                    <section class="post">
-                        <header class="post-header">
-                            <img width="48" height="48" class="post-avatar" src="img/masher.jpg">
-                            <h2 class="post-title">Michael Asher</h2>
-                            <!-- <p class="post-meta">
-                            By <a class="post-author" href="#">Andrew Wooldridge</a> under <a class="post-category post-category-yui" href="#">YUI</a>
-                        </p> -->
-                        </header>
-                        <div class="post-description">
-                            <p>
-                                A Data Scientist and Software Engineer. Michael loves all aspects of data rich software development. He enjoys being involved with the entire product, building and deploying models, services and web apps.
+        </section>
+        ========================= /WRITING ========================== -->
 
-                                <!-- I enjoy being involved with the entire product: cleaning and storing data, analyzing and processing it, deploying APIs to production environments and protyping client apps. -->
-                            </p>
-                            <h3>Experience</h3>
-                            <ul>
-                                <li> Lead Data Scientist at Farmlogs (2015 -) </li>
-                                <li> Analyst at Kinesis (2015) </li>
-                                <li> Technology consultant at Threadharvest (2014) </li>
-                                <li> Programmer at BAE Systems Applied Intelligence, formerly Stratsec (2012) </li>
-                                <li> Intern analyst at Quantium (Summer 2010- 11) </li>
-                            </ul>
-                            <h3>Education</h3>
-                            <ul>
-                                <li> PhD in Machine Learning and Groundwater Modelling at the Australian National University (2014 - present) </li>
-                                <li> BSc in Maths and Computer Science at the Australian National University, High Distinction Average, First Class Honours (2012) </li>
-                                <li> Higher School Certificate, ATAR of 99.75 (2008) </li>
+        <!-- ============================= CV ============================= -->
+        <section class="section" id="cv">
+            <div class="wrap">
+                <div class="section-head">
+                    <span class="label">02</span>
+                    <h2>CV</h2>
+                </div>
+
+                <div class="portrait-row">
+                    <img src="img/masher.jpg" alt="Michael Asher">
+                    <div class="measure">
+                        <p>Data scientist and full stack engineer. Models, services, and the maps they end up on.
+                            <a href="extras/cv.html">Longer version →</a></p>
+                    </div>
+                </div>
+
+                <div class="cv-grid">
+                    <div>
+                        <div class="cv-block">
+                            <span class="label">Experience</span>
+                            <ul class="cv-list">
+                                <li><span class="what"><a href="https://precip.ai/">Precip</a> <small>Co-founder</small></span><span class="when">2024 &ndash;</span></li>
+                                <li><span class="what"><a href="https://www.giraffe.build/">Giraffe</a> <small>Co-founder</small></span><span class="when">2018 &ndash; 2024</span></li>
+                                <li><span class="what"><a href="https://granular.ag/">Granular</a> (<a href="https://www.corteva.com/">Corteva</a>) <small>Data science lead, Des Moines</small></span><span class="when">2018 &ndash; 2021</span></li>
+                                <li><span class="what"><a href="https://farmlogs.com/">FarmLogs</a> (now <a href="https://www.bushelpowered.com/">Bushel</a>) <small>Lead data scientist, Ann Arbor</small></span><span class="when">2015 &ndash; 2018</span></li>
+                                <li><span class="what"><a href="https://kinesis.org/">Kinesis Australia</a> <small>Analyst intern, Sydney</small></span><span class="when">2015</span></li>
+                                <li><span class="what"><a href="https://threadharvest.com.au/">Thread Harvest</a> <small>Software developer, Sydney</small></span><span class="when">2014</span></li>
+                                <li><span class="what"><a href="https://www.baesystems.com/en/what-we-do/digital-intelligence">Stratsec</a> (now BAE Systems Applied Intelligence) <small>Analyst intern, Canberra</small></span><span class="when">2012</span></li>
+                                <li><span class="what"><a href="https://www.quantium.com/">Quantium</a> <small>Data analyst intern, Sydney</small></span><span class="when">2010 &ndash; 11</span></li>
                             </ul>
                         </div>
-                    </section>
+
+                        <div class="cv-block">
+                            <span class="label">Education</span>
+                            <ul class="cv-list">
+                                <li><span class="what">Y Combinator <small>W24</small></span><span class="when">2024</span></li>
+                                <li><span class="what">PhD, mathematics &amp; computer science <small>ANU — surrogate models for groundwater</small></span><span class="when">2013 &ndash; 2021</span></li>
+                                <li><span class="what">BPhil, mathematics &amp; computer science <small>ANU — high distinction average, first class honours</small></span><span class="when">2009 &ndash; 2012</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="cv-block">
+                            <span class="label">Selected publications</span>
+                            <ul class="refs">
+                                <li><em>System and method for remote nitrogen monitoring and prescription.</em>
+                                    <a href="https://patents.google.com/patent/US9652840B1/en">US&nbsp;9,652,840</a>,
+                                    granted 2017. Shriver, Prasad, Asher, Blackmer.</li>
+                                <!-- <li><em>System and method for field pattern analysis.</em>
+                                    <a href="https://patents.google.com/patent/US20190108631A1/en">US&nbsp;2019/0108631</a>,
+                                    filed 2018. Riley, Asher, Blackmer.</li>
+                                <li><em>System and method for field test management.</em>
+                                    <a href="https://patents.google.com/patent/US20190107521A1/en">US&nbsp;2019/0107521</a>,
+                                    filed 2018. Riley, Asher, Blackmer.</li> -->
+                                <li>Asher, M. J., et al. <em>A review of surrogate models and their application to
+                                    groundwater modeling.</em> Water Resources Research 51.8 (2015): 5957&ndash;5973.</li>
+                                <!-- <li>Asher, M., et al. <em>Multi-fidelity uncertainty estimation of groundwater flow
+                                    models.</em> Australian Groundwater Conference, 2015.</li>
+                                <li>Asher, M., et al. <em>Multi-fidelity surrogates of groundwater flow.</em> AGU Fall
+                                    Meeting, 2015.</li>
+                                <li>Asher, M., et al. <em>Surrogate groundwater models.</em> MODSIM, 2013.</li> -->
+                            </ul>
+                        </div>
+
+                        <div class="cv-block">
+                            <span class="label">Awards</span>
+                            <ul class="cv-list">
+                                <li><span class="what">CSIRO Flagship Scholarship</span><span class="when">2013 &ndash; 16</span></li>
+                                <li><span class="what">Australian Postgraduate Award</span><span class="when">2013 &ndash; 16</span></li>
+                                <li><span class="what">Burgmann College Medal</span><span class="when">2012</span></li>
+                                <li><span class="what">ANU Merit Scholarship</span><span class="when">2009 &ndash; 12</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <!--    <div class="footer">
-                <div class="pure-menu pure-menu-horizontal">
-                    <ul>
-                        <li class="pure-menu-item"><a href="http://purecss.io/" class="pure-menu-link">About</a></li>
-                        <li class="pure-menu-item"><a href="http://twitter.com/yuilibrary/" class="pure-menu-link">Twitter</a></li>
-                        <li class="pure-menu-item"><a href="http://github.com/yahoo/pure/" class="pure-menu-link">GitHub</a></li>
-                    </ul>
-                </div>
-            </div> -->
             </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="wrap inner">
+            <a class="mail" href="mailto:michael.james.asher@gmail.com">michael.james.asher@gmail.com</a>
+            <span class="colophon">Michigan, by way of Australia </span>
         </div>
-    </div>
+    </footer>
+
 </body>
 
 </html>
